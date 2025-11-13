@@ -2,7 +2,6 @@
 
 The Administration functionality is the starting point for using the SCMP.
 
-
 The providers configured within this functionality will be used by the system to retrieve all necessary information.
 
 Within this functionality, it will be possible to:
