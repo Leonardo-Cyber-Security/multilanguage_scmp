@@ -1,10 +1,11 @@
 # Administration
 
+Use these examples to structure your documentation for clarity and consistency.
 
 La funzionalità di Administration è la base di partenza per poter utilizzare la SCMP.
 
 I provider inseriti all’interno di questa funzionalità verranno utilizzati dal sistema per recuperare tutte le informazioni necessarie.
-
+<figcaption><em>TESTO CENTRATO</em></figcaption>
 All’interno della funzionalità sarà possibile:
 
 - Configurare i cloud provider che potranno essere utilizzati nel Tenant di riferimento.
@@ -289,6 +290,9 @@ Vengono indicati con \* i parametri obbligatori
 | catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione CMP | 5 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | dataFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
+
+[Link a Compute Family](#compute-family)
+[Link a Pool Confidential Services](#pool-confidential-services)
 
 !!! info "Configurazioni sul provider"
     1. Configurazione S3
@@ -634,6 +638,10 @@ Vengono indicati con \* i parametri obbligatori (disponibili in basso sotto la s
 | catalogPriceDiscount \*\* | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | -5 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | dataFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
+
+[Link a Compute Family](#compute-family)
+[Link a Pool Confidential Services](#pool-confidential-services)
+[Link a Services Description](#services-description)
 
 !!! warning "Variabili per il calcolo dei costi"
 
