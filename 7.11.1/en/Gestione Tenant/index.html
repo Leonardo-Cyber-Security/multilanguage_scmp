@@ -1,0 +1,852 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Tenants - Super Project Documentation (EN)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/eng-standard-theme.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/fabric.min.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/toc.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/language-switcher.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tenants" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Super Project Documentation (EN)" class="md-header__button md-logo" aria-label="Super Project Documentation (EN)" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Super Project Documentation (EN)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tenants
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Super Project Documentation (EN)" class="md-nav__button md-logo" aria-label="Super Project Documentation (EN)" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    Super Project Documentation (EN)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developers/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Administration/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SCMP_SUM_en.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PDF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creation-of-a-new-tenant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creation of a new tenant
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation of a new tenant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-modifying-and-deleting-a-tenant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing, Modifying, and Deleting a tenant
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automated-tenant-and-subsystem-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automated tenant and subsystem creation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automated tenant and subsystem creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tenant-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Import
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subsystem-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subsystem Import
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-catalogs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Common" Catalogs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="&#34;Common&#34; Catalogs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-price-list-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New price list entry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifying-validity-and-deleting-price-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifying validity and deleting price lists
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#price-list-changes-changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Price list changes changelog
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reporting-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reporting tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reporting tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-report-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available report types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#report-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Report creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tenants">Tenants</h1>
+<p>SCMP has been developed as a Multi-Tenant solution, which offers greater security, customization, flexibility, and scalability, with more efficient administration and reduced costs.</p>
+<p>To allow the user to manage the tenants present in the infrastructure, the "Tenant" functionality has been made available, a feature not available to everyone but only to users enabled for Service Management.</p>
+<p>To access the functionality, click on the bento button in the top left. Afterwards, click on "Tenant".</p>
+<p>
+<figure><img src="images/extract/media/image31.png" /><figcaption>Access to Tenant management</figcaption>
+</figure>
+</p>
+<h3 id="creation-of-a-new-tenant">Creation of a new tenant</h3>
+<p>At this point, the user is inside the "Tenant" tab page, which contains the list of tenants configured on the system. To add a new tenant, click the "menu" available in the top right and select the "+ Add" item.</p>
+<p>
+<figure><img src="images/extract/media/image32.png" /><figcaption>Add new tenant</figcaption>
+</figure>
+</p>
+<p>Once pressed, the new tenant configuration page is displayed, divided into three sections:</p>
+<p>
+<figure><img src="images/extract/media/image33.png" /><figcaption>New tenant creation form</figcaption>
+</figure>
+</p>
+<ol>
+<li>General parameters:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Required</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tenant ID</td>
+<td>Unique ID of the new tenant</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Tenant Name</td>
+<td>Name of the tenant that will be displayed to the user</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A description of the tenant</td>
+<td>x</td>
+</tr>
+<tr>
+<td>MarketPlace Subscription ID</td>
+<td>the ID received from the Azure marketplace upon service subscription</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Data persistence:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Required</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inventory</td>
+<td>Indicates the number of days for which inventory data will be retained in the collections present in the DB</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>Indicates the number of days for which cost data will be retained in the collections present in the DB</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Monitoring</td>
+<td>Indicates the number of days for which monitoring data will be retained in the collections present in the DB</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Indicates the number of days for which security data will be retained in the collections present in the DB</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Init Catalog</li>
+</ol>
+<p>In this section, you can select the catalog items that
+will be automatically copied to the new tenant.</p>
+<p>The initial section (1) allows choosing only one option from:</p>
+<ul>
+<li>Empty Catalog: leave the catalog empty without copying any information.</li>
+<li>Copy Catalog from Default Tenant: indicates that the tenant from which to retrieve information to copy is the Default tenant.</li>
+<li>Copy Catalog from other Tenant: if selected, a new field containing the list of available tenants will be displayed in the section below, allowing the selection of the tenant from which to retrieve information to copy.</li>
+</ul>
+<p>Subsequently, you can fill in the next section (2) by entering the non-mandatory fields:</p>
+<ul>
+<li><strong>Providers</strong>: list of providers configured in the source tenant; selecting one or more providers will copy their catalog items to the new tenant.</li>
+<li><strong>Copy SCMP Catalog</strong>: if activated, all elements present in the SCMP catalog will be added to the new tenant.</li>
+<li><strong>Copy Services</strong>: if activated, all elements present in the SCMP catalog will be added to the new tenant.</li>
+<li><strong>Copy Custom Services</strong>: if activated, custom services available on the tenant will be added to the new tenant.</li>
+<li>
+<p><strong>Copy Blueprints</strong>: if activated, all available Blueprints will be added to the new tenant.</p>
+</li>
+<li>
+<p>Association Catalog</p>
+</li>
+</ul>
+<p>In this section, you can select the flag to enable the tenant to use the "Common" price lists analyzed later.
+By selecting this field, it will no longer be necessary to define a specific catalog for the tenant; it will inherit the common price lists.</p>
+<p>
+<figure><img src="images/extract/media/image34.png" /><figcaption>Catalog initialization section</figcaption>
+</figure>
+</p>
+<p>To confirm the creation of the new tenant, click the "Save" button in the bottom right. After waiting for loading, a creation confirmation message will be displayed, and the user will be returned to the tenant list where the newly created tenant will be present.</p>
+<h4 id="viewing-modifying-and-deleting-a-tenant">Viewing, Modifying, and Deleting a tenant</h4>
+<p>In the tenant list, next to each result, there is a "menu" with three buttons:</p>
+<ul>
+<li>"Show": allows viewing tenant information (indicated with a red arrow in the image).</li>
+<li>"Edit": allows modifying basic tenant information (indicated with a yellow arrow in the image).</li>
+<li>"Delete": allows deleting the user after clicking "confirm" in the displayed modal (indicated with a purple arrow in the image).</li>
+</ul>
+<p>
+<figure><img src="images/extract/media/image35.png" /><figcaption>Control buttons</figcaption>
+</figure>
+</p>
+<h3 id="automated-tenant-and-subsystem-creation">Automated tenant and subsystem creation</h3>
+<p>The user is given the possibility to automate the import of tenants and subsystems to speed up "onboarding" operations. To access the functionality, click the "import" tab available at the top of the "Tenants" functionality.</p>
+<p>
+<figure><img src="images/extract/media/082425001.png" /><figcaption>Tenant import functionality</figcaption>
+</figure>
+</p>
+<p>In the center of the page, there is a contextual menu that allows selecting the import type (Tenant or subsystems).</p>
+<p>Let's analyze the 2 pages in detail.</p>
+<h4 id="tenant-import">Tenant Import</h4>
+<p>The functionality consists of 2 sections:</p>
+<ol>
+<li>The "upload file" section where you can insert a file in .xlsx format (of which an example can be downloaded using the dedicated button) {in red in the figure}</li>
+<li>The "configuration" section where it is possible to select the parameters shared between tenants (in yellow in the figure), as described in the section (<a href="#creazione-di-un-nuovo-tenant">Creation of a new tenant</a>).</li>
+</ol>
+<p>Once all information has been entered, you can click the "import" button (in green in the figure) to validate the uploaded file and start the import process.</p>
+<p>
+<figure><img src="images/extract/media/082425002.png" /><figcaption>Tenant configuration parameters</figcaption>
+</figure>
+</p>
+<p>After a few minutes, you can use the "Results" button (in pink in the image) to view the details of the operations performed by the SCMP.</p>
+<p>
+<figure><img src="images/extract/media/090425001.png" /><figcaption>Results of performed imports</figcaption>
+</figure>
+</p>
+<h4 id="subsystem-import">Subsystem Import</h4>
+<p>To access the subsystem import functionality, you need to click on the "subsystems" tab available on the "import" page.</p>
+<p>
+<figure><img src="images/extract/media/082425003.png" /><figcaption>Subsystem import functionality</figcaption>
+</figure>
+</p>
+<p>The functionality consists of 2 sections:</p>
+<ol>
+<li>The "upload file" section where you can insert a file in .xlsx format (of which an example can be downloaded using the dedicated button).</li>
+<li>The selection of the provider type to import.</li>
+</ol>
+<p>Once files are inserted and it's verified that the provider is compatible, you can click the "import" button (in green in the figure) to validate the uploaded file and start the import process.</p>
+<p>
+<figure><img src="images/extract/media/082425004.png" /><figcaption>Tenant and subsystem import functionality</figcaption>
+</figure>
+</p>
+<p>After a few minutes, you can use the "Results" button (in pink in the image) to view the details of the operations performed by the SCMP.</p>
+<p>
+<figure><img src="images/extract/media/090425001.png" /><figcaption>Results of performed imports</figcaption>
+</figure>
+</p>
+<h3 id="common-catalogs">"Common" Catalogs</h3>
+<p>The user is given the possibility to import a series of catalogs for SKUs or resources, which will then be used by all tenants that have the <a href="#creazione-di-un-nuovo-tenant">enabled flag</a>.</p>
+<p>To proceed with price list entry, you can access the "Price list" page available on the tenant administration module.</p>
+<p>
+<figure><img src="images/extract/media/250530001.png" /><figcaption>Access to catalog import</figcaption>
+</figure>
+</p>
+<p>Once inside the page, to view the data, we can use the "Provider" filter to select the type of provider for which to check the status of price lists.</p>
+<p>
+<figure><img src="images/extract/media/250530002.png" /><figcaption>Filter by provider</figcaption>
+</figure>
+</p>
+<p>We can use the other filters on the page to:</p>
+<ul>
+<li>View data for a specific year ("Date" filter)</li>
+<li>View specific catalogs for the selected tenant ("tenant" filter)</li>
+</ul>
+<p>To view the data, it is necessary to select only one type of provider, in order to display the calendar and the list of price lists applied for a given year to the specified tenant and/or common.</p>
+<p>Inside the page, you will find the list of imported price lists with their validity period. For each row, a color is also indicated; this color helps identify the price list in the graphic section on the left. This calendar facilitates the identification of periods not covered by the price list.</p>
+<p>The list of "inactive" price lists that have been previously replaced is also displayed.</p>
+<p>
+<figure><img src="images/extract/media/300625001.png" /><figcaption>Inactive price lists</figcaption>
+</figure>
+</p>
+<h4 id="new-price-list-entry">New price list entry</h4>
+<p>To enter a new price list, you need to click the "hamburger menu" available in the top right of the catalog resources page and select "Import Catalogue".</p>
+<p>
+<figure><img src="images/extract/media/300625002.png" /><figcaption>Access to "Scheduled Catalog Import"</figcaption>
+</figure>
+</p>
+<p>Three parameters are present in the modal:</p>
+<ul>
+<li>Tenant: select the tenant on which to perform the upload.</li>
+<li>Provider: Select the provider related to the price list to be entered.</li>
+<li>Valid From: it is possible to indicate a start date for the price list's validity. On the day indicated in this variable, the system will automatically update the catalog resources to match the new price list.</li>
+</ul>
+<p>If necessary, the user can enter a "common to all tenants" price list which will be used by all configured tenants containing systems from the reference provider.</p>
+<p>
+<figure><img src="images/extract/media/300625003.png" /><figcaption>Required fields for import</figcaption>
+</figure>
+</p>
+<p>Additionally, below the parameters, there are two sections for file upload. By clicking on the first square on the left, you can select an "XLS" file containing all resources to be mapped. By clicking on the second square, you can insert a mapping file, following the information shown in the "Help" section indicated by a "Question Mark" icon. Clicking on it will open a box below the upload sections that contains all information related to the mapping file to be inserted.</p>
+<p>
+<figure><img src="images/extract/media/image190.png" /><figcaption>Help message for Mapping file</figcaption>
+</figure>
+</p>
+<p>After entering all parameters, you can click the save button at the bottom, and you will be returned to the previous page which, after the import, will display the new price list.</p>
+<h4 id="modifying-validity-and-deleting-price-lists">Modifying validity and deleting price lists</h4>
+<p>To modify a price list, it is necessary to click the menu corresponding to the table row containing the price list, as indicated in the figure. Subsequently, select the edit item to display the modification mask.</p>
+<p>
+<figure><img src="images/extract/media/300625005.png" /><figcaption>Edit a price list</figcaption>
+</figure>
+</p>
+<p>Within the window, it is possible to modify the validity date of the price list, either to reduce or extend its duration. If the "Indefinite time" option is selected, the price list will remain valid until a new price list is entered. At that point, the price list with indefinite validity will be automatically deactivated and considered valid until the day the new price list is activated.</p>
+<p>After the update, it is necessary to refresh the costs on the involved tenants, in order to correctly calculate the customer price based on the updated price lists.</p>
+<p>
+<figure><img src="images/extract/media/300625006.png" /><figcaption>Edit the validity of a price list</figcaption>
+</figure>
+</p>
+<p>The user is also given the option to delete a price list. In this case, the period previously covered by that price list will remain uncovered, i.e., without an associated rate.</p>
+<p>
+<figure><img src="images/extract/media/300625007.png" /><figcaption>Price list deletion</figcaption>
+</figure>
+</p>
+<h3 id="price-list-changes-changelog">Price list changes changelog</h3>
+<p>Using the "Price list changelog" tab available at the top of the "tenant administration" section, it is possible to view a list of operations performed on the price lists, with an indication of the dates used for import and the reference user who made the changes.</p>
+<p>
+<figure><img src="images/extract/media/300625004.png" /><figcaption>Error details</figcaption>
+</figure>
+</p>
+<p>Using the filter available on the page, we can view data for only one selected tenant.</p>
+<h3 id="reporting-tools">Reporting tools</h3>
+<p>The reporting functionality, specific to features, allows generating global reports of the information available for the various providers. Within the pages, the possibility will also be given to create files to facilitate information sharing.</p>
+<p>To access the functionality, above the breadcrumb path, click on the "Reports" tab.</p>
+<p>
+<figure><img src="images/extract/media/image141.png" /><figcaption>Access to Catalog report</figcaption>
+</figure>
+</p>
+<h4 id="available-report-types">Available report types</h4>
+<ul>
+<li><strong>SKUs not in Price List</strong> – List of SKUs that have generated costs (retrieved through the cost functionality for each provider) that are not present in the price list entered in the "price lists" section.</li>
+</ul>
+<h4 id="report-creation">Report creation</h4>
+<p>In the top right of the page, we can click on the "New Report" button to start creating a report. Specifically, a modal is displayed containing the list of available report types.</p>
+<p>
+<figure><img src="images/extract/media/image142.png" /><figcaption>New report creation</figcaption>
+</figure>
+</p>
+<p>Once the report type is selected, click on the "Configure" button to select the providers to include in the report. In the newly opened window, you will find the "Provider" field that allows selecting one or more pre-existing providers in the system. Subsequently, you can select one or more subsystems to include in the report; if no providers are selected, no subsystems can be selected. Finally, there is a "tag" section to include only resources that have the entered tag.</p>
+<p>
+<figure><img src="images/extract/media/image143.png" /><figcaption>Report configuration</figcaption>
+</figure>
+</p>
+<p>To confirm the creation of a static report, verify that "One-Shot" has been selected for the "Report type" field and click the "Submit" button at the bottom.</p>
+<p>After a loading period, the newly generated report will be visible in the list.</p>
+<p>
+<figure><img src="images/extract/media/image144.png" /><figcaption>List of generated reports</figcaption>
+</figure>
+</p>
+<div class="no-print">
+
+Removed in release 8.0.0
+
+### Catalog synchronization between different tenants
+
+A functionality is implemented within SCMP that allows the user to copy a price list previously uploaded using an XML file in the catalog functionality. To do this, it is necessary to click on the destination tenant and then click on "Associate tenant".
+
+![Catalog association functionality](images/extract/media/image36.png)
+
+A window will be displayed showing the list of previously associated price lists. At the bottom, by clicking the "Associate Catalog" button, we will start the association procedure.
+
+![Start of Association process](images/extract/media/image37.png)
+
+The first necessary step for associating price lists is the selection of the source, in this case, the tenant containing the price list to be associated.
+
+![Selection of "Source" tenant](images/extract/media/image38.png)
+
+By selecting the "Source" tenant, the list of price lists present within the tenant will be displayed on screen, from which one or more items can be selected. These will be automatically imported and associated by clicking the "Associate Catalog" button.
+
+![Price list selection](images/extract/media/image39.png)
+
+A confirmation modal will be displayed informing us to wait a few minutes to allow the system to complete the operations, and we will be returned to the "tenant" page.
+
+![Confirmation of import process start](images/extract/media/image40.png)
+
+In the tenant list, you can click on the corresponding row to view, in addition to the tenant details, also the list containing the new price list that we have imported. On this same page, you can click the "Associate Catalog" button to repeat the operations just described.
+
+![Price list successfully imported](images/extract/media/image41.png)
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../assets/js/toc.js"></script>
+      
+        <script src="../assets/js/language-switcher.js"></script>
+      
+    
+  </body>
+</html>
