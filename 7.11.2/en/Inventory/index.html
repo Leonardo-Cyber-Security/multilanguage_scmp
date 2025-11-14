@@ -1,0 +1,1736 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Inventory - Super Project Documentation (EN)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/eng-standard-theme.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/fabric.min.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/toc.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/language-switcher.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inventory" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Super Project Documentation (EN)" class="md-header__button md-logo" aria-label="Super Project Documentation (EN)" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Super Project Documentation (EN)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Inventory
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Super Project Documentation (EN)" class="md-nav__button md-logo" aria-label="Super Project Documentation (EN)" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    Super Project Documentation (EN)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developers/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Code'></span> Developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Getting started/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--WaitlistConfirm'></span> Installation and Deploy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Authentication/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AuthenticatorApp'></span> Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gestione Tenant/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ModelingView'></span> Tenant Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Administration/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Admin'></span> Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dashboard/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ViewDashboard'></span> Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--OpenFolderHorizontal'></span> Inventory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Monitoring/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AreaChart'></span> Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Security/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AzureKeyVault'></span> Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Catalog/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AddToShoppingList'></span> Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Costs e Usage/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Money'></span> Costs & Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Provisioning/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--BranchFork2'></span> Provisioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Backup Disaster Recovery/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Lifesaver'></span> Backup & Disaster Recovery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Funzionalità condivise/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--SecondaryNav'></span> Shared Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Service Detail Design/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ReservationOrders'></span> Service Detail Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OverviewPSN/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AddToShoppingList'></span> Leonardo Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" >
+        
+          
+          <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AzureAPIManagement'></span> REST API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_17">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    <span class='ms-Icon ms-Icon--AzureAPIManagement'></span> REST API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/finopsAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/provisioningAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Provisioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory / Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/absAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Abstraction Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmreportAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Report manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmcostsAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cost
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmmonitoringAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmsecurityAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmserviceAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/siemAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SIEM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/txmAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Taxonomy Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/tenantAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tenant Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/api/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service detail design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SCMP_SUM_en.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--PDF'></span> Complete PDF Version
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inventory-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventory Dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inventory Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resource-detail-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resource detail view
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions-on-inventory-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actions on inventory machines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster-explorer-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “Cluster Explorer” functionality
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-if-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        “WHAT IF” Functionality
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="“WHAT IF” Functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-what-if-provider-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario “What If”: Provider Migration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-what-if-change-resource-capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario “What If”: Change Resource Capacity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-if-scenario-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What If scenario Export
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reporting-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reporting Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reporting Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-report-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available report types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#report-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Report Creation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Report Creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#report-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Report Scheduling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-of-scheduled-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List of scheduled reports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using reports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="inventory">Inventory</h1>
+<p>The inventory functionality collects metadata of installed assets across all providers present on the SCMP.</p>
+<p>The assets currently present are:</p>
+<ul>
+<li>Virtual Machine</li>
+<li>Data Stores</li>
+<li>Networks</li>
+<li>Clusters</li>
+<li>Edge</li>
+<li>Security</li>
+<li>Others</li>
+</ul>
+<p>Heterogeneous metadata, coming from different sources, is then normalized by the SCMP to allow for standard visualization.</p>
+<p>Inventory is accessible from the “Inventory” menu item.</p>
+<p>
+<figure><img src="images/extract/media/image104.png" /><figcaption>Accesso a Inventory</figcaption>
+</figure>
+</p>
+<h3 id="inventory-dashboard">Inventory Dashboard</h3>
+<p>The Dashboard page provides a global and aggregated view of all resources, while the menus above the breadcrumb path allow filtering by resource type. The functionalities available on the various pages are identical.</p>
+<p>
+<figure><img src="images/extract/media/image105.png" /><figcaption>dashboard di inventario</figcaption>
+</figure>
+</p>
+<p>Within the “Resources” tab page, there are filters; in the first filter at the top, it is possible to search for resources by name, resource group, Provider, etc. It is also possible to filter resources by “Provider” and “Subsystem”.</p>
+<p>The last filter allows searching by tag. Click on it and select a tag, then by clicking the button depicting a magnifying glass, the page will refresh and display the list of filtered resources.</p>
+<p>
+<figure><img src="images/extract/media/image106.png" /><figcaption>Ricerca generica, per tag, per Provider e Subsystem</figcaption>
+</figure>
+</p>
+<p>It is also possible to click on the graphs to automatically apply the relevant filters.</p>
+<h4 id="resource-detail-view">Resource detail view</h4>
+<p>To view the details of a resource, you can click as shown in the figure:</p>
+<p>
+<figure><img src="images/extract/media/image107.png" /><figcaption>Accesso alla risorsa in modalità lettura</figcaption>
+</figure>
+</p>
+<p>The detail of an inventory asset shows the main characteristics at the top, such as monthly cost, machine size, and an external link to the resource pointing to the reference provider.</p>
+<p>Below is the detailed view of a VM:</p>
+<p>
+<figure><img src="images/extract/media/image108.png" /><figcaption>Dettaglio risorsa</figcaption>
+</figure>
+</p>
+<p>And at the bottom, the asset's relationships with other SCMP elements, as shown in the figure:</p>
+<p>
+<figure><img src="images/extract/media/image109.png" /><figcaption>Grafico delle relazioni</figcaption>
+</figure>
+</p>
+<p>The relationship graph allows navigating between resources by directly clicking on the circle of the linked resource, in order to land on its details.</p>
+<p>Furthermore, it is possible to edit some attributes, such as tags, as shown in the figure:</p>
+<p>
+<figure><img src="images/extract/media/image110.png" /><figcaption>Selezione del tag</figcaption>
+</figure>
+</p>
+<p>For the “Provider Tags…” field, it is not possible to select a tag, as tags in this section are retrieved directly from the subsystem.</p>
+<p>The “Add SCMP Tag…” field allows selecting from a list or manually entering one. Inside the tag, there is an “X” symbol to delete it.</p>
+<p>It is possible to add multiple tags to the resource.</p>
+<p>Subsequently, in the bottom right of the “Tags &amp; Note” section, click on the “Save” button to save the change, and a banner will appear at the bottom indicating the tag has been saved.</p>
+<p>Scroll the page to the bottom, and click on the “Close” button located on the right to return to the “Dashboard” tab page.</p>
+<h4 id="actions-on-inventory-machines">Actions on inventory machines</h4>
+<p>For inventory machines from supported providers, a new button available in the table context menu called “Manage” can be used to perform basic operations on the machines.</p>
+<p>
+<figure><img src="images/extract/media/image111.png" /><figcaption>Accesso alla funzionalità di "management"</figcaption>
+</figure>
+</p>
+<p>From this resource detail page, the following operations can be performed using the menu at the top of the page; the operations available on the machines may vary depending on the provider:</p>
+<p>Azure Stack HCI</p>
+<ul>
+<li>Start machine</li>
+<li>Stop machine</li>
+<li>Resize machine</li>
+<li>Add storage disks</li>
+<li>Add network interface</li>
+<li>Delete resource</li>
+<li>Remove disk from resource</li>
+<li>Remove network interface</li>
+</ul>
+<p>Red Hat Edge</p>
+<ul>
+<li>Update an EDGE device image</li>
+</ul>
+<p>Operations are indicated in white when they can be executed and in gray when they are not supported or unavailable for the resource.</p>
+<p>
+<figure><img src="images/extract/media/image112.png" /><figcaption>Operazioni sulle macchine di inventario</figcaption>
+</figure>
+</p>
+<h4 id="cluster-explorer-functionality">“Cluster Explorer” functionality</h4>
+<p>Cluster Explorer is a powerful feature that allows users to view namespaces within a cluster in detail. This function provides a comprehensive overview of data and resource organization within the cluster, facilitating navigation and management of complex environments.</p>
+<p>With Cluster Explorer, users can:</p>
+<ul>
+<li>View the complete list of namespaces in a cluster: Get a quick overview of all available namespaces in the cluster.</li>
+<li>Examine the details of each namespace: Access complete information about each namespace, including name, description, labels, and resource quotas.</li>
+<li>Filter and search namespaces: Quickly find specific namespaces using advanced filtering and search criteria.</li>
+</ul>
+<p>To access the functionality, select the “Clusters” item from the horizontal menu of the Inventory module.</p>
+<p>
+<figure><img src="images/extract/media/image113.png" /><figcaption>Accesso alla funzionalità di cluster explorer</figcaption>
+</figure>
+</p>
+<p>Inside the page, a list of clusters present within the subsystems configured in the system will be displayed. Clicking on one of them will open a modal with the general details of the cluster.</p>
+<p>
+<figure><img src="images/extract/media/image114.png" /><figcaption>Finestra di dettaglio del cluster</figcaption>
+</figure>
+</p>
+<p>We can notice that at the bottom right there is a “cluster explorer” button; pressing it will redirect us to the cluster Dashboard. This page can also be accessed using the “cluster explorer” button available in the “three dots” context menu present for each cluster in the list of results.</p>
+<p>Within this page, we can view a graph representing the distribution of namespaces within the cluster; on the right, the legend of namespaces with the number of active pods is displayed.</p>
+<p>
+<figure><img src="images/extract/media/image115.png" /><figcaption>Dashboard del “cluster explorer”</figcaption>
+</figure>
+</p>
+<p>We can drill down into the details of namespaces using different components on the page:</p>
+<p>it is possible to click on the “Explore namespaces” button at the top right or click on the number of namespaces displayed at the top left to view the namespace exploration page without filters. If we want to directly view the details of a namespace present in the graph, it is possible to click on the corresponding slice, and the detail page will be automatically filtered for the selected namespace.</p>
+<p>
+<figure><img src="images/extract/media/image116.png" /><figcaption>Pagina "Namespace explorer"</figcaption>
+</figure>
+</p>
+<p>The namespaces field at the top allows searching among available clusters by entering free text. If a match is found, you can select the namespace from the list to view its details.</p>
+<p>
+<figure><img src="images/extract/media/image117.png" /><figcaption>Dettaglio dei namespace</figcaption>
+</figure>
+</p>
+<p>Using the “Down Arrow” commands, it will be possible to navigate between available categories and sub-categories of elements. Finally, by selecting a result, its details will be displayed in the right section of the page, which will be automatically populated with the selected result from the left.</p>
+<p>
+<figure><img src="images/extract/media/image118.png" /><figcaption>Dettagli del contenuto del namespace</figcaption>
+</figure>
+</p>
+<h3 id="what-if-functionality">“WHAT IF” Functionality</h3>
+<p>This functionality allows performing simulations for asset migration from one provider to another, or within the same provider, in order to compare management and maintenance costs.</p>
+<p>To run a simulation, click on the tab above the breadcrumb path that depicts a relationship connecting two entities, named ‘What If’.</p>
+<p>
+<figure><img src="images/extract/media/image119.png" /><figcaption>Accesso a “What If”</figcaption>
+</figure>
+</p>
+<p>After doing so, you will find yourself on the “What If” tab page.</p>
+<p>Above the list of simulations, on the right, we can notice two tabs that allow filtering the list by simulation type, specifically:</p>
+<p>upon opening the page, all “Change Provider” type simulations will be displayed, while clicking on the “Capacity” tab will allow viewing the list of “Change size” type simulations.</p>
+<p><img alt="" src="images/extract/media/image120.png" />
+<figure><img src="images/extract/media/image121.png" /><figcaption>Pagina di “What If”</figcaption>
+</figure>
+</p>
+<h4 id="scenario-what-if-provider-migration">Scenario “What If”: Provider Migration</h4>
+<p>To perform a “What If: Migrate Provider” simulation, click on the box on the left titled “Migrate to another provider”.</p>
+<p>
+<figure><img src="images/extract/media/image122.png" /><figcaption>Accesso alla funzionalità "What If: Migrate Provider"</figcaption>
+</figure>
+</p>
+<p>After doing so, the user will find themselves on the “Start” page of step 1 for simulating resource migration from one cloud provider to another.</p>
+<p>On the left, in the “Select Resources to migrate” box, the user can search for resources using three types of filters, including:</p>
+<ul>
+<li>“Search” which allows searching for a resource by name;</li>
+<li>“Search by Type” to obtain resources by selecting the resource type;</li>
+<li>“Search by tags” which allows searching for resources using one or more tags.</li>
+</ul>
+<p>Within the resource table, only resources that have a relationship in the catalog will be displayed.</p>
+<p>Within the resource table, click on one of them and, using the “drag and drop” technique, drag it to the right, into the box titled “Currently selected”.</p>
+<p>A maximum of three resources can be included per simulation.</p>
+<p>Subsequently, in the bottom right, click on the “Next” button.</p>
+<p>
+<figure><img src="images/extract/media/image123.png" /><figcaption>Scelta delle risorse in cui effettuare la migrazione del provider</figcaption>
+</figure>
+</p>
+<p>After doing so, the user will find themselves on the “Destination Providers” page of step 2, where it is possible to click on the checkbox corresponding to one or more providers. Based on the selected provider type, the value in the ‘Option selected’ field at the bottom left will be automatically populated with the names of the selected providers.</p>
+<p>Subsequently, in the bottom right, click on the “Next” button, while to return to the “Start” page of step 1, click on the “Back” button.</p>
+<p>
+<figure><img src="images/extract/media/image124.png" /><figcaption>Scelta del Cloud Provider in cui migrare le risorse</figcaption>
+</figure>
+</p>
+<p>After clicking the “Next” button, the user will find themselves on the page of step 3 titled “Details”.</p>
+<p>On this page, cards will be displayed, one for each subsystem selected in step 2.</p>
+<p>In each card, on the left, there is a list of regions available for the cloud provider, and on the right, an empty section is displayed.</p>
+<p>Selecting one or more regions in the right section (in red in the figure) will display a menu in the right section that allows selecting the type of cost to apply (in yellow in the figure). Selecting the “Consumption” type requires no further parameters, while selecting the “Reservation” type, to the left of the field, it will be possible to choose the Reservation period (in yellow in the figure).</p>
+<p>
+<figure><img src="images/extract/media/image125.png" /><figcaption>Selezione della "Regione" e del "Cost Model"</figcaption>
+</figure>
+</p>
+<p>After clicking the “Next” button, the user will find themselves in step 4 titled “Duration”.</p>
+<p>From the “Duration” page of step 4, select an interval for the simulation among:</p>
+<ul>
+<li>“One Month”</li>
+<li>“Six Months”</li>
+<li>“One Year”</li>
+</ul>
+<p>To return to the “Details” page, in the bottom right, click on the “Back” button. Instead, to proceed with the simulation, click on the “Launch Simulation” button.</p>
+<p>
+<figure><img src="images/extract/media/image126.png" /><figcaption>Selezione dell'intervallo di tempo</figcaption>
+</figure>
+</p>
+<p>After clicking the “Launch Simulation” button, the user will find themselves on the “Results” page of step 5.</p>
+<p>Within the “Results” page, at the top, the “Simulation parameters” box can be viewed, which contains a summary of the parameters used. (in yellow in the figure)</p>
+<p>Below the “Summary” box, there are different sections, one for each destination provider (in red in the figure), and inside, we can view the list of resources that can be migrated to the provider (in green in the figure). Clicking on one of them will display a histogram graph. In this graph we can note:</p>
+<ul>
+<li>A line parallel to the X-axis indicating the current cost of the resource.</li>
+<li>A series of bars (one for each region and selected cost type) that will be red when the destination price is higher than the starting price or green when the price is lower than the current cost of the resource; hovering over one of them will display its reference.</li>
+<li>A summary table of the selected cost types, which is used to generate the bar chart.</li>
+</ul>
+<p>It is possible to view details for other simulations (in purple in the figure) using the procedure just described.</p>
+<p>To exit the simulation without saving, in the bottom right, click on the “Close” button.</p>
+<p>To save the simulation, click on the “Save” button next to the “Close” button, and then click on “Confirm”.</p>
+<p>After clicking a button, the user is redirected to the “What If” tab page.</p>
+<p>
+<figure><img src="images/extract/media/image127.png" /><figcaption>Pagina dei risultati della simulazione WHAT IF</figcaption>
+</figure>
+</p>
+<p>
+<figure><img src="images/extract/media/image128.png" /><figcaption>Tabella riassuntiva della/e risorse</figcaption>
+</figure>
+</p>
+<p>It is possible to update and re-run a simulation without re-entering all data.</p>
+<p>To do this, click on the row to be modified. At this point, the user will be redirected to step 1 of the simulation, where all steps have been pre-filled using the saved parameters.</p>
+<p>
+<figure><img src="images/extract/media/image129.png" /><figcaption>Avvio per l'aggiornamento della simulazione di tipo "Migrate to another provider"</figcaption>
+</figure>
+</p>
+<h4 id="scenario-what-if-change-resource-capacity">Scenario “What If”: Change Resource Capacity</h4>
+<p>This functionality allows comparing the costs of a resource in case of modification of its technical characteristics.</p>
+<p>Still from the “What If” tab page, in the top right, click on the “Change resources capacity” box.</p>
+<p>
+<figure><img src="images/extract/media/image130.png" /><figcaption>Accesso alla funzionalità "What If: Change resources capacity"</figcaption>
+</figure>
+</p>
+<p>After doing so, the user will find themselves on the “Start” page of step 1.</p>
+<p>On the left, in the “Select Resources to change” box, the user can search for resources using three types of filters, including:</p>
+<ul>
+<li>“Search” which allows searching for a resource by name;</li>
+<li>“Search by Type” which allows obtaining resources by selecting the resource type;</li>
+<li>“Search by tags” which allows searching for resources using one or more tags associated with them.</li>
+</ul>
+<p>The resource table will only show resources that, within the SCMP catalog, have more than one “Relationship” with different sizes but belong to the same region, price type, and operating system.</p>
+<p>In the bottom left, there is the resource table, which can be filtered based on the parameters entered in the filter(s). Within the resource table, click on one of them and, using the “drag and drop” technique, drag it to the right, into the box titled “Currently selected:”.</p>
+<p>A maximum of three resources can be included per simulation.</p>
+<p>Subsequently, in the bottom right, click on the “Next” button.</p>
+<p>
+<figure><img src="images/extract/media/image131.png" /><figcaption>Selezione delle risorse da cui modificare le capacità</figcaption>
+</figure>
+</p>
+<p>After doing so, the user will find themselves on the “Resource Provider” page of step 2, where it is possible to modify the size of one or more resources.</p>
+<p>Within the “Resource Provider” page of step 2, for a resource, click on the dropdown menu in the “Size” column and select a different size from the initial one.</p>
+<p>After that, in the bottom right, click on the “Next” button to continue the simulation.</p>
+<p>To return to the “Start” page of step 1, click on the “Back” button.</p>
+<p>
+<figure><img src="images/extract/media/image132.png" /><figcaption>Modifica della size di una risorsa</figcaption>
+</figure>
+</p>
+<p>After clicking the “Next” button, the user will find themselves on the “Duration” page of step 3.</p>
+<p>Within the aforementioned page, it is necessary to select an interval for the simulation.</p>
+<p>After that, in the bottom right, click on the “Launch Simulation” button.</p>
+<p>To go back, click on the “Back” button; in this way, the user will find themselves on the “Resource Provider” page of step 2.</p>
+<p>
+<figure><img src="images/extract/media/image133.png" /><figcaption>Selezione dell'intervallo per la simulazione</figcaption>
+</figure>
+</p>
+<p>After clicking the “Launch Simulation” button, the user will find themselves on the “Results” page of step 4.</p>
+<p>Within the “Results” page, at the top, there is a “Summary” box that advises whether to modify the size of the resources. Below, there is an histogram graph, where the purple bar represents current costs, while the green bar represents target costs.</p>
+<p>To save the simulation, click on the “Save” button next to the “Close” button, and then click on “Confirm”. After doing so, the user is redirected to the “What If” page.</p>
+<p>To exit the simulation without saving it, in the bottom right, click on the “Close” button. After doing so, the user will find themselves on the “What If” page.</p>
+<p><img alt="" src="images/extract/media/image134.png" />
+<img alt="" src="images/extract/media/image135.png" />
+<figure><img src="images/extract/media/image136.png" /><figcaption>Parametri di configurazione e consiglio sulla simulazione</figcaption>
+</figure>
+</p>
+<h4 id="what-if-scenario-export">What If scenario Export</h4>
+<p>For a simulation of a resource size modification, it is possible to export it in PDF, CSV, and JSON format.</p>
+<p>Within the “What If” page, at the bottom, there is a table of simulations; click on the “Capacity” button located in the top right corner of the aforementioned table.</p>
+<p>After doing so, the table shows simulations regarding resource size modification.</p>
+<p>For a simulation, click on the button depicting an arrow.</p>
+<p>At this point, a sub-menu will open where it is possible to export in the three previously described formats.</p>
+<p>
+<figure><img src="images/extract/media/image137.png" /><figcaption>Export della simulazione</figcaption>
+</figure>
+</p>
+<p>Also for a simulation, it is possible to print it.</p>
+<p>For a simulation, click on the kebab menu, and then click on the “Print” option.</p>
+<p>At this point, a modal of the print preview will appear. Finally, click on the “Print” button to start printing the document.</p>
+<p>
+<figure><img src="images/extract/media/image138.png" /><figcaption>Stampa della simulazione</figcaption>
+</figure>
+</p>
+<p>For a simulation, click on the kebab menu.</p>
+<p>From the list of options, click on “Delete”.</p>
+<p>
+<figure><img src="images/extract/media/image139.png" /><figcaption>Opzione per eliminare una simulazione</figcaption>
+</figure>
+</p>
+<p>After clicking the “Delete” option, a modal will appear where it is necessary to confirm the deletion of the simulation by clicking on the “Confirm” button.</p>
+<p>After doing so, the simulation is no longer present in the table.</p>
+<p>If, however, you do not want to confirm the deletion of the simulation, click on the “Cancel” button.</p>
+<p>
+<figure><img src="images/extract/media/image140.png" /><figcaption>Conferma dell'eliminazione della simulazione</figcaption>
+</figure>
+</p>
+<h3 id="reporting-tools">Reporting Tools</h3>
+<p>The reporting functionality, specific to features, allows generating global reports of the information available for the various providers. Within the pages, there will also be the possibility to create files to facilitate information sharing.</p>
+<p>To access the functionality, above the breadcrumb path, click on the “Reports” tab.</p>
+<p>
+<figure><img src="images/extract/media/image141.png" /><figcaption>Accesso al report di Catalogo</figcaption>
+</figure>
+</p>
+<h4 id="available-report-types">Available report types</h4>
+<ul>
+<li><strong>INVENTORY Summary</strong> – Summary on the quantity of main inventory resources based on the selected provider/subsystem combination.</li>
+</ul>
+<h4 id="report-creation">Report Creation</h4>
+<p>At the top right of the page, we can click on the “New Report” button to start creating a report. Specifically, a modal is displayed containing the list of available report types.</p>
+<p>
+<figure><img src="images/extract/media/image142.png" /><figcaption>Creazione nuovo report</figcaption>
+</figure>
+</p>
+<p>Once the report type is selected, click on the “Configure” button to select the providers to include in the report. In the newly opened window, we find the “Provider” field which allows selecting one or more pre-existing providers in the system. Subsequently, it is possible to select one or more subsystems to include in the report; if no providers are selected, no subsystem can be selected. Finally, there is a “tag” section to include only resources that have the entered tag.</p>
+<p>
+<figure><img src="images/extract/media/image143.png" /><figcaption>Configurazione del report</figcaption>
+</figure>
+</p>
+<p>At this point, the user can choose between two different actions:</p>
+<ul>
+<li>Create a static report that will be saved in the system.</li>
+<li>Schedule a task that generates the report periodically.</li>
+</ul>
+<p>To confirm the creation of a static report, verify that “One-Shot” has been selected for the “Report type” field and click the “Submit” button at the bottom.</p>
+<p>After a loading period, the newly generated report will be visible in the list.</p>
+<p>
+<figure><img src="images/extract/media/image144.png" /><figcaption>Lista dei report effettuati</figcaption>
+</figure>
+</p>
+<h5 id="report-scheduling">Report Scheduling</h5>
+<p>If, instead, you want to schedule automatic report execution, it will be necessary to select “Recurring” for the “Report Type” field. In this case, the window refreshes to show additional parameters for configuring the periodic report.</p>
+<p>The parameters to enter are:</p>
+<ul>
+<li>Period: allows selecting the report sending frequency (hourly, daily, ...).</li>
+<li>"Receive only if not empty" if selected, the file will not be sent when it contains no information.</li>
+<li>Report Language: allows selecting the language used in the report.</li>
+<li>File format: allows selecting one or more file types to include in the email.</li>
+<li>User E-mails: allows entering an email address to send reports to. After entering an an email, it is necessary to press “Enter” on the keyboard to confirm its insertion. Once pressed, the newly entered email will move to the box at the bottom, and the field will be cleared to allow the insertion of a new email, if necessary.</li>
+</ul>
+<p>
+<figure><img src="images/extract/media/image145.png" /><figcaption>Parametri dei report schedulati</figcaption>
+</figure>
+</p>
+<p>Having configured all parameters, the “Submit” button will become clickable. Click it to confirm the insertion, and after a loading period, the newly generated report will be visible in the list.</p>
+<p>
+<figure><img src="images/extract/media/image144.png" /><figcaption>Lista dei report effettuati</figcaption>
+</figure>
+</p>
+<h5 id="list-of-scheduled-reports">List of scheduled reports</h5>
+<p>To view the list of scheduled reports, select the “Scheduled” tab at the top left of the reports page.</p>
+<p>
+<figure><img src="images/extract/media/image146.png" /><figcaption>Lista dei report schedulati</figcaption>
+</figure>
+</p>
+<p>On this page, you will find the list and related information of scheduled reports present in the system. For each result, by clicking the “Three dots” button on the right, three operations can be performed:</p>
+<ul>
+<li>View the last generated report.</li>
+<li>Edit the schedule settings; it will not be possible to modify the selected providers or subsystems.</li>
+<li>Delete the schedule to stop sending emails.</li>
+</ul>
+<p>
+<figure><img src="images/extract/media/image147.png" /><figcaption>Modifica di una schedule</figcaption>
+</figure>
+</p>
+<h5 id="using-reports">Using reports</h5>
+<p>By clicking on a static report row, or using the “Show report” button available for scheduled reports, it will be possible to view the detail page of the selected report.</p>
+<p>Within the Inventory report summary, there is a “Stats” section showing the number of disks, interfaces, networks, and virtual machines belonging to the selected provider.</p>
+<p>Below the “Stats” section, the filters used by the user to generate the report are present.</p>
+<p>Below the filters, there is a summary table of resources belonging to the providers. On the right, there are two buttons: “PRINT” and “EXPORT”.</p>
+<p>Clicking on the “PRINT” button, a print preview modal appears. To print the report, click on the “Print” button in the bottom right; at this point, the printing of the report will start.</p>
+<p>Clicking on the “EXPORT” button, it is possible to export the report in “.csv”, “.json”, or “.pdf” format.</p>
+<p>To return to the “Results” tab, in the bottom right, click on the “CLOSE” button or in the top left, click on the left-pointing arrow, next to the report title.</p>
+<p>
+<figure><img src="images/extract/media/image148.png" /><figcaption>Dettagli dei report</figcaption>
+</figure>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../assets/js/toc.js"></script>
+      
+        <script src="../assets/js/language-switcher.js"></script>
+      
+    
+  </body>
+</html>
