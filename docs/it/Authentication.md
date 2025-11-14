@@ -8,41 +8,41 @@ Il menu è accessibile dal tasto in alto a destra, come mostrato di seguito.
 
 In particolare, per accedere alla profilatura utente il menu è “Authentication”.
 
-![Accesso alla funzionalità Authentication](images/extract/media/image8.png)
+![Accesso alla funzionalità Authentication](assets/images/extract/media/image8.png)
 
 Visualizzazione dashboard per la profilatura utente:
 
-![Dashboard di IAM](images/extract/media/image10.png)
+![Dashboard di IAM](assets/images/extract/media/image10.png)
 
 ### Gruppi
 
 Per semplificare l’assegnazione di menù attributi e autorizzazioni è possibile utilizzare dei gruppi di utenti, cliccare il menù “Groups” nella sezione “Entities” della dashboard IAM.
 
-![Accesso alla gestione Gruppi](images/extract/media/image11.png)
+![Accesso alla gestione Gruppi](assets/images/extract/media/image11.png)
 
 Una volta cliccato il link verrà mostrata all’utente la lista di tutti i gruppi disponibili sul portale con i rispettivi pulsanti di configurazione
 
-![Lista dei gruppi configurati](images/extract/media/image12.png)
+![Lista dei gruppi configurati](assets/images/extract/media/image12.png)
 
 #### Creazione Gruppi
 
 Per creare un nuovo gruppo all’ interno del sistema, cliccare il pulsante “+” in alto a destra, verrà visualizzata una maschera di creazione del Gruppo.
 
-![Aggiunta nuovo Gruppo](images/extract/media/image13.png)
+![Aggiunta nuovo Gruppo](assets/images/extract/media/image13.png)
 
 Inserire il nome del gruppo e cliccare il tasto “Add Group” per aggiungerlo al sistema. Una volta premuto il sistema ci porta alla lista dei gruppi disponibili dove possiamo trovare il gruppo appena creato.
 
-![Parametri di inserimento Gruppo](images/extract/media/image14.png)
+![Parametri di inserimento Gruppo](assets/images/extract/media/image14.png)
 
 #### Gestione utenti assegnati e attributi
 
 Per poter assegnare degli utenti a un gruppo, dalla lista dei gruppi disponibili, cliccare sull'icona “persone” sulla riga corrispondente al gruppo interessato. L’utente verrà reindirizzato nella pagina “Members” dove è possibile visualizzare tutti gli utenti assegnati al gruppo e le loro informazioni di base.
 
-![Accesso gestione assegnazione utenti](images/extract/media/image15.png)
+![Accesso gestione assegnazione utenti](assets/images/extract/media/image15.png)
 
 Possiamo aggiungere un utente al gruppo cliccando il tasto “+” presente in alto a Destra (1), una volta premuto nella lista degli utenti assegnati verrà creata una nuova riga (2) dove all’ interno è possibile selezionare dalla lista degli utenti disponibili un utente (3).
 
-![Assegnare un utente al gruppo](images/extract/media/image16.png)
+![Assegnare un utente al gruppo](assets/images/extract/media/image16.png)
 
 Analogamente è possibile rimuovere gli utenti dal gruppo, cliccando il pulsante “Cestino” in corrispondenza dell’utente da rimuovere.
 
@@ -50,7 +50,7 @@ Dopo aver aggiunto tutti gli utenti al gruppo cliccare il tasto “Save” in ba
 
 Possiamo assegnare degli attributi al gruppo che verranno automaticamente utilizzati dagli utenti assegnati, per farlo selezionare il tab “Attributes” in alto nella pagina (1), poi utilizzando il tasto “+” in alto a destra (2) è possibile aggiungere un attributo, nella parte sinistra bisogna inserire la chiave (3) e nella parte bianca sulla destra bisogna inserirne il suo valore (4), durante l’inserimento vedremo sotto al campo una drop down dove cliccando sarà possibile salvare il valore inserito (5).
 
-![Inserire Attributi](images/extract/media/image17.png)
+![Inserire Attributi](assets/images/extract/media/image17.png)
 
 Una volta inseriti tutti gli attributi necessari è possibile salvare le modifiche utilizzando il tasto “Save” in basso.
 
@@ -65,7 +65,7 @@ Sempre dalla lista dei Gruppi disponibili per ogni gruppo sono disponibili una s
 - “Cestino”: permette l’eliminazione del gruppo dopo aver cliccato
   “conferma” nella modale visualizzata (indicato con una freccia viola nell’ immagine).
 
-![Pulsanti di controllo](images/extract/media/image18.png)
+![Pulsanti di controllo](assets/images/extract/media/image18.png)
 
 ### Utenti
 
@@ -73,17 +73,17 @@ Per poter accedere e utilizzare il sistema è necessario che l’utenza da utili
 
 Per accedere alla gestione Utenti cliccare il menù “Users” nella sezione “Entities” della dashboard IAM.
 
-![Accesso alla gestione Utenti](images/extract/media/image19.png)
+![Accesso alla gestione Utenti](assets/images/extract/media/image19.png)
 
 Una volta cliccato il link verrà mostrata all’utente la lista di tutti i gruppi disponibili sul portale con i rispettivi pulsanti di configurazione.
 
-![Lista degli utenti configurati](images/extract/media/image20.png)
+![Lista degli utenti configurati](assets/images/extract/media/image20.png)
 
 #### Creazione nuovi utenti
 
 Per creare un nuovo utente all’ interno del sistema, cliccare il pulsante “+” in alto a destra, verrà visualizzata una maschera di creazione dell’utente .
 
-![Creazione nuovo utente](images/extract/media/image21.png)
+![Creazione nuovo utente](assets/images/extract/media/image21.png)
 
 Verrà visualizzato il form di creazione di un nuovo utente, compilare i campi obbligatori della lista:
 
@@ -95,7 +95,7 @@ Verrà visualizzato il form di creazione di un nuovo utente, compilare i campi o
 - Max concurrent connections: Numero di connessioni massime in   contemporanea abilitate per l’utente.
 - Default Language: la lingua di base da visualizzare nel sistema.
 
-![Maschera di creazione utente](images/extract/media/image22.png)
+![Maschera di creazione utente](assets/images/extract/media/image22.png)
 
 Una volta inseriti tutti i campi obbligatori cliccare il pulsante “+ Add user” per completare l’inserimento.
 
@@ -107,17 +107,17 @@ Per visualizzare l’utente appena creato tornare nella pagina contenente la lis
 
 Per gestire gli utenti è possibile cliccare il tasto “Gruppi” in corrispondenza della riga dell’utente da modificare
 
-![Accesso alla gestione utente](images/extract/media/image23.png)
+![Accesso alla gestione utente](assets/images/extract/media/image23.png)
 
 Una volta premuto il pulsante, la pagina si aggiorna per mostrare la pagina “Groups”  dove è possibile assegnare o rimuovere uno o più gruppi all’ utente.
 
 Per aggiungere un nuovo gruppo all’utente bisogna selezionare, nella sezione di sinistra, il gruppo che si vuole assegnare all’utente (1) e, successivamente cliccando il pulsante “Associa” al centro della pagina (2) il gruppo passerà automaticamente nella sezione destra e le modifiche verranno salvate automaticamente.
 
-![Associare un utente al gruppo](images/extract/media/image24.png)
+![Associare un utente al gruppo](assets/images/extract/media/image24.png)
 
 Analogamente è possibile rimuovere l’utente dal gruppo cliccando prima il gruppo da rimuovere nella sezione di destra e successivamente il tasto “Dissocia” al centro della pagina , le modifiche verranno salvate automaticamente.
 
-![Dissociare un utente dal gruppo](images/extract/media/image25.png)
+![Dissociare un utente dal gruppo](assets/images/extract/media/image25.png)
 
 È possibile, inoltre, tramite i tasti presenti nella sezione di destra, in corrispondenza di ogni gruppo, modificare la priorità dei vari gruppi.
 
@@ -125,7 +125,7 @@ Anche per gli utenti è possibile assegnare degli attributi personalizzati, per 
 
 La lista degli attributi disponibili si trova nel paragrafo.
 
-![Inserire Attributi](images/extract/media/image17.png)
+![Inserire Attributi](assets/images/extract/media/image17.png)
 
 Una volta inseriti tutti gli attributi necessari è possibile salvare le modifiche utilizzando il tasto “Save” in basso.
 
@@ -133,7 +133,7 @@ Una volta inseriti tutti gli attributi necessari è possibile salvare le modific
 
 Come amministratore degli utenti è possibile resettare le password, per farlo bisogna cliccare sul tab “Credentials” visualizzato in alto nella pagina,  in questo tab è possibile inserire una nuova password per l’utente e configurarla come “Temporanea”, la password temporanea dovrà essere modificata dall'utente dopo il primo accesso. Si può inoltre definire un periodo di validità della password espresso in giorni.
 
-![Modifica della password per l'utente](images/extract/media/image26.png)
+![Modifica della password per l'utente](assets/images/extract/media/image26.png)
 
 #### Visualizzazione modifica ed Eliminazione di un Utente
 
@@ -143,17 +143,17 @@ Sempre dalla lista degli utenti disponibili per ogni gruppo sono disponibili una
 - “Matita”: permette la modifica delle informazioni base dell’ utente (indicato con una freccia gialla nell’ immagine).
 - “Cestino”: permette l’eliminazione dell’utente dopo aver cliccato “conferma” nella modale visualizzata (indicato con una freccia viola nell’ immagine).
 
-![Pulsanti di controllo](images/extract/media/image27.png)
+![Pulsanti di controllo](assets/images/extract/media/image27.png)
 
 ### Gestione menù abilitati per utente/Gruppo
 
 Il sistema IAM integrato nella SCMP permette anche la gestione degli elementi di menù disponibili per i vari utenti e gruppi, per accedere alla funzionalità basta cliccare il link “User management X Pages” disponibile nella sezione “Administration” della dashboard IAM.
 
-![Accesso alla gestione dei menù](images/extract/media/image28.png)
+![Accesso alla gestione dei menù](assets/images/extract/media/image28.png)
 
 All’interno della pagina in alto, sono presenti due menu a tendina, il menu a tendina a sinistra consente di selezionare un singolo utente, quello a destra consente di selezionare un gruppo.
 
-![Selezione dell'utente/gruppo da modificare](images/extract/media/image29.png)
+![Selezione dell'utente/gruppo da modificare](assets/images/extract/media/image29.png)
 
 Dopo aver selezionato un’utenza, la pagina verrà aggiornata per mostrare tutti gli “STREAM” disponibili sull'applicazione, è possibile cliccare il tasto “+” in corrispondenza di ogni riga per visualizzarne i “MODULES” e i “COMPONENT” disponibili.
 
@@ -168,7 +168,7 @@ I valori selezionabili sono:
 - Disabled: Indica che il menù non verrà abilitato e non sarà  visibile all’ utente/gruppo.
 - N.D: non definito (il menù è disabilitato e non sarà visibile).
 
-![Gestione delle autorizzazioni del menù](images/extract/media/image30.png)
+![Gestione delle autorizzazioni del menù](assets/images/extract/media/image30.png)
 
 ### Liste profili utente e Attributi
 

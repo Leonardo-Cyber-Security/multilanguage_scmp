@@ -12,7 +12,7 @@ To access the Catalog functionality, click on the bento button in the upper left
 
 Then, click on "Catalog".
 
-![Accesso a Catalog](images/extract/media/image149.png)
+![Accesso a Catalog](assets/images/extract/media/image149.png)
 
 At this point, the user is on the "Resources" tab page.
 
@@ -24,13 +24,13 @@ We can divide the functionality into 3 sections to specify its behavior:
 
 Below, we will analyze each group of functionalities separately.
 
-![Catalogo della SCMP](images/extract/media/image150.png)
+![Catalogo della SCMP](assets/images/extract/media/image150.png)
 
 ### SCMP Catalog Item Management
 
 On the page, there is a series of filters that, once selected and by clicking on the magnifying glass button, will be used to filter the list of results.
 
-![ Catalogo SCMP filtrato](images/extract/media/image151.png)
+![ Catalogo SCMP filtrato](assets/images/extract/media/image151.png)
 
 !!! warning "Association between SCMP catalog resource/SKU and Provider catalog resource/SKU"
 
@@ -53,7 +53,7 @@ Within the SCMP, it is possible to configure a "Relationship" type resource. Thi
 
 To access the relationships page, click the "SCMP Resources" tab at the top of the Catalog functionality.
 
-![Accesso a "SCMP resources"](images/extract/media/image152.png)
+![Accesso a "SCMP resources"](assets/images/extract/media/image152.png)
 
 At the top, there is a filter section that allows searching by:
 
@@ -67,27 +67,27 @@ To export the list of Catalog resources present in the list, on the page, in the
 
 The operator will have the option to export the list of results in .csv and/or .json format.
 
-![Scaricare la lista di risultati](images/extract/media/image153.png)
+![Scaricare la lista di risultati](assets/images/extract/media/image153.png)
 
 ##### Forced Catalog Update Functionality
 
 Through the Force Sync functionality, it is possible to request a catalog update by clicking on the hamburger menu and then clicking on "Force Sync".
 
-![Funzionalità Force Sync](images/extract/media/image154.png)
+![Funzionalità Force Sync](assets/images/extract/media/image154.png)
 
 ##### Catalog Relationship Creation
 
 To create a resource in the Catalog, always on the page, in the upper right corner, click on the hamburger menu, and then click on "Add Catalog Resource".
 
-![Opzione per aggiungere una risorsa](images/extract/media/image155.png)
+![Opzione per aggiungere una risorsa](assets/images/extract/media/image155.png)
 
 At this point, the user is on the page where they can select the type of resource to create.
 
-![Selezione del tipo di risorsa da creare](images/extract/media/image156.png)
+![Selezione del tipo di risorsa da creare](assets/images/extract/media/image156.png)
 
 From the dropdown menu, select the type of resource to create. Then, click the "Next" button. You will be on the resource compilation page.
 
-![Esempio di form per la creazione di una relazione](images/extract/media/image157.png)
+![Esempio di form per la creazione di una relazione](assets/images/extract/media/image157.png)
 
 The individual parameters to be entered in the "Properties" section are specified in the table:
 
@@ -105,7 +105,7 @@ Mandatory parameters are indicated with \*
 
 On the resource creation page, fill in all fields in the "Properties" section. After doing this, select one or more tags for the "Add SCMP tag…" field and fill in notes in the "Tags & Note" section.
 
-![Sezione tag e note](images/extract/media/image158.png)
+![Sezione tag e note](assets/images/extract/media/image158.png)
 
 In the "Relations" section, open the left section. Subsequently, it is possible to use the "search" filters with free text or select a "System Type" from those available to filter the resource table.
 
@@ -113,19 +113,19 @@ Once the resource to be associated is identified, drag and drop it from the righ
 
 It is possible to add only one resource per provider type. If the user tries to insert another resource from the same provider, a pop-up will appear inviting the user to add only one resource per provider.
 
-![Selezione del provider per associare le risorse](images/extract/media/image159.png)
+![Selezione del provider per associare le risorse](assets/images/extract/media/image159.png)
 
 We can make a "single" association by entering only one machine in this section. In this way, the system allows us to manually select a customized price to associate with the resource in the "Cost" section below. To do this, select the billing interval (hourly, daily, weekly, monthly) and enter the cost relative to the selected period on the right.
 
-![Sezione costi delle relazioni](images/extract/media/image160.png)
+![Sezione costi delle relazioni](assets/images/extract/media/image160.png)
 
 By selecting more than one machine per provider, the cost section is automatically hidden; the applied costs will be defined by the percentages configured in the subsystems.
 
-![Risorse associate alla risorsa SCMP](images/extract/media/image161.png)
+![Risorse associate alla risorsa SCMP](assets/images/extract/media/image161.png)
 
 Once the resources are related, an illustrative diagram will automatically be created in the 'Relations Chart' section.
 
-![Creazione automatica del Relation Chart](images/extract/media/image162.png)
+![Creazione automatica del Relation Chart](assets/images/extract/media/image162.png)
 
 Finally, in the bottom right, click the "Save" button to save the changes. A banner will appear at the bottom, notifying the user of the successful resource creation, and the user will be redirected to the page containing the list of resources.
 
@@ -135,17 +135,17 @@ Finally, in the bottom right, click the "Save" button to save the changes. A ban
 
 To view the data of an SCMP resource, on the "Resources" page of Catalog, in the list of resources, click on the record of interest for a resource. A window will appear showing brief information about the identified resource: System, Name, Size, Update Date, RAM, and CPU as shown in the following image.
 
-![Dettaglio rapido delle risorse di catalogo](images/extract/media/image163.png)
+![Dettaglio rapido delle risorse di catalogo](assets/images/extract/media/image163.png)
 
 ###### Viewing Catalog Relationships
 
 To view the data of an SCMP resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Show".
 
-![Accesso alla risorsa in modalità view](images/extract/media/image164.png)
+![Accesso alla risorsa in modalità view](assets/images/extract/media/image164.png)
 
 After doing this, the user is on the resource page in view mode, where they can see the data but cannot modify it.
 
-![Dettaglio completo delle risorse di catalogo](images/extract/media/image165.png)
+![Dettaglio completo delle risorse di catalogo](assets/images/extract/media/image165.png)
 
 The detail of a resource is divided into various sections:
 
@@ -156,13 +156,13 @@ The detail of a resource is divided into various sections:
 - Cost, if present.
 - Relations Chart.
 
-![Sezione proprietà degli elementi del catalogo](images/extract/media/image166.png)
+![Sezione proprietà degli elementi del catalogo](assets/images/extract/media/image166.png)
 
-![Sezione Tags & Note degli elementi del catalogo](images/extract/media/image167.png)
+![Sezione Tags & Note degli elementi del catalogo](assets/images/extract/media/image167.png)
 
-![Sezione delle relazioni del catalogo SCMP](images/extract/media/image168.png)
+![Sezione delle relazioni del catalogo SCMP](assets/images/extract/media/image168.png)
 
-![Sezione Relations Chart delle risorse](images/extract/media/image169.png)
+![Sezione Relations Chart delle risorse](assets/images/extract/media/image169.png)
 
 In the bottom right, click the "Close" button. The user will be redirected to the "Resources" page of Catalog.
 
@@ -170,7 +170,7 @@ In the bottom right, click the "Close" button. The user will be redirected to th
 
 To modify an SCMP resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Edit".
 
-![Accesso alla risorsa in modalità edit](images/extract/media/image170.png)
+![Accesso alla risorsa in modalità edit](assets/images/extract/media/image170.png)
 
 After doing this, the user is on the resource page in edit mode. Unlike 'Show' mode, in 'Edit' mode, it is possible to modify the Properties section and the Cost section.
 
@@ -178,17 +178,17 @@ In the bottom right, click the "Save" button. At this point, a banner will appea
 
 In addition, the user will be redirected to the "Resources" page of Catalog.
 
-![Modifica della relazione](images/extract/media/image171.png)
+![Modifica della relazione](assets/images/extract/media/image171.png)
 
 ###### Deleting Catalog Relationships
 
 To delete an SCMP resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Delete".
 
-![Eliminazione di una risorsa](images/extract/media/image172.png)
+![Eliminazione di una risorsa](assets/images/extract/media/image172.png)
 
 Once done, a modal appears where it is necessary to click the "Remove" button to confirm the resource deletion.
 
-![Conferma eliminazione della risorsa](images/extract/media/image173.png)
+![Conferma eliminazione della risorsa](assets/images/extract/media/image173.png)
 
 #### Resources and relationships between SKUs
 
@@ -196,7 +196,7 @@ Within the SCMP, it is possible to configure an "SCMP SKU" type resource. This r
 
 To access the SKUs page, click the "SCMP SKU" tab at the top of the Catalog functionality.
 
-![Accesso a "SCMP SKU"](images/extract/media/image174.png)
+![Accesso a "SCMP SKU"](assets/images/extract/media/image174.png)
 
 At the top, there is a filter section that allows searching by:
 
@@ -210,17 +210,17 @@ To export the list of Catalog resources present in the list, always on the "SCMP
 
 The operator will have the option to export the list of results in .csv and/or .json format.
 
-![Scaricare la lista di risultati](images/extract/media/image153.png)
+![Scaricare la lista di risultati](assets/images/extract/media/image153.png)
 
 ##### Creating a Catalog SKU Relationship
 
 To create a resource in the Catalog, always on the "SCMP" tab page, in the upper right corner, click on the hamburger menu, and then click on "Add Catalog Resource".
 
-![Opzione per aggiungere una risorsa “SKU”](images/extract/media/image175.png)
+![Opzione per aggiungere una risorsa “SKU”](assets/images/extract/media/image175.png)
 
 At this point, the user is on the "SKU" resource creation page. Click on the accordions on the page to view their details.
 
-![IPagina di creazione “SKU”](images/extract/media/image176.png)
+![IPagina di creazione “SKU”](assets/images/extract/media/image176.png)
 
 In the "Properties" section, fill in all fields defined in the table.
 
@@ -235,13 +235,13 @@ Mandatory parameters are indicated with \*
 | unit | string | Enter text that will be used as the "unit of measure" displayed across all functionalities | MB/hour |
 | Unit conversion Expression * | string | Enter the conversion formula between the value received from the provider and the value that will be used in the SCMP (conversion between the provider's unit of measure and the unit of measure indicated in the SKU relationship) "$var" indicates the value received from the provider | $var * 24 / 100 |
 
-![Compilazione dei campi, selezione Properties](images/extract/media/image177.png)
+![Compilazione dei campi, selezione Properties](assets/images/extract/media/image177.png)
 
 After entering the conversion formula, it is necessary to click the "Test expression" button to verify its correctness.
 
 If it has been entered correctly, the button will turn "Green" with "TEST OK" written on it; otherwise, it will turn "Red" with "KO". In this case, the possibility of saving the relationship is inhibited.
 
-![Conferma della formula di conversione](images/extract/media/image178.png)
+![Conferma della formula di conversione](assets/images/extract/media/image178.png)
 
 Subsequently, select one or more tags for the "Add SCMP tag…" field and fill in notes in the "Tags & Note" section.
 
@@ -249,11 +249,11 @@ In the "Relation" section, it is possible to select one or more SKUs from the va
 
 In the right section, filters can be used to display only relevant results. The available filters are: the origin provider, the service name, and a free text field (in yellow in the image).
 
-![Drag and drop Relazioni SKU](images/extract/media/image179.png)
+![Drag and drop Relazioni SKU](assets/images/extract/media/image179.png)
 
 Once the resources are related, an illustrative diagram will automatically be created in the 'Relations Chart' section.
 
-![Creazione automatica del Relation Chart](images/extract/media/image180.png)
+![Creazione automatica del Relation Chart](assets/images/extract/media/image180.png)
 
 Finally, click the save button to confirm the creation of the SKU relationship. Upon completion, you will return to the page containing the list of SKU relationships, where you can find the new relationship in the list.
 
@@ -263,17 +263,17 @@ Finally, click the save button to confirm the creation of the SKU relationship. 
 
 To view the data of an SKU resource, in the list of resources, click on the record of interest for a resource. A checkbox will appear showing brief information about the identified resource: System, Name, Size, Update Date, name, and service as shown in the following image.
 
-![Dettaglio rapido delle risorse SKU](images/extract/media/image181.png)
+![Dettaglio rapido delle risorse SKU](assets/images/extract/media/image181.png)
 
 ###### Viewing Relationships in the Catalog
 
 To view the data of an SKU resource, in the list of resources, click on the kebab menu for a resource and then click on "Show".
 
-![Accesso alla risorsa in modalità view](images/extract/media/image182.png)
+![Accesso alla risorsa in modalità view](assets/images/extract/media/image182.png)
 
 After doing this, the user is on the resource page in view mode, where they can see the data but cannot modify it.
 
-![Dettaglio completo delle risorse di catalogo](images/extract/media/image183.png)
+![Dettaglio completo delle risorse di catalogo](assets/images/extract/media/image183.png)
 
 The detail of a resource is divided into various sections:
 
@@ -284,13 +284,13 @@ The detail of a resource is divided into various sections:
 - Cost.
 - Relations Chart.
 
-![Sezione proprietà degli elementi SKU di catalogo](images/extract/media/image184.png)
+![Sezione proprietà degli elementi SKU di catalogo](assets/images/extract/media/image184.png)
 
-![Sezione Tags & Note degli elementi SKU di catalogo](images/extract/media/image185.png)
+![Sezione Tags & Note degli elementi SKU di catalogo](assets/images/extract/media/image185.png)
 
-![Sezione delle relazioni degli SKU di catalogo](images/extract/media/image186.png)
+![Sezione delle relazioni degli SKU di catalogo](assets/images/extract/media/image186.png)
 
-![Sezione Relations Chart delle risorse](images/extract/media/image169.png)
+![Sezione Relations Chart delle risorse](assets/images/extract/media/image169.png)
 
 In the bottom right, click the "Close" button. The user will be redirected to the page containing the list of resources.
 
@@ -298,18 +298,18 @@ In the bottom right, click the "Close" button. The user will be redirected to th
 
 To modify an SCMP resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Edit".
 
-![Accesso alla risorsa in modalità edit](images/extract/media/image170.png)
+![Accesso alla risorsa in modalità edit](assets/images/extract/media/image170.png)
 
 After doing this, the user is on the resource page in edit mode. Unlike 'Show' mode, in 'Edit' mode, it is possible to modify the resource parameters.
 
 ###### Deleting Catalog SKU Relationships
 
 To delete a catalog SKU resource, in the list of resources, click on the kebab menu for a resource and then click on "Delete".
-![Eliminazione di una risorsa SKU](images/extract/media/image172.png)
+![Eliminazione di una risorsa SKU](assets/images/extract/media/image172.png)
 
 Once done, a modal appears where it is necessary to click the "Remove" button to confirm the resource deletion.
 
-![Conferma eliminazione della risorsa](images/extract/media/image173.png)
+![Conferma eliminazione della risorsa](assets/images/extract/media/image173.png)
 
 #### Scheduled Import of Catalog Items
 
@@ -319,7 +319,7 @@ Manually entering catalog resources is a very long and costly operation. To simp
 
 To insert a new price list, it is necessary to click the "hamburger menu" available in the upper right corner of the catalog resources page and select "Import Catalogue".
 
-![Accesso all "Importazione pianificata del catalogo"](images/extract/media/image187.png)
+![Accesso all "Importazione pianificata del catalogo"](assets/images/extract/media/image187.png)
 
 After clicking the button, a modal will open, containing two buttons:
 
@@ -328,19 +328,19 @@ After clicking the button, a modal will open, containing two buttons:
 
 Once the resource type to be created is selected, the page updates to show all mandatory parameters.
 
-![Scelta della tipologia di catalogo](images/extract/media/image188.png)
+![Scelta della tipologia di catalogo](assets/images/extract/media/image188.png)
 
 Two parameters are present in the modal:
 
 - Provider: Select the provider related to the price list that will be inserted.
 - Valid From: It is possible to indicate a start validity date for the price list. On the day indicated in this variable, the system will automatically update the catalog resources to conform to the new price list.
 
-![Campi obbligatori per l'importazione](images/extract/media/image189.png)
+![Campi obbligatori per l'importazione](assets/images/extract/media/image189.png)
 
 Furthermore, below the parameters, there are two sections for file upload. Clicking on the first square on the left will allow selecting an "XLS" file containing all the resources to be mapped.
 Clicking on the second square will allow inserting a mapping file, following the information shown in the "Help" section indicated with a "Question Mark" icon. Clicking on it will open a box, below the upload sections, containing all the information related to the mapping file to be inserted.
 
-![Messaggio di aiuto per il file di Mapping](images/extract/media/image190.png)
+![Messaggio di aiuto per il file di Mapping](assets/images/extract/media/image190.png)
 
 After entering all parameters, it will be possible to click the save button at the bottom, and we will be redirected to the imported catalogs management page, where it will be possible to monitor their insertion.
 
@@ -348,7 +348,7 @@ After entering all parameters, it will be possible to click the save button at t
 
 To insert a new price list, it is necessary to click the "hamburger menu" available in the upper right corner of the catalog resources page and select "Imported Catalogues".
 
-![Accesso ai cataloghi importati](images/extract/media/image191.png)
+![Accesso ai cataloghi importati](assets/images/extract/media/image191.png)
 
 The user will then be redirected to the page containing all previously imported catalogs. On this page, for each row, which corresponds to an Upload, it is possible to delete the file by clicking the "Three dots" button corresponding to the row and clicking "Delete" to remove it.
 
@@ -360,7 +360,7 @@ Catalogs can have 3 different states:
 
 On this page, we can also note that uploads made with the same file are saved using versions, so when an already existing catalog is inserted, it will be overwritten with a higher version, and previous versions will be deactivated.
 
-![Lista dei cataloghi importati](images/extract/media/image192.png)
+![Lista dei cataloghi importati](assets/images/extract/media/image192.png)
 
 Clicking on a "Success" row in the table will open a modal. Inside, we can view a summary that contains, in addition to basic information, the number of elements, called "rows", that were found in the Excel file.
 
@@ -370,13 +370,13 @@ The rows available in the file can have 3 different states:
 - Success Rows: indicates that the system is able to create the resource but cannot establish a relationship with a provider resource.
 - Failed Rows: indicates that the system cannot insert the resource.
 
-![Dettagli dell' importazione](images/extract/media/image193.png)
+![Dettagli dell' importazione](assets/images/extract/media/image193.png)
 
 At the bottom, we can click the "More Details" button to view the details of the Excel file rows that were discarded by the system. Clicking on one of them allows us to view the row number, the name indicated in the file, and the error that prevented its insertion.
 
-![Dettagli delle righe dell' importazione](images/extract/media/image194.png)
+![Dettagli delle righe dell' importazione](assets/images/extract/media/image194.png)
 
-![Dettaglio dell' errore](images/extract/media/image195.png)
+![Dettaglio dell' errore](assets/images/extract/media/image195.png)
 
 ### Provider Catalog Item Management
 
@@ -386,7 +386,7 @@ Within the Catalog Module, it is possible to view the list and details of the "s
 
 To view the list of resources available for a provider, select the "Cloud resources" menu (in red in the image) at the top and select one of the available providers (in yellow in the image). The functionalities available on the pages of the different providers are identical.
 
-![Risorse del catalogo dei providers](images/extract/media/image196.png)
+![Risorse del catalogo dei providers](assets/images/extract/media/image196.png)
 
 ##### Export of Provider Sizes
 
@@ -394,13 +394,13 @@ To export the list of Catalog resources displayed on the page, in the upper righ
 
 The operator will have the option to export the list of results in .csv and/or .json format.
 
-![Esportazione dei risultati](images/extract/media/image197.png)
+![Esportazione dei risultati](assets/images/extract/media/image197.png)
 
 ##### Forced Catalog and Cost Update Functionality
 
 It is possible to force the system so that, after a few minutes, all "sizes" and their associated costs are automatically updated. To do this, click on the hamburger menu in the upper right corner, and then click on "Force Sync".
 
-![Funzionalità Force Sync](images/extract/media/image198.png)
+![Funzionalità Force Sync](assets/images/extract/media/image198.png)
 
 ##### Resource Filters
 
@@ -412,22 +412,22 @@ The user is given the possibility to filter the displayed resource lists. At the
 
 After entering one or more filters, click the "magnifying glass" button to perform the search.
 
-![Filtri del Catalogo](images/extract/media/image199.png)
+![Filtri del Catalogo](assets/images/extract/media/image199.png)
 
 ##### Resource Summary View
 
 To view a preview of a resource, click on the record of interest for a resource. A modal will appear showing the general information of the identified resource, including: System, Name, Size, Update Date, RAM, and CPU as shown in the following image.
 
-![Dettaglio rapido delle risorse di catalogo](images/extract/media/image200.png)
+![Dettaglio rapido delle risorse di catalogo](assets/images/extract/media/image200.png)
 
 ##### Viewing Resource Details
 
 To view the data of a resource, click on the kebab menu for a resource and then click on "Show". After
 
-![Accesso alla risorsa in modalità view](images/extract/media/image201.png)
+![Accesso alla risorsa in modalità view](assets/images/extract/media/image201.png)
 
 doing this, the user is on the resource page in view mode, where they can see the data but cannot modify it.
-![Dettaglio Risorsa dal Modulo Catalog](images/extract/media/image202.png)
+![Dettaglio Risorsa dal Modulo Catalog](assets/images/extract/media/image202.png)
 
 The detail of a resource is divided into various sections:
 
@@ -438,7 +438,7 @@ The detail of a resource is divided into various sections:
 
 In the Cost section, it is possible to sequentially select the Region, Zone, and Cost type to obtain a preview of the costs related to the selected resource.
 
-![Sezione costi della risorsa](images/extract/media/image203.png)
+![Sezione costi della risorsa](assets/images/extract/media/image203.png)
 
 In the bottom right, click the "Close" button to return to the list.
 
@@ -450,29 +450,29 @@ The user is given the possibility to define a personalized "Cloud" catalog direc
 
 To do this, it is first necessary to access the catalog resources tab of an on-premise provider. Specifically, we take "VMWare" as an example by selecting "VMWare" in the "Cloud resources" menu of the catalog module.
 
-![Accesso al catalogo On-premise](images/extract/media/image204.png)
+![Accesso al catalogo On-premise](assets/images/extract/media/image204.png)
 
 On the page, in the upper right, above the filter bar, we find a contextual menu. Click on the "Three lines" icon and select "Add catalog resource". In this way, we will be redirected to the provider-specific page for creating the catalog resource.
 
-![Creazione nuova risorsa](images/extract/media/image205.png)
+![Creazione nuova risorsa](assets/images/extract/media/image205.png)
 
 At this point, the user is on the page where they can select the type of resource to create.
 
-![Selezione del tipo di risorsa da creare](images/extract/media/image156.png)
+![Selezione del tipo di risorsa da creare](assets/images/extract/media/image156.png)
 
 From the dropdown menu, select the type of resource to create. Then, click the "Next" button. You will be on the resource compilation page.
 
-![Esempio di form per la creazione di una risorsa](images/extract/media/image157.png)
+![Esempio di form per la creazione di una risorsa](assets/images/extract/media/image157.png)
 
 On this page, after opening the available sections, enter all necessary parameters. In the "Cost" section at the bottom, it will be possible to add a customized price to associate with the resource. To do this, you need to select the billing interval (hourly, daily, weekly, monthly) and enter the cost related to the selected period on the right.
 
-![Sezione costi delle risorse](images/extract/media/image160.png)
+![Sezione costi delle risorse](assets/images/extract/media/image160.png)
 
 #### Cloud SKU
 
 To view the list of SKUs available for a provider, select the "Cloud SKU" menu (in red in the image) at the top and select one of the available providers (in yellow in the image). The functionalities available on the pages of the different providers are identical.
 
-![Risorse del catalogo dei providers](images/extract/media/image206.png)
+![Risorse del catalogo dei providers](assets/images/extract/media/image206.png)
 
 ##### Export of Available Provider Sizes
 
@@ -480,13 +480,13 @@ To export the list of Catalog resources displayed on the page, in the upper righ
 
 The operator will have the option to export the list of results in .csv and/or .json format.
 
-![Esportazione dei risultati](images/extract/media/image197.png)
+![Esportazione dei risultati](assets/images/extract/media/image197.png)
 
 ##### Forced Catalog Update Functionality
 
 It is possible to force the system so that, after a few minutes, all "sizes" and their associated costs are automatically updated. To do this, click on the hamburger menu in the upper right corner, and then click on "Force Sync".
 
-![Funzionalità Force Sync](images/extract/media/image198.png)
+![Funzionalità Force Sync](assets/images/extract/media/image198.png)
 
 ##### Filters for Displayed Resources
 
@@ -496,21 +496,21 @@ The user is given the possibility to filter the displayed resource lists. At the
 - "search by Service name": allows searching for resources related to a specific service type only.
 - "search by tags" allows searching for all resources containing a specific tag. After entering one or more filters, click the "magnifying glass" button to perform the search.
 
-![Filtri del Catalogo](images/extract/media/image207.png)
+![Filtri del Catalogo](assets/images/extract/media/image207.png)
 
 ##### Catalog Resource Summary View
 
 To view a preview of a resource, click on the record of interest for a resource. A modal will appear showing the general information of the identified resource, including: System, Name, Size, Update Date, service name.
 
-![Dettaglio rapido delle risorse di catalogo](images/extract/media/image208.png)
+![Dettaglio rapido delle risorse di catalogo](assets/images/extract/media/image208.png)
 
 ##### Viewing Resource Details in the Catalog
 
 To view the data of a resource, click on the kebab menu for a resource and then click on "Show". After doing this, the user is on the resource page in view mode, where they can see the data but cannot modify it.
 
-![Accesso alla risorsa in modalità view](images/extract/media/image201.png)
+![Accesso alla risorsa in modalità view](assets/images/extract/media/image201.png)
 
-![Dettaglio Risorsa dal Modulo Catalog](images/extract/media/image209.png).
+![Dettaglio Risorsa dal Modulo Catalog](assets/images/extract/media/image209.png).
 
 The detail of a resource is divided into various sections:
 
@@ -521,7 +521,7 @@ The detail of a resource is divided into various sections:
 
 In the Cost section, it is possible to sequentially select the Region, Zone, and Cost type to obtain a preview of the costs related to the selected resource.
 
-![Sezione costi della risorsa](images/extract/media/image203.png)
+![Sezione costi della risorsa](assets/images/extract/media/image203.png)
 
 In the bottom right, click the "Close" button to return to the list.
 
@@ -531,13 +531,13 @@ In the bottom right, click the "Close" button to return to the list.
 
 To access the "Services" functionality, click on the bento button in the upper left corner and then click on "Catalog".
 
-![Accesso ai "Services"](images/extract/media/image210.png)
+![Accesso ai "Services"](assets/images/extract/media/image210.png)
 
 From the "SCMP" page, click on the tab that depicts three joined squares, 'Services', located above the breadcrumb path. After doing this, you will be on the 'Services' page, where a list of components called "Card" is displayed.
 
 Each card refers to a specific type of service. Since there are many services, the system paginates them. At the bottom, we can use the "Item for page" field to display more results or use the arrows to navigate through the lists of services.
 
-![Pagina dei servizi](images/extract/media/image211.png)
+![Pagina dei servizi](assets/images/extract/media/image211.png)
 
 ##### “Services” Page Filters
 
@@ -549,17 +549,17 @@ To facilitate the user in searching for a specific service, a side filter sectio
 
 By using the filters in combination, it will be possible to display only the services that satisfy all specified conditions. In other words, the query will return only the services that match all set criteria.
 
-![Filtri disponibili](images/extract/media/image212.png)
+![Filtri disponibili](assets/images/extract/media/image212.png)
 
 ##### Creating Services
 
 From the "Services" page, the user can create a Service by accessing the appropriate section as shown in the figure.
 
-![Accesso al form di creazione del Service](images/extract/media/image213.png)
+![Accesso al form di creazione del Service](assets/images/extract/media/image213.png)
 
 On the creation page, it is necessary to select a service type using the "Service Type" field to display its mandatory parameters.
 
-![Selezione della tipologia di servizio](images/extract/media/image214.png)
+![Selezione della tipologia di servizio](assets/images/extract/media/image214.png)
 
 In the following paragraphs, we will analyze the individual service types in detail.
 
@@ -592,7 +592,7 @@ To insert a new service, it is necessary to fill in all fields in the properties
 - "Upload File": by clicking this control, it will be possible to select an "image" type file from your PC that will be displayed on the service card.
 - "Related Software": in this section, you can select one or more "Standard" software that will then be used during provisioning.
 
-![Aggiunta nuova categoria](images/extract/media/image215.png)
+![Aggiunta nuova categoria](assets/images/extract/media/image215.png)
 
 Once all data has been entered, the service can be saved using the "save" button in the bottom right. A confirmation modal will be displayed, and the user will be redirected to the list of available services.
 
@@ -652,7 +652,7 @@ In the configuration of "Custom" services, we can identify a common section comp
 - "Name": the name of the service that will be displayed on the corresponding card.
 - "Description": the description of the service that will be shown on the relative card.
 
-![Parametri generali dei "Custom Services"](images/extract/media/image216.png)
+![Parametri generali dei "Custom Services"](assets/images/extract/media/image216.png)
 
 Subsequently, it is necessary to choose the type of "orchestrator" to use and insert the corresponding ".zip" file in the "Upload File" section. The specifications for each type are indicated below:
 
@@ -665,7 +665,7 @@ Subsequently, it is necessary to choose the type of "orchestrator" to use and in
 
 In addition to the files described in the table, it is possible to add a ".png / .jpg / .img" file to the zip that will then be used as the image for the corresponding Card.
 
-![Selezione della tipologia di Orchestratore](images/extract/media/image217.png)
+![Selezione della tipologia di Orchestratore](assets/images/extract/media/image217.png)
 
 Once all data has been entered, the service can be saved using the "save" button in the bottom right. A confirmation modal will be displayed, and the user will be redirected to the list of available services.
 
@@ -679,7 +679,7 @@ In the configuration of "Azure Pipeline" services, we can identify a general sec
   a new category by clicking the "+" button in the dropdown. "Name": the name of the service that will be displayed on the corresponding card.
 - "Description": the description of the service that will be shown on the relative card.
 
-![Parametri generali "Azure pipeline service"](images/extract/media/image218.png)
+![Parametri generali "Azure pipeline service"](assets/images/extract/media/image218.png)
 
 Also for this service, it will be possible, through the "Upload File" field, to insert a ".zip" file that contains a ".png / .jpg / .img" file within the zip, which will then be used as the image for the corresponding Card.
 
@@ -691,11 +691,11 @@ Subsequently, it will be necessary to fill in the specific parameters of the ser
 
 If the entered data is not valid, various error messages will be displayed indicating which parameter is incorrect (e.g., "Specified Organization is not valid.") and the button will turn red with "KO" written. When all parameters are correct, the button will turn green with "OK" written.
 
-![Parametri specifici delle Pipeline](images/extract/media/image219.png)
+![Parametri specifici delle Pipeline](assets/images/extract/media/image219.png)
 
 After successfully performing the test, it will be possible to select the pipeline to execute using the "Select Pipeline" field and clicking on an available option.
 
-![Selezione della pipeline](images/extract/media/image220.png)
+![Selezione della pipeline](assets/images/extract/media/image220.png)
 
 Once all data has been entered, the service can be saved using the "save" button in the bottom right. A confirmation modal will be displayed, and the user will be redirected to the list of available services.
 
@@ -717,11 +717,11 @@ We can also configure "HELM" type services within the SCMP. For the configuratio
 - "Name": the name of the service that will be displayed on the corresponding card.
 - "Configurations": in this section, it is possible to upload the values.yaml file that will be used for provisioning.
 
-![Parametri generali dei "HELM Services"](images/extract/media/image221.png)
+![Parametri generali dei "HELM Services"](assets/images/extract/media/image221.png)
 
 For these services, it is also possible to prevent any kind of service modification by selecting the "immutable" option and entering a namespace and a cluster in which to deploy the applications.
 
-![Parametro "immutabile"](images/extract/media/20250605003.png)
+![Parametro "immutabile"](assets/images/extract/media/20250605003.png)
 
 Once all data has been entered, the service can be saved using the "save" button in the bottom right. A confirmation modal will be displayed, and the user will be redirected to the list of available services.
 
@@ -729,47 +729,47 @@ Once all data has been entered, the service can be saved using the "save" button
 
 In addition to creating a Service, it is possible to view, modify, and delete it.
 
-![Operazioni disponibili per i Services](images/extract/media/image222.png)
+![Operazioni disponibili per i Services](assets/images/extract/media/image222.png)
 
 - To modify the information of a "Service", click the "Edit" button within the card. Afterward, within the form, the user can modify the necessary data. After performing the edit operations, in the bottom right, click the "Submit" button. After doing this, the user is on the "Service" page.
 
-![Pagina di edit per un servizio](images/extract/media/image223.png)
+![Pagina di edit per un servizio](assets/images/extract/media/image223.png)
 
 - To delete a "Service", click on the kebab menu of said service and then click on "Delete". After doing this, a confirmation modal for service deletion appears. At this point, it is necessary to click the "Remove" button.
 
-![ Eliminazione di un servizio](images/extract/media/image224.png)
+![ Eliminazione di un servizio](assets/images/extract/media/image224.png)
 
 #### Blueprint Management
 
 To access the "Services" functionality, click on the bento button in the upper left corner and then click on "Catalog".
 
-![Accesso alle "Blueprint"](images/extract/media/image210.png)
+![Accesso alle "Blueprint"](assets/images/extract/media/image210.png)
 
 From the "SCMP" page, click on the tab that depicts three joined squares, 'Blueprint', located above the breadcrumb path. After doing this, you will be on the 'Blueprint' page, where the list of blueprints configured in the system is displayed.
 
-![Pagina delle Blueprint](images/extract/media/image225.png)
+![Pagina delle Blueprint](assets/images/extract/media/image225.png)
 
 ##### Adding a new blueprint
 
 From the "Blueprint" page, the user can create a new blueprint by accessing the appropriate section as shown in the figure, by clicking the "hamburger menu" in the upper right corner and selecting "Add Blueprint".
 
-![Aggiunta nuova Blueprint](images/extract/media/image226.png)
+![Aggiunta nuova Blueprint](assets/images/extract/media/image226.png)
 
 The user is redirected to step 1 of the "Blueprint" creation where all general information about the blueprint can be entered. After entering the data, click the "Save blueprint" button to save the blueprint draft. For details on the status, please refer to the next paragraph.
 
-![Blueprint step 1](images/extract/media/image227.png)
+![Blueprint step 1](assets/images/extract/media/image227.png)
 
 A confirmation modal for insertion will open. Once "yes" is clicked to continue, the user will see step 2 of blueprint creation.
 
 Clicking "No" will cancel the draft insertion.
 
-![Blueprint conferma della bozza](images/extract/media/image228.png)
+![Blueprint conferma della bozza](assets/images/extract/media/image228.png)
 
 In step 2 of creating a Blueprint, it is necessary to click within the "Upload File" field and, using the Windows upload window, select the ".CSAR" file that contains the Blueprint.
 
 After selecting a file, click the "Upload" button in the bottom right to start the file validation process, following the list of statuses in the paragraph below.
 
-![Inserimento file](images/extract/media/image229.png)
+![Inserimento file](assets/images/extract/media/image229.png)
 
 ##### Blueprint Status
 
@@ -782,7 +782,7 @@ Specifically, there are 4 possible "STATUSES":
 3. FAILED (red "X"): indicates that the uploaded file is not valid and must be re-entered by the user after correction.
 4. DRAFT (orange): indicates that the "blueprint" has been created as a draft but does not contain the necessary CSAR file. Once the file is inserted, the blueprint will change to VERIFY status.
 
-![Status delle Blueprint](images/extract/media/image230.png)
+![Status delle Blueprint](assets/images/extract/media/image230.png)
 
 ##### Viewing, Editing, and Deleting Blueprints
 
@@ -795,7 +795,7 @@ The "View" functionality: allows viewing the details of the blueprint. Once clic
 - Topology: The topology of a blueprint is the arrangement of components in a Kubernetes cluster. In this section, we can graphically visualize the system structure among different pods, services, and components (Figure 243).
 - Update Model: in this section, it is possible to upload the CSAR file. By making this modification, the Blueprint will return to the "VERIFY" state to validate its content (Figure 244).
 
-![Sezioni della pagina Blueprint "view"](images/extract/media/image231.png)
+![Sezioni della pagina Blueprint "view"](assets/images/extract/media/image231.png)
 
 The "Edit" functionality allows viewing and modifying all blueprint parameters, including the related CSAR file. It contains the following sections:
 
@@ -804,17 +804,17 @@ The "Edit" functionality allows viewing and modifying all blueprint parameters, 
 - Topology: The topology of a blueprint is the arrangement of components in a Kubernetes cluster. In this section, we can graphically visualize the system structure among different pods, services, and components.
 - Update Model: in this section, it is possible to upload the CSAR file. By making this modification, the Blueprint will return to the "VERIFY" state to validate its content.
 
-![Sezioni della pagina Blueprint "edit"](images/extract/media/image234.png)
+![Sezioni della pagina Blueprint "edit"](assets/images/extract/media/image234.png)
 
-![Sezione Plan di una Blueprint](images/extract/media/image235.png)
+![Sezione Plan di una Blueprint](assets/images/extract/media/image235.png)
 
-![Sezione Topology di una Blueprint](images/extract/media/image233.png)
+![Sezione Topology di una Blueprint](assets/images/extract/media/image233.png)
 
-![Sezione Model di una Blueprint](images/extract/media/image236.png)
+![Sezione Model di una Blueprint](assets/images/extract/media/image236.png)
 
 The "Delete" functionality: allows permanently deleting the blueprint from the system. To do this, simply confirm the deletion by clicking the "Yes" button displayed in the deletion confirmation modal.
 
-![Eliminazione di una Blueprint](images/extract/media/image237.png)
+![Eliminazione di una Blueprint](assets/images/extract/media/image237.png)
 
 ### Reporting Tools
 
@@ -823,7 +823,7 @@ providers. Within the pages, the possibility will also be given to create files 
 
 To access the functionality, above the breadcrumb path, click on the "Reports" tab.
 
-![Accesso al report di Catalogo](images/extract/media/image141.png)
+![Accesso al report di Catalogo](assets/images/extract/media/image141.png)
 
 #### Available Report Types
 
@@ -833,11 +833,11 @@ To access the functionality, above the breadcrumb path, click on the "Reports" t
 
 In the upper right of the page, we can click on the "New Report" button to start creating a report. Specifically, a modal will be displayed containing the list of available report types.
 
-![Creazione nuovo report](images/extract/media/image142.png)
+![Creazione nuovo report](assets/images/extract/media/image142.png)
 
 Once the report type is selected, click the "Configure" button to select the providers to include in the report. In the newly opened window, we find the "Provider" field which allows selecting one or more existing providers in the system. Subsequently, it is possible to select one or more subsystems to include in the report. If no providers are selected, no subsystem can be selected. Finally, there is a "tag" section to include only resources that have the entered tag.
 
-![Configurazione del report](images/extract/media/image143.png)
+![Configurazione del report](assets/images/extract/media/image143.png)
 
 At this point, the user can choose between two different actions:
 
@@ -848,7 +848,7 @@ To confirm the creation of a static report, verify that "One-Shot" has been sele
 
 After a loading period, the newly generated report will be visible in the list.
 
-![Lista dei report effettuati](images/extract/media/image144.png)
+![Lista dei report effettuati](assets/images/extract/media/image144.png)
 
 ##### Report Scheduling
 
@@ -862,17 +862,17 @@ The parameters to be entered are:
 - File format: allows selecting one or more file types to include in the email.
 - User E-mails: allows entering an email to which reports will be sent. After entering an email, it is necessary to press "Enter" on the keyboard to confirm its entry. Once pressed, the newly entered email will move to the bottom box, and the field will be cleared to allow the entry of a new email, if necessary.
 
-![Parametri dei report schedulati](images/extract/media/image145.png)
+![Parametri dei report schedulati](assets/images/extract/media/image145.png)
 
 Having configured all parameters, the "Submit" button will become clickable. Click it to confirm the entry, and after a loading period, the newly generated report will be visible in the list.
 
-![Lista dei report effettuati](images/extract/media/image144.png)
+![Lista dei report effettuati](assets/images/extract/media/image144.png)
 
 ##### List of Scheduled Reports
 
 To view the list of scheduled reports, select the "Scheduled" tab in the upper left of the reports page.
 
-![Lista dei report schedulati](images/extract/media/image146.png)
+![Lista dei report schedulati](assets/images/extract/media/image146.png)
 
 On this page, you will find the list and related information of the scheduled reports present in the system. For each result, it is possible, by clicking the "Three dots" button on the right, to perform three operations:
 
@@ -880,7 +880,7 @@ On this page, you will find the list and related information of the scheduled re
 - Edit the schedule settings; it will not be possible to modify the selected providers or subsystems.
 - Delete the schedule to stop sending emails.
 
-![Modifica di una schedule](images/extract/media/image147.png)
+![Modifica di una schedule](assets/images/extract/media/image147.png)
 
 ##### Using Reports
 
@@ -898,4 +898,4 @@ Clicking the "EXPORT" button, it is possible to export the report in ".csv", ".j
 
 To return to the "Results" tab, in the bottom right, click the "CLOSE" button or in the upper left, click the left-pointing arrow, next to the report title.
 
-![Dettagli dei report](images/extract/media/image148.png)
+![Dettagli dei report](assets/images/extract/media/image148.png)

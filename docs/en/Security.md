@@ -4,7 +4,7 @@ The SCMP's security feature shows the vulnerabilities of inventory assets presen
 
 To access the “Security” feature, click the bento button in the top left. After doing so, the menu bar will appear, where you need to click on “Security”.
 
-![Access to Security](images/extract/media/image268.png)
+![Access to Security](assets/images/extract/media/image268.png)
 
 ### General Dashboard
 
@@ -18,15 +18,15 @@ By hovering the mouse over a section of the chart, we can see that the values di
 
 It is possible to click on a section of the chart to automatically apply the “subsystem” and “status” filters to the page.
 
-![Security Dashboard](images/extract/media/image269.png)
+![Security Dashboard](assets/images/extract/media/image269.png)
 
 Scrolling down the page, there is the policies table which will be automatically filtered based on the selected filters.
 
-![Policies table](images/extract/media/image270.png)
+![Policies table](assets/images/extract/media/image270.png)
 
 Clicking on a row in the table will open a detail window where you can find all information related to the selected policy, and the list of affected resources will also be available. It is possible to click on the name of a machine to view its details; in this case, the user will be redirected to the SCMP inventory resource in “view” mode.
 
-![Policy details](images/extract/media/image271.png)
+![Policy details](assets/images/extract/media/image271.png)
 
 To exit the detail, you need to click outside the window, which will close automatically.
 
@@ -36,7 +36,7 @@ It is possible to further filter policies by resource type, using the tabs at th
 
 Once the resource type is selected, it is possible to navigate the pages following the methods described in the previous paragraph.
 
-![Virtual Machines compliance Dashboard](images/extract/media/image272.png)
+![Virtual Machines compliance Dashboard](assets/images/extract/media/image272.png)
 
 ### SIEM Dashboard
 
@@ -46,25 +46,25 @@ Below, there is the “Summary” section which contains information, including 
 
 Below the “Summary” section, there is the “Hourly Events Grouped By Type” section which contains a histogram chart indicating hourly events by type.
 
-![SIEM Dashboard](images/extract/media/image273.png)
+![SIEM Dashboard](assets/images/extract/media/image273.png)
 
 Scrolling through the SIEM dashboard, there is the “Event types” chart which indicates all event types.
 
-![“Event types" of the SIEM dashboard](images/extract/media/image274.png)
+![“Event types" of the SIEM dashboard](assets/images/extract/media/image274.png)
 
 Finally, at the bottom of the page, there are two tables: on the left, the “Alert rules” table which shows a set of alarm rules, while on the right, there is the “Incidents” table which shows incidents.
 
-![“Alert rules” and “Incidents” tables](images/extract/media/image275.png)
+![“Alert rules” and “Incidents” tables](assets/images/extract/media/image275.png)
 
 Clicking on a row in the table will open a detail window, where you can find all information related to the selected rule or incident.
 
-![“Incidents” details](images/extract/media/image276.png)
+![“Incidents” details](assets/images/extract/media/image276.png)
 
 ### Secret Manager Dashboard
 
 To view the SIEM dashboard, click on the tab that depicts a key. At the top, there is a dropdown menu where you can select the subscription of interest.
 
-![Key Vault Dashboard](images/extract/media/image277.png)
+![Key Vault Dashboard](assets/images/extract/media/image277.png)
 
 At the bottom of the page, you can see navigation buttons for the table and a table.
 
@@ -74,11 +74,11 @@ Depending on the selected page, the table will display respectively:
 - Keys
 - Certificates
 
-![Viewable resources](images/extract/media/image278.png)
+![Viewable resources](assets/images/extract/media/image278.png)
 
 Clicking on a row in the table allows you to view the detail of the selected resource.
 
-![Key details](images/extract/media/image279.png)
+![Key details](assets/images/extract/media/image279.png)
 
 ### Clusters Dashboard
 
@@ -92,15 +92,15 @@ By hovering the mouse over a section of the chart, we can see that the values di
 
 It is possible to click on a section of the chart to automatically apply the “subsystem” filter.
 
-![“Cluster alerts” Dashboard](images/extract/media/image280.png)
+![“Cluster alerts” Dashboard](assets/images/extract/media/image280.png)
 
 Scrolling down the page, there is the “alerts” table which will be automatically filtered based on the selected filters.
 
-![Alerts table](images/extract/media/image281.png)
+![Alerts table](assets/images/extract/media/image281.png)
 
 Clicking on a row in the table will open a detail window, where you can find all information related to the selected “alert”.
 
-![Alert details on clusters](images/extract/media/image271.png)
+![Alert details on clusters](assets/images/extract/media/image271.png)
 
 To exit the detail, you need to click outside the window, which will close automatically.
 
@@ -108,21 +108,21 @@ To exit the detail, you need to click outside the window, which will close autom
 
 To view the compliance dashboard, click on the tab that depicts a document in the security module.
 
-![Compliance dashboard](images/extract/media/120325001.png)
+![Compliance dashboard](assets/images/extract/media/120325001.png)
 
 At this point, the user is on the "Compliance" tab page, composed of 4 sections.
 The first section contains filters that allow searching by policy name, subsystem, and/or compliance status.
 The second section, always active, contains pie charts that indicate the general status of the filtered resources.
 
-![“Filters” and “pie charts” sections](images/extract/media/120325002.png)
+![“Filters” and “pie charts” sections](assets/images/extract/media/120325002.png)
 
 The third section, active only if multiple different subsystems are present in the results, shows a bar chart, subdivided by provider, of the compliance status of resources.
 The last section contains a table with general information on policy groups.
 
-![“Bar charts” and “table” sections](images/extract/media/120325003.png)
+![“Bar charts” and “table” sections](assets/images/extract/media/120325003.png)
 
 Clicking on a row in the table opens a modal where it will be possible to view the list of all policies configured in the group, with the relative resource count.
 Still within the modal, we can click on one of the displayed policies; doing so will show at the bottom the list of all machines assigned to the policy and their respective status.
 Next to each resource, a "link" button is available; once clicked, the user will be redirected to the inventory page of the selected resource.
 
-![Policy details](images/extract/media/120325004.png)
+![Policy details](assets/images/extract/media/120325004.png)

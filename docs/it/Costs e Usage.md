@@ -27,7 +27,7 @@ Ad esempio:
 
 Per accedere alla sezione costi, è necessario utilizzare il menu come da figura .
 
-![Accesso a Costs](images/extract/media/image238.png)
+![Accesso a Costs](assets/images/extract/media/image238.png)
 
 A questo punto, l’utente si ritroverà all’interno della pagina del tab “Dashboard” dei costi.
 In questa schermata possiamo notare nell’ ordine:
@@ -39,11 +39,11 @@ In questa schermata possiamo notare nell’ ordine:
 
  In basso saranno presenti diversi grafici di aggregazione delle  risorse, ad esempio, per Regione o Tipologia di Servizio, come  indicato nei rispettivi cloud providers e come analizzeremo in seguito  sarà possibile personalizzare i grafici e le sezioni disponibili.
 
-![Dashboard dei costi](images/extract/media/image239.png)
+![Dashboard dei costi](assets/images/extract/media/image239.png)
 
 Nella funzionalità dei costi viene data la possibilità di filtrare per tipologia di risorsa utilizzando la barra dei tab in alto, mentre per avere una visualizzazione generale è possibile utilizzare la dashboard.
 
-![Filtrare per tipologia di risorsa](images/extract/media/image240.png)
+![Filtrare per tipologia di risorsa](assets/images/extract/media/image240.png)
 
 #### Filtri della sezione Costi
 
@@ -51,7 +51,7 @@ All’interno della pagina sono disponibili una serie di filtri che possono esse
 
 Il filtro principale è il periodo di visualizzazione, lo possiamo trovare in alto a destra, cliccandoci verrà aperta una finestra di scelta (in giallo nella figura) dove sarà possibile sia inserire un intervallo di tempo personalizzato, utilizzando i campi “From” e “To” presenti sulla sinistra, o selezionare un intervallo di tempo “smart” cliccando direttamente sulla scelta desiderata nella sezione scrollable a destra.
 
-![Filtro temporale dei costi](images/extract/media/image241.png)
+![Filtro temporale dei costi](assets/images/extract/media/image241.png)
 
 Vengono messi a disposizione, in alto a sinistra della pagina, una serie di filtri che permettono di filtrare le risorse recuperate, nello specifico è possibile filtrare per:
 
@@ -61,7 +61,7 @@ Vengono messi a disposizione, in alto a sinistra della pagina, una serie di filt
 
  Questi filtri permettono di selezionare dei valori multipli e possono  essere combinati tra loro per raggiungere la granularità desiderata
 
-![Filtri della funzionalità costi](images/extract/media/image242.png)
+![Filtri della funzionalità costi](assets/images/extract/media/image242.png)
 
 #### Panoramica dei dati mostrati
 
@@ -89,7 +89,7 @@ Nel dettaglio:
 - **Effective Spend:** grafico contenente la somma dei costi SCMP addebitati al cliente per ciascun provider.  
   *Aiuta a valutare la redditività ottenuta su ogni provider.*
 
-![General](images/extract/media/image243.png)
+![General](assets/images/extract/media/image243.png)
 
 ##### **Sezione “Accounts”**
 
@@ -106,7 +106,7 @@ Nel dettaglio:
 - **Sub-Account Effective Cost %:** Percentuale del costo totale SCMP addebitato al cliente, per ogni account subordinato.  
   *Consente di vedere quali account generano più fatturato.*
 
-![Accounts](images/extract/media/image244.png)
+![Accounts](assets/images/extract/media/image244.png)
 
 ##### **Sezione “Services”**
 
@@ -123,7 +123,7 @@ Nel dettaglio:
 - **Service Effective Cost %:** Percentuale del costo totale SCMP addebitato al cliente, per ogni servizio.  
   *Fornisce una visione chiara delle fonti principali di ricavo per servizio.*
 
-![Services](images/extract/media/image245.png)
+![Services](assets/images/extract/media/image245.png)
 
 ##### **Sezione “SKUs”**
 
@@ -140,7 +140,7 @@ Nel dettaglio:
 - **Sku Effective Cost %:** Percentuale del costo totale SCMP addebitato al cliente, per ogni SKU.  
   *Aiuta a evidenziare eventuali squilibri nei margini a livello di SKU.*
 
-![Skus](images/extract/media/image246.png)
+![Skus](assets/images/extract/media/image246.png)
 
 ##### **Sezione “Resources”**
 
@@ -157,7 +157,7 @@ Nel dettaglio:
 - **Resource Effective Cost %:** Percentuale del costo totale SCMP addebitato al cliente, per ogni risorsa.  
   *Fornisce visibilità sulla redditività delle singole risorse.*
 
-![Resources](images/extract/media/image247.png)
+![Resources](assets/images/extract/media/image247.png)
 
 ##### **Sezione “Types”**
 
@@ -174,7 +174,7 @@ Nel dettaglio:
 - **Resource Type Effective Cost %:** Percentuale del costo totale SCMP addebitato al cliente, per ogni tipo di risorsa.  
   *Consente di misurare il peso commerciale di ogni categoria.*
 
-![Types](images/extract/media/image248.png)
+![Types](assets/images/extract/media/image248.png)
 
 ##### **Sezione “Regions”**
 
@@ -191,7 +191,7 @@ Nel dettaglio:
 - **Regional Effective Cost %:** Percentuale del costo totale SCMP addebitato al cliente, per ogni regione.  
   *Utile per analizzare la distribuzione del fatturato per area geografica.*
 
-![Regions](images/extract/media/image249.png)
+![Regions](assets/images/extract/media/image249.png)
 
 ##### **Sezione “History”**
 
@@ -205,13 +205,13 @@ Nel dettaglio:
 - **Historical Provider Billing Costs:** Storico dell’andamento dei costi totali di ogni account cloud di fatturazione.  
   *Aiuta a prevedere trend futuri e ad anticipare problemi di spesa o budget.*
 
-![History](images/extract/media/image250.png)
+![History](assets/images/extract/media/image250.png)
 
 #### Visualizzazione limitata per il cliente
 
 Se viene utilizzata, per l’accesso alla dashboard dei costi, una utenza configurata con il parametro “LIMITED” i grafici disponibili sulla dashboard saranno relativi ai soli costi ricalcolati della SCMP, mentre i costi effettivi ricevuti dai provider non saranno visibili perché superflui come si può vedere nell’ immagine.
 
-![Dashboard dei costi limitata](images/extract/media/image251.png)
+![Dashboard dei costi limitata](assets/images/extract/media/image251.png)
 
 ### Dashboard dello “Usage”
 
@@ -221,7 +221,7 @@ Navigando dunque alla sezione Usages del modulo, verranno mostrate informazioni 
 
 Per accedere alla funzionalità, sopra il path del breadcrumb, cliccare sul tab “Usages” .
 
-![Accesso a "Usages"](images/extract/media/image252.png)
+![Accesso a "Usages"](assets/images/extract/media/image252.png)
 
 #### Filtri della sezione Usage
 
@@ -229,7 +229,7 @@ All’interno della pagina sono disponibili una serie di filtri, che possono ess
 
 Il filtro principale è il periodo di visualizzazione, lo possiamo trovare in alto a destra, cliccandoci verrà aperta una finestra di scelta (in giallo nella figura) dove sarà possibile sia inserire un intervallo di tempo personalizzato, utilizzando i campi “From” e “To” presenti sulla sinistra, o selezionare un intervallo di tempo “smart” cliccando direttamente sulla scelta desiderata nella sezione scrollable a destra.
 
-![Filtro temporale dello usage](images/extract/media/image241.png)
+![Filtro temporale dello usage](assets/images/extract/media/image241.png)
 
 Vengono messi a disposizione, in alto a sinistra della pagina, una serie di filtri che permettono di filtrare le risorse recuperate, nello specifico è possibile filtrare per:
 
@@ -242,7 +242,7 @@ Vengono messi a disposizione, in alto a sinistra della pagina, una serie di filt
 
 Questi filtri permettono di selezionare dei valori multipli e possono essere combinati tra loro per raggiungere la granularità desiderata.
 
-![Filtri della funzionalità costi](images/extract/media/image242.png)
+![Filtri della funzionalità costi](assets/images/extract/media/image242.png)
 
 #### Panoramica dei dati mostrati sezione costi
 
@@ -253,7 +253,7 @@ Il primo grafico rappresenta la media giornaliera consumata da ogni SKU.
 
 Per ogni SKU, infatti, viene indicata la media di consumo e l’unità di misura, nel range temporale specificato, per fornire sommariamente quali di essi sono mediamente più utilizzati e di conseguenza quali di essi potrebbero generare maggiore costo per l’utente.
 
-![Sezione "Skus Usage"](images/extract/media/image253.png)
+![Sezione "Skus Usage"](assets/images/extract/media/image253.png)
 
 ##### Sezione “SKU Resource Average”
 
@@ -261,7 +261,7 @@ Il secondo grafico invece, è focalizzato sullo SKU selezionato come filtro dall
 
 anch'esso, può essere classificato come un grafico riassuntivo che fornisce all’utente quali risorse per un determinato SKU, sono mediamente più utilizzate e di conseguenza quali tra esse potrebbero generare maggiore costo per l’utente.
 
-![Sezione "SKU resource"](images/extract/media/image253.png)
+![Sezione "SKU resource"](assets/images/extract/media/image253.png)
 
 ##### Sezione “Historical SKU Usage”
 
@@ -269,7 +269,7 @@ Il primo grafico temporale mostra l’andamento giornaliero del consumo dello sp
 
 Nel caso in figura, si evidenzia un consumo (in ore) costante nel tempo, utile all’utente per fasi successive d’analisi.
 
-![Sezione "Historical SKU"](images/extract/media/image254.png)
+![Sezione "Historical SKU"](assets/images/extract/media/image254.png)
 
 ##### Sezione “SKU Resources Usage”
 
@@ -280,7 +280,7 @@ Questo grafico, dunque mostra all’utente il dettaglio storico del grafico prec
 
 Quest’ultimo grafico è particolarmente utile all’utente perché evidenzia quali risorse vengono effettivamente utilizzate nell’ambito di uno sku specifico e, di conseguenza, quali tra esse potrebbero portare maggiori costi all’utente o essere pagate senza nemmeno essere utilizzate.
 
-![Sezione "Sku Resources"](images/extract/media/image255.png)
+![Sezione "Sku Resources"](assets/images/extract/media/image255.png)
 
 ### Personalizzazione dashboard dei costi e Usage
 
@@ -293,7 +293,7 @@ provider, all’ interno delle pagine verrà data anche la possibilità di crear
 
 Per accedere alla funzionalità, sopra il path del breadcrumb, cliccare sul tab “Reports”
 
-![Accesso al report di Catalogo](images/extract/media/image141.png)
+![Accesso al report di Catalogo](assets/images/extract/media/image141.png)
 
 #### Tipologie di report disponibili
 
@@ -307,11 +307,11 @@ Per accedere alla funzionalità, sopra il path del breadcrumb, cliccare sul tab 
 
 In alto sulla destra della pagina possiamo cliccare sul pulsante “New Report” per avviare la creazione di un report, nello specifico viene visualizzata una modale che contiene la lista delle tipologie di report disponibili.
 
-![Creazione nuovo report](images/extract/media/image142.png)
+![Creazione nuovo report](assets/images/extract/media/image142.png)
 
 Una volta selezionata la tipologia di report cliccare sul pulsante “Configure” per selezionare i provider da includere nel report, nella finestra appena aperta troviamo il campo “Provider” che permette di selezionare uno o più provider preesistenti nel sistema, successivamente è possibile selezionare uno o più sottosistemi da includere nel report, se non vengono selezionati dei provider non sarà possibile selezione nessun sottosistema. Infine è presente una sezione “tag” per includere le sole risorse che presentano il tag inserito
 
-![Configurazione del report](images/extract/media/image143.png)
+![Configurazione del report](assets/images/extract/media/image143.png)
 
 A questo punto l'utente può scegliere tra due diverse azioni:
 
@@ -322,7 +322,7 @@ Per confermare la creazione di un report statico verificare che per il campo “
 
 Dopo un periodo di caricamento sarà possibile visualizzare nella lista il report appena generato .
 
-![Lista dei report effettuati](images/extract/media/image144.png)
+![Lista dei report effettuati](assets/images/extract/media/image144.png)
 
 ##### Schedulazione del report
 
@@ -336,18 +336,18 @@ I parametri da inserire sono:
 - File format: permette di selezionare una o più tipologie di file da includere nella mail.
 - User E-mails: permette di inserire una mail alla quale inviare i report, dopo aver inserito una mail è necessario premere “Invio” sulla tastiera per confermarne l’inserimento, una volta premuto la mail appena inserita passerà nel box in fondo e il campo verrà svuotato per permettere l’inserimento, se necessario, di una nuova mail.
 
-![Parametri dei report schedulati](images/extract/media/image145.png)
+![Parametri dei report schedulati](assets/images/extract/media/image145.png)
 
 Avendo configurato tutti i parametri il pulsante “Submit” diventerà cliccabile, cliccarlo per confermare l’inserimento e dopo un periodo di caricamento sarà possibile visualizzare nella lista il report appena generato .
 
-![Lista dei report effettuati](images/extract/media/image144.png)
+![Lista dei report effettuati](assets/images/extract/media/image144.png)
 
 ##### Lista dei report schedulati
 
 Per visualizzare la lista dei report schedulati, selezionare il tab “Scheduled” presente in alto sulla sinistra nella pagina dei report
 .
 
-![Lista dei report schedulati](images/extract/media/image146.png)
+![Lista dei report schedulati](assets/images/extract/media/image146.png)
 
 In questa pagina troviamo la lista e le relative informazioni dei report schedulati presenti nel sistema, per ogni risultato è possibile, cliccando il pulsante “Tre punti” sulla destra sarà possibile effettuare tre operazioni:
 
@@ -355,7 +355,7 @@ In questa pagina troviamo la lista e le relative informazioni dei report schedul
 - Editare le impostazioni della schedula, non sarà possibile modificare i provider o sottosistemi selezionati.
 - Eliminare la schedula per interrompere l’invio delle e-mail.
 
-![Modifica di una schedule](images/extract/media/image147.png)
+![Modifica di una schedule](assets/images/extract/media/image147.png)
 
 ##### Utilizzo dei report
 
@@ -373,4 +373,4 @@ Cliccando sul pulsante “EXPORT”, è possibile esportare il report in formato
 
 Per tornare al tab “Results”, in basso a destra, cliccare sul pulsante “CLOSE” oppure in alto a sinistra cliccare sulla freccia che punta verso la sinistra, accanto al titolo del report.
 
-![Dettagli dei report](images/extract/media/image148.png)
+![Dettagli dei report](assets/images/extract/media/image148.png)

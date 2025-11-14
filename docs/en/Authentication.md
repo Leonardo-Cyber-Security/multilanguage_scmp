@@ -8,41 +8,41 @@ The menu is accessible from the button at the top right, as shown below.
 
 Specifically, to access user profiling, the menu is "Authentication".
 
-![Access to Authentication functionality](images/extract/media/image8.png)
+![Access to Authentication functionality](assets/images/extract/media/image8.png)
 
 Dashboard view for user profiling:
 
-![IAM Dashboard](images/extract/media/image10.png)
+![IAM Dashboard](assets/images/extract/media/image10.png)
 
 ### Groups
 
 To simplify the assignment of menu attributes and authorizations, user groups can be used. Click the "Groups" menu in the "Entities" section of the IAM dashboard.
 
-![Access to Group management](images/extract/media/image11.png)
+![Access to Group management](assets/images/extract/media/image11.png)
 
 Once the link is clicked, the user will be shown the list of all available groups on the portal with their respective configuration buttons.
 
-![List of configured groups](images/extract/media/image12.png)
+![List of configured groups](assets/images/extract/media/image12.png)
 
 #### Group Creation
 
 To create a new group within the system, click the "+" button in the top right. A group creation form will be displayed.
 
-![Adding a new Group](images/extract/media/image13.png)
+![Adding a new Group](assets/images/extract/media/image13.png)
 
 Enter the group name and click the "Add Group" button to add it to the system. Once pressed, the system will take us to the list of available groups where we can find the newly created group.
 
-![Group entry parameters](images/extract/media/image14.png)
+![Group entry parameters](assets/images/extract/media/image14.png)
 
 #### Management of Assigned Users and Attributes
 
 To assign users to a group, from the list of available groups, click the "people" icon on the row corresponding to the group of interest. The user will be redirected to the "Members" page where it is possible to view all users assigned to the group and their basic information.
 
-![Access to user assignment management](images/extract/media/image15.png)
+![Access to user assignment management](assets/images/extract/media/image15.png)
 
 We can add a user to the group by clicking the "+" button at the top right (1). Once pressed, a new row (2) will be created in the list of assigned users where a user can be selected from the list of available users (3).
 
-![Assign a user to the group](images/extract/media/image16.png)
+![Assign a user to the group](assets/images/extract/media/image16.png)
 
 Similarly, it is possible to remove users from the group by clicking the "Trash" button corresponding to the user to be removed.
 
@@ -50,7 +50,7 @@ After adding all users to the group, click the "Save" button at the bottom left 
 
 We can assign attributes to the group that will be automatically used by the assigned users. To do this, select the "Attributes" tab at the top of the page (1), then using the "+" button at the top right (2), it is possible to add an attribute. In the left part, the key must be entered (3) and in the white part on the right, its value must be entered (4). During entry, we will see a dropdown below the field where clicking will allow saving the entered value (5).
 
-![Enter Attributes](images/extract/media/image17.png)
+![Enter Attributes](assets/images/extract/media/image17.png)
 
 Once all necessary attributes have been entered, changes can be saved using the "Save" button at the bottom.
 
@@ -65,7 +65,7 @@ From the list of available Groups, a series of buttons are available for each gr
 - "Trash": allows deleting the group after clicking
   "confirm" in the displayed modal (indicated by a purple arrow in the image).
 
-![Control buttons](images/extract/media/image18.png)
+![Control buttons](assets/images/extract/media/image18.png)
 
 ### Users
 
@@ -73,17 +73,17 @@ For an account to access and use the system, it must be appropriately configured
 
 To access User management, click the "Users" menu in the "Entities" section of the IAM dashboard.
 
-![Access to User management](images/extract/media/image19.png)
+![Access to User management](assets/images/extract/media/image19.png)
 
 Once the link is clicked, the user will be shown the list of all available groups on the portal with their respective configuration buttons.
 
-![List of configured users](images/extract/media/image20.png)
+![List of configured users](assets/images/extract/media/image20.png)
 
 #### New User Creation
 
 To create a new user within the system, click the "+" button at the top right. A user creation form will be displayed.
 
-![New user creation](images/extract/media/image21.png)
+![New user creation](assets/images/extract/media/image21.png)
 
 The new user creation form will be displayed. Fill in the mandatory fields in the list:
 
@@ -95,7 +95,7 @@ The new user creation form will be displayed. Fill in the mandatory fields in th
 - Max concurrent connections: Maximum number of simultaneous connections enabled for the user.
 - Default Language: the basic language to be displayed in the system.
 
-![User creation form](images/extract/media/image22.png)
+![User creation form](assets/images/extract/media/image22.png)
 
 Once all mandatory fields are entered, click the "+ Add user" button to complete the entry.
 
@@ -107,17 +107,17 @@ To view the newly created user, return to the page containing the list of users.
 
 To manage users, you can click the "Groups" button corresponding to the row of the user to be modified.
 
-![Access to user management](images/extract/media/image23.png)
+![Access to user management](assets/images/extract/media/image23.png)
 
 Once the button is pressed, the page refreshes to show the "Groups" page where one or more groups can be assigned to or removed from the user.
 
 To add a new group to the user, you must select the group to be assigned to the user in the left section (1) and then, by clicking the "Associate" button in the center of the page (2), the group will automatically move to the right section and the changes will be saved automatically.
 
-![Associate a user to the group](images/extract/media/image24.png)
+![Associate a user to the group](assets/images/extract/media/image24.png)
 
 Similarly, it is possible to remove the user from the group by first clicking the group to be removed in the right section and then the "Disassociate" button in the center of the page. The changes will be saved automatically.
 
-![Disassociate a user from the group](images/extract/media/image25.png)
+![Disassociate a user from the group](assets/images/extract/media/image25.png)
 
 Furthermore, using the buttons in the right section, corresponding to each group, it is possible to modify the priority of the various groups.
 
@@ -125,7 +125,7 @@ For users, it is also possible to assign custom attributes. To do this, select t
 
 The list of available attributes is in the paragraph.
 
-![Enter Attributes](images/extract/media/image17.png)
+![Enter Attributes](assets/images/extract/media/image17.png)
 
 Once all necessary attributes have been entered, changes can be saved using the "Save" button at the bottom.
 
@@ -133,7 +133,7 @@ Once all necessary attributes have been entered, changes can be saved using the 
 
 As a user administrator, it is possible to reset passwords. To do this, click on the "Credentials" tab displayed at the top of the page. In this tab, you can enter a new password for the user and configure it as "Temporary". The temporary password must be changed by the user after the first login. A password validity period, expressed in days, can also be defined.
 
-![Modifying the user's password](images/extract/media/image26.png)
+![Modifying the user's password](assets/images/extract/media/image26.png)
 
 #### Viewing, Modifying, and Deleting a User
 
@@ -143,17 +143,17 @@ From the list of available users, a series of buttons are available for each gro
 - "Pencil": allows modifying the user's basic information (indicated by a yellow arrow in the image).
 - "Trash": allows deleting the user after clicking "confirm" in the displayed modal (indicated by a purple arrow in the image).
 
-![Control buttons](images/extract/media/image27.png)
+![Control buttons](assets/images/extract/media/image27.png)
 
 ### Management of Menus Enabled per User/Group
 
 The IAM system integrated into the SCMP also allows the management of menu elements available to various users and groups. To access this functionality, simply click the "User management X Pages" link available in the "Administration" section of the IAM dashboard.
 
-![Access to menu management](images/extract/media/image28.png)
+![Access to menu management](assets/images/extract/media/image28.png)
 
 At the top of the page, there are two dropdown menus: the left dropdown allows selecting a single user, and the right one allows selecting a group.
 
-![Selection of user/group to modify](images/extract/media/image29.png)
+![Selection of user/group to modify](assets/images/extract/media/image29.png)
 
 After selecting an account, the page will update to show all "STREAM" available on the application. It is possible to click the "+" button corresponding to each row to view the available "MODULES" and "COMPONENT".
 
@@ -168,7 +168,7 @@ The selectable values are:
 - Disabled: Indicates that the menu will not be enabled and will not be visible to the user/group.
 - N.D: not defined (the menu is disabled and will not be visible).
 
-![Menu authorization management](images/extract/media/image30.png)
+![Menu authorization management](assets/images/extract/media/image30.png)
 
 ### User Profile Lists and Attributes
 

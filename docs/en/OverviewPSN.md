@@ -2,7 +2,7 @@
 
 Leonardo provides several managed services which are represented in the following figure by type (called service families).
 
-![Overview Leonardo Services](images/extract/media/PSN1.png)
+![Overview Leonardo Services](assets/images/extract/media/PSN1.png)
 
 From a logical-functional point of view, the services can be divided into three macro-categories:
 

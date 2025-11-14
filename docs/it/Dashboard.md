@@ -13,10 +13,10 @@ In particolare:
 
 Il titolo di ogni sezione è cliccabile e porta alla dashboard specifica.
 
-![Dashboard sezione "Inventory"](images/extract/media/image100.png)
+![Dashboard sezione "Inventory"](assets/images/extract/media/image100.png)
 
-![Dashboard sezione "Monitoring"](images/extract/media/image101.png)
+![Dashboard sezione "Monitoring"](assets/images/extract/media/image101.png)
 
-![Dashboard sezione "Costs](images/extract/media/image102.png)
+![Dashboard sezione "Costs](assets/images/extract/media/image102.png)
 
-![Dashboard sezione "Security"](images/extract/media/image103.png)
+![Dashboard sezione "Security"](assets/images/extract/media/image103.png)

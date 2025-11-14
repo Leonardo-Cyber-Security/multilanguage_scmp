@@ -13,10 +13,10 @@ In particular:
 
 The title of each section is clickable and leads to the specific dashboard.
 
-![Dashboard section "Inventory"](images/extract/media/image100.png)
+![Dashboard section "Inventory"](assets/images/extract/media/image100.png)
 
-![Dashboard section "Monitoring"](images/extract/media/image101.png)
+![Dashboard section "Monitoring"](assets/images/extract/media/image101.png)
 
-![Dashboard section "Costs](images/extract/media/image102.png)
+![Dashboard section "Costs](assets/images/extract/media/image102.png)
 
-![Dashboard section "Security"](images/extract/media/image103.png)
+![Dashboard section "Security"](assets/images/extract/media/image103.png)

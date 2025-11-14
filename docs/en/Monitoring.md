@@ -10,13 +10,13 @@ Within the functionality, it is possible to filter by resource type using the ta
 
 The monitoring module can be accessed via the dedicated menu. As shown in the figure:
 
-![Access to the Monitoring Module](images/extract/media/image259.png)
+![Access to the Monitoring Module](assets/images/extract/media/image259.png)
 
 ### Monitoring Dashboard
 
 At this point, the user will be on the "Dashboard" monitoring tab page.
 
-![Monitoring Dashboard](images/extract/media/170325001.png)
+![Monitoring Dashboard](assets/images/extract/media/170325001.png)
 
 #### Monitoring Section Filters
 
@@ -24,7 +24,7 @@ Within the page, a series of filters are available that can be selected simultan
 
 The main filter is the display period, which can be found at the top right. Clicking on it will open a selection window (in yellow in the figure) where it will be possible to either enter a customized time range, using the "From" and "To" fields on the left, or select a "Smart" time range by directly clicking on the desired choice in the scrollable section on the right.
 
-![Monitoring Time Filter](images/extract/media/120325006.png)
+![Monitoring Time Filter](assets/images/extract/media/120325006.png)
 
 Additionally, a series of filters are available at the top left of the page, allowing users to filter the retrieved resources. Specifically, it is possible to filter by:
 
@@ -34,7 +34,7 @@ Additionally, a series of filters are available at the top left of the page, all
 
  These filters allow for multiple values to be selected and can be combined to achieve the desired granularity.
 
-![Monitoring Functionality Filters](images/extract/media/170325002.png)
+![Monitoring Functionality Filters](assets/images/extract/media/170325002.png)
 
 ### Quotas Dashboard
 
@@ -42,7 +42,7 @@ The Quotas dashboard, available in the "Quotas" tab, allows viewing the details 
 
 To access it, you need to click the button at the top of the tab bar.
 
-![Access to the Quotas section](images/extract/media/170325003.png)
+![Access to the Quotas section](assets/images/extract/media/170325003.png)
 
 At this point, the user will be on the "Quotas" monitoring tab page.
 At the top, we can see a filter bar, which allows filtering by provider or subsystem. Additionally, it is possible to view the filters for the chart using the "Show additional filters" button; these filters modify the chart's display.
@@ -50,13 +50,13 @@ Below the filters, there is a table indicating the subsystem name and
 the quotas used, limits, and an average utilization divided by resource type.
 Finally, at the bottom, a time-based chart on the selected metric in the filters can be displayed.
 
-![Quotas Dashboard](images/extract/media/170325004.png)
+![Quotas Dashboard](assets/images/extract/media/170325004.png)
 
 ### Alarms on Quota Usage
 
 To allow the user to receive notifications when quota usage thresholds are exceeded, an "Alerting" module has been included. To access it, you need to select the tab at the top of the Monitoring functionality.
 
-![Access to the Alerting system](images/extract/media/090425002.png)
+![Access to the Alerting system](assets/images/extract/media/090425002.png)
 
 Within the page, we find the list of "alerts" configured on the system, along with their respective configurations.
 
@@ -65,7 +65,7 @@ Within the page, we find the list of "alerts" configured on the system, along wi
 Using the menu available on the right, it is possible to add a new alert to the system.
 To do this, we select the displayed "New alert" option, and a configuration page will open.
 
-![New Alert Creation](images/extract/media/090425004.png)
+![New Alert Creation](assets/images/extract/media/090425004.png)
 
 On the configuration page, all fields must be filled in, specifically:
 
@@ -78,7 +78,7 @@ On the configuration page, all fields must be filled in, specifically:
 - **"Alert format"**: Select the format of the sent file that defines the alert details.
 - **"Emails"**: By selecting E-mail as the notification type, we can enter an email address to send reports to. After entering an email, it is necessary to press "Enter" on the keyboard to confirm its entry. Once pressed, the newly entered email will move to the box at the bottom, and the field will be cleared to allow for the entry of a new email, if necessary.
 
-![Configuration Page](images/extract/media/090425005.png)
+![Configuration Page](assets/images/extract/media/090425005.png)
 
 #### Viewing, Modifying, and Deleting an Alert
 
@@ -88,7 +88,7 @@ On this page, we find the list and related information of the alerts present in 
 - Edit the alert settings.
 - Delete the schedule to stop sending emails.
 
-![Alert Operations](images/extract/media/090425003.png)
+![Alert Operations](assets/images/extract/media/090425003.png)
 
 ### Reporting Tools
 
@@ -96,7 +96,7 @@ The reporting functionality, specific to each feature, allows generating global 
 providers. Within the pages, the possibility will also be given to create files to facilitate information sharing.
 To access the functionality, above the breadcrumb path, click on the "Reports" tab.
 
-![Access to Catalog Report](images/extract/media/image141.png)
+![Access to Catalog Report](assets/images/extract/media/image141.png)
 
 #### Available Report Types
 
@@ -106,11 +106,11 @@ To access the functionality, above the breadcrumb path, click on the "Reports" t
 
 At the top right of the page, we can click the "New Report" button to start creating a report. Specifically, a modal is displayed containing the list of available report types.
 
-![New Report Creation](images/extract/media/image142.png)
+![New Report Creation](assets/images/extract/media/image142.png)
 
 Once the report type is selected, click the "Configure" button to select the providers to include in the report. In the newly opened window, we find the "Provider" field which allows selecting one or more pre-existing providers in the system. Subsequently, it is possible to select one or more subsystems to include in the report; if no providers are selected, no subsystems can be selected. Finally, there is a "tag" section to include only resources that have the entered tag.
 
-![Report Configuration](images/extract/media/image143.png)
+![Report Configuration](assets/images/extract/media/image143.png)
 
 At this point, the user can choose between two different actions:
 
@@ -120,7 +120,7 @@ At this point, the user can choose between two different actions:
 To confirm the creation of a static report, verify that "One-Shot" has been selected for the "Report type" field and click the "Submit" button at the bottom.
 After a loading period, the newly generated report will be visible in the list.
 
-![List of Generated Reports](images/extract/media/image144.png)
+![List of Generated Reports](assets/images/extract/media/image144.png)
 
 ##### Report Scheduling
 
@@ -133,17 +133,17 @@ The parameters to enter are:
 - File format: allows selecting one or more file types to include in the email.
 - User E-mails: allows entering an email address to send reports to. After entering an email, it is necessary to press "Enter" on the keyboard to confirm its entry. Once pressed, the newly entered email will move to the box at the bottom, and the field will be cleared to allow for the entry of a new email, if necessary.
 
-![Scheduled Report Parameters](images/extract/media/image145.png)
+![Scheduled Report Parameters](assets/images/extract/media/image145.png)
 
 Having configured all parameters, the "Submit" button will become clickable. Click it to confirm the entry, and after a loading period, the newly generated report will be visible in the list.
 
-![List of Generated Reports](images/extract/media/image144.png)
+![List of Generated Reports](assets/images/extract/media/image144.png)
 
 ##### List of Scheduled Reports
 
 To view the list of scheduled reports, select the "Scheduled" tab located at the top left of the reports page.
 
-![List of Scheduled Reports](images/extract/media/image146.png)
+![List of Scheduled Reports](assets/images/extract/media/image146.png)
 
 On this page, we find the list and related information of the scheduled reports present in the system. For each result, by clicking the "Three dots" button on the right, it will be possible to perform three operations:
 
@@ -151,7 +151,7 @@ On this page, we find the list and related information of the scheduled reports 
 - Edit the schedule settings; it will not be possible to modify the selected providers or subsystems.
 - Delete the schedule to stop sending emails.
 
-![Modify a schedule](images/extract/media/image147.png)
+![Modify a schedule](assets/images/extract/media/image147.png)
 
 ##### Report Usage
 
@@ -163,4 +163,4 @@ Clicking the "PRINT" button will display a print preview modal. To print the rep
 Clicking the "EXPORT" button allows exporting the report in ".csv", ".json", or ".pdf" format.
 To return to the "Results" tab, click the "CLOSE" button at the bottom right, or click the left-pointing arrow at the top left, next to the report title.
 
-![Report Details](images/extract/media/image148.png)
+![Report Details](assets/images/extract/media/image148.png)

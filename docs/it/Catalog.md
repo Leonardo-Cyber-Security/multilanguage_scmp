@@ -13,7 +13,7 @@ Per accedere alla funzionalità di Catalog, in alto a sinistra cliccare sul puls
 
 Dopodiché, cliccare su “Catalog” .
 
-![Accesso a Catalog](images/extract/media/image149.png)
+![Accesso a Catalog](assets/images/extract/media/image149.png)
 
 A questo punto, l’utente si ritrova all’interno della pagina del tab “Resources” .
 
@@ -25,13 +25,13 @@ Possiamo suddividere la funzionalità in 3 sezioni per specificarne il comportam
 
 Di seguito analizzeremo ogni gruppo di funzionalità separatamente.
 
-![Catalogo della SCMP](images/extract/media/image150.png)
+![Catalogo della SCMP](assets/images/extract/media/image150.png)
 
 ### Gestione Elementi di catalogo SCMP
 
 All’interno della pagina sono presenti una serie di filtri che una volta selezionati e cliccando sul pulsante che raffigura una lente d’ingrandimento verranno utilizzati per filtrare la lista dei risultati
 
-![ Catalogo SCMP filtrato](images/extract/media/image151.png)
+![ Catalogo SCMP filtrato](assets/images/extract/media/image151.png)
 
 !!! warning "Associazione tra risorsa/SKU di catalogo SCMP e risorsa/SKU di catalogo Provider"
 
@@ -54,7 +54,7 @@ All’ interno della SCMP è possibile configurare una risorsa di tipo “Relazi
 
 Per accedere alla pagina delle relazioni cliccare il tab “SCMP Resources” in alto nella funzionalità di Catalogo
 
-![Accesso a "SCMP resources"](images/extract/media/image152.png)
+![Accesso a "SCMP resources"](assets/images/extract/media/image152.png)
 
 In alto è presente una sezione filtri che permette la ricerca per:
 
@@ -68,27 +68,27 @@ Per esportare l’elenco delle risorse del Catalogo presenti all’interno della
 
 L’operatore avrà la possibilità di esportare la lista dei risultati in formato .csv e/o .json.
 
-![Scaricare la lista di risultati](images/extract/media/image153.png)
+![Scaricare la lista di risultati](assets/images/extract/media/image153.png)
 
 ##### Funzionalità Aggiornamento Forzato del Catalogo
 
 Attraverso la funzionalità di Force Sync, è possibile richiedere un aggiornamento del catalogo cliccando sull'hamburger menù e successivamente cliccando su “Force Sync”
 
-![Funzionalità Force Sync](images/extract/media/image154.png)
+![Funzionalità Force Sync](assets/images/extract/media/image154.png)
 
 ##### Creazione relazione di Catalogo
 
 Per creare una risorsa sul Catalogo, sempre all’interno della pagina in alto a destra cliccare sull'hamburger menu, e poi cliccare su “Add Catalog Resource” .
 
-![Opzione per aggiungere una risorsa](images/extract/media/image155.png)
+![Opzione per aggiungere una risorsa](assets/images/extract/media/image155.png)
 
 A questo punto, l’utente si ritrova all’interno della pagina in cui è possibile selezionare il tipo di risorsa da creare
 
-![Selezione del tipo di risorsa da creare](images/extract/media/image156.png)
+![Selezione del tipo di risorsa da creare](assets/images/extract/media/image156.png)
 
 Dal menu a tendina, selezionare il tipo di risorsa da creare. Dopodiché, cliccare sul pulsante “Next”. Ci si ritrova all’interno della pagina di compilazione della risorsa .
 
-![Esempio di form per la creazione di una relazione](images/extract/media/image157.png)
+![Esempio di form per la creazione di una relazione](assets/images/extract/media/image157.png)
 
 I singoli parametri da inserire nella sezione “Properties” vengono specificati nella tabella:
 
@@ -106,7 +106,7 @@ Vengono indicati con \* i parametri obbligatori
 
 All’interno della pagina di creazione della risorsa , compilare tutti i campi della sezione “Properties”. Dopo aver fatto ciò, selezionare uno o più tag per il campo “Add SCMP tag…” e compilare delle note all’interno della sezione “Tags & Note”
 
-![Sezione tag e note](images/extract/media/image158.png)
+![Sezione tag e note](assets/images/extract/media/image158.png)
 
 All’interno della sezione “Relations”, aprire la sezione a sinistra, successivamente è possibile utilizzare i filtri “search” con testo libero o selezionare un “System Type” tra quelli disponibili per filtrare la tabella delle risorse
 
@@ -114,19 +114,19 @@ Una volta individuata la risorsa da associare portare , utilizzando il drag and 
 
 È possibile aggiungere una sola risorsa per tipologia di provider, se l’utente prova a inserire un'altra risorsa dello stesso provider apparirà un pop up che invita l’utente ad aggiungere una sola risorsa per provider.
 
-![Selezione del provider per associare le risorse](images/extract/media/image159.png)
+![Selezione del provider per associare le risorse](assets/images/extract/media/image159.png)
 
 Possiamo effettuare una associazione “singola” inserendo in questa sezione una sola macchina, in questo modo il sistema ci permette di selezionare manualmente, nella sezione “Cost” in basso , un prezzo personalizzato da associare alla risorsa. Per farlo bisogna selezionare l’intervallo di fatturazione (orario, giornaliero, settimanale, mensile) e inserire a destra il costo relativo al periodo selezionato.
 
-![Sezione costi delle relazioni](images/extract/media/image160.png)
+![Sezione costi delle relazioni](assets/images/extract/media/image160.png)
 
 Selezionando più di una macchina per provider, la sezione costi viene nascosta automaticamente, i costi applicati saranno definiti dalle percentuali configurate nei sottosistemi .
 
-![Risorse associate alla risorsa SCMP](images/extract/media/image161.png)
+![Risorse associate alla risorsa SCMP](assets/images/extract/media/image161.png)
 
 Una volta inserite le risorse in relazione, nella sezione ‘Relations Chart’ si creerà automaticamente un diagramma illustrativo.
 
-![Creazione automatica del Relation Chart](images/extract/media/image162.png)
+![Creazione automatica del Relation Chart](assets/images/extract/media/image162.png)
 
 Infine, in basso a destra, cliccare sul pulsante “Save” per salvare le modifiche. Apparirà un banner in basso che avvisa l’utente dell’avvenuta creazione della risorsa, e viene reindirizzato nella pagina contenente la lista di risorse.
 
@@ -136,17 +136,17 @@ Infine, in basso a destra, cliccare sul pulsante “Save” per salvare le modif
 
 Per visualizzare i dati di una risorsa di SCMP, nella pagina “Resources” di Catalog, nella lista delle risorse, in corrispondenza di una risorsa cliccare sul record di interesse, apparirà una finestra che riporta piccole informazioni della risorsa individuata: Sistema, Nome, Taglia, Data aggiornamento, RAM e CPU come presente nell’immagine seguente.
 
-![Dettaglio rapido delle risorse di catalogo](images/extract/media/image163.png)
+![Dettaglio rapido delle risorse di catalogo](assets/images/extract/media/image163.png)
 
 ###### Visualizzazione delle relazioni di Catalogo
 
 Per visualizzare i dati di una risorsa di SCMP, nella pagina “Resources” di Catalog, nella lista delle risorse, in corrispondenza di una risorsa cliccare sul kebab menu e poi cliccare su “Show” .
 
-![Accesso alla risorsa in modalità view](images/extract/media/image164.png)
+![Accesso alla risorsa in modalità view](assets/images/extract/media/image164.png)
 
 Dopo aver fatto ciò, l’utente si ritrova all’interno della pagina della risorsa in modalità view, nel quale potrà visualizzare i dati ma non potrà modificarli .
 
-![Dettaglio completo delle risorse di catalogo](images/extract/media/image165.png)
+![Dettaglio completo delle risorse di catalogo](assets/images/extract/media/image165.png)
 
 Il dettaglio di una risorsa è suddiviso in varie sezioni:
 
@@ -157,13 +157,13 @@ Il dettaglio di una risorsa è suddiviso in varie sezioni:
 - Cost, se presente
 - Relations Chart.
 
-![Sezione proprietà degli elementi del catalogo](images/extract/media/image166.png)
+![Sezione proprietà degli elementi del catalogo](assets/images/extract/media/image166.png)
 
-![Sezione Tags & Note degli elementi del catalogo](images/extract/media/image167.png)
+![Sezione Tags & Note degli elementi del catalogo](assets/images/extract/media/image167.png)
 
-![Sezione delle relazioni del catalogo SCMP](images/extract/media/image168.png)
+![Sezione delle relazioni del catalogo SCMP](assets/images/extract/media/image168.png)
 
-![Sezione Relations Chart delle risorse](images/extract/media/image169.png)
+![Sezione Relations Chart delle risorse](assets/images/extract/media/image169.png)
 
 In basso a destra, cliccare sul pulsante “Close”. L’utente verrà reindirizzato nella pagina “Resources” di Catalog.
 
@@ -171,7 +171,7 @@ In basso a destra, cliccare sul pulsante “Close”. L’utente verrà reindiri
 
 Per modificare una risorsa di SCMP, nella pagina “Resources” di Catalog, nella lista delle risorse, in corrispondenza di una risorsa cliccare sul kebab menu e poi cliccare su “Edit”.
 
-![Accesso alla risorsa in modalità edit](images/extract/media/image170.png)
+![Accesso alla risorsa in modalità edit](assets/images/extract/media/image170.png)
 
 Dopo aver fatto ciò, l’utente si ritrova all’interno della pagina della risorsa in modalità edit, a differenza della modalità ‘Show’ in quella ‘Edit’ è possibile modificare la sezione Properties e la sezione Cost.
 
@@ -179,17 +179,17 @@ In basso a destra, cliccare sul pulsante “Save”. A questo punto, in basso ap
 
 Inoltre, l’utente verrà reindirizzato nella pagina “Resources” di Catalog.
 
-![Modifica della relazione](images/extract/media/image171.png)
+![Modifica della relazione](assets/images/extract/media/image171.png)
 
 ###### Eliminazione delle relazioni di Catalogo
 
 Per eliminare una risorsa di SCMP, nella pagina “Resources” di Catalog, nella lista delle risorse, in corrispondenza di una risorsa cliccare sul kebab menu e poi cliccare su “Delete”.
 
-![Eliminazione di una risorsa](images/extract/media/image172.png)
+![Eliminazione di una risorsa](assets/images/extract/media/image172.png)
 
 Fatto ciò, appare una modale in cui è necessario cliccare sul pulsante “Remove” per confermare l’eliminazione della risorsa
 
-![Conferma eliminazione della risorsa](images/extract/media/image173.png)
+![Conferma eliminazione della risorsa](assets/images/extract/media/image173.png)
 
 #### Risorse e relazioni tra SKU
 
@@ -197,7 +197,7 @@ All’ interno della SCMP è possibile configurare una risorsa di tipo “SKU SC
 
 Per accedere alla pagina degli SKU cliccare il tab “SCMP SKU” in alto nella funzionalità di Catalog
 
-![Accesso a "SCMP SKU"](images/extract/media/image174.png)
+![Accesso a "SCMP SKU"](assets/images/extract/media/image174.png)
 
 In alto è presente una sezione filtri che permette la ricerca per:
 
@@ -211,17 +211,17 @@ Per esportare l’elenco delle risorse del Catalogo presenti all’interno della
 
 L’operatore avrà la possibilità di esportare la lista dei risultati in formato .csv e/o .json.
 
-![Scaricare la lista di risultati](images/extract/media/image153.png)
+![Scaricare la lista di risultati](assets/images/extract/media/image153.png)
 
 ##### Creazione relazione di Catalogo SKU
 
 Per creare una risorsa sul Catalogo, sempre all’interno della pagina del tab “SCMP”, in alto a destra cliccare sull'hamburger menu, e poi cliccare su “Add Catalog Resource”.
 
-![Opzione per aggiungere una risorsa “SKU”](images/extract/media/image175.png)
+![Opzione per aggiungere una risorsa “SKU”](assets/images/extract/media/image175.png)
 
 A questo punto, l’utente si ritrova all’interno della pagina di creazione di una risorsa ”SKU”, cliccare sugli accordion presenti in pagina per visualizzarne i dettagli.
 
-![IPagina di creazione “SKU”](images/extract/media/image176.png)
+![IPagina di creazione “SKU”](assets/images/extract/media/image176.png)
 
 Nella sezione “Properties”  compilare tutti i campi definiti nella tabella.
 
@@ -236,13 +236,13 @@ Vengono indicati con \* i parametri obbligatori
 | unit  | string  | Inserire un testo che verrà utilizzato come “unità di misura” visualizzata su tutte le funzionalità | MB/hour |
 | Unit conversion Expression * | string  |Inserire la formula di conversione tra il valore ricevuto dal provider e il valore che verrà utilizzato nella SCMP (conversione tra unità di misura del provider e unità di misura indicata nella relazione SKU) “$var” indica il valore ricevuto dal provider | $var * 24 / 100 |
 
-![Compilazione dei campi, selezione Properties](images/extract/media/image177.png)
+![Compilazione dei campi, selezione Properties](assets/images/extract/media/image177.png)
 
 Dopo aver inserito la formula di conversione è necessario cliccare sul pulsante “Test expression” per verificarne la correttezza.
 
 Se è stata inserita correttamente il pulsante diventerà di colore “Verde” con scritto “TEST OK”, in caso contrario diventerà di colore “Rosso” “KO”, in questo caso la possibilità di salvare la relazione viene inibita.
 
-![Conferma della formula di conversione](images/extract/media/image178.png)
+![Conferma della formula di conversione](assets/images/extract/media/image178.png)
 
 Successivamente, selezionare uno o più tag per il campo “Add SCMP tag…” e compilare delle note all’interno della sezione “Tags & Note”.
 
@@ -250,11 +250,11 @@ Nella sezione “Relation” è possibile selezionare uno o più SKU provenienti
 
 Nella sezione destra è possibile utilizzare i filtri per visualizzare solo i risultati pertinenti. I filtri disponibili sono: il provider d’origine , il nome del servizio e un campo di testo libero (in giallo nell’ immagine).
 
-![Drag and drop Relazioni SKU](images/extract/media/image179.png)
+![Drag and drop Relazioni SKU](assets/images/extract/media/image179.png)
 
 Una volta inserite le risorse in relazione, nella sezione ‘Relations Chart’ si creerà automaticamente un diagramma illustrativo .
 
-![Creazione automatica del Relation Chart](images/extract/media/image180.png)
+![Creazione automatica del Relation Chart](assets/images/extract/media/image180.png)
 
 Infine, cliccare il pulsante salva per confermare la creazione della relazione SKU, al termine si torna nella pagina contenente la lista di relazioni SKU dove potremo trovare all’ interno della lista la nuova
 relazione.
@@ -265,17 +265,17 @@ relazione.
 
 Per visualizzare i dati di una risorsa SKU, nella lista delle risorse, in corrispondenza di una risorsa cliccare sul record di interesse, apparirà una checkbox che riporta piccole informazioni della risorsa individuata: Sistema, Nome, Taglia, Data aggiornamento, nome e servizio come presente nell’immagine seguente .
 
-![Dettaglio rapido delle risorse SKU](images/extract/media/image181.png)
+![Dettaglio rapido delle risorse SKU](assets/images/extract/media/image181.png)
 
 ###### Visualizzazione delle relazioni nel Catalogo
 
 Per visualizzare i dati di una risorsa SKU, nella lista delle risorse, in corrispondenza di una risorsa cliccare sul kebab menu e poi cliccare su “Show” .
 
-![Accesso alla risorsa in modalità view](images/extract/media/image182.png)
+![Accesso alla risorsa in modalità view](assets/images/extract/media/image182.png)
 
 Dopo aver fatto ciò, l’utente si ritrova all’interno della pagina della risorsa in modalità view, nel quale potrà visualizzare i dati ma non potrà modificarli .
 
-![Dettaglio completo delle risorse di catalogo](images/extract/media/image183.png)
+![Dettaglio completo delle risorse di catalogo](assets/images/extract/media/image183.png)
 
 Il dettaglio di una risorsa è suddiviso in varie sezioni:
 
@@ -286,13 +286,13 @@ Il dettaglio di una risorsa è suddiviso in varie sezioni:
 - Cost.
 - Relations Chart .
 
-![Sezione proprietà degli elementi SKU di catalogo](images/extract/media/image184.png)
+![Sezione proprietà degli elementi SKU di catalogo](assets/images/extract/media/image184.png)
 
-![Sezione Tags & Note degli elementi SKU di catalogo](images/extract/media/image185.png)
+![Sezione Tags & Note degli elementi SKU di catalogo](assets/images/extract/media/image185.png)
 
-![Sezione delle relazioni degli SKU di catalogo](images/extract/media/image186.png)
+![Sezione delle relazioni degli SKU di catalogo](assets/images/extract/media/image186.png)
 
-![Sezione Relations Chart delle risorse](images/extract/media/image169.png)
+![Sezione Relations Chart delle risorse](assets/images/extract/media/image169.png)
 
 In basso a destra, cliccare sul pulsante “Close”. L’utente verrà reindirizzato nella pagina contenente la lista delle risorse
 
@@ -300,18 +300,18 @@ In basso a destra, cliccare sul pulsante “Close”. L’utente verrà reindiri
 
 Per modificare una risorsa di SCMP, nella pagina “Resources” di Catalog, nella lista delle risorse, in corrispondenza di una risorsa cliccare sul kebab menu e poi cliccare su “Edit”.
 
-![Accesso alla risorsa in modalità edit](images/extract/media/image170.png)
+![Accesso alla risorsa in modalità edit](assets/images/extract/media/image170.png)
 
 Dopo aver fatto ciò, l’utente si ritrova all’interno della pagina della risorsa in modalità edit, a differenza della modalità ‘Show’ in quella ‘Edit’ è possibile modificare i parametri delle risorse
 
 ###### Eliminazione delle relazioni SKU di Catalogo
 
 Per eliminare una risorsa SKU di catalogo, nella lista delle risorse, in corrispondenza di una risorsa cliccare sul kebab menu e poi cliccare su “Delete” .
-![Eliminazione di una risorsa SKU](images/extract/media/image172.png)
+![Eliminazione di una risorsa SKU](assets/images/extract/media/image172.png)
 
 Fatto ciò, appare una modale in cui è necessario cliccare sul pulsante “Remove” per confermare l’eliminazione della risorsa .
 
-![Conferma eliminazione della risorsa](images/extract/media/image173.png)
+![Conferma eliminazione della risorsa](assets/images/extract/media/image173.png)
 
 #### Importazione pianificata di elementi di catalogo
 
@@ -321,7 +321,7 @@ L’inserimento manuale delle risorse di catalogo è un’operazione molto lunga
 
 Per inserire un nuovo listino è necessario cliccare l’ “hamburger menu” disponibile in alto a destra nella pagina delle risorse di catalogo e selezionare la voce “Import Catalogue”
 
-![Accesso all "Importazione pianificata del catalogo"](images/extract/media/image187.png)
+![Accesso all "Importazione pianificata del catalogo"](assets/images/extract/media/image187.png)
 
 Dopo aver cliccato il pulsante, verrà aperta una modale, contenente due pulsanti:
 
@@ -330,19 +330,19 @@ Dopo aver cliccato il pulsante, verrà aperta una modale, contenente due pulsant
 
 Una volta selezionata la tipologia di risorsa da creare la pagina si aggiorna per mostrare tutti i parametri obbligatori
 
-![Scelta della tipologia di catalogo](images/extract/media/image188.png)
+![Scelta della tipologia di catalogo](assets/images/extract/media/image188.png)
 
 Nella modale sono presenti due parametri:
 
 - Provider: Selezionare il provider relativo al listino che verrà inserito.
 - Valid From: è possibile indicare una data di inizio validità del listino, nel giorno indicato in questa variabile il sistema aggiornerà automaticamente le risorse di catalogo per adeguarle al nuovo listino.
 
-![Campi obbligatori per l'importazione](images/extract/media/image189.png)
+![Campi obbligatori per l'importazione](assets/images/extract/media/image189.png)
 
 Inoltre sotto i parametri sono presenti due sezioni per l’upload del file, cliccando sul primo quadrato a sinistra sarà possibile selezionare un file di tipo “XLS” che contiene tutte le risorse da mappare.  
 Cliccando sul secondo quadrato sarà possibile inserire un file di mappatura, seguendo le informazioni mostrate nella sezione “Aiuto” indicata con una icona “Punto di domanda”, cliccando su di essa verrà aperto un box, sotto le sezioni per l’upload che contiene tutte le informazioni relative al file di mapping da inserire .
 
-![Messaggio di aiuto per il file di Mapping](images/extract/media/image190.png)
+![Messaggio di aiuto per il file di Mapping](assets/images/extract/media/image190.png)
 
 Dopo aver inserito tutti i parametri sarà possibile cliccare il tasto salva in basso, e verremo riportati nella pagina di gestione dei cataloghi importati, dove sarà possibile monitorarne l’inserimento.
 
@@ -350,7 +350,7 @@ Dopo aver inserito tutti i parametri sarà possibile cliccare il tasto salva in 
 
 Per inserire un nuovo listino è necessario cliccare l’ “hamburger menu” disponibile in alto a destra nella pagina delle risorse di catalogo e selezionare la voce “Imported Catalogues”
 
-![Accesso ai cataloghi importati](images/extract/media/image191.png)
+![Accesso ai cataloghi importati](assets/images/extract/media/image191.png)
 
 L’utente verrà quindi reindirizzato nella pagina contenente tutti i cataloghi importati precedentemente  all interno di questa pagina su ogni riga, che corrisponde ad un Upload , è possibile eliminare il file cliccando il pulsante “Tre punti” in corrispondenza della riga e cliccare la voce “Delete” per eliminarlo.
 
@@ -362,7 +362,7 @@ I cataloghi possono avere 3 stati differenti:
 
 All’interno di questa pagina possiamo notare inoltre che gli upload effettuati con lo stesso file, vengono salvati utilizzando le versioni-, quindi all’ inserimento di un catalogo già esistente esso verrà sovrascritto con una versione superiore e le versioni precedenti verranno disattivate.
 
-![Lista dei cataloghi importati](images/extract/media/image192.png)
+![Lista dei cataloghi importati](assets/images/extract/media/image192.png)
 
 Cliccando su una riga in stato “Success” della tabella verrà aperta una modale, all’ interno possiamo visualizzare uno specchietto riassuntivo che contiene, oltre alle informazioni di base, anche il numero di elementi , denominate “rows”, che sono state trovate nel file Excel.
 
@@ -372,13 +372,13 @@ Le righe disponibili nel file possono avere 3 stati differenti:
 - Success Rows: indica che il sistema riesce a creare la risorsa ma non riesce ad effettuare la relazione con una risorsa del provider.
 - Failed Rows: indica che il sistema non può inserire la risorsa.
 
-![Dettagli dell' importazione](images/extract/media/image193.png)
+![Dettagli dell' importazione](assets/images/extract/media/image193.png)
 
 In basso possiamo cliccare il pulsante “More Details” per visualizzare il dettaglio delle righe del file Excel che sono state scartate dal sistema , cliccando su una di esse possiamo visualizzare il numero della riga, il nome indicato nel file e l’errore che non ne ha permesso l’inserimento.
 
-![Dettagli delle righe dell' importazione](images/extract/media/image194.png)
+![Dettagli delle righe dell' importazione](assets/images/extract/media/image194.png)
 
-![Dettaglio dell' errore](images/extract/media/image195.png)
+![Dettaglio dell' errore](assets/images/extract/media/image195.png)
 
 ### Gestione elementi di catalogo dei Provider
 
@@ -388,7 +388,7 @@ All’interno del Modulo Catalog è possibile visualizzare la lista ed i dettagl
 
 Per visualizzare la lista di risorse disponibili per un provider, selezionare in alto il menu “Cloud resources”(in rosso nell’ immagine) e selezionare uno dei provider disponibili (in giallo nell’ immagine), le funzionalità disponibili nelle pagine dei diversi provider sono identiche .
 
-![Risorse del catalogo dei providers](images/extract/media/image196.png)
+![Risorse del catalogo dei providers](assets/images/extract/media/image196.png)
 
 ##### Export dei tagli del Provider
 
@@ -396,13 +396,13 @@ Per esportare l’elenco delle risorse del Catalogo visualizzate in pagina, in a
 
 L’operatore avrà la possibilità di esportare la lista dei risultati in formato .csv e/o .json.
 
-![Esportazione dei risultati](images/extract/media/image197.png)
+![Esportazione dei risultati](assets/images/extract/media/image197.png)
 
 ##### Funzionalità Aggiornamento Forzato del Catalogo e costi
 
 È possibile forzare il sistema affinché dopo qualche minuto, vengano aggiornate automaticamente tutte le “size” e i relativi costi associati, per farlo, cliccare in alto a destra sull'hamburger menu, e poi cliccare su “Force Sync” .
 
-![Funzionalità Force Sync](images/extract/media/image198.png)
+![Funzionalità Force Sync](assets/images/extract/media/image198.png)
 
 ##### Filtri delle risorse
 
@@ -414,22 +414,22 @@ Viene data la possibilità all’ utente di filtrare le liste di risorse visuali
 
 Dopo aver inserito uno o più filtri cliccare il pulsante “lente di ingrandimento” per effettuare la ricerca.
 
-![Filtri del Catalogo](images/extract/media/image199.png)
+![Filtri del Catalogo](assets/images/extract/media/image199.png)
 
 ##### Visualizzazione Riepilogo Risorsa
 
 Per visualizzare l’anteprima di una risorsa in corrispondenza di una risorsa cliccare sul record di interesse, apparirà una modale che riporta le informazioni generali della risorsa individuata, tra cui: Sistema, Nome, Taglia , Data aggiornamento , RAM e CPU come presente nell’immagine seguente .
 
-![Dettaglio rapido delle risorse di catalogo](images/extract/media/image200.png)
+![Dettaglio rapido delle risorse di catalogo](assets/images/extract/media/image200.png)
 
 ##### Visualizzazione dei dettagli delle Risorse
 
 Per visualizzare i dati di una risorsa, in corrispondenza di una risorsa cliccare sul kebab menu e poi cliccare su “Show” . Dopo aver
 
-![Accesso alla risorsa in modalità view](images/extract/media/image201.png)
+![Accesso alla risorsa in modalità view](assets/images/extract/media/image201.png)
 
 fatto ciò, l’utente si ritrova all’interno della pagina della risorsa in modalità view, nel quale potrà visualizzare i dati ma non potrà modificarli
-![Dettaglio Risorsa dal Modulo Catalog](images/extract/media/image202.png)
+![Dettaglio Risorsa dal Modulo Catalog](assets/images/extract/media/image202.png)
 
 Il dettaglio di una risorsa è suddiviso in varie sezioni:
 
@@ -440,7 +440,7 @@ Il dettaglio di una risorsa è suddiviso in varie sezioni:
 
 Nella sezione Cost è possibile selezionare in successione la Regione, la Zona e la tipologia di Costo per ottenere una preview dei costi relativi alla risorsa selezionata .
 
-![Sezione costi della risorsa](images/extract/media/image203.png)
+![Sezione costi della risorsa](assets/images/extract/media/image203.png)
 
 In basso a destra, cliccare sul pulsante “Close” per tornare alla lista.
 
@@ -452,29 +452,29 @@ Viene data la possibilità all’ utente di definire un catalogo “Cloud” per
 
 Per farlo è necessario prima accedere al tab delle risorse di catalogo di un provider on-premise, nello specifico prendiamo come esempio “VMWare” selezionando la voce “VMWare” nel menù “Cloud resources" del modulo di catalogo
 
-![Accesso al catalogo On-premise](images/extract/media/image204.png)
+![Accesso al catalogo On-premise](assets/images/extract/media/image204.png)
 
 All’ interno della pagina, in alto sulla destra sopra la barra dei filtri, troviamo un menu contestuale, cliccare sull'icona “Tre linee” e selezionare “Add catalog resource” in questo modo verremo reindirizzati alla pagina, specifica per provider, di creazione della risorsa di catalogo.
 
-![Creazione nuova risorsa](images/extract/media/image205.png)
+![Creazione nuova risorsa](assets/images/extract/media/image205.png)
 
 A questo punto, l’utente si ritrova all’interno della pagina in cui è possibile selezionare il tipo di risorsa da creare .
 
-![Selezione del tipo di risorsa da creare](images/extract/media/image156.png)
+![Selezione del tipo di risorsa da creare](assets/images/extract/media/image156.png)
 
 Dal menu a tendina, selezionare il tipo di risorsa da creare. Dopodiché, cliccare sul pulsante “Next”. Ci si ritrova all’interno della pagina di compilazione della risorsa.
 
-![Esempio di form per la creazione di una risorsa](images/extract/media/image157.png)
+![Esempio di form per la creazione di una risorsa](assets/images/extract/media/image157.png)
 
 All’ interno di questa pagina , dopo aver aperto le sezioni disponibili, inserire tutti i parametri necessari, nella sezione “Cost” in basso, sarà possibile aggiungere un prezzo personalizzato da associare alla risorsa. Per farlo bisogna selezionare l’intervallo di fatturazione (orario, giornaliero, settimanale, mensile) e inserire a destra il costo relativo al periodo selezionato.
 
-![Sezione costi delle risorse](images/extract/media/image160.png)
+![Sezione costi delle risorse](assets/images/extract/media/image160.png)
 
 #### Cloud SKU
 
 Per visualizzare la lista degli sku disponibili per un provider, selezionare in alto il menu “Cloud SKU”(in rosso nell’ immagine) e selezionare uno dei provider disponibili (in giallo nell’ immagine), le funzionalità disponibili nelle pagine dei diversi provider sono identiche.
 
-![Risorse del catalogo dei providers](images/extract/media/image206.png)
+![Risorse del catalogo dei providers](assets/images/extract/media/image206.png)
 
 ##### Export dei tagli del Provider disponibili
 
@@ -482,13 +482,13 @@ Per esportare l’elenco delle risorse del Catalogo visualizzate in pagina, in a
 
 L’operatore avrà la possibilità di esportare la lista dei risultati in formato .csv e/o .json.
 
-![Esportazione dei risultati](images/extract/media/image197.png)
+![Esportazione dei risultati](assets/images/extract/media/image197.png)
 
 ##### Funzionalità Aggiornamento Forzato del Catalog
 
 È possibile forzare il sistema affinché dopo qualche minuto, vengano aggiornate automaticamente tutte le “size” e i relativi costi associati, per farlo, cliccare in alto a destra sull'hamburger menu, e poi cliccare su “Force Sync”.
 
-![Funzionalità Force Sync](images/extract/media/image198.png)
+![Funzionalità Force Sync](assets/images/extract/media/image198.png)
 
 ##### Filtri delle risorse visualizzate
 
@@ -498,21 +498,21 @@ Viene data la possibilità all’ utente di filtrare le liste di risorse visuali
 - “search by Service name”: permette di cercare le risorse relative ad una sola tipologia di servizio.
 - “search by tags” permette di cercare tutte le risorse che contengono un tag specifico. Dopo aver inserito uno o più filtri cliccare il pulsante “lente di ingrandimento” per effettuare la ricerca.
 
-![Filtri del Catalogo](images/extract/media/image207.png)
+![Filtri del Catalogo](assets/images/extract/media/image207.png)
 
 ##### Visualizzazione Riepilogo Risorsa di catalogo
 
 Per visualizzare l’anteprima di una risorsa in corrispondenza di una risorsa cliccare sul record di interesse, apparirà una modale che riporta le informazioni generali della risorsa individuata, tra cui: Sistema, Nome, Taglia , Data aggiornamento , nome del servizio
 
-![Dettaglio rapido delle risorse di catalogo](images/extract/media/image208.png)
+![Dettaglio rapido delle risorse di catalogo](assets/images/extract/media/image208.png)
 
 ##### Visualizzazione dei dettagli delle Risorse nel catalogo
 
 Per visualizzare i dati di una risorsa, in corrispondenza di una risorsa cliccare sul kebab menu e poi cliccare su “Show” . Dopo aver fatto ciò, l’utente si ritrova all’interno della pagina della risorsa in modalità view, nel quale potrà visualizzare i dati ma non potrà modificarli
 
-![Accesso alla risorsa in modalità view](images/extract/media/image201.png)
+![Accesso alla risorsa in modalità view](assets/images/extract/media/image201.png)
 
-![Dettaglio Risorsa dal Modulo Catalog](images/extract/media/image209.png).
+![Dettaglio Risorsa dal Modulo Catalog](assets/images/extract/media/image209.png).
 
 Il dettaglio di una risorsa è suddiviso in varie sezioni:
 
@@ -523,7 +523,7 @@ Il dettaglio di una risorsa è suddiviso in varie sezioni:
 
 Nella sezione Cost è possibile selezionare in successione la Regione, la Zona e la tipologia di Costo per ottenere una preview dei costi relativi alla risorsa selezionata.
 
-![Sezione costi della risorsa](images/extract/media/image203.png)
+![Sezione costi della risorsa](assets/images/extract/media/image203.png)
 
 In basso a destra, cliccare sul pulsante “Close” per tornare alla lista.
 
@@ -533,13 +533,13 @@ In basso a destra, cliccare sul pulsante “Close” per tornare alla lista.
 
 Per accedere alla funzionalità dei “Services”, in alto a sinistra cliccare sul pulsante bento e poi cliccare su “Catalog” .
 
-![Accesso ai "Services"](images/extract/media/image210.png)
+![Accesso ai "Services"](assets/images/extract/media/image210.png)
 
 Dalla pagina “SCMP”, cliccare sul tab che raffigura tre quadrati uniti ‘Services’, posizionato sopra il path del breadcrumb. Fatto ciò, ci si ritrova all’ interno della pagina ‘Services’, viene visualizzata una lista di componenti denominati “Card” .
 
 Ogni card fa riferimento ad un tipo di servizio specifico, essendo molti i servizi presenti il sistema ne esegue una paginazione, in basso possiamo utilizzare il campo “Item for page” per visualizzare più risultati oppure utilizzare le frecce per navigare tra le liste di servizi.
 
-![Pagina dei servizi](images/extract/media/image211.png)
+![Pagina dei servizi](assets/images/extract/media/image211.png)
 
 ##### Filtri della pagina “Services”
 
@@ -551,17 +551,17 @@ Per facilitare l’utente nella ricerca di un servizio specifico è stata inseri
 
 Utilizzando i filtri in combinazione tra loro, sarà possibile visualizzare i soli servizi che soddisfano tutte le condizioni specificate. In altre parole, la query restituirà solo i servizi che coincidono con tutti i criteri impostati.
 
-![Filtri disponibili](images/extract/media/image212.png)
+![Filtri disponibili](assets/images/extract/media/image212.png)
 
 ##### Creazione Services
 
 Dalla pagina “Services”, è possibile per l’utente poter creare un Service, accedendo nell’apposita sezione come mostrato in figura .
 
-![Accesso al form di creazione del Service](images/extract/media/image213.png)
+![Accesso al form di creazione del Service](assets/images/extract/media/image213.png)
 
 All’interno della pagina di creazione è necessario selezionare una tipologia di servizio utilizzando il campo "Service Type” per visualizzarne i parametri obbligatori
 
-![Selezione della tipologia di servizio](images/extract/media/image214.png)
+![Selezione della tipologia di servizio](assets/images/extract/media/image214.png)
 
 Nei prossimi paragrafi analizzeremo nel dettaglio le singole tipologie di servizi.
 
@@ -594,7 +594,7 @@ Per inserire un nuovo servizio è necessario compilare tutti i campi della sezio
 - “Upload File”: cliccando questo controllo sarà possibile selezionare dal proprio PC un file di tipo “immagine” che verrà visualizzato nella card del servizio.
 - “Related Software”: in questa sezione è possibile selezionare uno o più software “Standard” che verranno poi utilizzati in fase di provisioning.
 
-![Aggiunta nuova categoria](images/extract/media/image215.png)
+![Aggiunta nuova categoria](assets/images/extract/media/image215.png)
 
 Una volta inseriti tutti i dati è possibile salvare il servizio utilizzando il pulsante “save” in basso a destra, verrà visualizzata una modale di conferma e l’utente viene reindirizzato nella lista dei servizi disponibili.
 
@@ -654,7 +654,7 @@ Nella configurazione dei servizi “Custom” possiamo individuare una sezione c
 - “Name”: il nome del servizio che sarà visualizzato nella card corrispondente.
 - “Description”: la descrizione del servizio che verrà mostrata nella card relativa.
 
-![Parametri generali dei "Custom Services"](images/extract/media/image216.png)
+![Parametri generali dei "Custom Services"](assets/images/extract/media/image216.png)
 
 Successivamente è necessario scegliere la tipologia di “orchestratore” da utilizzare  e inserire il file “.zip” corrispondente nella sezione “Upload File”, di seguito vengono indicate le specifiche per ogni tipologia:
 
@@ -667,7 +667,7 @@ Successivamente è necessario scegliere la tipologia di “orchestratore” da u
 
 Oltre ai files descritti nella tabella è possibile aggiungere nello zip un file di tipo “.png / .jpg / .img” che verrà poi utilizzato come immagine della Card corrispondente
 
-![Selezione della tipologia di Orchestratore](images/extract/media/image217.png)
+![Selezione della tipologia di Orchestratore](assets/images/extract/media/image217.png)
 
 Una volta inseriti tutti i dati è possibile salvare il servizio utilizzando il pulsante “save” in basso a destra, verrà visualizzata una modale di conferma e l’utente viene reindirizzato nella lista dei servizi disponibili
 
@@ -681,7 +681,7 @@ Nella configurazione dei servizi “Azure Pipeline” possiamo individuare una s
   una nuova categoria cliccando il pulsante “+” nella dropdown “Name”: il nome del servizio che sarà visualizzato nella card corrispondente
 - “Description”: la descrizione del servizio che verrà mostrata nella card relativa
 
-![Parametri generali "Azure pipeline service"](images/extract/media/image218.png)
+![Parametri generali "Azure pipeline service"](assets/images/extract/media/image218.png)
 
 Anche per questo servizio sarà possibile, tramite il campo “upload File” , inserire un file di tipo “.zip” che contenga nello zip un file di tipo “.png / .jpg / .img” che verrà poi utilizzato come immagine della Card corrispondente.
 
@@ -693,11 +693,11 @@ Successivamente sarà necessario compilare i parametri specifici del servizio, i
 
 Se i dati inseriti non sono validi verranno visualizzati diversi messaggi di errore che indicano quale parametro è errato (ad esempio: “Specified Organization is not valid.”) e il pulsante diventa rosso con scritto “KO”, quando tutti i parametri sono corretti il pulsante diventa di colore Verde con scritto “OK”.
 
-![Parametri specifici delle Pipeline](images/extract/media/image219.png)
+![Parametri specifici delle Pipeline](assets/images/extract/media/image219.png)
 
 Dopo aver effettuato il test correttamente sarà possibile selezionare la pipeline da eseguire utilizzando il campo “Select Pipeline” e cliccando su una opzione disponibile .
 
-![Selezione della pipeline](images/extract/media/image220.png)
+![Selezione della pipeline](assets/images/extract/media/image220.png)
 
 Una volta inseriti tutti i dati è possibile salvare il servizio utilizzando il pulsante “save” in basso a destra, verrà visualizzata una modale di conferma e l’utente viene reindirizzato nella lista dei servizi disponibili
 
@@ -719,11 +719,11 @@ Possiamo configurare all’ interno della SCMP anche dei servizi di tipo “HELM
 - “Name”: il nome del servizio che sarà visualizzato nella card corrispondente.
 - “Configurations”: in questa sezione è possibile caricare il file values.yaml che verrà utilizzato per il provisioning
 
-![Parametri generali dei "HELM Services"](images/extract/media/image221.png)
+![Parametri generali dei "HELM Services"](assets/images/extract/media/image221.png)
 
 Per questi servizi viene data inoltre la possibilità di impedire qualunque tipo di modifica del servizio, selezionando quindi la voce "immutable" e inserendo un namespace ed un cluster nel quale effettuare i deploy degli applicativi
 
-![Parametro "immutabile"](images/extract/media/20250605003.png)
+![Parametro "immutabile"](assets/images/extract/media/20250605003.png)
 
 Una volta inseriti tutti i dati è possibile salvare il servizio utilizzando il pulsante “save” in basso a destra, verrà visualizzata una modale di conferma e l’utente viene reindirizzato nella lista dei servizi disponibili
 
@@ -731,47 +731,47 @@ Una volta inseriti tutti i dati è possibile salvare il servizio utilizzando il 
 
 Oltre alla creazione di un Service, è possibile effettuare la visualizzazione, modifica ed eliminazione del suddetto
 
-![Operazioni disponibili per i Services](images/extract/media/image222.png)
+![Operazioni disponibili per i Services](assets/images/extract/media/image222.png)
 
 - Per modificare le informazioni di un “Service”, cliccare sul pulsante “Edit” all’interno della card. Dopodiché, all’interno del form, l’utente può modificare i dati necessari. Dopo aver effettuato le operazioni di edit, in basso a destra, cliccare sul pulsante “Submit”. Dopo aver fatto ciò, l’utente si ritrova all’interno della pagina “Service” .
 
-![Pagina di edit per un servizio](images/extract/media/image223.png)
+![Pagina di edit per un servizio](assets/images/extract/media/image223.png)
 
 - Per eliminare un “Service”, cliccare sul kebab menu di un suddetto e poi cliccare su “Delete”. Fatto ciò, appare una modale di conferma di eliminazione del Service. A questo punto, è necessario cliccare sul pulsante “Remove”.
 
-![ Eliminazione di un servizio](images/extract/media/image224.png)
+![ Eliminazione di un servizio](assets/images/extract/media/image224.png)
 
 #### Gestione Blueprints
 
 Per accedere alla funzionalità dei “Services”, in alto a sinistra cliccare sul pulsante bento e poi cliccare su “Catalog” .
 
-![Accesso alle "Blueprint"](images/extract/media/image210.png)
+![Accesso alle "Blueprint"](assets/images/extract/media/image210.png)
 
 Dalla pagina “SCMP”, cliccare sul tab che raffigura tre quadrati uniti ‘Blueprint’, posizionato sopra il path del breadcrumb. Fatto ciò, ci si ritrova all’ interno della pagina ‘Blueprint’, viene visualizzata la lista delle blueprint configurate nel sistema .
 
-![Pagina delle Blueprint](images/extract/media/image225.png)
+![Pagina delle Blueprint](assets/images/extract/media/image225.png)
 
 ##### Aggiunta nuova blueprint
 
 Dalla pagina “Blueprint”, è possibile per l’utente poter creare una nuova blueprint, accedendo nell’apposita sezione come mostrato in figura, cliccando l’“hamburger menu” presente in alto a destra e selezionando come opzione “Add Blueprint”.
 
-![Aggiunta nuova Blueprint](images/extract/media/image226.png)
+![Aggiunta nuova Blueprint](assets/images/extract/media/image226.png)
 
 L’utente viene reindirizzato nello step 1 della creazione di una “Blueprint” dove è possibile inserire tutte le informazioni generali della blueprint. Dopo aver inserito i dati cliccare il pulsante “Save blueprint” per salvare la bozza della blueprint, per i dettagli sullo status è possibile consultare il paragrafo successivo.
 
-![Blueprint step 1](images/extract/media/image227.png)
+![Blueprint step 1](assets/images/extract/media/image227.png)
 
 Viene aperta una modale di conferma inserimento, una volta cliccato “yes” per continuare l’utente visualizzerà lo stato 2 della creazione di una blueprint.
 
 Cliccando “No” verrà annullato l’inserimento della bozza.
 
-![Blueprint conferma della bozza](images/extract/media/image228.png)
+![Blueprint conferma della bozza](assets/images/extract/media/image228.png)
 
 Nello step 2 della creazione di una Blueprint è necessario cliccare all’ interno del campo “Upload File” e utilizzando la finestra di upload windows selezionare il file “.CSAR” che contiene la Blueprint .
 
 Dopo aver selezionato un file cliccare sul pulsante “Upload” in basso a destra per lanciare il processo di validazione del file, seguendo la lista di stati presente nel paragrafo
 
-![Inserimento file](images/extract/media/image229.png)
+![Inserimento file](assets/images/extract/media/image229.png)
 
 ##### Status delle Blueprint
 
@@ -784,7 +784,7 @@ Nello specifico esistono 4 possibili “STATUS”:
 3. FAILED (“X” di colore rosso): indica che il file inviato non è valido e dovrà essere reinserito dall'utente dopo averlo corretto.
 4. DRAFT (di colore arancione): indica che la “blueprint” è stata creata come bozza ma non contiene all’ interno il file CSAR necessario, una volta inserito il file la blueprint passerà allo status VERIFY.
 
-![Status delle Blueprint](images/extract/media/image230.png)
+![Status delle Blueprint](assets/images/extract/media/image230.png)
 
 ##### Visualizzazione, Modifica ed Eliminazione delle Blueprint
 
@@ -797,7 +797,7 @@ la funzionalità “View”: permette di visualizzare i dettagli della blueprint
 - Topology: La topologia di una blueprint è la disposizione dei componenti in un cluster Kubernetes. In questa sezione possiamo visualizzare graficamente la struttura del sistema tra i diversi pod, servizi e componenti (Figura 243).
 - Update Model: in questa sezione è possibile eseguire l’upload del file CSAR, effettuando questa modifica la Blueprint tornerà nello stato di “VERIFY” per validarne il contenuto (Figura 244).
 
-![Sezioni della pagina Blueprint "view"](images/extract/media/image231.png)
+![Sezioni della pagina Blueprint "view"](assets/images/extract/media/image231.png)
 
 La funzionalità “Edit” permette di visualizzare e modificare tutti i parametri della blueprint, compreso il file CSAR relativo , contiene le seguenti sezioni:
 
@@ -806,17 +806,17 @@ La funzionalità “Edit” permette di visualizzare e modificare tutti i parame
 - Topology: La topologia di una blueprint è la disposizione dei componenti in un cluster Kubernetes. In questa sezione possiamo visualizzare graficamente la struttura del sistema tra i diversi pod, servizi e componenti .
 - Update Model: in questa sezione è possibile eseguire l’upload del file CSAR, effettuando questa modifica la Blueprint tornerà nello stato di “VERIFY” per validarne il contenuto.
 
-![Sezioni della pagina Blueprint "edit"](images/extract/media/image234.png)
+![Sezioni della pagina Blueprint "edit"](assets/images/extract/media/image234.png)
 
-![Sezione Plan di una Blueprint](images/extract/media/image235.png)
+![Sezione Plan di una Blueprint](assets/images/extract/media/image235.png)
 
-![Sezione Topology di una Blueprint](images/extract/media/image233.png)
+![Sezione Topology di una Blueprint](assets/images/extract/media/image233.png)
 
-![Sezione Model di una Blueprint](images/extract/media/image236.png)
+![Sezione Model di una Blueprint](assets/images/extract/media/image236.png)
 
 La funzionalità “Delete”: permette di eliminare definitivamente la blueprint dal sistema. Per farlo basta confermare l’eliminazione cliccando il tasto “Yes” visualizzato nella modale di conferma eliminazione.
 
-![Eliminazione di una Blueprint](images/extract/media/image237.png)
+![Eliminazione di una Blueprint](assets/images/extract/media/image237.png)
 
 ### Strumenti di reportistica
 
@@ -825,7 +825,7 @@ provider, all’ interno delle pagine verrà data anche la possibilità di crear
 
 Per accedere alla funzionalità, sopra il path del breadcrumb, cliccare sul tab “Reports”
 
-![Accesso al report di Catalogo](images/extract/media/image141.png)
+![Accesso al report di Catalogo](assets/images/extract/media/image141.png)
 
 #### Tipologie di report disponibili
 
@@ -835,11 +835,11 @@ Per accedere alla funzionalità, sopra il path del breadcrumb, cliccare sul tab 
 
 In alto sulla destra della pagina possiamo cliccare sul pulsante “New Report” per avviare la creazione di un report, nello specifico viene visualizzata una modale che contiene la lista delle tipologie di report disponibili.
 
-![Creazione nuovo report](images/extract/media/image142.png)
+![Creazione nuovo report](assets/images/extract/media/image142.png)
 
 Una volta selezionata la tipologia di report cliccare sul pulsante “Configure” per selezionare i provider da includere nel report, nella finestra appena aperta troviamo il campo “Provider” che permette di selezionare uno o più provider preesistenti nel sistema, successivamente è possibile selezionare uno o più sottosistemi da includere nel report, se non vengono selezionati dei provider non sarà possibile selezione nessun sottosistema. Infine è presente una sezione “tag” per includere le sole risorse che presentano il tag inserito
 
-![Configurazione del report](images/extract/media/image143.png)
+![Configurazione del report](assets/images/extract/media/image143.png)
 
 A questo punto l'utente può scegliere tra due diverse azioni:
 
@@ -850,7 +850,7 @@ Per confermare la creazione di un report statico verificare che per il campo “
 
 Dopo un periodo di caricamento sarà possibile visualizzare nella lista il report appena generato .
 
-![Lista dei report effettuati](images/extract/media/image144.png)
+![Lista dei report effettuati](assets/images/extract/media/image144.png)
 
 ##### Schedulazione del report
 
@@ -864,18 +864,18 @@ I parametri da inserire sono:
 - File format: permette di selezionare una o più tipologie di file da includere nella mail.
 - User E-mails: permette di inserire una mail alla quale inviare i report, dopo aver inserito una mail è necessario premere “Invio” sulla tastiera per confermarne l’inserimento, una volta premuto la mail appena inserita passerà nel box in fondo e il campo verrà svuotato per permettere l’inserimento, se necessario, di una nuova mail.
 
-![Parametri dei report schedulati](images/extract/media/image145.png)
+![Parametri dei report schedulati](assets/images/extract/media/image145.png)
 
 Avendo configurato tutti i parametri il pulsante “Submit” diventerà cliccabile, cliccarlo per confermare l’inserimento e dopo un periodo di caricamento sarà possibile visualizzare nella lista il report appena generato .
 
-![Lista dei report effettuati](images/extract/media/image144.png)
+![Lista dei report effettuati](assets/images/extract/media/image144.png)
 
 ##### Lista dei report schedulati
 
 Per visualizzare la lista dei report schedulati, selezionare il tab “Scheduled” presente in alto sulla sinistra nella pagina dei report
 .
 
-![Lista dei report schedulati](images/extract/media/image146.png)
+![Lista dei report schedulati](assets/images/extract/media/image146.png)
 
 In questa pagina troviamo la lista e le relative informazioni dei report schedulati presenti nel sistema, per ogni risultato è possibile, cliccando il pulsante “Tre punti” sulla destra sarà possibile effettuare tre operazioni:
 
@@ -883,7 +883,7 @@ In questa pagina troviamo la lista e le relative informazioni dei report schedul
 - Editare le impostazioni della schedula, non sarà possibile modificare i provider o sottosistemi selezionati.
 - Eliminare la schedula per interrompere l’invio delle e-mail.
 
-![Modifica di una schedule](images/extract/media/image147.png)
+![Modifica di una schedule](assets/images/extract/media/image147.png)
 
 ##### Utilizzo dei report
 
@@ -901,4 +901,4 @@ Cliccando sul pulsante “EXPORT”, è possibile esportare il report in formato
 
 Per tornare al tab “Results”, in basso a destra, cliccare sul pulsante “CLOSE” oppure in alto a sinistra cliccare sulla freccia che punta verso la sinistra, accanto al titolo del report.
 
-![Dettagli dei report](images/extract/media/image148.png)
+![Dettagli dei report](assets/images/extract/media/image148.png)

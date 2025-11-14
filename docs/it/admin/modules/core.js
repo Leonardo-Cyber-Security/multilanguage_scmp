@@ -164,12 +164,12 @@ function updatePreviewImages() {
           console.log(`🖼️ Cache hit: ${filename} -> ${found.name}`);
         } else if (window.currentUsername && window.currentRepo) {
           // Fallback: GitHub raw URL - IMMEDIATO
-          // Mappa admin/images/ -> images/extract/media/
+          // Mappa admin/images/ -> assets/images/extract/media/
           let githubPath = src;
           if (src.startsWith("admin/images/") || src.startsWith("/admin/images/")) {
-            githubPath = src.replace(/^\/?(admin\/)?images\//, "images/extract/media/");
+            githubPath = src.replace(/^\/?(admin\/)?images\//, "assets/images/extract/media/");
           } else if (src.startsWith("images/")) {
-            githubPath = src.replace(/^images\//, "images/extract/media/");
+            githubPath = src.replace(/^images\//, "assets/images/extract/media/");
           }
           
           const cleanPath = githubPath.replace(/^\/+/, "");
@@ -575,7 +575,7 @@ async function commitAllStaging() {
 
     stagedImages.forEach(([filename, imageData]) => {
       allItems.push({
-        path: `overrides/assets/images/extract/media/${filename}`,
+        path: `overrides/assets/assets/images/extract/media/${filename}`,
         label: filename,
         contentBase64: imageData.base64,
         mode: "100644",

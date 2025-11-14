@@ -27,7 +27,7 @@ For example:
 
 To access the cost section, use the menu as shown in the figure.
 
-![Access to Costs](images/extract/media/image238.png)
+![Access to Costs](assets/images/extract/media/image238.png)
 
 At this point, the user will find themselves within the "Dashboard" tab page of costs.
 On this screen, we can note in order:
@@ -39,11 +39,11 @@ On this screen, we can note in order:
 
  At the bottom, there will be several resource aggregation charts, for example, by Region or Service Type, as indicated by the respective cloud providers, and as we will analyze later, it will be possible to customize the available charts and sections.
 
-![Cost Dashboard](images/extract/media/image239.png)
+![Cost Dashboard](assets/images/extract/media/image239.png)
 
 In the cost functionality, it is possible to filter by resource type using the tab bar at the top, while for a general view, the dashboard can be used.
 
-![Filter by resource type](images/extract/media/image240.png)
+![Filter by resource type](assets/images/extract/media/image240.png)
 
 #### Cost Section Filters
 
@@ -51,7 +51,7 @@ Within the page, a series of filters are available that can be selected simultan
 
 The main filter is the display period, which can be found in the upper right. Clicking on it will open a selection window (in yellow in the figure) where it will be possible to either enter a custom time range, using the "From" and "To" fields on the left, or select a "smart" time range by clicking directly on the desired choice in the scrollable section on the right.
 
-![Cost time filter](images/extract/media/image241.png)
+![Cost time filter](assets/images/extract/media/image241.png)
 
 A series of filters are available in the upper left of the page, allowing you to filter the retrieved resources. Specifically, you can filter by:
 
@@ -61,7 +61,7 @@ A series of filters are available in the upper left of the page, allowing you to
 
  These filters allow multiple values to be selected and can be combined to achieve the desired granularity
 
-![Cost functionality filters](images/extract/media/image242.png)
+![Cost functionality filters](assets/images/extract/media/image242.png)
 
 #### Overview of the data shown
 
@@ -89,7 +89,7 @@ In detail:
 - **Effective Spend:** chart containing the sum of SCMP costs charged to the customer for each provider.  
   *Helps evaluate the profitability obtained from each provider.*
 
-![General](images/extract/media/image243.png)
+![General](assets/images/extract/media/image243.png)
 
 ##### **"Accounts" Section**
 
@@ -106,7 +106,7 @@ In detail:
 - **Sub-Account Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each subordinate account.  
   *Allows seeing which accounts generate more revenue.*
 
-![Accounts](images/extract/media/image244.png)
+![Accounts](assets/images/extract/media/image244.png)
 
 ##### **"Services" Section**
 
@@ -123,7 +123,7 @@ In detail:
 - **Service Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each service.  
   *Provides a clear view of the main revenue sources per service.*
 
-![Services](images/extract/media/image245.png)
+![Services](assets/images/extract/media/image245.png)
 
 ##### **"SKUs" Section**
 
@@ -140,7 +140,7 @@ In detail:
 - **Sku Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each SKU.  
   *Helps highlight any imbalances in margins at the SKU level.*
 
-![Skus](images/extract/media/image246.png)
+![Skus](assets/images/extract/media/image246.png)
 
 ##### **"Resources" Section**
 
@@ -157,7 +157,7 @@ In detail:
 - **Resource Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each resource.  
   *Provides visibility into the profitability of individual resources.*
 
-![Resources](images/extract/media/image247.png)
+![Resources](assets/images/extract/media/image247.png)
 
 ##### **"Types" Section**
 
@@ -174,7 +174,7 @@ In detail:
 - **Resource Type Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each resource type.  
   *Allows measuring the commercial weight of each category.*
 
-![Types](images/extract/media/image248.png)
+![Types](assets/images/extract/media/image248.png)
 
 ##### **"Regions" Section**
 
@@ -191,7 +191,7 @@ In detail:
 - **Regional Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each region.  
   *Useful for analyzing the distribution of revenue by geographical area.*
 
-![Regions](images/extract/media/image249.png)
+![Regions](assets/images/extract/media/image249.png)
 
 ##### **"History" Section**
 
@@ -205,13 +205,13 @@ In detail:
 - **Historical Provider Billing Costs:** History of the trend of total costs for each cloud billing account.  
   *Helps predict future trends and anticipate spending or budget issues.*
 
-![History](images/extract/media/image250.png)
+![History](assets/images/extract/media/image250.png)
 
 #### Limited view for the customer
 
 If a user configured with the "LIMITED" parameter is used to access the cost dashboard, the charts available on the dashboard will only relate to the recalculated SCMP costs, while the actual costs received from the providers will not be visible as they are superfluous, as can be seen in the image.
 
-![Limited cost dashboard](images/extract/media/image251.png)
+![Limited cost dashboard](assets/images/extract/media/image251.png)
 
 ### "Usage" Dashboard
 
@@ -221,7 +221,7 @@ By navigating to the Usages section of the module, generic and detailed informat
 
 To access the functionality, above the breadcrumb path, click on the "Usages" tab.
 
-![Access to "Usages"](images/extract/media/image252.png)
+![Access to "Usages"](assets/images/extract/media/image252.png)
 
 #### Usage section filters
 
@@ -229,7 +229,7 @@ Within the page, a series of filters are available that can be selected simultan
 
 The main filter is the display period, which can be found in the upper right. Clicking on it will open a selection window (in yellow in the figure) where it will be possible to either enter a custom time range, using the "From" and "To" fields on the left, or select a "smart" time range by clicking directly on the desired choice in the scrollable section on the right.
 
-![Usage time filter](images/extract/media/image241.png)
+![Usage time filter](assets/images/extract/media/image241.png)
 
 A series of filters are available in the upper left of the page, allowing you to filter the retrieved resources. Specifically, you can filter by:
 
@@ -242,7 +242,7 @@ A series of filters are available in the upper left of the page, allowing you to
 
 These filters allow multiple values to be selected and can be combined to achieve the desired granularity.
 
-![Cost functionality filters](images/extract/media/image242.png)
+![Cost functionality filters](assets/images/extract/media/image242.png)
 
 #### Overview of the data shown in the costs section
 
@@ -253,7 +253,7 @@ It is a summary chart that shows the user the general trend of consumption.
 
 For each SKU, in fact, the average consumption and the unit of measure are indicated, within the specified time range, to briefly show which of them are, on average, most used and consequently which of them could generate higher costs for the user.
 
-![ "SKUs Usage" Section](images/extract/media/image253.png)
+![ "SKUs Usage" Section](assets/images/extract/media/image253.png)
 
 ##### "SKU Resource Average" Section
 
@@ -261,7 +261,7 @@ The second chart, on the other hand, is focused on the SKU selected as a filter 
 
 It too can be classified as a summary chart that provides the user with which resources for a given SKU are, on average, most used and consequently which of them could generate higher costs for the user.
 
-![ "SKU resource" Section](images/extract/media/image253.png)
+![ "SKU resource" Section](assets/images/extract/media/image253.png)
 
 ##### "Historical SKU Usage" Section
 
@@ -269,7 +269,7 @@ The first temporal chart shows the daily consumption trend of the specific SKU, 
 
 In the case shown, a constant consumption (in hours) over time is highlighted, useful for the user for subsequent analysis phases.
 
-![ "Historical SKU" Section](images/extract/media/image254.png)
+![ "Historical SKU" Section](assets/images/extract/media/image254.png)
 
 ##### "SKU Resources Usage" Section
 
@@ -279,7 +279,7 @@ This chart, therefore, shows the user the historical detail of the previous char
 
 This last chart is particularly useful to the user because it highlights which resources are actually used within a specific SKU and, consequently, which of them could lead to higher costs for the user or be paid for without even being used.
 
-![ "SKU Resources" Section](images/extract/media/image255.png)
+![ "SKU Resources" Section](assets/images/extract/media/image255.png)
 
 ### Cost and Usage dashboard customization
 
@@ -292,7 +292,7 @@ providers. Within the pages, the possibility to create files to facilitate infor
 
 To access the functionality, above the breadcrumb path, click on the "Reports" tab
 
-![Access to Catalog report](images/extract/media/image141.png)
+![Access to Catalog report](assets/images/extract/media/image141.png)
 
 #### Available report types
 
@@ -306,11 +306,11 @@ To access the functionality, above the breadcrumb path, click on the "Reports" t
 
 In the upper right of the page, we can click on the "New Report" button to start creating a report. Specifically, a modal window appears containing the list of available report types.
 
-![New report creation](images/extract/media/image142.png)
+![New report creation](assets/images/extract/media/image142.png)
 
 Once the report type is selected, click on the “Configure” button to select the providers to include in the report. In the newly opened window, you will find the “Provider” field, which allows you to select one or more pre-existing providers in the system. Subsequently, it is possible to select one or more subsystems to include in the report; if no providers are selected, no subsystem can be selected. Finally, there is a “tag” section to include only resources that have the entered tag.
 
-![Report configuration](images/extract/media/image143.png)
+![Report configuration](assets/images/extract/media/image143.png)
 
 At this point, the user can choose between two different actions:
 
@@ -321,7 +321,7 @@ To confirm the creation of a static report, verify that "One-Shot" has been sele
 
 After a loading period, the newly generated report will be visible in the list.
 
-![List of generated reports](images/extract/media/image144.png)
+![List of generated reports](assets/images/extract/media/image144.png)
 
 ##### Report Scheduling
 
@@ -335,17 +335,17 @@ The parameters to enter are:
 - File format: allows selecting one or more file types to include in the email.
 - User E-mails: allows entering an email address to send reports to. After entering an email, it is necessary to press “Enter” on the keyboard to confirm its insertion. Once pressed, the newly entered email will move to the bottom box, and the field will be cleared to allow the insertion, if necessary, of a new email.
 
-![Scheduled report parameters](images/extract/media/image145.png)
+![Scheduled report parameters](assets/images/extract/media/image145.png)
 
 Having configured all parameters, the “Submit” button will become clickable. Click it to confirm the insertion, and after a loading period, the newly generated report will be visible in the list.
 
-![List of generated reports](images/extract/media/image144.png)
+![List of generated reports](assets/images/extract/media/image144.png)
 
 ##### List of Scheduled Reports
 
 To view the list of scheduled reports, select the “Scheduled” tab located at the top left of the reports page.
 
-![List of scheduled reports](images/extract/media/image146.png)
+![List of scheduled reports](assets/images/extract/media/image146.png)
 
 On this page, you will find the list and related information of the scheduled reports present in the system. For each result, by clicking the “Three dots” button on the right, three operations can be performed:
 
@@ -353,7 +353,7 @@ On this page, you will find the list and related information of the scheduled re
 - Edit the schedule settings; it will not be possible to modify the selected providers or subsystems.
 - Delete the schedule to stop sending emails.
 
-![Editing a schedule](images/extract/media/image147.png)
+![Editing a schedule](assets/images/extract/media/image147.png)
 
 ##### Report Usage
 
@@ -371,4 +371,4 @@ Clicking the “EXPORT” button allows exporting the report in “.csv”, “.
 
 To return to the “Results” tab, click the “CLOSE” button in the lower right, or click the left-pointing arrow in the upper left, next to the report title.
 
-![Report details](images/extract/media/image148.png)
+![Report details](assets/images/extract/media/image148.png)
