@@ -1,0 +1,1888 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Provisioning - Documentazione Super Progetto</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/eng-standard-theme.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/fabric.min.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/toc.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/language-switcher.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#provisioning" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="Documentazione Super Progetto" class="md-header__button md-logo" aria-label="Documentazione Super Progetto" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentazione Super Progetto
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Provisioning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentazione Super Progetto" class="md-nav__button md-logo" aria-label="Documentazione Super Progetto" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    Documentazione Super Progetto
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developers/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Code'></span> Sviluppatori
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Getting started/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--WaitlistConfirm'></span> Installazione e deploy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Authentication/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AuthenticatorApp'></span> Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gestione Tenant/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ModelingView'></span> Tenant Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Administration/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Admin'></span> Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dashboard/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ViewDashboard'></span> Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inventory/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--OpenFolderHorizontal'></span> Inventory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Monitoring/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AreaChart'></span> Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Security/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AzureKeyVault'></span> Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Catalog/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AddToShoppingList'></span> Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Costs e Usage/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Money'></span> Costs & Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--BranchFork2'></span> Provisioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Backup Disaster Recovery/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Lifesaver'></span> Backup & Disaster Recovery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Funzionalità condivise/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--SecondaryNav'></span> Shared Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Service Detail Design/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ReservationOrders'></span> Service Detail Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OverviewPSN/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AddToShoppingList'></span> Leonardo Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" >
+        
+          
+          <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AzureAPIManagement'></span> REST API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_17">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    <span class='ms-Icon ms-Icon--AzureAPIManagement'></span> REST API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/finopsAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/provisioningAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Provisioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory / Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/absAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Abstraction Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmreportAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Report manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmcostsAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cost
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmmonitoringAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmsecurityAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmserviceAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/siemAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SIEM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/txmAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Taxonomy Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/tenantAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tenant Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/api/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service detail design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SCMP_SUM_it.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--PDF'></span> Versione PDF completa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#provisioning-table-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provisioning Table Specifications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Provisioning Table Specifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resources-services-custom-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Resources", "Services", "Custom Services"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-uninstall-of-helm-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto uninstall of HELM services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blueprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blueprint
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-of-provisionings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creation of Provisionings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation of Provisionings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#provisioning-of-physical-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provisioning of "Physical Resources"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Provisioning of &#34;Physical Resources&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Virtual Machines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provisioning-of-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provisioning of "Services"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Provisioning of &#34;Services&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Standard" Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Custom" Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-pipeline-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Azure Pipeline" Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paas-and-ai-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "PaaS" and "AI Services"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helm-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "HELM" Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immutable-helm-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Immutable" HELM Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provisioning-of-edge-device-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provisioning of "Edge" device images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creation-of-a-blueprint-provisioning-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creation of a "Blueprint" provisioning request
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation of a &#34;Blueprint&#34; provisioning request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blueprint-execution-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Blueprint" execution request
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-be-completed-blueprint-management-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "To be completed" blueprint management page
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="&#34;To be completed&#34; blueprint management page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modification-of-a-performed-provisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modification of a performed provisioning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="provisioning">Provisioning</h1>
+<p>Provisioning is one of the most important functionalities of SCMP. Through these modules, it is possible to allocate runtime assets within the providers managed by SCMP.</p>
+<p>To use this functionality, relations must be defined within the SCMP.</p>
+<p>This constraint was made available to bind certain characteristics to provisioning; for example, the VM size is not selectable during provisioning but is among the predefined characteristics by administrators within the catalog.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image6.png" /><figcaption>Access to "Provisioning"</figcaption>
+</figure>
+</p>
+<h3 id="dashboard">Dashboard</h3>
+<p>Accessing the functionality, the first available page is the Dashboard of provisionings carried out within the system.</p>
+<p>The page presents a series of graphs, filters, and the list of provisionings performed.</p>
+<p>The graphs allow visualizing the information present in the table, grouped by:</p>
+<ul>
+<li>The total of all provisionings carried out, divided by type.</li>
+<li>The status of provisionings carried out, divided by outcome and category of the provisioned asset.</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image282.png" /><figcaption>Provisioning page graphs</figcaption>
+</figure>
+</p>
+<p>At the bottom of the page, we can use the filters section to modify the results present in the table. The "Provisioning Type" filter is the main filter that allows selecting the type of asset to display, specifically:</p>
+<ul>
+<li>Selecting "Resources" adds a filter that allows selecting the type of resource for which you want to display the provisioning status. By default, the system shows the list of provisioned VMs.</li>
+<li>Selecting "Services" and "Custom services" has no additional filters, and the list is updated with only provisionings related to Services.</li>
+<li>Selecting "Blueprint" adds a filter that allows changing the flow (i.e., the type of blueprint to display), and the table is modified to show only flows not yet completed. Above the table, there is a control that allows changing tabs, to switch from "in progress" flows to "Completed" flows.</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image283.png" /><figcaption>Filter by asset type</figcaption>
+</figure>
+</p>
+<h3 id="provisioning-table-specifications">Provisioning Table Specifications</h3>
+<h4 id="resources-services-custom-services">"Resources", "Services", "Custom Services"</h4>
+<p>The list has the following attributes when "Resources", "Services", "Custom Services" is selected as a filter:</p>
+<ul>
+<li>Uuid, Provisioning identifier;</li>
+<li>Provisioning completion date;</li>
+<li>Provisioning request date;</li>
+<li>User who created the instance;</li>
+<li>Status;</li>
+<li>Output of provisioning systems;</li>
+<li>Detailed provisioning Json;</li>
+<li>Status information;</li>
+<li>Resource type.</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image284.png" /><figcaption>“Resources” Table</figcaption>
+</figure>
+</p>
+<p>When in this view, the following operations can be performed:</p>
+<ul>
+<li>By clicking on the row of a failed provisioning, it is possible to modify and re-execute it.</li>
+<li>By clicking on the "Output Message" icon corresponding to a provisioning, it is possible to view the response received from the "Terraform" module.</li>
+<li>By clicking the "Download" button, it is possible to download the files returned by the functionality.</li>
+<li>By clicking the "State" button, it is possible to view the graph and the list of provisioned resources.</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image285.png" /><figcaption>Terraform message visualization</figcaption>
+</figure>
+</p>
+<p>
+<figure><img src="../assets/images/extract/media/image286.png" /><figcaption>Resource graph visualization</figcaption>
+</figure>
+</p>
+<h4 id="auto-uninstall-of-helm-services">Auto uninstall of HELM services</h4>
+<p>When we select "Custom services" as a filter type, we can notice a new "Uninstall" button displayed with a "Stop" icon.</p>
+<p>
+<figure><img src="../assets/images/extract/media/20250605001.png" /><figcaption>Uninstall HELM service</figcaption>
+</figure>
+</p>
+<p>Clicking the button will ask for confirmation of deletion. Upon confirmation, SCMP will delete all HELM resources deployed in the indicated namespace.</p>
+<p>
+<figure><img src="../assets/images/extract/media/20250605002.png" /><figcaption>Uninstall confirmation</figcaption>
+</figure>
+</p>
+<h4 id="blueprint">Blueprint</h4>
+<p>The list has the following attributes when "Blueprint" is selected as a filter:</p>
+<ul>
+<li>Blueprint Name</li>
+<li>Creation Date</li>
+<li>User who provisioned the blueprint</li>
+</ul>
+<p>Above the table, we can notice two tabs. By clicking on them, the table is filtered respectively for Blueprints to be completed and Completed Blueprints (in red in the image).</p>
+<p>
+<figure><img src="../assets/images/extract/media/image287.png" /><figcaption>“Provisioning blueprint” table tabs</figcaption>
+</figure>
+</p>
+<p>In this view, it is possible to click on a table row to view the blueprint details.</p>
+<p>When the selected blueprint is "to be completed," we will be redirected to the blueprint provisioning page where we can perform the necessary operations for completion.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image288.png" /><figcaption>“To be completed” flow visualization</figcaption>
+</figure>
+</p>
+<p>If a completed blueprint is selected instead, we will be redirected to the blueprint provisioning details page where the prediction "flow" will not be displayed because it has already been completed.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image289.png" /><figcaption>“Completed” flow visualization</figcaption>
+</figure>
+</p>
+<h3 id="creation-of-provisionings">Creation of Provisionings</h3>
+<h4 id="provisioning-of-physical-resources">Provisioning of "Physical Resources"</h4>
+<p>Using the tabs in the provisioning functionality, it is possible to view the lists of provisionable resources within the SCMP, such as Virtual Machines, Storage, and Kubernetes.</p>
+<p>To view elements within the result lists, it is necessary that a relation exists in the SCMP catalog with the catalog resource of the provider to be provisioned.</p>
+<p>The functionalities available for these elements are identical; only the parameters to be entered in the creation steps change.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image290.png" /><figcaption>Tabs for resource creation</figcaption>
+</figure>
+</p>
+<h5 id="virtual-machines">Virtual Machines</h5>
+<p>To start provisioning a resource, click on the corresponding row to view the page containing step 1 of provisioning creation. In this step, it is necessary to select, using the dropdown on the left, the "target" subsystem where the resources are to be provisioned. Once selected, an information mirror will be displayed on the right indicating the characteristics of the resource that will be provisioned. To continue, click the "Next" button at the bottom right to go to step 2 "Config" page.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image291.png" /><figcaption>Selection of the “target” subsystem, provisioning step 1</figcaption>
+</figure>
+</p>
+<p>On the "Config" page of step 2, fill in all mandatory fields in all sections of the form. At the bottom left, click the "Reset" button to reset all fields on the page.</p>
+<p>Instead, on the right, click the "Submit" button to go to step 3 "Plan".</p>
+<p><img alt="" src="../assets/images/extract/media/image292.png" />
+<figure><img src="../assets/images/extract/media/image293.png" /><figcaption>Filling in the resource prediction form fields</figcaption>
+</figure>
+</p>
+<p>After clicking the "Submit" button, the user is redirected to the "Plan" page of step 3 where we can view the provisioning plan sent by Terraform, which indicates all the parameters of the resources that will be configured, and at the bottom, there is a list with a cost perspective.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image294.png" /><figcaption>Forecast screen</figcaption>
+</figure>
+</p>
+<p>Still from the "Plan" page of step 3, at the bottom right, there are three buttons: "Back", "Reset", and "Apply". If you click the "Back" button, the user returns to the "Config" page of step 2 where parameters can be modified.</p>
+<p>If you click the "Reset" button, the user is redirected to the "Subscription" page of step 1 where it is necessary to select a subsystem, and then enter the parameters on the "Config" page of step 2.</p>
+<p>Finally, if you click the "Apply" button, the forecast is saved, and the user is redirected to the "Dashboard" tab page where the user verifies the presence of the newly created forecast.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image295.png" /><figcaption>List of provisionings performed</figcaption>
+</figure>
+</p>
+<h4 id="provisioning-of-services">Provisioning of "Services"</h4>
+<p>To access the services page, click on the tab that depicts a shelf located in the top menu. After doing this, you will find yourself on the "Service" page.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image296.png" /><figcaption>List of cards</figcaption>
+</figure>
+</p>
+<p>On the page, a list of components called "Card" is displayed. Each card refers to a specific type of service; in particular, the following information is displayed:</p>
+<ul>
+<li>Service name;</li>
+<li>Service icon;</li>
+<li>Type of script used for service provisioning;</li>
+<li>Service description;</li>
+<li>"Subscribe" button to proceed with service creation.</li>
+</ul>
+<p>Depending on the type of service selected, the steps for provisioning change; these will be analyzed in detail below.</p>
+<h5 id="standard-services">"Standard" Services</h5>
+<p>Click the "Subscribe" button corresponding to a "standard" service. The user will be redirected to step 1 of the service creation page, and all instantiable versions of the service by SCMP will be displayed. In particular, various blocks will be shown, each with a list of configurations:</p>
+<ul>
+<li>Name and version of the service that will be instantiated.</li>
+<li>Name and version of the operating system that will be installed on the machine.</li>
+<li>Belonging provider on which the service will be provisioned.</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image297.png" /><figcaption>Provisioning of a "standard" service</figcaption>
+</figure>
+</p>
+<p>Select a software version and press the "Continue" button; the user is redirected to step 2 of service provisioning.</p>
+<p>In step 2, it will be necessary to select a subsystem and fill out the form with the details of the chosen subsystem.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image298.png" /><figcaption>Configuration of a "standard" service</figcaption>
+</figure>
+</p>
+<p>After completing all the form fields, click "Submit".</p>
+<p>A request will be sent to the Terraform service, which will validate the activation configuration of the indicated flow and return the result.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image299.png" /><figcaption>Service configuration summary</figcaption>
+</figure>
+</p>
+<p>Click "Apply" to validate the flow and activate the service subscription.</p>
+<p>The dashboard page will open with the list of all subscribed services and their relative statuses. Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image300.png" /><figcaption>Dashboard with the list of all subscribed services and their relative statuses</figcaption>
+</figure>
+</p>
+<h5 id="custom-services">"Custom" Services</h5>
+<p>Click the "Subscribe" button corresponding to a "custom" service. The user will be redirected to step 1 of the service creation page where the subsystem can be selected, in which to perform the provisioning, from the dropdown in the center of the page.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image301.png" /><figcaption>Provisioning of a “Custom” service</figcaption>
+</figure>
+</p>
+<p>By selecting the subsystem, the page updates to proceed to step 2 of service provisioning.</p>
+<p>In this step 2, it will be necessary to fill out the form with the specific configuration parameters of the selected service.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image298.png" /><figcaption>Configuration of a "custom" service</figcaption>
+</figure>
+</p>
+<p>After completing all the form fields, click "Launch".</p>
+<p>A request will be sent to the Terraform service, which will validate the activation configuration of the indicated flow and return the result.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image299.png" /><figcaption>Service configuration summary</figcaption>
+</figure>
+</p>
+<p>Click "Apply" to validate the flow and start the automatic configuration operations.</p>
+<p>The dashboard page will open with the list of all subscribed services and their relative statuses.</p>
+<p>Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image300.png" /><figcaption>Dashboard with the list of all subscribed services and their relative statuses</figcaption>
+</figure>
+</p>
+<h5 id="azure-pipeline-services">"Azure Pipeline" Services</h5>
+<p>Click the "Subscribe" button corresponding to an "Azure Pipeline" service. The user will be redirected to step 1 of the service creation page. From the dropdown in the center of the page, select the "Branch" of the pipeline to execute.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image302.png" /><figcaption>Provisioning of an "Azure pipeline" service</figcaption>
+</figure>
+</p>
+<p>By selecting the branch, the page updates to proceed to step 2 of service creation.</p>
+<p>In this step 2, it will be necessary to fill out the form with the configuration parameters retrieved directly from the Pipeline that will be executed.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image303.png" /><figcaption>Configuration of an "Azure pipeline" service</figcaption>
+</figure>
+</p>
+<p>After completing all the form fields, click "Launch" to send the pipeline start request. The dashboard page will open with the list of all subscribed services and their relative statuses.</p>
+<p>Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image300.png" /><figcaption>Dashboard with the list of all subscribed services and their relative statuses</figcaption>
+</figure>
+</p>
+<h5 id="paas-and-ai-services">"PaaS" and "AI Services"</h5>
+<p>Click the "Subscribe" button corresponding to a "PaaS" service. The user will be redirected to step 1 of the service creation page where it will be necessary to fill out the form with the specific configuration parameters of the selected service.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image304.png" /><figcaption>Configuration of a "PaaS" service</figcaption>
+</figure>
+</p>
+<p>After completing all the form fields, click "Launch".</p>
+<p>The dashboard page will open with the list of all subscribed services and their relative statuses.</p>
+<p>Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image300.png" /><figcaption>Dashboard with the list of all subscribed services and their relative statuses</figcaption>
+</figure>
+</p>
+<h5 id="helm-services">"HELM" Services</h5>
+<p>Click the "Subscribe" button corresponding to a "HELM" service. The user will be redirected to step 1 of the service creation page where it will be necessary to select the cluster on which to perform the provisioning.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image305.png" /><figcaption>Cluster selection</figcaption>
+</figure>
+</p>
+<p>Fill out the form with the specific configuration parameters of the selected service. Also, add the "values.yaml" file at the bottom, which contains all the configuration parameters necessary for the service.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image306.png" /><figcaption>Configuration of "HELM" parameters</figcaption>
+</figure>
+</p>
+<p>After completing all the form fields, click "Launch".</p>
+<p>The dashboard page will open with the list of all subscribed services and their relative statuses.</p>
+<p>Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image300.png" /><figcaption>Dashboard with the list of all subscribed services and their relative statuses</figcaption>
+</figure>
+</p>
+<h5 id="immutable-helm-services">"Immutable" HELM Services</h5>
+<p>If the "immutable" flag was selected for the HELM service during creation, the user is not given the option to view and modify the service information, thus allowing for a "one-Click" installation.
+Once "subscribe" is selected, the system automatically begins provisioning and returns the user to the dashboard page to monitor the results.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image300.png" /><figcaption>Dashboard with the list of all subscribed services and their relative statuses</figcaption>
+</figure>
+</p>
+<h4 id="provisioning-of-edge-device-images">Provisioning of "Edge" device images</h4>
+<p>To access the "Edge" provisioning page, click on the tab of the same name in the top menu.</p>
+<p>After doing this, we will be taken to the "Edge" page of the provisioning module.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image307.png" /><figcaption>Access to Edge provisioning</figcaption>
+</figure>
+</p>
+<p>At first glance, the page may appear empty, but by selecting a configured EDGE subsystem from the "Subsystem" filter, all available images in the subsystem will be displayed below.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image308.png" /><figcaption>Images available in the system</figcaption>
+</figure>
+</p>
+<p>By selecting one of the available images, a section will open on the right that allows selecting a compatible inventory machine from the list.</p>
+<p>After selecting a machine, we can confirm the operation using the "Apply" button.</p>
+<p>We will be returned to the "dashboard" section of the "Provisioning" module where we can view the outcome of the operations.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image309.png" /><figcaption>Confirmation of "Edge" provisioning</figcaption>
+</figure>
+</p>
+<h4 id="creation-of-a-blueprint-provisioning-request">Creation of a "Blueprint" provisioning request</h4>
+<p>To access the services page, click on the "blueprint" tab in the top menu. After doing this, you will find yourself on the "Blueprints" page.</p>
+<p>On the page, a list of components called "Card" is displayed. Each card refers to a specific type of service; in particular, the following information is displayed:</p>
+<ul>
+<li>Service name.</li>
+<li>Service icon.</li>
+<li>Type of script used for service provisioning.</li>
+<li>Service description.</li>
+<li>"Subscribe" button to proceed with service creation.</li>
+</ul>
+<p>Depending on the blueprint selected, the parameters for provisioning change, while the functionalities remain unchanged.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image296.png" /><figcaption>List of blueprints</figcaption>
+</figure>
+</p>
+<h5 id="blueprint-execution-request">"Blueprint" execution request</h5>
+<p>Click the "Subscribe" button corresponding to a "Blueprint". The user will be redirected to step 1 of the creation page. In this step, it is necessary to select the subsystem in which provisioning is to be performed from the dropdown.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image310.png" /><figcaption>Step 1 of Blueprint creation</figcaption>
+</figure>
+</p>
+<p>By selecting a subsystem, the page will move to step 2 of creation where it will be necessary to fill out the form with the specific configuration parameters of the selected blueprint.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image311.png" /><figcaption>Step 2 of "Blueprint" creation</figcaption>
+</figure>
+</p>
+<p>Once the parameters have been entered, you can click the "Start" button at the bottom right to initiate provisioning. After a few seconds, you will be redirected to the "Dashboard" page, filtered for "Blueprints to be completed".</p>
+<p>
+<figure><img src="../assets/images/extract/media/image312.png" /><figcaption>Blueprint Request sent successfully</figcaption>
+</figure>
+</p>
+<h5 id="to-be-completed-blueprint-management-page">"To be completed" blueprint management page</h5>
+<p>To work on the blueprint, it is necessary to select a "to be completed" blueprint from the dashboard. Clicking on the corresponding row will display its management page.</p>
+<p>This page is divided into sections, specifically:</p>
+<ul>
+<li>"Process Diagram": This section displays an image that graphically represents all the steps to be executed in the blueprint. Additionally, the step currently in execution is indicated in red.</li>
+<li>"Variables": In this section, we can view all parameters entered manually or automatically during the blueprint execution.</li>
+<li>"Task": In this section, it is possible to manage the blueprint steps that require manual intervention using the available controls.</li>
+<li>"Subprocess": In this section, we can view the status of all automatic operations performed during the blueprint execution.</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image313.png" /><figcaption>Provisioning plan flow</figcaption>
+</figure>
+</p>
+<p>The execution, and therefore the corresponding change, between the Blueprint steps can be carried out in two ways: automatically or manually, exactly as described within the Blueprint itself.</p>
+<h6 id="automatic-steps">Automatic steps</h6>
+<p>The system automatically manages the creation, configuration of resources, and deployment of applications. The status and result of these steps are visible in the "Subprocess" section below.</p>
+<p>For each row in the table, by clicking the buttons on the right, it is possible to verify the generated output message and download its content.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image314.png" /><figcaption>Blueprint subprocesses section</figcaption>
+</figure>
+</p>
+<h6 id="manual-steps">Manual steps</h6>
+<p>Manual tasks, when present and required in the blueprint, will appear in the relevant section. To work on it, it is first necessary to click the "Assign" button (red in the figure) to take charge of the task.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image315.png" /><figcaption>Task assignment to the user</figcaption>
+</figure>
+</p>
+<p>A confirmation modal for assignment will be displayed. By clicking "Yes", the task will be taken over by the user and cannot be worked on by a different user.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image316.png" /><figcaption>Assignment confirmation</figcaption>
+</figure>
+</p>
+<p>A confirmation message will appear at the bottom, and we can note that the "Task" section has been updated. On the left, below the task name, the relevant assignee is indicated, and on the right, there are 2 buttons:</p>
+<ul>
+<li>"Remove assignment" (red in the figure).</li>
+<li>"Complete manual task" (yellow in the figure).</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image317.png" /><figcaption>Task management buttons</figcaption>
+</figure>
+</p>
+<p>Clicking "Remove assignment" will open a confirmation modal. Clicking "Yes" will make the task available to other users who can take charge of it.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image318.png" /><figcaption>Task release</figcaption>
+</figure>
+</p>
+<p>Clicking the "Complete task" button will open a modal containing one or more customizable fields. The fields can be of different types.</p>
+<p>We can enter numeric, boolean, and text fields. Once entered, it is possible to confirm by clicking the "Continue" button at the bottom right.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image319.png" /><figcaption>Numeric fields of blueprints</figcaption>
+</figure>
+</p>
+<p>
+<figure><img src="../assets/images/extract/media/image320.png" /><figcaption>Text fields in Blueprints</figcaption>
+</figure>
+</p>
+<p>Once pressed, we can see that the BPMN graph on the page has been updated and that the next step of the blueprint is active and has a red outline.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image321.png" /><figcaption>Next step</figcaption>
+</figure>
+</p>
+<p>All manual tasks present in the blueprint will follow the procedure described previously; therefore, regardless of the type of data to be entered, it is always necessary to assign the task to oneself.</p>
+<p>It is possible to insert a temporal field within the manual steps of blueprints, using a calendar it will be possible to manually select the correct day and time.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image322.png" /><figcaption>Date field in tasks</figcaption>
+</figure>
+</p>
+<p>The last type of step that we can find within the blueprints is the "Multi-choice" field. This field allows managing the blueprint's flow.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image323.png" /><figcaption>Multi-choice field</figcaption>
+</figure>
+</p>
+<p>This field is of "Selection" type, so it will not be possible to enter a custom value, but selectable options will be proposed. Specifically, we can find three choices:</p>
+<ul>
+<li>"Repeat": allows re-executing the previous steps as described in the blueprint (path in pink in the figure).</li>
+<li>"End": allows concluding the blueprint execution without performing further operations (path in yellow in the figure).</li>
+<li>"Insert date": allows moving to a subsequent step of the blueprint (path in green in the figure).</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image324.png" /><figcaption>Multi-choice field values</figcaption>
+</figure>
+</p>
+<p>
+<figure><img src="../assets/images/extract/media/image325.png" /><figcaption>Possible state changes for Multi-choice</figcaption>
+</figure>
+</p>
+<p>Once all blueprint steps are completed, the graph will be automatically removed from the page, and in the step section, it will no longer be possible to take charge of an operation. Furthermore, in the "sub-processes" section, we will be able to view the result of all automated steps in the blueprint.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image326.png" /><figcaption>Blueprint completion</figcaption>
+</figure>
+</p>
+<h4 id="modification-of-a-performed-provisioning">Modification of a performed provisioning</h4>
+<p>For a provisioning that has been carried out and has failed, it is possible to modify it.</p>
+<p>Provisioning modification is only available for resource types.</p>
+<p>To start modifying a provisioning, click on a failed forecast.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image327.png" /><figcaption>Start modification of a Provisioning</figcaption>
+</figure>
+</p>
+<p>After doing so, you will find yourself on the "Config" page of step 2 where you can modify the previously entered parameters.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image328.png" /><figcaption>Configuration parameters</figcaption>
+</figure>
+</p>
+<p>
+<figure><img src="../assets/images/extract/media/image329.png" /><figcaption>Modification of parameters</figcaption>
+</figure>
+</p>
+<p>After modifying the necessary parameters, at the bottom right, click the "Submit" button.</p>
+<p>By doing so, you will find yourself on the "Plan" page of step 3, where the forecast is present, and below, the quote table.</p>
+<p>At the bottom right, click the "Apply" button. After clicking the "Apply" button, you will find yourself on the "Dashboard" tab page.</p>
+<p>Subsequently, from the "Dashboard" page, the user notes that the modification was successful.</p>
+<p>It is also possible to modify a failed provisioning for other elements managed by SCMP.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image330.png" /><figcaption>Provisioning summary and quote table</figcaption>
+</figure>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../assets/js/toc.js"></script>
+      
+        <script src="../assets/js/language-switcher.js"></script>
+      
+    
+  </body>
+</html>
