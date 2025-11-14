@@ -1,5 +1,4 @@
 nav:
-- "<span class='ms-Icon ms-Icon--Code'></span> Sviluppatori": developers.md
 - "<span class='ms-Icon ms-Icon--WaitlistConfirm'></span> Installazione e deploy": Getting started.md
 - "<span class='ms-Icon ms-Icon--AuthenticatorApp'></span> Authentication": Authentication.md
 - "<span class='ms-Icon ms-Icon--ModelingView'></span> Tenant Management": Gestione Tenant.md
