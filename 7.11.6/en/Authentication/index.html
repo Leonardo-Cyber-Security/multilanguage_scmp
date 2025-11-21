@@ -1,0 +1,1958 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Authentication - Super Project Documentation (EN)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/eng-standard-theme.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/fabric.min.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/toc.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/language-switcher.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#authentication" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Super Project Documentation (EN)" class="md-header__button md-logo" aria-label="Super Project Documentation (EN)" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Super Project Documentation (EN)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Authentication
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Super Project Documentation (EN)" class="md-nav__button md-logo" aria-label="Super Project Documentation (EN)" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    Super Project Documentation (EN)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Getting started/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--WaitlistConfirm'></span> Installation and Deploy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AuthenticatorApp'></span> Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gestione Tenant/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ModelingView'></span> Tenant Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Administration/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Admin'></span> Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dashboard/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ViewDashboard'></span> Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inventory/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--OpenFolderHorizontal'></span> Inventory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Monitoring/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AreaChart'></span> Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Security/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AzureKeyVault'></span> Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Catalog/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AddToShoppingList'></span> Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Costs e Usage/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Money'></span> Costs & Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Provisioning/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--BranchFork2'></span> Provisioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Backup Disaster Recovery/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Lifesaver'></span> Backup & Disaster Recovery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Funzionalità condivise/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--SecondaryNav'></span> Shared Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Service Detail Design/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ReservationOrders'></span> Service Detail Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OverviewPSN/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AddToShoppingList'></span> Leonardo Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AzureAPIManagement'></span> REST API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    <span class='ms-Icon ms-Icon--AzureAPIManagement'></span> REST API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/finopsAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/provisioningAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Provisioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory / Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/absAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Abstraction Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmreportAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Report manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmcostsAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cost
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmmonitoringAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmsecurityAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmserviceAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/siemAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SIEM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/txmAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Taxonomy Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/tenantAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tenant Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/api/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service detail design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SCMP_SUM_en.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--PDF'></span> Complete PDF Version
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Groups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#group-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group Creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#management-of-assigned-users-and-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Management of Assigned Users and Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-modifying-and-deleting-a-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing, Modifying, and Deleting a Group
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Users
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-user-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New User Creation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role-and-attribute-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role and Attribute Assignment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#credential-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credential Reset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-modifying-and-deleting-a-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing, Modifying, and Deleting a User
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#management-of-menus-enabled-per-usergroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Management of Menus Enabled per User/Group
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-profile-lists-and-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Profile Lists and Attributes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Profile Lists and Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administrator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Service Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorized" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorized
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="authentication">Authentication</h1>
+<p>The "Authentication" functionality allows interaction with the IAM to modify user profiling.</p>
+<p>For preliminary configurations, refer to the specifications indicated in document DI-IPSC-81443, included in the reference documents table.</p>
+<p>The menu is accessible from the button at the top right, as shown below.</p>
+<p>Specifically, to access user profiling, the menu is "Authentication".</p>
+<p>
+<figure><img src="../assets/images/extract/media/image8.png" /><figcaption>Access to Authentication functionality</figcaption>
+</figure>
+</p>
+<p>Dashboard view for user profiling:</p>
+<p>
+<figure><img src="../assets/images/extract/media/image10.png" /><figcaption>IAM Dashboard</figcaption>
+</figure>
+</p>
+<h3 id="groups">Groups</h3>
+<p>To simplify the assignment of menu attributes and authorizations, user groups can be used. Click the "Groups" menu in the "Entities" section of the IAM dashboard.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image11.png" /><figcaption>Access to Group management</figcaption>
+</figure>
+</p>
+<p>Once the link is clicked, the user will be shown the list of all available groups on the portal with their respective configuration buttons.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image12.png" /><figcaption>List of configured groups</figcaption>
+</figure>
+</p>
+<h4 id="group-creation">Group Creation</h4>
+<p>To create a new group within the system, click the "+" button in the top right. A group creation form will be displayed.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image13.png" /><figcaption>Adding a new Group</figcaption>
+</figure>
+</p>
+<p>Enter the group name and click the "Add Group" button to add it to the system. Once pressed, the system will take us to the list of available groups where we can find the newly created group.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image14.png" /><figcaption>Group entry parameters</figcaption>
+</figure>
+</p>
+<h4 id="management-of-assigned-users-and-attributes">Management of Assigned Users and Attributes</h4>
+<p>To assign users to a group, from the list of available groups, click the "people" icon on the row corresponding to the group of interest. The user will be redirected to the "Members" page where it is possible to view all users assigned to the group and their basic information.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image15.png" /><figcaption>Access to user assignment management</figcaption>
+</figure>
+</p>
+<p>We can add a user to the group by clicking the "+" button at the top right (1). Once pressed, a new row (2) will be created in the list of assigned users where a user can be selected from the list of available users (3).</p>
+<p>
+<figure><img src="../assets/images/extract/media/image16.png" /><figcaption>Assign a user to the group</figcaption>
+</figure>
+</p>
+<p>Similarly, it is possible to remove users from the group by clicking the "Trash" button corresponding to the user to be removed.</p>
+<p>After adding all users to the group, click the "Save" button at the bottom left to save the changes. A save confirmation modal will be displayed.</p>
+<p>We can assign attributes to the group that will be automatically used by the assigned users. To do this, select the "Attributes" tab at the top of the page (1), then using the "+" button at the top right (2), it is possible to add an attribute. In the left part, the key must be entered (3) and in the white part on the right, its value must be entered (4). During entry, we will see a dropdown below the field where clicking will allow saving the entered value (5).</p>
+<p>
+<figure><img src="../assets/images/extract/media/image17.png" /><figcaption>Enter Attributes</figcaption>
+</figure>
+</p>
+<p>Once all necessary attributes have been entered, changes can be saved using the "Save" button at the bottom.</p>
+<p>To return to the list of available Groups, click the "Back" button present on each page.</p>
+<h4 id="viewing-modifying-and-deleting-a-group">Viewing, Modifying, and Deleting a Group</h4>
+<p>From the list of available Groups, a series of buttons are available for each group:</p>
+<ul>
+<li>"Magnifying glass": allows viewing group information (indicated by a red arrow in the image);</li>
+<li>"Pencil": allows modifying the group's basic information (indicated by a yellow arrow in the image);</li>
+<li>"Trash": allows deleting the group after clicking
+  "confirm" in the displayed modal (indicated by a purple arrow in the image).</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image18.png" /><figcaption>Control buttons</figcaption>
+</figure>
+</p>
+<h3 id="users">Users</h3>
+<p>For an account to access and use the system, it must be appropriately configured. Below, we will see the process of creating and managing a user within the SCMP using IAM as an access control application.</p>
+<p>To access User management, click the "Users" menu in the "Entities" section of the IAM dashboard.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image19.png" /><figcaption>Access to User management</figcaption>
+</figure>
+</p>
+<p>Once the link is clicked, the user will be shown the list of all available groups on the portal with their respective configuration buttons.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image20.png" /><figcaption>List of configured users</figcaption>
+</figure>
+</p>
+<h4 id="new-user-creation">New User Creation</h4>
+<p>To create a new user within the system, click the "+" button at the top right. A user creation form will be displayed.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image21.png" /><figcaption>New user creation</figcaption>
+</figure>
+</p>
+<p>The new user creation form will be displayed. Fill in the mandatory fields in the list:</p>
+<ul>
+<li>E-mail: the user's valid e-mail address.</li>
+<li>Username: the username to be used as the account for portal access.</li>
+<li>First Name: User's first name.</li>
+<li>Last Name: User's last name.</li>
+<li>Password: Password of at least 8 characters to be used for access.</li>
+<li>Max concurrent connections: Maximum number of simultaneous connections enabled for the user.</li>
+<li>Default Language: the basic language to be displayed in the system.</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image22.png" /><figcaption>User creation form</figcaption>
+</figure>
+</p>
+<p>Once all mandatory fields are entered, click the "+ Add user" button to complete the entry.</p>
+<p>A confirmation message will be displayed, and the page will reset to allow the entry of a new user.</p>
+<p>To view the newly created user, return to the page containing the list of users.</p>
+<h4 id="role-and-attribute-assignment">Role and Attribute Assignment</h4>
+<p>To manage users, you can click the "Groups" button corresponding to the row of the user to be modified.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image23.png" /><figcaption>Access to user management</figcaption>
+</figure>
+</p>
+<p>Once the button is pressed, the page refreshes to show the "Groups" page where one or more groups can be assigned to or removed from the user.</p>
+<p>To add a new group to the user, you must select the group to be assigned to the user in the left section (1) and then, by clicking the "Associate" button in the center of the page (2), the group will automatically move to the right section and the changes will be saved automatically.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image24.png" /><figcaption>Associate a user to the group</figcaption>
+</figure>
+</p>
+<p>Similarly, it is possible to remove the user from the group by first clicking the group to be removed in the right section and then the "Disassociate" button in the center of the page. The changes will be saved automatically.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image25.png" /><figcaption>Disassociate a user from the group</figcaption>
+</figure>
+</p>
+<p>Furthermore, using the buttons in the right section, corresponding to each group, it is possible to modify the priority of the various groups.</p>
+<p>For users, it is also possible to assign custom attributes. To do this, select the "Attributes" tab at the top of the page (1), then using the "+" button at the top right (2), it is possible to add an attribute. In the left part, the key must be entered (3) and in the white part on the right, its value must be entered (4). During entry, we will see a dropdown below the field where clicking will allow saving the entered value (5).</p>
+<p>The list of available attributes is in the paragraph.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image17.png" /><figcaption>Enter Attributes</figcaption>
+</figure>
+</p>
+<p>Once all necessary attributes have been entered, changes can be saved using the "Save" button at the bottom.</p>
+<h4 id="credential-reset">Credential Reset</h4>
+<p>As a user administrator, it is possible to reset passwords. To do this, click on the "Credentials" tab displayed at the top of the page. In this tab, you can enter a new password for the user and configure it as "Temporary". The temporary password must be changed by the user after the first login. A password validity period, expressed in days, can also be defined.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image26.png" /><figcaption>Modifying the user's password</figcaption>
+</figure>
+</p>
+<h4 id="viewing-modifying-and-deleting-a-user">Viewing, Modifying, and Deleting a User</h4>
+<p>From the list of available users, a series of buttons are available for each group:</p>
+<ul>
+<li>"Magnifying glass": allows viewing user info (indicated by a red arrow in the image).</li>
+<li>"Pencil": allows modifying the user's basic information (indicated by a yellow arrow in the image).</li>
+<li>"Trash": allows deleting the user after clicking "confirm" in the displayed modal (indicated by a purple arrow in the image).</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image27.png" /><figcaption>Control buttons</figcaption>
+</figure>
+</p>
+<h3 id="management-of-menus-enabled-per-usergroup">Management of Menus Enabled per User/Group</h3>
+<p>The IAM system integrated into the SCMP also allows the management of menu elements available to various users and groups. To access this functionality, simply click the "User management X Pages" link available in the "Administration" section of the IAM dashboard.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image28.png" /><figcaption>Access to menu management</figcaption>
+</figure>
+</p>
+<p>At the top of the page, there are two dropdown menus: the left dropdown allows selecting a single user, and the right one allows selecting a group.</p>
+<p>
+<figure><img src="../assets/images/extract/media/image29.png" /><figcaption>Selection of user/group to modify</figcaption>
+</figure>
+</p>
+<p>After selecting an account, the page will update to show all "STREAM" available on the application. It is possible to click the "+" button corresponding to each row to view the available "MODULES" and "COMPONENT".</p>
+<p>The displayed component lists are automatically generated by the system using the configurations performed during installation.</p>
+<p>For each component present, by clicking the dropdown menu on the corresponding row, it is possible to indicate its visibility (or lack thereof) to the user/group we previously selected.</p>
+<p>The selectable values are:</p>
+<ul>
+<li>Enabled and default: only one default can be indicated per module. Selecting this option makes the selected page the main one; thus, upon clicking the menu, the user will be redirected to this page.</li>
+<li>Enabled: Indicates that the menu is visible and usable by the user/group.</li>
+<li>Disabled: Indicates that the menu will not be enabled and will not be visible to the user/group.</li>
+<li>N.D: not defined (the menu is disabled and will not be visible).</li>
+</ul>
+<p>
+<figure><img src="../assets/images/extract/media/image30.png" /><figcaption>Menu authorization management</figcaption>
+</figure>
+</p>
+<h3 id="user-profile-lists-and-attributes">User Profile Lists and Attributes</h3>
+<p>This section highlights the different types of users who can access and use the described product.</p>
+<p>For each of them, a list of functionalities the user has been enabled for and can interact with is provided.</p>
+<p>All attributes that can be assigned to Users and Groups are also indicated here.</p>
+<h4 id="attributes">Attributes</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Attribute</strong></th>
+<th style="text-align: left;"><strong>Acceptable Values</strong></th>
+<th style="text-align: left;"><strong>Type</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Monitoring</td>
+<td style="text-align: left;">Default, AS01, mase</td>
+<td style="text-align: left;">String array</td>
+<td style="text-align: left;">Enter the list of enabled tenants for the user, separated by commas between each tenant name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Costs</td>
+<td style="text-align: left;">true / false</td>
+<td style="text-align: left;">Boolean</td>
+<td style="text-align: left;">By enabling the attribute, we specify that the user can perform searches by TAG instead of using the tenant as a discriminant.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Inventory</td>
+<td style="text-align: left;">ADMIN / LIMITED</td>
+<td style="text-align: left;">Enumeration</td>
+<td style="text-align: left;">By entering ADMIN as the value, the user will be able to view both costs received from the provider and costs calculated by the SCMP. By entering LIMITED, only costs calculated by the SCMP will be viewable.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Inventory</td>
+<td style="text-align: left;">Zona1</td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">Mandatory parameter for tools used by IAM.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="administrator">Administrator</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Functionality</strong></th>
+<th style="text-align: left;"><strong>Create</strong></th>
+<th style="text-align: left;"><strong>Read</strong></th>
+<th style="text-align: left;"><strong>Undo</strong></th>
+<th style="text-align: left;"><strong>Delete</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Monitoring</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Costs</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Inventory</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Security</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dashboard</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Catalog</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Administration</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Maturity model</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Provisioning</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tenant Management</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Service Detail Design</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="service-manager">Service Manager</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Functionality</strong></th>
+<th style="text-align: left;"><strong>Create</strong></th>
+<th style="text-align: left;"><strong>Read</strong></th>
+<th style="text-align: left;"><strong>Undo</strong></th>
+<th style="text-align: left;"><strong>Delete</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Monitoring</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Costs</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Inventory</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Security</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Dashboard</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Catalog</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Administration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Maturity model</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Provisioning</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Tenant Management</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Service Detail Design</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+</tbody>
+</table>
+<h4 id="viewer">Viewer</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Functionality</strong></th>
+<th style="text-align: left;"><strong>Create</strong></th>
+<th style="text-align: left;"><strong>Read</strong></th>
+<th style="text-align: left;"><strong>Undo</strong></th>
+<th style="text-align: left;"><strong>Delete</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Monitoring</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Costs</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Inventory</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Security</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Dashboard</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Catalog</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Administration</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Maturity model</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Provisioning</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Tenant Management</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Service Detail Design</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="authorized">Authorized</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Functionality</strong></th>
+<th style="text-align: left;"><strong>Create</strong></th>
+<th style="text-align: left;"><strong>Read</strong></th>
+<th style="text-align: left;"><strong>Undo</strong></th>
+<th style="text-align: left;"><strong>Delete</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Monitoring</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Costs</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Inventory</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Security</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Dashboard</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Catalog</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Administration</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Maturity model</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Provisioning</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tenant Management</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Service Detail Design</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../assets/js/toc.js"></script>
+      
+        <script src="../assets/js/language-switcher.js"></script>
+      
+    
+  </body>
+</html>
