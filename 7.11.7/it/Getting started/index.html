@@ -1,0 +1,1736 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Getting started - Documentazione Super Progetto</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/eng-standard-theme.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/fabric.min.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/toc.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/language-switcher.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="Documentazione Super Progetto" class="md-header__button md-logo" aria-label="Documentazione Super Progetto" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentazione Super Progetto
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentazione Super Progetto" class="md-nav__button md-logo" aria-label="Documentazione Super Progetto" data-md-component="logo">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    Documentazione Super Progetto
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Getting started/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--WaitlistConfirm'></span> Installazione e deploy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Authentication/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AuthenticatorApp'></span> Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gestione Tenant/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ModelingView'></span> Tenant Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Administration/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Admin'></span> Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dashboard/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ViewDashboard'></span> Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inventory/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--OpenFolderHorizontal'></span> Inventory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Monitoring/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AreaChart'></span> Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Security/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AzureKeyVault'></span> Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Catalog/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AddToShoppingList'></span> Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Costs e Usage/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Money'></span> Costs & Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Provisioning/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--BranchFork2'></span> Provisioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Backup Disaster Recovery/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--Lifesaver'></span> Backup & Disaster Recovery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Funzionalità condivise/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--SecondaryNav'></span> Shared Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Service Detail Design/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--ReservationOrders'></span> Service Detail Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OverviewPSN/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AddToShoppingList'></span> Leonardo Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--AzureAPIManagement'></span> REST API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    <span class='ms-Icon ms-Icon--AzureAPIManagement'></span> REST API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/finopsAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/provisioningAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Provisioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory / Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/absAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Abstraction Layer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmreportAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Report manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmcostsAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cost
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmmonitoringAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmsecurityAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rmserviceAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/siemAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SIEM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/txmAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Taxonomy Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/tenantAPI/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tenant Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/api/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service detail design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SCMP_SUM_it.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class='ms-Icon ms-Icon--PDF'></span> Versione PDF completa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sizing-raccomandato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sizing Raccomandato
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#altri-requisiti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Altri Requisiti
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Components
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modules
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-ports-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Ports &amp; Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Communication Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-locales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Locales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrades-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrades &amp; Maintenance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-configuration-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Configuration Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Configuration Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#load-balancer-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Load Balancer Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proxies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssl-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSL Certificates
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Encryption
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initial-appliance-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initial Appliance Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Initial Appliance Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#appliance-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Appliance Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keycloak-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keycloak Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Getting started</h1>
+
+<h3 id="getting-started">Getting Started</h3>
+<p>La soluzione di Secure Cloud Management Platform, in linea con la definizione di Gartner indicata nei Documenti di riferimento, è una piattaforma operativa che permette la governance, la gestione del ciclo di vita, il brokering e l’automazione delle risorse gestite in ambiente cloud.</p>
+<h4 id="requirements">Requirements</h4>
+<p>La soluzione SCMP è progettata per essere eseguita esclusivamente in ambienti Kubernetes conformi alle versioni supportate indicate nella sezione <a href="#supported-kubernetes-versions">Supported Kubernetes Versions</a>.<br />
+L'installazione richiede la disponibilità di un cluster Kubernetes (upstream o managed service) o OpenShift Container Platform già esistente, dotato delle risorse necessarie per ospitare i componenti core della piattaforma.</p>
+<p>In ambienti OpenShift è possibile sfruttare i vantaggi degli operatori certificati Red Hat. In alternativa, è possibile utilizzare cluster Kubernetes upstream o gestiti (EKS, AKS, GKE) con Helm v3.</p>
+<h4 id="sizing-raccomandato">Sizing Raccomandato</h4>
+<p>Per garantire prestazioni ottimali, si raccomanda che il cluster Kubernetes disponga di nodi con le seguenti caratteristiche minime:</p>
+<table>
+<thead>
+<tr>
+<th>Tipologia</th>
+<th>Ruolo</th>
+<th>#qty</th>
+<th>vCPU</th>
+<th>Memoria (GB)</th>
+<th>Disco (GB)</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Node</td>
+<td>Control Plane</td>
+<td>3</td>
+<td>8</td>
+<td>16</td>
+<td>128</td>
+<td>Rispettare l'HA nativa Kubernetes</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>Infra</td>
+<td>3</td>
+<td>12</td>
+<td>24</td>
+<td>628</td>
+<td>Per servizi ingress, logging, monitoring</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>Worker</td>
+<td>4</td>
+<td>8</td>
+<td>32</td>
+<td>128</td>
+<td>Per moduli SCMP e carichi utente</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠ <strong>Nota:</strong> Le quantità e le dimensioni dei nodi possono variare in base alla dimensione dell'ambiente, al numero di moduli SCMP installati e ai workload da gestire.</p>
+</blockquote>
+<h4 id="altri-requisiti">Altri Requisiti</h4>
+<ul>
+<li><strong>Helm v3</strong> installato e configurato.</li>
+<li>Accesso ai repository Helm e ai registries container indicati nella sezione successiva.</li>
+<li>Network connectivity outbound (porta 443) verso Internet e API/console dei cloud provider supportati.</li>
+<li>Persistent Storage disponibile tramite <code>StorageClass</code> compatibile con PersistentVolumeClaim Kubernetes (NFS, Ceph, Portworx, EBS, Azure Disk, ecc.).</li>
+</ul>
+<p>La piattaforma SCMP è supportata su Kubernetes e OpenShift nelle seguenti versioni:</p>
+<table>
+<thead>
+<tr>
+<th>Piattaforma</th>
+<th>Versione(i) Supportata(e)</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OpenShift Container Platform (OCP)</strong></td>
+<td>&gt;= 4.14</td>
+<td>Raccomandato l'utilizzo di versioni &gt;= 4.14 per garantire compatibilità con gli operatori certificati</td>
+</tr>
+<tr>
+<td><strong>Kubernetes Upstream</strong></td>
+<td>&gt;= 1.25</td>
+<td>Supportato con Helm v3; raccomandato utilizzare versioni &gt;= 1.26</td>
+</tr>
+<tr>
+<td><strong>Amazon EKS (Elastic Kubernetes Service)</strong></td>
+<td>&gt;= 1.25</td>
+<td>Supporto validato per ambienti gestiti EKS</td>
+</tr>
+<tr>
+<td><strong>Azure AKS (Azure Kubernetes Service)</strong></td>
+<td>&gt;= 1.25</td>
+<td>Validato per ambienti gestiti AKS</td>
+</tr>
+<tr>
+<td><strong>Google GKE (Google Kubernetes Engine)</strong></td>
+<td>&gt;= 1.25</td>
+<td>Validato per ambienti gestiti GKE</td>
+</tr>
+</tbody>
+</table>
+<p>Per effettuare correttamente l' installazione è necessario avere accesso ai seguenti repository:</p>
+<ul>
+<li><a href="https://dev.azure.com/Leonardo-Cybersecurity/ETD-CMP-HELM/_git/charts">Repository Leonardo</a></li>
+<li><a href="https://artifacthub.io/">repository charts k8s</a></li>
+</ul>
+<p>Inoltre è necessario verificare che l'ambiente possa effettuare richieste verso le console e le API messe a disposizione dei providers che verranno utilizzati</p>
+<h4 id="storage-considerations">Storage Considerations</h4>
+<h4 id="network-connectivity">Network Connectivity</h4>
+<h4 id="components">Components</h4>
+<p>In questa sezione andiamo a definire tutti i componenti necessari per il funzionamento della SCMP.
+Gli elementi "required" devono essere installati prima dei vari moduli SCMP come spiegato nella sezione "Installation"</p>
+<h5 id="prerequisites">Prerequisites</h5>
+<ul>
+<li><a href="https://artifacthub.io/packages/helm/nginx/nginx-ingress">Nginx Ingress Controller</a></li>
+<li><a href="https://cert-manager.io/docs/installation/kubernetes/">Cert Manager</a></li>
+<li><a href="../minio-operator/README.md">Minio Operator</a></li>
+<li><a href="../strimzi-operator/README.md">Strimzi Operator</a></li>
+<li><a href="https://github.com/mongodb/mongodb-kubernetes-operator?tab=readme-ov-file#documentation">MongoDB Operator</a></li>
+<li><a href="../vault-autounseal/README.md">Vault AutoUnseal</a></li>
+</ul>
+<h5 id="modules">Modules</h5>
+<h4 id="common-ports-requirements">Common Ports &amp; Requirements</h4>
+<h4 id="communication-data">Communication Data</h4>
+<p>Per aggiornare i dati la SCMP utilizza una serie di cron-job, suddivisi per provider di riferimento e modulo interessato.
+Nello specifico possiamo individuare:</p>
+<table>
+<thead>
+<tr>
+<th>Tipologia</th>
+<th>Lanciato ogni</th>
+<th>Attività svolta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inventario</td>
+<td>1 ora</td>
+<td>Recupera tutte le risorse di inventario disponibili sul provider</td>
+</tr>
+<tr>
+<td>Costi</td>
+<td>24 ore</td>
+<td>Recupera i costi degli ultimi 2 giorni per le risorse disponibili sul provider (vengono recuperati piu giorni per convalidare i dati)</td>
+</tr>
+<tr>
+<td>Monitoraggio</td>
+<td>24 ore</td>
+<td>Recupera le informazioni di monitoraggio delle risorse del provider</td>
+</tr>
+<tr>
+<td>Catalogo</td>
+<td>24 ore</td>
+<td>Recupera le risorse/SKU di catalogo del provider, cosi da permetterne l'utilizzo nella SCMP</td>
+</tr>
+<tr>
+<td>Sicurezza</td>
+<td>24 ore</td>
+<td>Recupera le informazioni di compliance e sicurezza per i provider disponibili</td>
+</tr>
+</tbody>
+</table>
+<h4 id="supported-locales">Supported Locales</h4>
+<p>Al momento le lingue supportate dalla SCMP sono:</p>
+<ul>
+<li>italiano</li>
+<li>inglese</li>
+</ul>
+<p>è possibile modificare la lingua utilizzata seguendo <a href="../Funzionalita%20condivise/#supporto-multilingua">questi passaggi</a></p>
+<h3 id="installation">Installation</h3>
+<p>In questa sezione possiamo trovare l'ordine e i passaggi necessari per effettuare una installazione completa e funzionante.</p>
+<h4 id="installation-overview">Installation Overview</h4>
+<ol>
+<li>Effettuare l'accesso ai registry helm necessari utilizzando questo codice:
+<code>helm registry login leonardocharts.azurecr.io --username leonardocharts --password $PASSWORD</code></li>
+<li>installare i  <a href="#prerequisites">prerequisiti</a></li>
+<li>Installare una istanza MongoDB (se non disponibile è possibile utilizzare "MongoDB Operator")</li>
+<li>Configurare i parametri necessari alla chart Leonardo <code>vault-autounseal</code> come indicato nella sezione di codice.
+<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">OpenShift</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">imagePullSecrets</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">acr-secret-cs</span>
+<span class="w">      </span><span class="nt">credentials</span><span class="p">:</span><span class="w"> </span><span class="c1"># specify the credentials for the image registry if you want to create the pull secret automatically</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">registry</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$DOCKER_REGISTRY</span>
+<span class="w">        </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$DOCKER_REGISTRY_USERNAME</span>
+<span class="w">        </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$DOCKER_REGISTRY_PASSWORD</span>
+<span class="w">        </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ignorethis@email.com</span>
+<span class="w">  </span><span class="c1"># The `namespace` key is needed by the official Vault chart in order to load the resources in the appropriate namespace</span>
+<span class="w">  </span><span class="c1"># and it has to adhere to our naming scheme &#39;&lt;tenant&gt;-&lt;suffix_namespace&gt;&#39;</span>
+<span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scmp-vault</span>
+<span class="w">  </span><span class="nt">tenant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scmp</span>
+<span class="w">  </span><span class="nt">suffix_namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vault</span>
+</code></pre></div></li>
+<li>Installare il chart Leonardo <code>vault-Autounseal</code> appena configurato utilizzando il codice. 
+<code>helm install vault-autounseal vault-autounseal</code></li>
+<li>**Dopo il completamento dell' installazione di <code>vault-autounseal</code> (cioè quando nel cluster sono gia disponibili i pod denominati <code>vault-prod</code>) configurare i parametri di installazione della SCMP come nel codice.
+<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">tenant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scmp</span>
+<span class="w">  </span><span class="nt">imagePullSecrets</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">acr-secret-cs</span>
+<span class="w">      </span><span class="nt">credentials</span><span class="p">:</span><span class="w"> </span><span class="c1"># specify the credentials for the image registry if you want to create the pull secret automatically</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">registry</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$DOCKER_REGISTRY</span>
+<span class="w">          </span><span class="l l-Scalar l-Scalar-Plain">username</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$DOCKER_REGISTRY_USERNAME</span>
+<span class="w">          </span><span class="l l-Scalar l-Scalar-Plain">password</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$DOCKER_REGISTRY_PASSWORD</span>
+<span class="w">          </span><span class="l l-Scalar l-Scalar-Plain">email</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ignorethis@email.com</span>
+<span class="w">  </span><span class="nt">minio</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">accesskey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;minioadmin&quot;</span>
+<span class="w">    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;minioadmin123!&quot;</span>
+</code></pre></div></li>
+<li>Lanciare l'installazione della SCMP utilizzando la chart appena modificata, per lanciarlo possiamo utilizzare:
+<code>helm install scmp scmp/</code></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Esegui le configurazioni</p>
+<p>Dopo aver effettuato l'installazione sono necessari dei passaggi di configurazione, come descritto nella sezione <a href="#appliance_setup">Appliance Setup</a></p>
+</div>
+<h3 id="upgrades-maintenance">Upgrades &amp; Maintenance</h3>
+<h3 id="additional-configuration-options">Additional Configuration Options</h3>
+<h4 id="load-balancer-configuration">Load Balancer Configuration</h4>
+<h4 id="proxies">Proxies</h4>
+<h4 id="ssl-certificates">SSL Certificates</h4>
+<h4 id="data-encryption">Data Encryption</h4>
+<h3 id="initial-appliance-setup">Initial Appliance Setup</h3>
+<h4 id="appliance-setup">Appliance Setup</h4>
+<h4 id="network-configuration">Network Configuration</h4>
+<ul>
+<li>Abilitare l' ingress controller cosi da esporre in rete i servizi</li>
+<li>(opzionale) Creare un DNS name per facilitare la connessione al sistema</li>
+</ul>
+<h4 id="keycloak-setup">Keycloak Setup</h4>
+<ul>
+<li>Configure Realm theme on Keycloak</li>
+<li>Create client 'microfe' on Keycloak Realm:</li>
+<li>Enable 'Implicit Flow'</li>
+<li>Set 'Valid Redirect URIs' to:<ul>
+<li><code>http://localhost:3000/*</code></li>
+<li>SCMP host domain</li>
+</ul>
+</li>
+</ul>
+<h4 id="content-management">Content Management</h4>
+<ul>
+<li>Upload micro frontends in singlespa bucket</li>
+<li><em>Alternatively:</em> Use minio-uploader utility chart</li>
+<li>Upload micro frontends config in singlespa-config bucket</li>
+<li><em>Alternatively:</em> Use minio-uploader utility chart</li>
+</ul>
+<h4 id="access-control">Access Control</h4>
+<ul>
+<li>Set anonymous read-only access on Minio buckets:</li>
+<li>singlespa</li>
+<li>singlespa-config</li>
+<li>
+<p>config</p>
+</li>
+<li>
+<p>Configurare utenze e ruoli di IAM , come indicato nella sezione <a href="Authentication#utenti">Creazione Utenti IAM</a></p>
+</li>
+</ul>
+<div class="admonition error">
+<p class="admonition-title">WIP</p>
+</div>
+<p>Questa pagina è in fase di aggiornamento, le informazioni non sono ancora state convalidate</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "search.highlight", "search.suggest"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+        <script src="../assets/js/toc.js"></script>
+      
+        <script src="../assets/js/language-switcher.js"></script>
+      
+    
+  </body>
+</html>
