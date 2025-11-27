@@ -1,7 +1,7 @@
 # Backup and disaster recovery
 
 La funzionalità “backup & Disaster Recovery” permette all’ utente di visualizzare una panoramica dei dati disponibili e configurati nei CommVault che sono stati correttamente inseriti nella funzionalità di “Administration”.  
-Per accedere alla funzionalità è necessario cliccare sul pulsante disponibile nel menu principale. .
+Per accedere alla funzionalità è necessario cliccare sul pulsante disponibile nel menu principale.
 
 ![Accesso a Backup & Disaster Recovery](assets/images/extract/media/image331.png)
 
