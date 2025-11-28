@@ -2,11 +2,11 @@
   "languages": {
     "it": {
       "path": "config/it/mkdocs.yml",
-      "site_name": "Documentazione Super Progetto",
-      "author": "Mario Rossi",
+      "site_name": "SCMP Documentazione (IT)",
+      "author": "Piccoli Giammarco",
       "numeroDocumento": "C000CMP01STP01",
-      "revisione": "08.00",
-      "data": "20/06/2025",
+      "revisione": "09.00",
+      "data": "20/12/2025",
       "cageCode": "A0069",
       "language_code": "it",
       "docs_dir": "../../docs/it",
@@ -78,11 +78,11 @@
 
     "en": {
       "path": "config/en/mkdocs.yml",
-      "site_name": "Super Project Documentation (EN)",
-      "author": "Mario Rossi",
+      "site_name": "SCMP Documentazione (IT)",
+      "author": "Piccoli Giammarco",
       "numeroDocumento": "C000CMP01STP01",
-      "revisione": "08.00",
-      "data": "20/06/2025",
+      "revisione": "09.00",
+      "data": "20/12/2025",
       "cageCode": "A0069",
       "language_code": "en",
       "docs_dir": "../../docs/en",
