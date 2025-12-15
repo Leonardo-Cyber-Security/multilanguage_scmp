@@ -33,14 +33,14 @@ def cleanup_html(file_path):
     )
     print("✅ Removed 'SCMP Documentazione' text")
     
-    # 2. Remove number + REST API pattern (e.g., "16 REST API", "16 <span...>REST API")
+    # 2. Remove entire <li> elements containing "REST API"
     content = re.sub(
-        r'\d+\s+(<span[^>]*>)*\s*REST\s*API',
+        r'<li[^>]*>.*?REST\s*API.*?</li>',
         '',
         content,
-        flags=re.IGNORECASE
+        flags=re.DOTALL | re.IGNORECASE
     )
-    print("✅ Removed numbered REST API text")
+    print("✅ Removed <li> elements containing 'REST API'")
     
     # Write cleaned content back
     with open(file_path, 'w', encoding='utf-8') as f:
