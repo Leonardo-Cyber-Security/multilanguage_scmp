@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Script to clean up generated HTML before PDF conversion.
-Removes unwanted elements like header titles, PDF links, and REST API navigation.
+Removes only specific text elements without breaking HTML structure.
 """
 
 import re
@@ -11,7 +11,7 @@ from pathlib import Path
 
 def cleanup_html(file_path):
     """
-    Remove unwanted elements from HTML file.
+    Remove unwanted text elements from HTML file.
     
     Args:
         file_path: Path to the HTML file to clean
@@ -24,51 +24,23 @@ def cleanup_html(file_path):
     
     original_size = len(content)
     
-    # 1. Remove md-header__title div and its content
-    # Match from opening div to its closing div (multi-line, non-greedy)
+    # 1. Remove "SCMP Documentazione (IT)" or "SCMP Documentazione (EN)"
     content = re.sub(
-        r'<div\s+class="md-header__title"[^>]*>.*?</div>\s*</div>',
-        '',
-        content,
-        flags=re.DOTALL | re.IGNORECASE
-    )
-    print("✅ Removed md-header__title section")
-    
-    # 2. Remove PDF link navigation item
-    # Match li containing PDF link (case insensitive search for "PDF" and ".pdf")
-    content = re.sub(
-        r'<li\s+class="md-nav__item">\s*<a\s+href="[^"]*\.pdf"[^>]*>.*?</a>\s*</li>',
-        '',
-        content,
-        flags=re.DOTALL | re.IGNORECASE
-    )
-    print("✅ Removed PDF download link")
-    
-    # 3. Remove REST API navigation link in table of contents
-    # Match anchor tags containing "REST API" text
-    content = re.sub(
-        r'<li\s+class="md-nav__item">\s*<a\s+href="#[^"]*"[^>]*>.*?REST\s*API.*?</a>\s*</li>',
-        '',
-        content,
-        flags=re.DOTALL | re.IGNORECASE
-    )
-    print("✅ Removed REST API navigation link")
-    
-    # 4. Additional cleanup: Remove any remaining ms-Icon--PDF references
-    content = re.sub(
-        r"<span\s+class=['\"]ms-Icon\s+ms-Icon--PDF['\"]></span>",
+        r'SCMP Documentazione \((IT|EN)\)',
         '',
         content,
         flags=re.IGNORECASE
     )
+    print("✅ Removed 'SCMP Documentazione' text")
     
-    # 5. Additional cleanup: Remove "Versione PDF completa" text variations
+    # 2. Remove number + REST API pattern (e.g., "16 REST API", "16 <span...>REST API")
     content = re.sub(
-        r'<span\s+class="md-ellipsis">\s*<span\s+class=[\'"]ms-Icon\s+ms-Icon--PDF[\'"]></span>\s*Versione\s+PDF\s+completa\s*</span>',
+        r'\d+\s+(<span[^>]*>)*\s*REST\s*API',
         '',
         content,
-        flags=re.DOTALL | re.IGNORECASE
+        flags=re.IGNORECASE
     )
+    print("✅ Removed numbered REST API text")
     
     # Write cleaned content back
     with open(file_path, 'w', encoding='utf-8') as f:
