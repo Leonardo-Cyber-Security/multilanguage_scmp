@@ -208,6 +208,3 @@ global:
 
 - Configure IAM users and roles, as indicated in the [IAM User Creation](Authentication#utenti) section.
 
-!!! error "WIP"
-
-  This page is being updated, the information has not yet been validated

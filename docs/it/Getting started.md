@@ -207,7 +207,3 @@ global:
   - config
 
 - Configurare utenze e ruoli di IAM , come indicato nella sezione [Creazione Utenti IAM](Authentication#utenti)
-
-!!! error "WIP"
-
-  Questa pagina è in fase di aggiornamento, le informazioni non sono ancora state convalidate

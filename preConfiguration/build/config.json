@@ -4,7 +4,7 @@
       "path": "config/it/mkdocs.yml",
       "site_name": "SCMP Documentazione (IT)",
       "author": "Piccoli Giammarco",
-      "numeroDocumento": "C000CMP01STP01",
+      "numeroDocumento": "C000CMP01SUM01",
       "revisione": "09.00",
       "data": "20/12/2025",
       "cageCode": "A0069",
@@ -18,7 +18,7 @@
       "titoli": {
         "titolo1": "Digital Security",
         "titolo2": "Secure Cloud Management Platform", 
-        "titolo3": "Secure Cloud Management Platform"
+        "titolo3": "Software User Manual (SUM)"
       },
 
       "autori": {
@@ -72,7 +72,7 @@
         "clausola": "",
         "diffusione": "Informazioni a diffusione esclusiva",
         "copyright": " © Copyright Leonardo S.p.a. – Tutti i diritti riservati",
-        "template": "Template:DEV183-T-IT-S rev.02 it"
+        "template": "Template:DEV200-T-IT-S rev.01.00 it"
       }
     },
 
@@ -80,7 +80,7 @@
       "path": "config/en/mkdocs.yml",
       "site_name": "SCMP Documentazione (IT)",
       "author": "Piccoli Giammarco",
-      "numeroDocumento": "C000CMP01STP01",
+      "numeroDocumento": "C000CMP01SUM01",
       "revisione": "09.00",
       "data": "20/12/2025",
       "cageCode": "A0069",
@@ -94,7 +94,7 @@
       "titoli": {
         "titolo1": "Digital Security",
         "titolo2": "Secure Cloud Management Platform", 
-        "titolo3": "Secure Cloud Management Platform"
+        "titolo3": "Software User Manual (SUM)"
       },
 
       "autori": {
@@ -148,7 +148,7 @@
         "clausola": "",
         "diffusione": "Information for exclusive distribution",
         "copyright": " © Copyright Leonardo S.p.a. – All rights reserved",
-        "template": "Template:DEV183-T-EN-S rev.02 en"
+        "template": "Template:DEV200-T-EN-S rev.01.00 en"
       }
     }
   }
