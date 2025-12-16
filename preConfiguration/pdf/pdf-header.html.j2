@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <script>
-            function asubst() {
+            function subst() {
                 var vars = {};
                 var query_strings_from_url = document.location.search.substring(1).split('&');
                 for (var query_string in query_strings_from_url) {
@@ -25,7 +26,7 @@
         </script>
 
     </head>
-    <body onload="asubst()">
+    <body class="header" style="border:0; margin: 0;" onload="subst()">
         <div class="header">
             <div class="company-info">
                 Leonardo Cyber & Security Solutions
