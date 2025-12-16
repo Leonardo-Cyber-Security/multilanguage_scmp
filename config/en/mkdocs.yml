@@ -1,4 +1,4 @@
-site_name: 'Super Project Documentation (EN)'
+site_name: 'SCMP Documentazione (IT)'
 docs_dir: '../../docs/en'                           # Where to find the markdown files
 site_dir: '../../generated/en'                           # Where to put the HTML files
 
@@ -13,7 +13,7 @@ theme:
     - search.highlight
     - search.suggest
 extra_css:
-  - assets/stylesheets/eng-standard-theme.css                   # CSS is shared by all languages
+  - assets/stylesheets/eng-standard-theme.css
   - assets/stylesheets/fabric.min.css 
   - assets/stylesheets/toc.css 
   - assets/stylesheets/language-switcher.css                    # Language switcher styles
