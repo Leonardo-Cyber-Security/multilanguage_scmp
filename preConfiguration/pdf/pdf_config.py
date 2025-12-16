@@ -1,6 +1,7 @@
 import json
 from jinja2 import Template
 import os
+import shutil
 
 # Base directory of this script (preConfiguration/pdf)
 BASE_DIR = os.path.dirname(__file__)
@@ -47,5 +48,15 @@ for tpl_file, out_file in templates:
     save_rendered(rendered, out_file)
     output_path = os.path.join(PROJECT_ROOT, out_file)
     print(f"  ✅ Generato {output_path}")
+
+# Copy CSS into the destination folder alongside generated HTML
+css_src = os.path.join(BASE_DIR, "pdf-leonardo.css")
+css_dest_rel = os.path.join("documentation", "pdfGeneration", "pdf-leonardo.css")
+css_dest_abs = os.path.join(PROJECT_ROOT, css_dest_rel)
+css_dest_dir = os.path.dirname(css_dest_abs)
+if not os.path.exists(css_dest_dir):
+    os.makedirs(css_dest_dir, exist_ok=True)
+shutil.copyfile(css_src, css_dest_abs)
+print(f"  ✅ Copiato CSS {css_dest_abs}")
 
 print("🎉 Template PDF generati con successo!")
