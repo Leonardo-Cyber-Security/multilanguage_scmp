@@ -116,15 +116,6 @@ jobs:
           echo "print_page.html (IT) non trovato"; \
         fi
 
-    - name: Clean HTML before PDF generation (IT)
-      if: env.RUN_BUILD_DOCS == 'true'
-      run: |
-        if [ -f generated/it/print_page/index.html ]; then \
-          python preConfiguration/build/cleanup_html.py generated/it/print_page/index.html; \
-        else \
-          echo "print_page.html (IT) non trovato"; \
-        fi
-
     - name: Install wkhtmltopdf
       run: |
         wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.focal_amd64.deb
@@ -169,15 +160,6 @@ jobs:
       run: |
         if [ -f generated/en/print_page/index.html ]; then \
           python preConfiguration/build/figureEnumerator.py generated/en/print_page/index.html; \
-        else \
-          echo "print_page.html (EN) non trovato"; \
-        fi
-
-    - name: Clean HTML before PDF generation (EN)
-      if: env.RUN_BUILD_DOCS == 'true'
-      run: |
-        if [ -f generated/en/print_page/index.html ]; then \
-          python preConfiguration/build/cleanup_html.py generated/en/print_page/index.html; \
         else \
           echo "print_page.html (EN) non trovato"; \
         fi
