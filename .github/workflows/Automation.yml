@@ -134,6 +134,8 @@ jobs:
           --disable-smart-shrinking \
           --dpi 200 \
           --encoding UTF-8 \
+          --header-html "file://$(pwd)/documentation/pdfGeneration/pdf-header.html" \
+          --footer-html "file://$(pwd)/documentation/pdfGeneration/pdf-footer.html" \
           --user-style-sheet "file://$(pwd)/documentation/pdfGeneration/pdf-leonardo.css" \
           --footer-spacing 10 \
           --header-spacing 10 \
