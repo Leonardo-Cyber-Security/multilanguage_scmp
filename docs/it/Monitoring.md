@@ -1,166 +1,159 @@
 # Monitoring
 
-The SCMP collects metrics from all cloud providers and aggregates them by macro categories.
+La SCMP raccoglie le metriche su tutti i cloud provider e le aggrega per macrocategorie.
 
-This aggregation allows comparison between metrics from different providers.
+Questa aggregazione (modificabile editorialmente) permette il confronto tra metriche su provider diversi.
 
-By accessing the dashboard, we can see how this aggregation mechanism provides an overview of resource utilization, divided by provider and organized by associated resource type.
+Accedendo alla dashboard, possiamo vedere come questo meccanismo di aggregazione, permetta di avere una panoramica sull’utilizzo delle risorse suddivise per provider e organizzate per tipo di risorsa associata.
 
-Within the functionality, it is possible to filter by resource type using the tab bar at the top, while for a general view, the dashboard can be used.
+Visualizzando il dettaglio delle singole metriche invece, questo meccanismo, ci permette di confrontare metriche cross provider.
+Utilizzando i menu in alto sopra il breadcrumb, è possibile accedere al dettaglio delle metriche per tipologia di asset. Qui si potranno confrontare asset su provider diversi, visualizzare le metriche fino a due anni, modificare la granularità dei dati ed esportare i risultati in vari formati.
 
-The monitoring module can be accessed via the dedicated menu. As shown in the figure:
+Si può accedere al modulo di monitoring tramite l’apposito menu. Come mostrato in figura:
 
-![Access to the Monitoring Module](assets/images/extract/media/image259.png)
+![Accesso al Modulo di Monitoring](assets/images/extract/media/image259.png)
 
-### Monitoring Dashboard
+La dashbord si presenta con un overview di tutti i provider associati, mostrando metriche per vm, dischi, network e cluster k8s. Come mostrato in figura:
 
-At this point, the user will be on the "Dashboard" monitoring tab page.
+![Dashboard di Monitoring](assets/images/extract/media/image260.png)
 
-![Monitoring Dashboard](assets/images/extract/media/170325001.png)
+L’utente si ritroverà all’interno della pagina del tab “Dashboard” di Monitoring in cui sono presenti le seguenti sezioni: “VM”, “Storage”, “Network”, “Clusters”, “Pods” e “Reports”. In ciascuna sezione sono presenti dei grafici di andamento delle metriche in funzione del tempo (time-series singola) con percentuale di utilizzo di una determinata metrica rispetto ad un tipo di servizio
 
-#### Monitoring Section Filters
+### Metriche delle risorse “VM” “Storage” “Network”
 
-Within the page, a series of filters are available that can be selected simultaneously to filter the dashboard results.
+Cliccare sul tab “Virtual Machines” per accedere all’interno della dashboard delle metriche delle “VM”
 
-The main filter is the display period, which can be found at the top right. Clicking on it will open a selection window (in yellow in the figure) where it will be possible to either enter a customized time range, using the "From" and "To" fields on the left, or select a "Smart" time range by directly clicking on the desired choice in the scrollable section on the right.
+![Grafico delle metriche](assets/images/extract/media/image261.png)
 
-![Monitoring Time Filter](assets/images/extract/media/120325006.png)
+Per ottenere il grafico delle metriche  cliccare sul menu a tendina “Provider”. All’interno del menu, è possibile cliccare su uno o più checkbox per selezionare più provider, è anche possibile selezionarli tutti cliccando sul checkbox “Select all”.
 
-Additionally, a series of filters are available at the top left of the page, allowing users to filter the retrieved resources. Specifically, it is possible to filter by:
+Successivamente, cliccare sul menu a tendina “Subsystem”. All’interno del menu, è possibile cliccare su uno o più checkbox per selezionare più sottosistemi, è anche possibile selezionarli tutti cliccando sul checkbox “Select all”.
 
-- Provider type
-- Subsystem name.
-- Resource name (only in detailed dashboards)
+Successivamente, cliccare sul menu a tendina “Metric Name”. All’interno del menu, è possibile cliccare solo su un tipo di metrica.
 
- These filters allow for multiple values to be selected and can be combined to achieve the desired granularity.
+Il pulsante che raffigura un calendario all’interno del menu a tendina “Date range” permette la selezione del range delle date.
 
-![Monitoring Functionality Filters](assets/images/extract/media/170325002.png)
+Sopra il menu a tendina di “Date range”, è presente il menu a tendina “Granularity” in cui sono disponibili le seguenti granularità:
 
-### Quotas Dashboard
+- 1 Minute
+- 5 Minutes
+- 15 Minutes
+- 30 Minutes
+- 1 Hour
+- 6 Hours
+- 1 Day
+- 1 Week
 
-The Quotas dashboard, available in the "Quotas" tab, allows viewing the details of consumption and related limits applied to Vcloud type subsystems.
+In base al range di date selezionato, si otterrà una determinata granularità:
 
-To access it, you need to click the button at the top of the tab bar.
+- La granularità a 1 minuto non sarà disponibile se il range di date \>
+  di 24 ore.
+- La granularità a 5 minuti non sarà disponibile se il range di date \>
+  di 7 giorni.
+- La granularità a 30 minuti non sarà disponibile se il range di date \>
+  di 30 giorni.
+- La granularità a 1 ora non sarà disponibile se il range di date \> di
+  6 mesi.
 
-![Access to the Quotas section](assets/images/extract/media/170325003.png)
+Le metriche possono essere ricercate in base ai TAG associati alle risorse .
 
-At this point, the user will be on the "Quotas" monitoring tab page.
-At the top, we can see a filter bar, which allows filtering by provider or subsystem. Additionally, it is possible to view the filters for the chart using the "Show additional filters" button; these filters modify the chart's display.
-Below the filters, there is a table indicating the subsystem name and
-the quotas used, limits, and an average utilization divided by resource type.
-Finally, at the bottom, a time-based chart on the selected metric in the filters can be displayed.
+Cliccare sul campo “Search tags...” e cliccare sul menu a tendina su un TAG, oppure compilarne uno manualmente. Si possono inserire uno o più TAG.
 
-![Quotas Dashboard](assets/images/extract/media/170325004.png)
+È possibile selezionare dal menu a tendina di “Granularity” altre granularità, ma come spiegato prima, tutto dipenderà dal range di date selezionato. Inoltre, è possibile recuperare un grafico delle metriche fino a due anni.
 
-### Alarms on Quota Usage
+![Ricerca delle metriche](assets/images/extract/media/image262.png)
 
-To allow the user to receive notifications when quota usage thresholds are exceeded, an "Alerting" module has been included. To access it, you need to select the tab at the top of the Monitoring functionality.
+### Shortcut dal Clusters alle metriche delle VM che lo compongono
 
-![Access to the Alerting system](assets/images/extract/media/090425002.png)
+Accedendo al sottomenu Clusters è possibile spostarsi dal grafico dellemetriche del cluster direttamente alle metriche delle risorse che compongono il cluster mediante la seguente procedura:
 
-Within the page, we find the list of "alerts" configured on the system, along with their respective configurations.
+- Accedere al sottomodulo Clusters;
+- Selezionare sul filtro:
+- Provider: OpenShift.
+- Sottosistema: uno tra quelli disponibili.
+- Risorsa: una tra quelle disponibili.
+- Metriche: una tra quelle disponibili che restituisca grafici con dati.
+- Passando il mouse sul grafico restituito verrà mostrata una finestra che riporta la risorsa del cluster di cui sono evidenziate le metriche misurate.
+- Su tale grafico cliccare sul puntino associato alla finestra.
 
-#### New Alert Creation
+![Grafico con shortcut a sottomodulo Virtual Machines](assets/images/extract/media/image263.png)
 
-Using the menu available on the right, it is possible to add a new alert to the system.
-To do this, we select the displayed "New alert" option, and a configuration page will open.
+Verranno aperte le metriche delle risorse all’interno del sottomenu Virtual Machines .
 
-![New Alert Creation](assets/images/extract/media/090425004.png)
+![Grafico delle metriche su Virtual Machines](assets/images/extract/media/image264.png)
 
-On the configuration page, all fields must be filled in, specifically:
+### Strumenti di reportistica
 
-- **"Alert type"**: Select the alert type
-- **"Alert schedule"**: Indicates the frequency of checks to be performed
-- **"Quota type"**: Select the quota type to monitor
-- **"Threshold (%)"**: Enter the percentage beyond which the alert will be sent.
-- **"Subsystems"**: Select one or more subsystems to monitor
-- **"Alert send type"**: Select the type of alert to receive, via e-Mail or Rabbit queue (for automatic integration with other systems)
-- **"Alert format"**: Select the format of the sent file that defines the alert details.
-- **"Emails"**: By selecting E-mail as the notification type, we can enter an email address to send reports to. After entering an email, it is necessary to press "Enter" on the keyboard to confirm its entry. Once pressed, the newly entered email will move to the box at the bottom, and the field will be cleared to allow for the entry of a new email, if necessary.
+La funzionalità di reportistica, specifica per funzionalità, permette di generare dei report globali delle informazioni disponibili per i vari provider, all’ interno delle pagine verrà data anche la possibilità di creare dei file per facilitare la condivisione delle informazioni.
 
-![Configuration Page](assets/images/extract/media/090425005.png)
+Per accedere alla funzionalità, sopra il path del breadcrumb, cliccare sul tab “Reports” .
 
-#### Viewing, Modifying, and Deleting an Alert
+![Accesso al report di Monitoring](assets/images/extract/media/image141.png)
 
-On this page, we find the list and related information of the alerts present in the system. For each result, by clicking the "Three dots" button on the right, it will be possible to perform three operations:
+#### Creazione di un report
 
-- View the "alert" configuration
-- Edit the alert settings.
-- Delete the schedule to stop sending emails.
+In alto sulla destra della pagina possiamo cliccare sul pulsante “New Report” per avviare la creazione di un report, nello specifico viene visualizzata una modale che contiene la lista delle tipologie di report disponibili .
 
-![Alert Operations](assets/images/extract/media/090425003.png)
+![Creazione nuovo report](assets/images/extract/media/image265.png)
 
-### Reporting Tools
+Una volta selezionata la tipologia di report cliccare sul pulsante “Configure”, nella finestra appena aperta troviamo un campo temporale, dal quale è possibile selezionare il periodo di dati di monitoraggio da inserire all’ interno del report. Il campo “Provider” che permette di selezionare uno o più provider preesistenti nel sistema, successivamente è possibile selezionare uno o più sottosistemi da includere nel report, se non vengono selezionati dei provider non sarà possibile selezione nessun sottosistema. Infine è presente una sezione “tag” per includere le sole risorse che presentano il tag inserito. .
 
-The reporting functionality, specific to each feature, allows generating global reports of the information available for the various
-providers. Within the pages, the possibility will also be given to create files to facilitate information sharing.
-To access the functionality, above the breadcrumb path, click on the "Reports" tab.
+![Configurazione del report](assets/images/extract/media/image266.png)
 
-![Access to Catalog Report](assets/images/extract/media/image141.png)
+A questo punto l'utente può scegliere tra due diverse azioni:
 
-#### Available Report Types
+- Creare un report statico che verrà salvato nel sistema.
+- Programmare una schedula che generi il report periodicamente.
 
-- **Monitoring Threshold Quotas** – List of VCloud and/or Backup subsystems, integrated into the SCMP, with details of utilization quotas (CPU, Memory, Storage, Backup). Based on the selected filter combination, it is possible to filter subsystems that exceed a certain utilization threshold.
+Per confermare la creazione di un report statico verificare che per il campo “Report type” sia stato selezionato “One-Shot” e cliccare il pulsante “Submit” presente in basso.
 
-#### Report Creation
+Dopo un periodo di caricamento sarà possibile visualizzare nella lista il report appena generato.
 
-At the top right of the page, we can click the "New Report" button to start creating a report. Specifically, a modal is displayed containing the list of available report types.
+![Lista dei report effettuati](assets/images/extract/media/image144.png)
 
-![New Report Creation](assets/images/extract/media/image142.png)
+##### Schedulazione del report
 
-Once the report type is selected, click the "Configure" button to select the providers to include in the report. In the newly opened window, we find the "Provider" field which allows selecting one or more pre-existing providers in the system. Subsequently, it is possible to select one or more subsystems to include in the report; if no providers are selected, no subsystems can be selected. Finally, there is a "tag" section to include only resources that have the entered tag.
+Se invece si vuole programmare l’esecuzione dei report automatica sarà necessario selezionare “Recurring” per il campo “Report Type”, in questo caso la finestra si aggiorna per mostrare i parametri aggiuntivi per la configurazione del report periodico.
 
-![Report Configuration](assets/images/extract/media/image143.png)
+I parametri da inserire sono:
 
-At this point, the user can choose between two different actions:
+- Period: permette di selezionare la frequenza di invio del report (oraria, giornaliera, ...), questo campo sovrascrive il periodo di selezione dei dati di monitoraggio inserito precedentemente.
+- Report Language: permette di selezionare la lingua utilizzata nel report
+- File format: permette di selezionare una o più tipologie di file da includere nella mail
+- User E-mails: permette di inserire una mail alla quale inviare i report, dopo aver inserito una mail è necessario premere “Invio” sulla tastiera per confermarne l’inserimento, una volta premuto la mail appena inserita passerà nel box in fondo e il campo verrà svuotato per permettere l’inserimento, se necessario, di una nuova mail
 
-- Create a static report that will be saved in the system.
-- Schedule a job that generates the report periodically.
+![Parametri dei report schedulati](assets/images/extract/media/image145.png)
 
-To confirm the creation of a static report, verify that "One-Shot" has been selected for the "Report type" field and click the "Submit" button at the bottom.
-After a loading period, the newly generated report will be visible in the list.
+Avendo configurato tutti i parametri il pulsante “Submit” diventerà cliccabile, cliccarlo per confermare l’inserimento e dopo un periodo di caricamento sarà possibile visualizzare nella lista il report appena generato .
 
-![List of Generated Reports](assets/images/extract/media/image144.png)
+![Lista dei report effettuati](assets/images/extract/media/image144.png)
 
-##### Report Scheduling
+##### Lista dei report schedulati
 
-If, on the other hand, automatic report execution is desired, it will be necessary to select "Recurring" for the "Report Type" field. In this case, the window updates to show additional parameters for configuring the periodic report.
-The parameters to enter are:
+Per visualizzare la lista dei report schedulati , selezionare il tab “Scheduled” presente in alto sulla sinistra nella pagina dei report
 
-- Period: allows selecting the report sending frequency (hourly, daily, ...).
-- "Receive only if not empty": if selected, the file will not be sent when it contains no information.
-- Report Language: allows selecting the language used in the report.
-- File format: allows selecting one or more file types to include in the email.
-- User E-mails: allows entering an email address to send reports to. After entering an email, it is necessary to press "Enter" on the keyboard to confirm its entry. Once pressed, the newly entered email will move to the box at the bottom, and the field will be cleared to allow for the entry of a new email, if necessary.
+![Lista dei report schedulati](assets/images/extract/media/image146.png)
 
-![Scheduled Report Parameters](assets/images/extract/media/image145.png)
+In questa pagina troviamo la lista e le relative informazioni dei report schedulati presenti nel sistema, per ogni risultato è possibile, cliccando il pulsante “Tre punti” sulla destra sarà possibile effettuare tre operazioni:
 
-Having configured all parameters, the "Submit" button will become clickable. Click it to confirm the entry, and after a loading period, the newly generated report will be visible in the list.
+- Visualizzare l’ultimo report generato .
+- Editare le impostazioni della schedula, non sarà possibile modificare i provider o sottosistemi selezionati .
+- Eliminare la schedula per interrompere l’invio delle e-mail.
 
-![List of Generated Reports](assets/images/extract/media/image144.png)
+![Modifica di una schedule](assets/images/extract/media/image147.png)
 
-##### List of Scheduled Reports
+##### Utilizzo dei report
 
-To view the list of scheduled reports, select the "Scheduled" tab located at the top left of the reports page.
+Cliccando sulla riga di un report statico, o utilizzando il pulsante “Show report” disponibile per i report schedulati sarà possibile visualizzare la pagina di dettaglio del report selezionato
 
-![List of Scheduled Reports](assets/images/extract/media/image146.png)
+All’interno del sommario del report dell’Monitoring, sono presenti i filtri usati dall’utente per generare il report.
 
-On this page, we find the list and related information of the scheduled reports present in the system. For each result, by clicking the "Three dots" button on the right, it will be possible to perform three operations:
+Sotto i filtri, è presente la tabella riassuntiva delle metriche delle risorse appartenenti ai provider. A destra sono presenti due pulsanti: “PRINT” ed “EXPORT”.
 
-- View the last generated report.
-- Edit the schedule settings; it will not be possible to modify the selected providers or subsystems.
-- Delete the schedule to stop sending emails.
+Cliccando sul pulsante “PRINT”, appare una modale di anteprima della stampa. Per stampare il report, cliccare sul pulsante in basso a destra “Stampa”, a questo punto si avvierà la stampa del suddetto.
 
-![Modify a schedule](assets/images/extract/media/image147.png)
+Cliccando sul pulsante “EXPORT”, è possibile esportare il report in  formato “.csv”, “. json” o “.pdf”.
 
-##### Report Usage
+Per tornare al tab “Results”, in basso a destra, cliccare sul pulsante “CLOSE” oppure in alto a sinistra cliccare sulla freccia che punta verso la sinistra, accanto al titolo del report.
 
-By clicking on a static report row, or by using the "Show report" button available for scheduled reports, it will be possible to view the detail page of the selected report.
-Within the Inventory report summary, there is a "Stats" section which includes the number of disks, interfaces, networks, and virtual machines belonging to the selected provider.
-Below the "Stats" section, there are the filters used by the user to generate the report.
-Below the filters, there is a summary table of resources belonging to the providers. On the right, there are two buttons: "PRINT" and "EXPORT".
-Clicking the "PRINT" button will display a print preview modal. To print the report, click the "Print" button at the bottom right; at this point, the printing of the report will start.
-Clicking the "EXPORT" button allows exporting the report in ".csv", ".json", or ".pdf" format.
-To return to the "Results" tab, click the "CLOSE" button at the bottom right, or click the left-pointing arrow at the top left, next to the report title.
-
-![Report Details](assets/images/extract/media/image148.png)
+![Dettagli dei report](assets/images/extract/media/image267.jpeg)

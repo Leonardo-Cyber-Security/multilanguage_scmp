@@ -1,11 +1,9 @@
 # Administration
 
-Use these examples to structure your documentation for clarity and consistency.
-
 La funzionalità di Administration è la base di partenza per poter utilizzare la SCMP.
 
 I provider inseriti all’interno di questa funzionalità verranno utilizzati dal sistema per recuperare tutte le informazioni necessarie.
-<figcaption><em>TESTO CENTRATO</em></figcaption>
+
 All’interno della funzionalità sarà possibile:
 
 - Configurare i cloud provider che potranno essere utilizzati nel Tenant di riferimento.
