@@ -439,7 +439,7 @@ Vengono indicati con \* i parametri obbligatori
 
 !!! warning "Variabili per il calcolo dei costi"
 
-    Le variabili indicate con \*\* sono esclusive, quindi è possibile selezionarne solo una alla volta. Ogni variabile attiva un sistema diverso per il calcolo dei costi e, se ne vengono impostate più di una, verrà impedito il salvataggio del sottosistema.
+    Le variabili indicate con \*\* sono esclusive, quindi è possibile selezionarne solo una alla volta. Ogni variabile attiva un sistema diverso per il calcolo dei costi e, se ne vengono impostate più di una, verrà impedito il salvataggio del sottosistema
     Nello specifico possiamo:
 
     - Utilizzare il campo "Storage account ID" per recuperare i costi tramite le estrazioni automatiche effettuate singolarmente per sottosistema (solo se lo storage appartiene allo stesso tenant)
