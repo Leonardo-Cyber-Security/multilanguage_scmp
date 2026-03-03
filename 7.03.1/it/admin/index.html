@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Editor Markdown con GitHub</title>
+<link rel="stylesheet" href="editor.css">
+<link rel="stylesheet" href="editorOriginal.css">
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <!-- Local FontAwesome fallback -->
+  <link rel="stylesheet" href="./fontawesome-local.css">
+ <!-- FontAwesome CDN to fix missing local font files -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <style>
+  /* Local loading gif */
+  .editormd-preview-container .loading, .editormd .loading {background-image:url('./images/loading.gif') !important;}
+   /* Force FontAwesome to use CDN sources; prevent local /fonts/ 404 */
+   @font-face {
+     font-family: 'FontAwesome';
+     font-style: normal;
+     font-weight: 400;
+     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'),
+          url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
+          url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf') format('truetype');
+   }
+
+ </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/editor.md@1.5.0/editormd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/editor.md@1.5.0/languages/en.js"></script>
+  
+  <!-- Moduli in ordine di dipendenza -->
+  <script src="./modules/core.js"></script>
+  <script src="./modules/images.js"></script>
+  <script src="./modules/repository.js"></script>
+  <script src="./modules/files.js"></script>
+  <script src="./modules/versions.js"></script>
+  <script src="./modules/deploy.js"></script>
+  <script src="./modules/events.js"></script>
+  
+  <!-- Entry point finale -->
+  <script src="./app.js"></script>
+  <script>
+    // Alias per accesso diretto alle variabili globali nell'HTML
+    let currentUsername, currentRepo, currentToken, ghPagesVersions;
+
+    // Funzione per sincronizzare le variabili  
+    function syncVars() {
+      currentUsername = window.currentUsername;
+      currentRepo = window.currentRepo;
+      currentToken = window.currentToken;
+      ghPagesVersions = window.ghPagesVersions;
+    }
+
+    // Sincronizza le variabili ogni volta che app.js le aggiorna
+    setInterval(syncVars, 50);
+  </script>
+</head>
+<body>
+
+<div id="configurator">
+  <h3>Configura Editor Markdown</h3>
+  <input type="text" id="username" placeholder="GitHub Username" />
+  <input type="text" id="repo" placeholder="Repository Name" />
+  <input type="password" id="token" placeholder="Personal Access Token" />
+  <button id="startBtn" class="action-btn">Avvia Editor</button>
+</div>
+
+<!-- Indicatore di caricamento immagini -->
+<div id="images-loading-indicator" style="display: none; position: fixed; top: 10px; right: 10px; background: #007acc; color: white; padding: 8px 15px; border-radius: 20px; z-index: 1000; font-size: 12px;">
+  🖼️ Caricamento immagini: <span id="images-progress">0/0</span>
+</div>
+
+<!-- Menu superiore - visibile solo quando editor è attivo -->
+<div id="top-menu" style="display: none;">
+  <div class="top-menu-content">
+    <div class="menu-group">
+      <button id="newFileBtn" class="top-btn create-btn">📝 Nuovo File</button>
+      <button id="uploadImageBtn" class="top-btn create-btn">📤 Nuova Immagine</button>
+    </div>
+    <div class="menu-group">
+      <button id="deleteFileBtn" class="top-btn delete-btn">�️ Elimina File</button>
+      <button id="deleteImageBtn" class="top-btn delete-btn">�️ Elimina Img</button>
+      <button id="versionEditorBtn" class="top-btn delete-btn">�️ Elimina Versioni</button>
+    </div>
+    <div class="menu-group">
+      <button id="commitAllBtn" class="top-btn commit-btn">💾 Commit All</button>
+      <button id="clearStagingBtn" class="top-btn clear-btn">🧹 Clear</button>
+    </div>
+  </div>
+</div>
+
+<button id="sidebar-toggle">☰</button>
+<div id="sidebar">
+  <h3>File disponibili:</h3>
+
+    <button id="refreshRepoBtn" class="sidebar-btn">Aggiorna repo</button>
+  <ul id="file-list-ul"></ul>
+    <button id="newFileBtn" class="sidebar-btn">Nuovo file Markdown</button>
+      <button id="pushAllBtn" class="sidebar-btn">Push All Changes</button>
+    <button id="deployBtn" class="sidebar-btn">Esegui Deploy Docs</button>
+    <button id="deleteFileBtn" class="sidebar-btn delete-btn">Elimina file</button>
+  <div id="uploadBox" class="upload-box">
+    <label class="upload-label">Carica Immagine:</label><br>
+    <input type="file" id="uploadImage" accept="image/*" class="upload-input" />
+    <button id="uploadBtn" class="sidebar-btn">Carica Immagine</button>
+    <button id="showImagesBtn" class="sidebar-btn">Vedi Immagini</button>
+    <button id="deleteImageBtn" class="sidebar-btn delete-btn">Elimina immagine</button>
+<!-- Modale elimina immagine -->
+<div id="deleteImageModal" class="modal-bg">
+  <div class="modal-box version-editor-modal">
+    <button id="closeDeleteImageModal" class="modal-close">&times;</button>
+    <h3>🖼️ Elimina Immagine</h3>
+    <div style="margin-bottom: 15px; padding: 10px; background: #fff3cd; border-radius: 5px;">
+      <p><strong>⚠️ Attenzione:</strong></p>
+      <ul style="margin: 5px 0; padding-left: 20px; font-size: 14px;">
+        <li>Seleziona una o più immagini da eliminare</li>
+        <li>Le immagini selezionate verranno aggiunte allo staging per l'eliminazione</li>
+        <li>Usa "Commit All" per rimuoverle definitivamente da GitHub</li>
+      </ul>
+    </div>
+    <div id="deleteImageList" class="modal-list"></div>
+    <div style="margin-top: 20px; text-align: center;">
+      <button id="selectAllImagesBtn" class="modal-btn" style="margin-right: 10px;">Seleziona tutto</button>
+      <button id="unselectAllImagesBtn" class="modal-btn" style="margin-right: 10px;">Deseleziona tutto</button>
+      <button id="confirmDeleteImageBtn" class="modal-btn delete-btn">🗑️ Elimina immagini selezionate</button>
+    </div>
+  </div>
+</div>
+
+</div>
+<!-- Modale Carica Immagine -->
+<div id="uploadImageModal" class="modal-bg">
+  <div class="modal-box">
+    <button id="closeUploadImageModal" class="modal-close">&times;</button>
+    <h3>📤 Carica Nuova Immagine</h3>
+    
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 10px; font-weight: bold;">Seleziona immagine:</label>
+      <input type="file" id="imageFileInput" accept="image/*" 
+             style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
+    </div>
+    
+    <div id="imagePreviewContainer" style="display: none; margin-bottom: 15px; text-align: center;">
+      <img id="imagePreview" style="max-width: 100%; max-height: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+      <div id="imageInfo" style="font-size: 12px; color: #666; margin-top: 8px;"></div>
+    </div>
+    
+    <div style="display: flex; gap: 10px;">
+      <button id="confirmUploadImageBtn" class="modal-btn" style="background: #28a745; color: white;" disabled>
+        📤 Carica in Staging
+      </button>
+      <button id="cancelUploadImageBtn" class="modal-btn" style="background: #6c757d; color: white;">
+        ❌ Annulla
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modale elimina file -->
+<div id="deleteFileModal" class="modal-bg">
+  <div class="modal-box version-editor-modal">
+    <button id="closeDeleteFileModal" class="modal-close">&times;</button>
+    <h3>📄 Elimina File Markdown</h3>
+    <div style="margin-bottom: 15px; padding: 10px; background: #fff3cd; border-radius: 5px;">
+      <p><strong>⚠️ Attenzione:</strong></p>
+      <ul style="margin: 5px 0; padding-left: 20px; font-size: 14px;">
+        <li>Seleziona uno o più file da eliminare</li>
+        <li>I file selezionati verranno aggiunti allo staging per l'eliminazione</li>
+        <li>Usa "Commit All" per rimuoverli definitivamente da GitHub</li>
+      </ul>
+    </div>
+    <div id="deleteFileList" class="modal-list"></div>
+    <div style="margin-top: 20px; text-align: center;">
+      <button id="selectAllFilesBtn" class="modal-btn" style="margin-right: 10px;">Seleziona tutto</button>
+      <button id="unselectAllFilesBtn" class="modal-btn" style="margin-right: 10px;">Deseleziona tutto</button>
+      <button id="confirmDeleteFileBtn" class="modal-btn delete-btn">🗑️ Elimina file selezionati</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modale Nuovo File -->
+<div id="newFileModal" class="modal-bg">
+  <div class="modal-box">
+    <button id="closeNewFileModal" class="modal-close">&times;</button>
+    <h3>📝 Crea Nuovo File Markdown</h3>
+    
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px; font-weight: bold;">Nome File:</label>
+      <input type="text" id="newFileName" placeholder="es. nuovo-documento.md" 
+             style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+      <label style="display: block; margin-bottom: 10px; font-weight: bold;">📁 Seleziona Directory:</label>
+      <div id="pathOptions" style="max-height: 200px; overflow-y: auto; border: 1px solid #eee; padding: 10px; border-radius: 4px;">
+        <!-- Opzioni path caricate dinamicamente -->
+      </div>
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px; font-weight: bold;">Path Completo:</label>
+      <input type="text" id="fullFilePath" readonly 
+             style="width: 100%; padding: 8px; background: #f5f5f5; border: 1px solid #ccc; border-radius: 4px;" 
+             placeholder="Seleziona directory e inserisci nome file..." />
+    </div>
+    
+    <button id="confirmCreateFileBtn" class="modal-btn">📝 Crea File</button>
+  </div>
+</div>
+
+<!-- Modale Version Editor -->
+<div id="versionEditorModal" class="modal-bg">
+  <div class="modal-box version-editor-modal">
+    <button id="closeVersionEditorModal" class="modal-close">&times;</button>
+    <h3>🗂️ Version Editor - Gestione Versioni gh-pages</h3>
+    <div id="versionEditorContent">
+      <div id="versionLoadingIndicator" style="text-align: center; padding: 20px;">
+        <div style="display: inline-block; animation: spin 1s linear infinite;">⏳</div>
+        <p>Caricamento versioni dal branch gh-pages...</p>
+      </div>
+      <div id="versionsList" style="display: none;">
+        <div style="margin-bottom: 15px; padding: 10px; background: #f0f8ff; border-radius: 5px;">
+          <p><strong>📋 Istruzioni:</strong></p>
+          <ul style="margin: 5px 0; padding-left: 20px; font-size: 14px;">
+            <li>Seleziona una o più versioni da eliminare</li>
+            <li>Le versioni selezionate verranno rimosse definitivamente dal branch gh-pages</li>
+            <li>La cartella "latest" non può essere eliminata per sicurezza</li>
+          </ul>
+        </div>
+        <div id="versionsCheckboxList"></div>
+        <div style="margin-top: 20px; text-align: center;">
+          <button id="selectAllVersionsBtn" class="modal-btn" style="margin-right: 10px;">Seleziona tutto</button>
+          <button id="unselectAllVersionsBtn" class="modal-btn" style="margin-right: 10px;">Deseleziona tutto</button>
+          <button id="deleteSelectedVersionsBtn" class="modal-btn delete-btn">🗑️ Elimina versioni selezionate</button>
+        </div>
+      </div>
+      <div id="versionsError" style="display: none; color: red; text-align: center; padding: 20px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Modale Version Editor -->
+<div id="versionEditorModal" class="modal-bg">
+  <div class="modal-box version-editor-modal">
+    <button id="closeVersionEditorModal" class="modal-close">&times;</button>
+    <h3>🗂️ Version Editor - Gestione Versioni gh-pages</h3>
+    <div id="versionEditorContent">
+      <div id="versionLoadingIndicator" style="text-align: center; padding: 20px;">
+        <div style="display: inline-block; animation: spin 1s linear infinite;">⏳</div>
+        <p>Caricamento versioni dal branch gh-pages...</p>
+      </div>
+      <div id="versionsList" style="display: none;">
+        <div style="margin-bottom: 15px; padding: 10px; background: #f0f8ff; border-radius: 5px;">
+          <p><strong>📋 Istruzioni:</strong></p>
+          <ul style="margin: 5px 0; padding-left: 20px; font-size: 14px;">
+            <li>Seleziona una o più versioni da eliminare</li>
+            <li>Le versioni selezionate verranno rimosse definitivamente dal branch gh-pages</li>
+            <li>La cartella "latest" non può essere eliminata per sicurezza</li>
+          </ul>
+        </div>
+        <div id="versionsCheckboxList"></div>
+        <div style="margin-top: 20px; text-align: center;">
+          <button id="selectAllVersionsBtn" class="modal-btn" style="margin-right: 10px;">Seleziona tutto</button>
+          <button id="unselectAllVersionsBtn" class="modal-btn" style="margin-right: 10px;">Deseleziona tutto</button>
+          <button id="deleteSelectedVersionsBtn" class="modal-btn delete-btn">🗑️ Elimina versioni selezionate</button>
+        </div>
+      </div>
+      <div id="versionsError" style="display: none; color: red; text-align: center; padding: 20px;"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="editor" class="wising-section">
+  <textarea style="display:none;"># Benvenuto nel tuo editor Markdown</textarea>
+</div>
+
+
+
+<script>
+/* ================== VARIABILI GLOBALI ================== */
+// Moved to app.js
+
+/* ================== FUNZIONI UTILI ================== */
+// Moved to app.js
+
+/* ================== EDITOR ================== */
+// Moved to app.js
+
+/* ================== GESTIONE FILE ================== */
+// File management functions moved to app.js
+
+/* ================== GESTIONE IMMAGINI ================== */
+function loadImagesList(callback) {
+  $.ajax({
+    url: `https://api.github.com/repos/${currentUsername}/${currentRepo}/contents/documentation/docs/images/media`,
+    headers: { Authorization: `token ${currentToken}` },
+    success: files => {
+      cachedImages = files.filter(f => f.type === "file").map(f => ({
+        name: f.name, local: "images/media/" + f.name, download_url: f.download_url, dataUrl: null
+      }));
+      let pending = cachedImages.length;
+      cachedImages.forEach((img, idx) => {
+        $.ajax({
+          url: img.download_url, xhrFields: { responseType: "blob" },
+          success: blob => {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+              cachedImages[idx].dataUrl = reader.result;
+              if (--pending === 0 && callback) callback(cachedImages);
+            };
+            reader.readAsDataURL(blob);
+          },
+          error: () => { if (--pending === 0 && callback) callback(cachedImages); }
+        });
+      });
+    },
+    error: () => { cachedImages = []; if (callback) callback([]); }
+  });
+}
+function uploadImage(file) {
+  const reader = new FileReader();
+  reader.onload = e => {
+    const base64 = e.target.result.split(",")[1];
+    $.ajax({
+      url: `https://api.github.com/repos/${currentUsername}/${currentRepo}/contents/documentation/docs/images/media/${file.name}`,
+      type: "PUT",
+      headers: { Authorization: `token ${currentToken}` },
+      data: JSON.stringify({ message: "Aggiunta immagine da editor web", content: base64 }),
+      success: () => alert("Immagine caricata!"),
+      error: () => alert("Errore nel caricamento immagine.")
+    });
+  };
+  reader.readAsDataURL(file);
+}
+
+/* ================== DEPLOY ================== */
+// Deploy functions moved to app.js
+
+/* ================== STATO REPO ================== */
+// Repository status functions moved to app.js
+
+/* ================== EVENTI ================== */
+$(document).on("click", ".open-md-file", function(e) {
+  e.preventDefault();
+  const path = $(this).data("path");
+  loadFile(path, currentUsername, currentRepo, currentToken);
+});
+$("#pushAllBtn").on("click", pushAllChanges);
+$("#newFileBtn").on("click", createNewFile);
+$("#uploadBtn").on("click", () => { const file = $("#uploadImage")[0].files[0]; if (file) uploadImage(file); });
+$("#deployBtn").on("click", () => { editAutomationYaml(true, () => setTimeout(() => editAutomationYaml(false), 5000)); });
+$("#startBtn").on("click", () => {
+  currentUsername = $("#username").val(); currentRepo = $("#repo").val(); currentToken = $("#token").val();
+  if (!currentUsername || !currentRepo || !currentToken) return alert("Compila tutti i campi!");
+  $("#configurator").hide(); $("#editor,#file-list").show(); initEditor(); loadFiles(currentUsername, currentRepo, currentToken);
+});
+$("#sidebar-toggle").on("click", function() {
+  $("#sidebar").toggleClass("collapsed");
+  if($("#sidebar").hasClass("collapsed")) {
+    $("#sidebar").css("left", "-280px");
+    $("#editor").css("margin-left", "0");
+  } else {
+    $("#sidebar").css("left", "0");
+    $("#editor").css("margin-left", "280px");
+  }
+});
+// Mostra modale elimina immagine
+$("#deleteImageBtn").on("click", function() {
+  loadImagesList(function(files) {
+    if (!files || files.length === 0) {
+      alert("Nessuna immagine disponibile da eliminare.");
+      return;
+    }
+    let html = '<ul class="delete-image-list">';
+    files.forEach(f => {
+      html += `<li class='delete-image-item'><label><input type='radio' name='deleteImageRadio' value='${f.local}' class='delete-image-radio'>${f.local}</label></li>`;
+    });
+    html += '</ul>';
+    $("#deleteImageList").html(html);
+    window.selectedImageToDelete = null;
+    $("#deleteImageModal").css("display", "block");
+  });
+});
+// Chiudi modale elimina immagine
+$("#closeDeleteImageModal").on("click", function() {
+  $("#deleteImageModal").css("display", "none");
+});
+// Mostra modale immagini come accordion
+$("#showImagesBtn").on("click", function() {
+  loadImagesList(function(files) {
+    let html = '<div id="images-accordion">';
+    files.forEach((f, idx) => {
+      html += `
+        <div class="img-accordion">
+          <span class="img-title" data-idx="${idx}" style="cursor:pointer;">${f.name}</span>
+          <button class="img-btn copy-img-name" data-name="${f.name}" title="Copia nome">📋</button>
+        </div>
+        <div class="img-panel" style="display:none;">
+          <img src='${f.dataUrl || f.download_url}' alt='${f.name}' class="img-preview-large">
+        </div>
+      `;
+    });
+    html += '</div>';
+    $("#imagesList").html(html);
+    $("#imagesModal").css("display", "block");
+  });
+});
+// Toggle accordion
+$(document).on("click", ".img-title", function() {
+  $(this).closest('.img-accordion').next('.img-panel').slideToggle(180);
+});
+// Copia nome immagine
+$(document).on("click", ".copy-img-name", function() {
+  const name = $(this).data("name");
+  navigator.clipboard.writeText(name);
+  $(this).text('✔️');
+  setTimeout(() => $(this).text('📋'), 900);
+});
+// Chiudi modale immagini
+$("#closeImagesModal").on("click", function() {
+  $("#imagesModal").css("display", "none");
+});
+</script>
+
+</body>
+</html>
