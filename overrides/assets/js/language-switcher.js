@@ -100,20 +100,13 @@ function setupLanguageSwitcherEvents() {
         let newUrl;
         
         const currentLang = getCurrentLanguage();
-        
-        if (currentLang === 'en' && targetLang === 'it') {
-            // Switch from English to Italian
-            newUrl = currentUrl.replace('/en/', '/it/');
-        } else if (currentLang === 'it' && targetLang === 'en') {
-            // Switch from Italian to English
-            newUrl = currentUrl.replace('/it/', '/en/');
-        } else {
-            // Fallback: construct new URL
-            const baseUrl = window.location.origin;
-            const pathWithoutLang = window.location.pathname.replace(/^\/(en|it)\//, '/');
-            newUrl = `${baseUrl}/${targetLang}${pathWithoutLang}`;
-        }
-        
+        // Rimuovi ogni prefisso lingua esistente (solo all'inizio del path)
+        const path = window.location.pathname.replace(/^\/(en|it)\//, '/');
+        // Costruisci il nuovo URL con il prefisso corretto
+        const baseUrl = window.location.origin;
+        let newUrl = `${baseUrl}/${targetLang}${path}`;
+        // Evita doppio slash
+        newUrl = newUrl.replace(/\/\//g, '/').replace(':/', '://');
         console.log(`Switching from ${currentLang} to ${targetLang}: ${newUrl}`);
         window.location.href = newUrl;
     }
