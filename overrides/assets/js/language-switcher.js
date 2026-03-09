@@ -94,24 +94,23 @@ function setupLanguageSwitcherEvents() {
         return 'it'; // Default to Italian
     }
 
-    // Switch language function
+    // Switch language function DISABLED TEMPORANEAMENTE
+    /*
     function switchLanguage(targetLang) {
         let currentUrl = window.location.href;
         let newUrl;
-        
         const currentLang = getCurrentLanguage();
-        // Rimuovi ogni prefisso lingua esistente (solo all'inizio del path)
         const path = window.location.pathname.replace(/^\/(en|it)\//, '/');
-        // Costruisci il nuovo URL con il prefisso corretto
         const baseUrl = window.location.origin;
         newUrl = `${baseUrl}/${targetLang}${path}`;
-        // Evita doppio slash
         newUrl = newUrl.replace(/\/\//g, '/').replace(':/', '://');
         console.log(`Switching from ${currentLang} to ${targetLang}: ${newUrl}`);
         window.location.href = newUrl;
     }
+    */
 
-    // Event listeners for language switches
+    // Event listeners for language switches DISABILITATI TEMPORANEAMENTE
+    /*
     switchToIt.addEventListener('click', function(e) {
         e.preventDefault();
         switchLanguage('it');
@@ -121,6 +120,7 @@ function setupLanguageSwitcherEvents() {
         e.preventDefault();
         switchLanguage('en');
     });
+    */
 
     // Update button text based on current language
     function updateSwitcherText() {
