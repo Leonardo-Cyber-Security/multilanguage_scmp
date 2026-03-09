@@ -104,7 +104,7 @@ function setupLanguageSwitcherEvents() {
         const path = window.location.pathname.replace(/^\/(en|it)\//, '/');
         // Costruisci il nuovo URL con il prefisso corretto
         const baseUrl = window.location.origin;
-        let newUrl = `${baseUrl}/${targetLang}${path}`;
+        newUrl = `${baseUrl}/${targetLang}${path}`;
         // Evita doppio slash
         newUrl = newUrl.replace(/\/\//g, '/').replace(':/', '://');
         console.log(`Switching from ${currentLang} to ${targetLang}: ${newUrl}`);
