@@ -13,7 +13,6 @@ nav:
 - "<span class='ms-Icon ms-Icon--Lifesaver'></span> Backup & Disaster Recovery": Backup Disaster Recovery.md
 - "<span class='ms-Icon ms-Icon--SecondaryNav'></span> Shared Features": Funzionalità condivise.md
 - "<span class='ms-Icon ms-Icon--ReservationOrders'></span> Service Detail Design": Service Detail Design.md
-- "<span class='ms-Icon ms-Icon--AddToShoppingList'></span> Leonardo Services": OverviewPSN.md
 - "<span class='ms-Icon ms-Icon--AzureAPIManagement'></span> REST API":
   - "Finops": api/finopsAPI.md
   - "Provisioning": api/provisioningAPI.md
