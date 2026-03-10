@@ -34,7 +34,7 @@ Inoltre, per ogni sottosistema è disponibile uno status, rappresentato da un �
 - Verde: il funziona correttamente nella SCMP “status: ok”.
 - Rosso: il sottosistema non è più utilizzabile dalla SCMP “status : failed”.
 
-La SCMP effettua periodicamente dei test di connessione su tutti i  sottosistemi configurati, quando un sottosistema fallisce questo controllo, lo status del sottosistema viene aggiornato e vengono disabilitati tutti i processi di recupero delle informazioni (costi, inventario, monitoraggio, sicurezza).
+La SCMP effettua periodicamente dei test di connessione su tutti i  sottosistemi configurati, quando un sottosistema fallisce questo controllo, lo status del sottosistema viene aggiornato e vengono disabilitati tutti i processi di recupero delle informazioni (costi, inventario, monitoring, sicurezza).
 
 Questo potrebbe accadere, ad esempio quando il secret o le password utilizzate per connettersi scadono e devono essere rinnovate.
 Andando a modificare il sottosistema è possibile inserire i nuovi parametri di connessione per ristabilirne il corretto funzionamento, che verrà confermato dallo status "OK"

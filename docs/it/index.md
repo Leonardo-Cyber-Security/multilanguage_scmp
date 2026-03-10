@@ -45,7 +45,7 @@ per le seguenti categorie:
 
 | **Funzionalità** | **Descrizione** |
 |----|----|
-| **Monitoring** | Monitoraggio Istanze Inventario |
+| **Monitoring** | monitoring Istanze Inventario |
 | **Costs** | Visualizzazione e Reportistica Costi |
 | **Inventory** | Visualizzazione, Reportistica e Scenari “what if” Inventario |
 | **Security** | Visualizzazione e gestione falle di sicurezza sugli asset di inventario |

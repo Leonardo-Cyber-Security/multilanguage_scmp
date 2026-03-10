@@ -33,7 +33,7 @@ Una volta premuto viene visualizzata la pagina di configurazione nuovo tenant  d
 |----|----|----|
 | Inventory | Indica il numero di giorni per cui i dati relativi all ‘inventario saranno conservati nelle collections presenti su DB | x |
 | Cost | Indica il numero di giorni per cui i dati relativi ai costi saranno conservati nelle collections presenti su DB | x |
-| Monitoring | Indica il numero di giorni per cui i dati relativi al monitoraggio saranno conservati nelle collections presenti su DB | x |
+| Monitoring | Indica il numero di giorni per cui i dati relativi al monitoring saranno conservati nelle collections presenti su DB | x |
 | Security | Indica il numero di giorni per cui i dati relativi alla security saranno conservati nelle collections presenti su DB | x |
 
 3. Init Catalog

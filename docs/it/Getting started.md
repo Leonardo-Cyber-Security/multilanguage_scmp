@@ -88,7 +88,7 @@ Nello specifico possiamo individuare:
 |-----------|--------------|------|
 | Inventario | 1 ora | Recupera tutte le risorse di inventario disponibili sul provider |
 | Costi | 24 ore | Recupera i costi degli ultimi 2 giorni per le risorse disponibili sul provider (vengono recuperati piu giorni per convalidare i dati) |
-| Monitoraggio | 24 ore | Recupera le informazioni di monitoraggio delle risorse del provider |
+| monitoring | 24 ore | Recupera le informazioni di monitoring delle risorse del provider |
 | Catalogo | 24 ore | Recupera le risorse/SKU di catalogo del provider, cosi da permetterne l'utilizzo nella SCMP |
 | Sicurezza | 24 ore | Recupera le informazioni di compliance e sicurezza per i provider disponibili |
 

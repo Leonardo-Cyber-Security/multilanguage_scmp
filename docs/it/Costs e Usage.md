@@ -20,7 +20,7 @@ Ad esempio:
 | Oracle Cloud | Cost Analysis | 4-6 ore, massimo 24 ore | alcuni servizi possono avere ritardi maggiori. |
 | AWS | Cost Explorer | 8-24 ore | Dati aggregati aggiornati entro 12-24 ore. |
 | AWS | Cost and Usage Reports (CUR) | 8-24 ore | Report dettagliati con ritardo simile. |
-| AWS | CloudWatch Metrics (Billing) | Ogni 6 ore | Monitoraggio quasi in tempo reale. |
+| AWS | CloudWatch Metrics (Billing) | Ogni 6 ore | monitoring quasi in tempo reale. |
 | AWS | Budget Alerts | 3-5 ore | Notifiche rapide al superamento delle soglie di budget. |
 
 ### Dashboard dei costi

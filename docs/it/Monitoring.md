@@ -1,5 +1,5 @@
 
-# Monitoraggio
+# monitoring
 
 La SCMP raccoglie metriche da tutti i cloud provider e le aggrega per macro-categorie.
 
@@ -9,15 +9,15 @@ Accedendo alla dashboard, è possibile vedere come questo meccanismo di aggregaz
 
 All’interno della funzionalità, è possibile filtrare per tipologia di risorsa utilizzando la barra delle tab in alto, mentre per una visione generale si può utilizzare la dashboard.
 
-Il modulo di monitoraggio è accessibile tramite il menu dedicato. Come mostrato in figura:
+Il modulo di monitoring è accessibile tramite il menu dedicato. Come mostrato in figura:
 
 ![Accesso al modulo Monitoring](assets/images/extract/media/image259.png)
 
-### Dashboard di Monitoraggio
+### Dashboard di monitoring
 
-A questo punto, l’utente si troverà nella pagina della tab “Dashboard” del monitoraggio.
+A questo punto, l’utente si troverà nella pagina della tab “Dashboard” del monitoring.
 
-![Dashboard di Monitoraggio](assets/images/extract/media/170325001.png)
+![Dashboard di monitoring](assets/images/extract/media/170325001.png)
 
 #### Filtri della sezione Monitoring
 
@@ -45,7 +45,7 @@ Per accedervi, è necessario cliccare il pulsante in alto nella barra delle tab.
 
 ![Accesso alla sezione Quotas](assets/images/extract/media/170325003.png)
 
-A questo punto, l’utente si troverà nella pagina della tab “Quotas” del monitoraggio.
+A questo punto, l’utente si troverà nella pagina della tab “Quotas” del monitoring.
 In alto è presente una barra filtri che consente di filtrare per provider o sottosistema. Inoltre, è possibile visualizzare i filtri per il grafico tramite il pulsante “Mostra filtri aggiuntivi”; questi filtri modificano la visualizzazione del grafico.
 Sotto i filtri, è presente una tabella che indica il nome del sottosistema e le quote utilizzate, i limiti e un utilizzo medio suddiviso per tipologia di risorsa.
 Infine, in basso, può essere visualizzato un grafico temporale sulla metrica selezionata nei filtri.
