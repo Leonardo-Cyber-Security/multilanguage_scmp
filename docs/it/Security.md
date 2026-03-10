@@ -1,128 +1,128 @@
-# Security
+# Sicurezza
 
-The SCMP's security feature shows the vulnerabilities of inventory assets present on the SCMP.
+La funzionalità di sicurezza di SCMP mostra le vulnerabilità degli asset di inventario presenti su SCMP.
 
-To access the “Security” feature, click the bento button in the top left. After doing so, the menu bar will appear, where you need to click on “Security”.
+Per accedere alla funzionalità “Sicurezza”, cliccare sul pulsante bento in alto a sinistra. Dopo averlo fatto, apparirà la barra del menu, dove occorre cliccare su “Sicurezza”.
 
-![Access to Security](assets/images/extract/media/image268.png)
+![Accesso a Sicurezza](assets/images/extract/media/image268.png)
 
-### General Dashboard
+### Dashboard Generale
 
-At this point, the user is on the “Dashboard” tab page where the security data of resources for all configured providers are shown in an aggregated manner.
+A questo punto, l’utente si trova nella pagina tab “Dashboard” dove vengono mostrati in modo aggregato i dati di sicurezza delle risorse per tutti i provider configurati.
 
-At the top, there is a filter bar that allows filtering results by subsystem, status, and/or policy name.
+In alto è presente una barra dei filtri che consente di filtrare i risultati per sottosistema, stato e/o nome policy.
 
-After that, the user notices the presence of the bar chart indicating the compliance status of resources assigned to policies, subdivided by subsystem.
+Successivamente, l’utente nota la presenza del grafico a barre che indica lo stato di compliance delle risorse assegnate alle policy, suddivise per sottosistema.
 
-By hovering the mouse over a section of the chart, we can see that the values displayed on the page are updated to show a preview of the detail.
+Passando il mouse su una sezione del grafico, si può notare che i valori visualizzati nella pagina si aggiornano per mostrare un’anteprima del dettaglio.
 
-It is possible to click on a section of the chart to automatically apply the “subsystem” and “status” filters to the page.
+È possibile cliccare su una sezione del grafico per applicare automaticamente i filtri “sottosistema” e “stato” alla pagina.
 
-![Security Dashboard](assets/images/extract/media/image269.png)
+![Dashboard Sicurezza](assets/images/extract/media/image269.png)
 
-Scrolling down the page, there is the policies table which will be automatically filtered based on the selected filters.
+Scorrendo la pagina verso il basso, è presente la tabella delle policy che verrà automaticamente filtrata in base ai filtri selezionati.
 
-![Policies table](assets/images/extract/media/image270.png)
+![Tabella policy](assets/images/extract/media/image270.png)
 
-Clicking on a row in the table will open a detail window where you can find all information related to the selected policy, and the list of affected resources will also be available. It is possible to click on the name of a machine to view its details; in this case, the user will be redirected to the SCMP inventory resource in “view” mode.
+Cliccando su una riga della tabella si aprirà una finestra di dettaglio dove è possibile trovare tutte le informazioni relative alla policy selezionata, e sarà disponibile anche la lista delle risorse coinvolte. È possibile cliccare sul nome di una macchina per visualizzarne i dettagli; in tal caso, l’utente verrà reindirizzato alla risorsa di inventario SCMP in modalità “visualizzazione”.
 
-![Policy details](assets/images/extract/media/image271.png)
+![Dettaglio policy](assets/images/extract/media/image271.png)
 
-To exit the detail, you need to click outside the window, which will close automatically.
+Per uscire dal dettaglio, occorre cliccare fuori dalla finestra, che si chiuderà automaticamente.
 
-### Dashboards specific to resource type
+### Dashboard specifiche per tipologia di risorsa
 
-It is possible to further filter policies by resource type, using the tabs at the top of the page.
+È possibile filtrare ulteriormente le policy per tipologia di risorsa, utilizzando le tab in alto nella pagina.
 
-Once the resource type is selected, it is possible to navigate the pages following the methods described in the previous paragraph.
+Una volta selezionata la tipologia di risorsa, è possibile navigare le pagine seguendo le modalità descritte nel paragrafo precedente.
 
-![Virtual Machines compliance Dashboard](assets/images/extract/media/image272.png)
+![Dashboard compliance Virtual Machine](assets/images/extract/media/image272.png)
 
-### SIEM Dashboard
+### Dashboard SIEM
 
-To view the SIEM dashboard, click on the tab that depicts a shield. At the top, there is a dropdown menu where you can select the subscription of interest, while next to it is a dropdown menu where you can select a time range.
+Per visualizzare la dashboard SIEM, cliccare sulla tab che raffigura uno scudo. In alto è presente un menu a tendina dove è possibile selezionare la sottoscrizione di interesse, mentre accanto c’è un menu a tendina dove è possibile selezionare un intervallo temporale.
 
-Below, there is the “Summary” section which contains information, including for example “Alerts” which indicates the number of alerts. Also within the “Summary” section is the “”Incidents by status” chart which indicates incidents by status.
+Sotto, è presente la sezione “Summary” che contiene informazioni, tra cui ad esempio “Alerts” che indica il numero di alert. Sempre all’interno della sezione “Summary” è presente il grafico “Incidents by status” che indica gli incidenti per stato.
 
-Below the “Summary” section, there is the “Hourly Events Grouped By Type” section which contains a histogram chart indicating hourly events by type.
+Sotto la sezione “Summary”, è presente la sezione “Hourly Events Grouped By Type” che contiene un grafico a istogramma che indica gli eventi orari per tipologia.
 
-![SIEM Dashboard](assets/images/extract/media/image273.png)
+![Dashboard SIEM](assets/images/extract/media/image273.png)
 
-Scrolling through the SIEM dashboard, there is the “Event types” chart which indicates all event types.
+Scorrendo la dashboard SIEM, è presente il grafico “Event types” che indica tutte le tipologie di evento.
 
-![“Event types" of the SIEM dashboard](assets/images/extract/media/image274.png)
+![“Event types" della dashboard SIEM](assets/images/extract/media/image274.png)
 
-Finally, at the bottom of the page, there are two tables: on the left, the “Alert rules” table which shows a set of alarm rules, while on the right, there is the “Incidents” table which shows incidents.
+Infine, in fondo alla pagina, sono presenti due tabelle: a sinistra la tabella “Alert rules” che mostra un insieme di regole di allarme, mentre a destra la tabella “Incidents” che mostra gli incidenti.
 
-![“Alert rules” and “Incidents” tables](assets/images/extract/media/image275.png)
+![Tabelle “Alert rules” e “Incidents”](assets/images/extract/media/image275.png)
 
-Clicking on a row in the table will open a detail window, where you can find all information related to the selected rule or incident.
+Cliccando su una riga della tabella si aprirà una finestra di dettaglio, dove è possibile trovare tutte le informazioni relative alla regola o all’incidente selezionato.
 
-![“Incidents” details](assets/images/extract/media/image276.png)
+![Dettaglio “Incidents”](assets/images/extract/media/image276.png)
 
-### Secret Manager Dashboard
+### Dashboard Secret Manager
 
-To view the SIEM dashboard, click on the tab that depicts a key. At the top, there is a dropdown menu where you can select the subscription of interest.
+Per visualizzare la dashboard SIEM, cliccare sulla tab che raffigura una chiave. In alto è presente un menu a tendina dove è possibile selezionare la sottoscrizione di interesse.
 
-![Key Vault Dashboard](assets/images/extract/media/image277.png)
+![Dashboard Key Vault](assets/images/extract/media/image277.png)
 
-At the bottom of the page, you can see navigation buttons for the table and a table.
+In fondo alla pagina sono visibili i pulsanti di navigazione della tabella e una tabella.
 
-Depending on the selected page, the table will display respectively:
+A seconda della pagina selezionata, la tabella mostrerà rispettivamente:
 
 - Secret
 - Keys
 - Certificates
 
-![Viewable resources](assets/images/extract/media/image278.png)
+![Risorse visualizzabili](assets/images/extract/media/image278.png)
 
-Clicking on a row in the table allows you to view the detail of the selected resource.
+Cliccando su una riga della tabella è possibile visualizzare il dettaglio della risorsa selezionata.
 
-![Key details](assets/images/extract/media/image279.png)
+![Dettaglio chiave](assets/images/extract/media/image279.png)
 
-### Clusters Dashboard
+### Dashboard Clusters
 
-At this point, the user is on the “Dashboard” tab page where all alerts generated by the configured “Cluster” type subsystems in SCMP are shown in an aggregated manner.
+A questo punto, l’utente si trova nella pagina tab “Dashboard” dove vengono mostrate in modo aggregato tutte le alert generate dai sottosistemi di tipo “Cluster” configurati in SCMP.
 
-At the top, there is a filter bar that allows filtering results by namespace, subscription, and/or policy name.
+In alto è presente una barra dei filtri che consente di filtrare i risultati per namespace, sottoscrizione e/o nome policy.
 
-After that, the user notices the presence of the bar chart indicating the total number of “alerts” received, subdivided by subsystem.
+Successivamente, l’utente nota la presenza del grafico a barre che indica il numero totale di “alert” ricevute, suddivise per sottosistema.
 
-By hovering the mouse over a section of the chart, we can see that the values displayed on the page are updated to show a preview of the detail.
+Passando il mouse su una sezione del grafico, si può notare che i valori visualizzati nella pagina si aggiornano per mostrare un’anteprima del dettaglio.
 
-It is possible to click on a section of the chart to automatically apply the “subsystem” filter.
+È possibile cliccare su una sezione del grafico per applicare automaticamente il filtro “sottosistema”.
 
-![“Cluster alerts” Dashboard](assets/images/extract/media/image280.png)
+![Dashboard “Cluster alerts”](assets/images/extract/media/image280.png)
 
-Scrolling down the page, there is the “alerts” table which will be automatically filtered based on the selected filters.
+Scorrendo la pagina verso il basso, è presente la tabella “alerts” che verrà automaticamente filtrata in base ai filtri selezionati.
 
-![Alerts table](assets/images/extract/media/image281.png)
+![Tabella alerts](assets/images/extract/media/image281.png)
 
-Clicking on a row in the table will open a detail window, where you can find all information related to the selected “alert”.
+Cliccando su una riga della tabella si aprirà una finestra di dettaglio, dove è possibile trovare tutte le informazioni relative all’“alert” selezionata.
 
-![Alert details on clusters](assets/images/extract/media/image271.png)
+![Dettaglio alert su cluster](assets/images/extract/media/image271.png)
 
-To exit the detail, you need to click outside the window, which will close automatically.
+Per uscire dal dettaglio, occorre cliccare fuori dalla finestra, che si chiuderà automaticamente.
 
-### Compliance Dashboard
+### Dashboard Compliance
 
-To view the compliance dashboard, click on the tab that depicts a document in the security module.
+Per visualizzare la dashboard compliance, cliccare sulla tab che raffigura un documento nel modulo sicurezza.
 
-![Compliance dashboard](assets/images/extract/media/120325001.png)
+![Dashboard compliance](assets/images/extract/media/120325001.png)
 
-At this point, the user is on the "Compliance" tab page, composed of 4 sections.
-The first section contains filters that allow searching by policy name, subsystem, and/or compliance status.
-The second section, always active, contains pie charts that indicate the general status of the filtered resources.
+A questo punto, l’utente si trova nella pagina tab “Compliance”, composta da 4 sezioni.
+La prima sezione contiene i filtri che permettono la ricerca per nome policy, sottosistema e/o stato di compliance.
+La seconda sezione, sempre attiva, contiene i grafici a torta che indicano lo stato generale delle risorse filtrate.
 
-![“Filters” and “pie charts” sections](assets/images/extract/media/120325002.png)
+![Sezioni “Filtri” e “grafici a torta”](assets/images/extract/media/120325002.png)
 
-The third section, active only if multiple different subsystems are present in the results, shows a bar chart, subdivided by provider, of the compliance status of resources.
-The last section contains a table with general information on policy groups.
+La terza sezione, attiva solo se nei risultati sono presenti più sottosistemi diversi, mostra un grafico a barre, suddiviso per provider, dello stato di compliance delle risorse.
+L’ultima sezione contiene una tabella con le informazioni generali sui gruppi di policy.
 
-![“Bar charts” and “table” sections](assets/images/extract/media/120325003.png)
+![Sezioni “grafici a barre” e “tabella”](assets/images/extract/media/120325003.png)
 
-Clicking on a row in the table opens a modal where it will be possible to view the list of all policies configured in the group, with the relative resource count.
-Still within the modal, we can click on one of the displayed policies; doing so will show at the bottom the list of all machines assigned to the policy and their respective status.
-Next to each resource, a "link" button is available; once clicked, the user will be redirected to the inventory page of the selected resource.
+Cliccando su una riga della tabella si apre una modale dove sarà possibile visualizzare l’elenco di tutte le policy configurate nel gruppo, con il relativo conteggio delle risorse.
+Sempre all’interno della modale, possiamo cliccare su una delle policy visualizzate; così facendo verrà mostrato in basso l’elenco di tutte le macchine assegnate alla policy e il relativo stato.
+Accanto a ciascuna risorsa è disponibile un pulsante “link”; una volta cliccato, l’utente verrà reindirizzato alla pagina inventario della risorsa selezionata.
 
-![Policy details](assets/images/extract/media/120325004.png)
+![Dettaglio policy](assets/images/extract/media/120325004.png)

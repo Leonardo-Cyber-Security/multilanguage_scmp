@@ -1,57 +1,57 @@
 # Service Detail Design
 
-The Service Detail Design service is the solution implemented for managing requests, which must then be processed within our environment by an authorized user.
+Il servizio Service Detail Design è la soluzione implementata per la gestione delle richieste, che devono poi essere lavorate all’interno del nostro ambiente da un utente autorizzato.
 
-To access Service Detail Design, log in to SCMP with the Service Manager user.
+Per accedere a Service Detail Design, effettuare il login su SCMP con l’utente Service Manager.
 
-After logging in, click the "Service Detail Design" module from the bento button.
+Dopo aver effettuato l’accesso, cliccare sul modulo "Service Detail Design" dal pulsante bento.
 
-![Access to Service Detail Design module](assets/images/extract/media/image339.png)
+![Accesso al modulo Service Detail Design](assets/images/extract/media/image339.png)
 
-The search page will be shown where it is possible to filter already created work orders based on:
+Verrà mostrata la pagina di ricerca dove è possibile filtrare i work order già creati in base a:
 
-- Status
-- Customer
-- Service Type
-- Phase
-- Creation Date
+- Stato
+- Cliente
+- Tipologia servizio
+- Fase
+- Data creazione
 
-The table will show the general information of the Work Order.
+La tabella mostrerà le informazioni generali del Work Order.
 
-![Service Detail Design functionality filters](assets/images/extract/media/image340.png)
+![Filtri funzionalità Service Detail Design](assets/images/extract/media/image340.png)
 
-Click the center of a work order row to view its content; a modal will open where we can expand the various sections by clicking on them.
+Cliccare al centro di una riga di work order per visualizzarne il contenuto; si aprirà una modale dove è possibile espandere le varie sezioni cliccandoci sopra.
 
-To exit the detail view, click outside the gray window.
+Per uscire dalla visualizzazione di dettaglio, cliccare fuori dalla finestra grigia.
 
-![Work Order Details](assets/images/extract/media/image341.png)
+![Dettaglio Work Order](assets/images/extract/media/image341.png)
 
-### Work Order Flow
+### Flusso Work Order
 
-To take charge of a work order, click the "Play" symbol next to an order in "New" status.
+Per prendere in carico un work order, cliccare sul simbolo “Play” accanto a un ordine in stato “Nuovo”.
 
-A status change notification will be displayed on the screen, and the current status of the Order becomes "In progress"; the buttons of the corresponding order are modified:
+Verrà visualizzata una notifica di cambio stato a schermo e lo stato corrente dell’Ordine diventa “In lavorazione”; i pulsanti dell’ordine corrispondente vengono modificati:
 
-- by clicking the “Pause” button, the order will transition to “Idle” status;
-- by clicking the “Mark as completed” button, it is possible to close the Work Order;
-- by clicking the “Rejected” button, it is possible to report the cancellation of the Order;
+- cliccando il pulsante “Pausa”, l’ordine passerà in stato “Idle”;
+- cliccando il pulsante “Segna come completato”, è possibile chiudere il Work Order;
+- cliccando il pulsante “Rifiutato”, è possibile segnalare l’annullamento dell’Ordine;
 
-![Work order management page for Service Detail Design](assets/images/extract/media/image342.png)
+![Pagina gestione work order Service Detail Design](assets/images/extract/media/image342.png)
 
-When the “Mark as completed” button is clicked, a window is displayed on the screen where information to be attached to the order can be entered, specifically:
+Quando viene cliccato il pulsante “Segna come completato”, viene visualizzata a schermo una finestra dove è possibile inserire le informazioni da allegare all’ordine, nello specifico:
 
-- the result of the processing;
-- a description of the chosen result;
-- a note for the operator.
+- l’esito della lavorazione;
+- una descrizione dell’esito scelto;
+- una nota per l’operatore.
 
-![Closing a Work order](assets/images/extract/media/image343.png)
+![Chiusura Work order](assets/images/extract/media/image343.png)
 
-By scrolling down the page, we can find the parameters section where it is possible to enter different key/value combinations for the parameters used during processing.
+Scorrendo la pagina verso il basso, troviamo la sezione parametri dove è possibile inserire diverse combinazioni chiave/valore per i parametri utilizzati durante la lavorazione.
 
-After entering the key and value, click the “Plus” button to confirm the entry; new empty fields are added where additional parameters can be entered. To delete a key/value pair, click the “Minus” button; once all parameters have been entered, click the “Finish” button.
+Dopo aver inserito chiave e valore, cliccare il pulsante “Plus” per confermare l’inserimento; vengono aggiunti nuovi campi vuoti dove è possibile inserire ulteriori parametri. Per eliminare una coppia chiave/valore, cliccare il pulsante “Minus”; una volta inseriti tutti i parametri, cliccare il pulsante “Finish”.
 
-![Parameter entry](assets/images/extract/media/image344.png)
+![Inserimento parametri](assets/images/extract/media/image344.png)
 
-After completing the order, it is possible, by opening the respective menus, to view all the information entered during processing within the info section.
+Dopo aver completato l’ordine, è possibile, aprendo i relativi menu, visualizzare tutte le informazioni inserite durante la lavorazione all’interno della sezione info.
 
-![Information added during processing](assets/images/extract/media/image345.png)
+![Informazioni aggiunte durante la lavorazione](assets/images/extract/media/image345.png)

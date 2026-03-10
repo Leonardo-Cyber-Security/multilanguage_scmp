@@ -1,413 +1,415 @@
+
 # Provisioning
 
-Provisioning is one of the most important functionalities of SCMP. Through these modules, it is possible to allocate runtime assets within the providers managed by SCMP.
+Il provisioning è una delle funzionalità più importanti di SCMP. Attraverso questi moduli è possibile allocare risorse runtime all’interno dei provider gestiti da SCMP.
 
-To use this functionality, relations must be defined within the SCMP.
+Per utilizzare questa funzionalità, è necessario che siano definite delle relazioni all’interno di SCMP.
 
-This constraint was made available to bind certain characteristics to provisioning; for example, the VM size is not selectable during provisioning but is among the predefined characteristics by administrators within the catalog.
+Questo vincolo è stato introdotto per legare alcune caratteristiche al provisioning; ad esempio, la dimensione della VM non è selezionabile durante il provisioning ma è tra le caratteristiche predefinite dagli amministratori nel catalogo.
 
-![Access to "Provisioning"](assets/images/extract/media/image6.png)
+![Accesso al "Provisioning"](assets/images/extract/media/image6.png)
 
 ### Dashboard
 
-Accessing the functionality, the first available page is the Dashboard of provisionings carried out within the system.
+Accedendo alla funzionalità, la prima pagina disponibile è la Dashboard dei provisioning effettuati nel sistema.
 
-The page presents a series of graphs, filters, and the list of provisionings performed.
+La pagina presenta una serie di grafici, filtri e la lista dei provisioning eseguiti.
 
-The graphs allow visualizing the information present in the table, grouped by:
+I grafici permettono di visualizzare le informazioni presenti nella tabella, raggruppate per:
 
-- The total of all provisionings carried out, divided by type.
-- The status of provisionings carried out, divided by outcome and category of the provisioned asset.
+- Il totale di tutti i provisioning effettuati, suddivisi per tipologia.
+- Lo stato dei provisioning effettuati, suddivisi per esito e categoria della risorsa provisionata.
 
-![Provisioning page graphs](assets/images/extract/media/image282.png)
+![Grafici pagina provisioning](assets/images/extract/media/image282.png)
 
-At the bottom of the page, we can use the filters section to modify the results present in the table. The "Provisioning Type" filter is the main filter that allows selecting the type of asset to display, specifically:
+In fondo alla pagina, possiamo utilizzare la sezione filtri per modificare i risultati presenti in tabella. Il filtro principale è “Tipologia Provisioning” che consente di selezionare la tipologia di asset da visualizzare, nello specifico:
 
-- Selecting "Resources" adds a filter that allows selecting the type of resource for which you want to display the provisioning status. By default, the system shows the list of provisioned VMs.
-- Selecting "Services" and "Custom services" has no additional filters, and the list is updated with only provisionings related to Services.
-- Selecting "Blueprint" adds a filter that allows changing the flow (i.e., the type of blueprint to display), and the table is modified to show only flows not yet completed. Above the table, there is a control that allows changing tabs, to switch from "in progress" flows to "Completed" flows.
+- Selezionando “Risorse” viene aggiunto un filtro che consente di selezionare la tipologia di risorsa per cui si vuole visualizzare lo stato del provisioning. Di default il sistema mostra la lista delle VM provisionate.
+- Selezionando “Servizi” e “Servizi custom” non sono presenti filtri aggiuntivi e la lista viene aggiornata solo con i provisioning relativi ai Servizi.
+- Selezionando “Blueprint” viene aggiunto un filtro che consente di cambiare il flusso (cioè la tipologia di blueprint da visualizzare) e la tabella viene modificata per mostrare solo i flussi non ancora completati. Sopra la tabella è presente un controllo che consente di cambiare tab, per passare dai flussi “in corso” a quelli “Completati”.
 
-![Filter by asset type](assets/images/extract/media/image283.png)
+![Filtro per tipologia asset](assets/images/extract/media/image283.png)
 
-### Provisioning Table Specifications
+### Specifiche della tabella Provisioning
 
-#### "Resources", "Services", "Custom Services"
+#### “Risorse”, “Servizi”, “Servizi Custom”
 
-The list has the following attributes when "Resources", "Services", "Custom Services" is selected as a filter:
+La lista presenta i seguenti attributi quando come filtro è selezionato “Risorse”, “Servizi”, “Servizi Custom”:
 
-- Uuid, Provisioning identifier;
-- Provisioning completion date;
-- Provisioning request date;
-- User who created the instance;
-- Status;
-- Output of provisioning systems;
-- Detailed provisioning Json;
-- Status information;
-- Resource type.
+- Uuid, identificativo del provisioning
+- Data di completamento del provisioning
+- Data richiesta provisioning
+- Utente che ha creato l’istanza
+- Stato
+- Output dei sistemi di provisioning
+- Json dettagliato del provisioning
+- Informazioni di stato
+- Tipologia risorsa
 
-![“Resources” Table](assets/images/extract/media/image284.png)
+![Tabella “Risorse”](assets/images/extract/media/image284.png)
 
-When in this view, the following operations can be performed:
+In questa vista è possibile eseguire le seguenti operazioni:
 
-- By clicking on the row of a failed provisioning, it is possible to modify and re-execute it.
-- By clicking on the "Output Message" icon corresponding to a provisioning, it is possible to view the response received from the "Terraform" module.
-- By clicking the "Download" button, it is possible to download the files returned by the functionality.
-- By clicking the "State" button, it is possible to view the graph and the list of provisioned resources.
+- Cliccando sulla riga di un provisioning fallito è possibile modificarlo e rieseguirlo
+- Cliccando sull’icona “Output Message” corrispondente a un provisioning è possibile visualizzare la risposta ricevuta dal modulo “Terraform”
+- Cliccando sul pulsante “Download” è possibile scaricare i file restituiti dalla funzionalità
+- Cliccando sul pulsante “State” è possibile visualizzare il grafo e la lista delle risorse provisionate
 
-![Terraform message visualization](assets/images/extract/media/image285.png)
+![Visualizzazione messaggio Terraform](assets/images/extract/media/image285.png)
 
-![Resource graph visualization](assets/images/extract/media/image286.png)
+![Visualizzazione grafo risorse](assets/images/extract/media/image286.png)
 
-#### Auto uninstall of HELM services
 
-When we select "Custom services" as a filter type, we can notice a new "Uninstall" button displayed with a "Stop" icon.
+#### Disinstallazione automatica dei servizi HELM
 
-![Uninstall HELM service](assets/images/extract/media/20250605001.png)
+Quando si seleziona “Servizi custom” come tipologia di filtro, è visibile un nuovo pulsante “Disinstalla” rappresentato da un’icona “Stop”.
 
-Clicking the button will ask for confirmation of deletion. Upon confirmation, SCMP will delete all HELM resources deployed in the indicated namespace.
+![Disinstalla servizio HELM](assets/images/extract/media/20250605001.png)
 
-![Uninstall confirmation](assets/images/extract/media/20250605002.png)
+Cliccando il pulsante viene richiesta conferma della cancellazione. Alla conferma, SCMP eliminerà tutte le risorse HELM deployate nel namespace indicato.
+
+![Conferma disinstallazione](assets/images/extract/media/20250605002.png)
 
 #### Blueprint
 
-The list has the following attributes when "Blueprint" is selected as a filter:
+La lista presenta i seguenti attributi quando come filtro è selezionato “Blueprint”:
 
-- Blueprint Name
-- Creation Date
-- User who provisioned the blueprint
+- Nome Blueprint
+- Data creazione
+- Utente che ha effettuato il provisioning
 
-Above the table, we can notice two tabs. By clicking on them, the table is filtered respectively for Blueprints to be completed and Completed Blueprints (in red in the image).
+Sopra la tabella sono presenti due tab. Cliccandole, la tabella viene filtrata rispettivamente per Blueprint da completare e Blueprint completati (in rosso in figura).
 
-![“Provisioning blueprint” table tabs](assets/images/extract/media/image287.png)
+![Tabella “Provisioning blueprint”](assets/images/extract/media/image287.png)
 
-In this view, it is possible to click on a table row to view the blueprint details.
+In questa vista è possibile cliccare su una riga della tabella per visualizzare il dettaglio del blueprint.
 
-When the selected blueprint is "to be completed," we will be redirected to the blueprint provisioning page where we can perform the necessary operations for completion.
+Se il blueprint selezionato è “da completare”, si viene reindirizzati alla pagina di provisioning del blueprint dove è possibile eseguire le operazioni necessarie al completamento.
 
-![“To be completed” flow visualization](assets/images/extract/media/image288.png)
+![Visualizzazione flusso “To be completed”](assets/images/extract/media/image288.png)
 
-If a completed blueprint is selected instead, we will be redirected to the blueprint provisioning details page where the prediction "flow" will not be displayed because it has already been completed.
+Se invece viene selezionato un blueprint completato, si viene reindirizzati alla pagina di dettaglio del blueprint dove il flusso “prediction” non viene più visualizzato perché già completato.
 
-![“Completed” flow visualization](assets/images/extract/media/image289.png)
+![Visualizzazione flusso “Completed”](assets/images/extract/media/image289.png)
 
-### Creation of Provisionings
+### Creazione di un provisioning
 
-#### Provisioning of "Physical Resources"
+#### Provisioning di “Risorse fisiche”
 
-Using the tabs in the provisioning functionality, it is possible to view the lists of provisionable resources within the SCMP, such as Virtual Machines, Storage, and Kubernetes.
+Utilizzando le tab della funzionalità provisioning, è possibile visualizzare le liste delle risorse provisionabili all’interno di SCMP, come Virtual Machine, Storage e Kubernetes.
 
-To view elements within the result lists, it is necessary that a relation exists in the SCMP catalog with the catalog resource of the provider to be provisioned.
+Per visualizzare gli elementi nelle liste dei risultati, è necessario che esista una relazione nel catalogo SCMP con la risorsa catalogo del provider da provisionare.
 
-The functionalities available for these elements are identical; only the parameters to be entered in the creation steps change.
+Le funzionalità disponibili per questi elementi sono identiche; cambiano solo i parametri da inserire nei vari step di creazione.
 
-![Tabs for resource creation](assets/images/extract/media/image290.png)
+![Tab per creazione risorse](assets/images/extract/media/image290.png)
 
-##### Virtual Machines
+##### Virtual Machine
 
-To start provisioning a resource, click on the corresponding row to view the page containing step 1 of provisioning creation. In this step, it is necessary to select, using the dropdown on the left, the "target" subsystem where the resources are to be provisioned. Once selected, an information mirror will be displayed on the right indicating the characteristics of the resource that will be provisioned. To continue, click the "Next" button at the bottom right to go to step 2 "Config" page.
+Per avviare il provisioning di una risorsa, cliccare sulla riga corrispondente per visualizzare la pagina contenente lo step 1 della creazione. In questo step è necessario selezionare, tramite il menu a tendina a sinistra, il “sottosistema target” dove verranno provisionate le risorse. Una volta selezionato, a destra viene visualizzato uno specchio informativo con le caratteristiche della risorsa che verrà provisionata. Per proseguire, cliccare il pulsante “Next” in basso a destra per passare allo step 2 “Config”.
 
-![Selection of the “target” subsystem, provisioning step 1](assets/images/extract/media/image291.png)
+![Selezione sottosistema target, step 1 provisioning](assets/images/extract/media/image291.png)
 
-On the "Config" page of step 2, fill in all mandatory fields in all sections of the form. At the bottom left, click the "Reset" button to reset all fields on the page.
+Nella pagina “Config” dello step 2, compilare tutti i campi obbligatori in tutte le sezioni del form. In basso a sinistra cliccare il pulsante “Reset” per azzerare tutti i campi della pagina.
 
-Instead, on the right, click the "Submit" button to go to step 3 "Plan".
+Invece, a destra, cliccare il pulsante “Submit” per passare allo step 3 “Plan”.
 
 ![](assets/images/extract/media/image292.png)
-![Filling in the resource prediction form fields](assets/images/extract/media/image293.png)
+![Compilazione campi form di provisioning](assets/images/extract/media/image293.png)
 
-After clicking the "Submit" button, the user is redirected to the "Plan" page of step 3 where we can view the provisioning plan sent by Terraform, which indicates all the parameters of the resources that will be configured, and at the bottom, there is a list with a cost perspective.
+Dopo aver cliccato “Submit”, l’utente viene reindirizzato alla pagina “Plan” dello step 3 dove è possibile visualizzare il piano di provisioning inviato da Terraform, che indica tutti i parametri delle risorse che verranno configurate, e in basso è presente una lista con la prospettiva dei costi.
 
-![Forecast screen](assets/images/extract/media/image294.png)
+![Schermata previsione](assets/images/extract/media/image294.png)
 
-Still from the "Plan" page of step 3, at the bottom right, there are three buttons: "Back", "Reset", and "Apply". If you click the "Back" button, the user returns to the "Config" page of step 2 where parameters can be modified.
+Sempre dalla pagina “Plan” dello step 3, in basso a destra, sono presenti tre pulsanti: “Back”, “Reset” e “Apply”. Se si clicca “Back”, l’utente torna alla pagina “Config” dello step 2 dove può modificare i parametri.
 
-If you click the "Reset" button, the user is redirected to the "Subscription" page of step 1 where it is necessary to select a subsystem, and then enter the parameters on the "Config" page of step 2.
+Se si clicca “Reset”, l’utente viene reindirizzato alla pagina “Subscription” dello step 1 dove è necessario selezionare un sottosistema e poi inserire i parametri nella pagina “Config” dello step 2.
 
-Finally, if you click the "Apply" button, the forecast is saved, and the user is redirected to the "Dashboard" tab page where the user verifies the presence of the newly created forecast.
+Infine, cliccando “Apply”, la previsione viene salvata e l’utente viene reindirizzato alla tab “Dashboard” dove verifica la presenza della nuova previsione creata.
 
-![List of provisionings performed](assets/images/extract/media/image295.png)
+![Lista provisioning effettuati](assets/images/extract/media/image295.png)
 
-#### Provisioning of "Services"
+#### Provisioning di “Servizi”
 
-To access the services page, click on the tab that depicts a shelf located in the top menu. After doing this, you will find yourself on the "Service" page.
+Per accedere alla pagina dei servizi, cliccare sulla tab che raffigura una mensola nel menu in alto. Dopo averlo fatto, ci si trova nella pagina “Servizi”.
 
-![List of cards](assets/images/extract/media/image296.png)
+![Lista delle card](assets/images/extract/media/image296.png)
 
-On the page, a list of components called "Card" is displayed. Each card refers to a specific type of service; in particular, the following information is displayed:
+Nella pagina viene visualizzata una lista di componenti chiamati “Card”. Ogni card si riferisce a una specifica tipologia di servizio; in particolare, vengono visualizzate le seguenti informazioni:
 
-- Service name;
-- Service icon;
-- Type of script used for service provisioning;
-- Service description;
-- "Subscribe" button to proceed with service creation.
+- Nome servizio
+- Icona servizio
+- Tipologia di script utilizzato per il provisioning
+- Descrizione servizio
+- Pulsante “Subscribe” per procedere alla creazione del servizio
 
-Depending on the type of service selected, the steps for provisioning change; these will be analyzed in detail below.
+A seconda della tipologia di servizio selezionata, cambiano gli step per il provisioning; questi saranno analizzati di seguito.
 
-##### "Standard" Services
+##### Servizi “Standard”
 
-Click the "Subscribe" button corresponding to a "standard" service. The user will be redirected to step 1 of the service creation page, and all instantiable versions of the service by SCMP will be displayed. In particular, various blocks will be shown, each with a list of configurations:
+Cliccare il pulsante “Subscribe” corrispondente a un servizio “standard”. L’utente viene reindirizzato allo step 1 della pagina di creazione del servizio e vengono visualizzate tutte le versioni istanziabili del servizio da SCMP. In particolare, vengono mostrati vari blocchi, ognuno con una lista di configurazioni:
 
-- Name and version of the service that will be instantiated.
-- Name and version of the operating system that will be installed on the machine.
-- Belonging provider on which the service will be provisioned.
+- Nome e versione del servizio che verrà istanziato
+- Nome e versione del sistema operativo che verrà installato sulla macchina
+- Provider di appartenenza su cui verrà effettuato il provisioning
 
-![Provisioning of a "standard" service](assets/images/extract/media/image297.png)
+![Provisioning di un servizio “standard”](assets/images/extract/media/image297.png)
 
-Select a software version and press the "Continue" button; the user is redirected to step 2 of service provisioning.
+Selezionare una versione software e premere il pulsante “Continue”; l’utente viene reindirizzato allo step 2 del provisioning del servizio.
 
-In step 2, it will be necessary to select a subsystem and fill out the form with the details of the chosen subsystem.
+Nello step 2 sarà necessario selezionare un sottosistema e compilare il form con i dettagli del sottosistema scelto.
 
-![Configuration of a "standard" service](assets/images/extract/media/image298.png)
+![Configurazione di un servizio “standard”](assets/images/extract/media/image298.png)
 
-After completing all the form fields, click "Submit".
+Dopo aver compilato tutti i campi del form, cliccare “Submit”.
 
-A request will be sent to the Terraform service, which will validate the activation configuration of the indicated flow and return the result.
+Verrà inviata una richiesta al servizio Terraform, che validerà la configurazione di attivazione del flusso indicato e restituirà il risultato.
 
-![Service configuration summary](assets/images/extract/media/image299.png)
+![Riepilogo configurazione servizio](assets/images/extract/media/image299.png)
 
-Click "Apply" to validate the flow and activate the service subscription.
+Cliccare “Apply” per validare il flusso e attivare la sottoscrizione del servizio.
 
-The dashboard page will open with the list of all subscribed services and their relative statuses. Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.
+La pagina dashboard si aprirà con la lista di tutti i servizi sottoscritti e i relativi stati. In particolare, il nuovo servizio provisionato avrà stato “Running” in giallo e, successivamente, a seconda del risultato, lo stato verrà aggiornato anche a “Completed” in verde o “Error” in rosso.
 
-![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
+![Dashboard con la lista di tutti i servizi sottoscritti e i relativi stati](assets/images/extract/media/image300.png)
 
-##### "Custom" Services
+##### Servizi “Custom”
 
-Click the "Subscribe" button corresponding to a "custom" service. The user will be redirected to step 1 of the service creation page where the subsystem can be selected, in which to perform the provisioning, from the dropdown in the center of the page.
+Cliccare il pulsante “Subscribe” corrispondente a un servizio “custom”. L’utente viene reindirizzato allo step 1 della pagina di creazione del servizio dove è possibile selezionare, dal menu a tendina centrale, il sottosistema in cui effettuare il provisioning.
 
-![Provisioning of a “Custom” service](assets/images/extract/media/image301.png)
+![Provisioning di un servizio “Custom”](assets/images/extract/media/image301.png)
 
-By selecting the subsystem, the page updates to proceed to step 2 of service provisioning.
+Selezionando il sottosistema, la pagina si aggiorna per passare allo step 2 del provisioning del servizio.
 
-In this step 2, it will be necessary to fill out the form with the specific configuration parameters of the selected service.
+In questo step 2 sarà necessario compilare il form con i parametri di configurazione specifici del servizio selezionato.
 
-![Configuration of a "custom" service](assets/images/extract/media/image298.png)
+![Configurazione di un servizio “custom”](assets/images/extract/media/image298.png)
 
-After completing all the form fields, click "Launch".
+Dopo aver compilato tutti i campi del form, cliccare “Launch”.
 
-A request will be sent to the Terraform service, which will validate the activation configuration of the indicated flow and return the result.
+Verrà inviata una richiesta al servizio Terraform, che validerà la configurazione di attivazione del flusso indicato e restituirà il risultato.
 
-![Service configuration summary](assets/images/extract/media/image299.png)
+![Riepilogo configurazione servizio](assets/images/extract/media/image299.png)
 
-Click "Apply" to validate the flow and start the automatic configuration operations.
+Cliccare “Apply” per validare il flusso e avviare le operazioni di configurazione automatica.
 
-The dashboard page will open with the list of all subscribed services and their relative statuses.
+La pagina dashboard si aprirà con la lista di tutti i servizi sottoscritti e i relativi stati.
 
-Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.
+In particolare, il nuovo servizio provisionato avrà stato “Running” in giallo e, successivamente, a seconda del risultato, lo stato verrà aggiornato anche a “Completed” in verde o “Error” in rosso.
 
-![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
+![Dashboard con la lista di tutti i servizi sottoscritti e i relativi stati](assets/images/extract/media/image300.png)
 
-##### "Azure Pipeline" Services
+##### Servizi “Azure Pipeline”
 
-Click the "Subscribe" button corresponding to an "Azure Pipeline" service. The user will be redirected to step 1 of the service creation page. From the dropdown in the center of the page, select the "Branch" of the pipeline to execute.
+Cliccare il pulsante “Subscribe” corrispondente a un servizio “Azure Pipeline”. L’utente viene reindirizzato allo step 1 della pagina di creazione del servizio. Dal menu a tendina centrale selezionare il “Branch” della pipeline da eseguire.
 
-![Provisioning of an "Azure pipeline" service](assets/images/extract/media/image302.png)
+![Provisioning di un servizio “Azure pipeline”](assets/images/extract/media/image302.png)
 
-By selecting the branch, the page updates to proceed to step 2 of service creation.
+Selezionando il branch, la pagina si aggiorna per passare allo step 2 della creazione del servizio.
 
-In this step 2, it will be necessary to fill out the form with the configuration parameters retrieved directly from the Pipeline that will be executed.
+In questo step 2 sarà necessario compilare il form con i parametri di configurazione recuperati direttamente dalla Pipeline che verrà eseguita.
 
-![Configuration of an "Azure pipeline" service](assets/images/extract/media/image303.png)
+![Configurazione di un servizio “Azure pipeline”](assets/images/extract/media/image303.png)
 
-After completing all the form fields, click "Launch" to send the pipeline start request. The dashboard page will open with the list of all subscribed services and their relative statuses.
+Dopo aver compilato tutti i campi del form, cliccare “Launch” per inviare la richiesta di avvio pipeline. La pagina dashboard si aprirà con la lista di tutti i servizi sottoscritti e i relativi stati.
 
-Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.
+In particolare, il nuovo servizio provisionato avrà stato “Running” in giallo e, successivamente, a seconda del risultato, lo stato verrà aggiornato anche a “Completed” in verde o “Error” in rosso.
 
-![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
+![Dashboard con la lista di tutti i servizi sottoscritti e i relativi stati](assets/images/extract/media/image300.png)
 
-##### "PaaS" and "AI Services"
+##### Servizi “PaaS” e “AI Services”
 
-Click the "Subscribe" button corresponding to a "PaaS" service. The user will be redirected to step 1 of the service creation page where it will be necessary to fill out the form with the specific configuration parameters of the selected service.
+Cliccare il pulsante “Subscribe” corrispondente a un servizio “PaaS”. L’utente viene reindirizzato allo step 1 della pagina di creazione del servizio dove sarà necessario compilare il form con i parametri di configurazione specifici del servizio selezionato.
 
-![Configuration of a "PaaS" service](assets/images/extract/media/image304.png)
+![Configurazione di un servizio “PaaS”](assets/images/extract/media/image304.png)
 
-After completing all the form fields, click "Launch".
+Dopo aver compilato tutti i campi del form, cliccare “Launch”.
 
-The dashboard page will open with the list of all subscribed services and their relative statuses.
+La pagina dashboard si aprirà con la lista di tutti i servizi sottoscritti e i relativi stati.
 
-Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.
+In particolare, il nuovo servizio provisionato avrà stato “Running” in giallo e, successivamente, a seconda del risultato, lo stato verrà aggiornato anche a “Completed” in verde o “Error” in rosso.
 
-![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
+![Dashboard con la lista di tutti i servizi sottoscritti e i relativi stati](assets/images/extract/media/image300.png)
 
-##### "HELM" Services
+##### Servizi “HELM”
 
-Click the "Subscribe" button corresponding to a "HELM" service. The user will be redirected to step 1 of the service creation page where it will be necessary to select the cluster on which to perform the provisioning.
+Cliccare il pulsante “Subscribe” corrispondente a un servizio “HELM”. L’utente viene reindirizzato allo step 1 della pagina di creazione del servizio dove sarà necessario selezionare il cluster su cui effettuare il provisioning.
 
-![Cluster selection](assets/images/extract/media/image305.png)
+![Selezione cluster](assets/images/extract/media/image305.png)
 
-Fill out the form with the specific configuration parameters of the selected service. Also, add the "values.yaml" file at the bottom, which contains all the configuration parameters necessary for the service.
+Compilare il form con i parametri di configurazione specifici del servizio selezionato. Aggiungere anche il file “values.yaml” in fondo, che contiene tutti i parametri di configurazione necessari al servizio.
 
-![Configuration of "HELM" parameters](assets/images/extract/media/image306.png)
+![Configurazione parametri HELM](assets/images/extract/media/image306.png)
 
-After completing all the form fields, click "Launch".
+Dopo aver compilato tutti i campi del form, cliccare “Launch”.
 
-The dashboard page will open with the list of all subscribed services and their relative statuses.
+La pagina dashboard si aprirà con la lista di tutti i servizi sottoscritti e i relativi stati.
 
-Specifically, the newly provisioned service will have a "Running" status in yellow, and subsequently, depending on the result, the status will also be updated to "Completed" in green or "Error" in red.
+In particolare, il nuovo servizio provisionato avrà stato “Running” in giallo e, successivamente, a seconda del risultato, lo stato verrà aggiornato anche a “Completed” in verde o “Error” in rosso.
 
-![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
+![Dashboard con la lista di tutti i servizi sottoscritti e i relativi stati](assets/images/extract/media/image300.png)
 
-##### "Immutable" HELM Services
+##### Servizi HELM “Immutable”
 
-If the "immutable" flag was selected for the HELM service during creation, the user is not given the option to view and modify the service information, thus allowing for a "one-Click" installation.
-Once "subscribe" is selected, the system automatically begins provisioning and returns the user to the dashboard page to monitor the results.
+Se durante la creazione del servizio HELM è stato selezionato il flag “immutable”, l’utente non ha la possibilità di visualizzare e modificare le informazioni del servizio, consentendo così un’installazione “one-Click”.
+Una volta selezionato “subscribe”, il sistema avvia automaticamente il provisioning e riporta l’utente alla pagina dashboard per monitorare i risultati.
 
-![Dashboard with the list of all subscribed services and their relative statuses](assets/images/extract/media/image300.png)
+![Dashboard con la lista di tutti i servizi sottoscritti e i relativi stati](assets/images/extract/media/image300.png)
 
-#### Provisioning of "Edge" device images
+#### Provisioning di immagini “Edge”
 
-To access the "Edge" provisioning page, click on the tab of the same name in the top menu.
+Per accedere alla pagina di provisioning “Edge”, cliccare sulla tab omonima nel menu in alto.
 
-After doing this, we will be taken to the "Edge" page of the provisioning module.
+Dopo averlo fatto, si viene portati nella pagina “Edge” del modulo provisioning.
 
-![Access to Edge provisioning](assets/images/extract/media/image307.png)
+![Accesso al provisioning Edge](assets/images/extract/media/image307.png)
 
-At first glance, the page may appear empty, but by selecting a configured EDGE subsystem from the "Subsystem" filter, all available images in the subsystem will be displayed below.
+In un primo momento la pagina può sembrare vuota, ma selezionando un sottosistema EDGE configurato dal filtro “Subsystem”, verranno visualizzate tutte le immagini disponibili nel sottosistema.
 
-![Images available in the system](assets/images/extract/media/image308.png)
+![Immagini disponibili nel sistema](assets/images/extract/media/image308.png)
 
-By selecting one of the available images, a section will open on the right that allows selecting a compatible inventory machine from the list.
+Selezionando una delle immagini disponibili, si aprirà a destra una sezione che consente di selezionare una macchina inventariata compatibile dall’elenco.
 
-After selecting a machine, we can confirm the operation using the "Apply" button.
+Dopo aver selezionato una macchina, è possibile confermare l’operazione tramite il pulsante “Apply”.
 
-We will be returned to the "dashboard" section of the "Provisioning" module where we can view the outcome of the operations.
+Si verrà riportati nella sezione “dashboard” del modulo “Provisioning” dove è possibile visualizzare l’esito delle operazioni.
 
-![Confirmation of "Edge" provisioning](assets/images/extract/media/image309.png)
+![Conferma provisioning Edge](assets/images/extract/media/image309.png)
 
-#### Creation of a "Blueprint" provisioning request
+#### Creazione richiesta provisioning “Blueprint”
 
-To access the services page, click on the "blueprint" tab in the top menu. After doing this, you will find yourself on the "Blueprints" page.
+Per accedere alla pagina dei servizi, cliccare sulla tab “blueprint” nel menu in alto. Dopo averlo fatto, ci si trova nella pagina “Blueprints”.
 
-On the page, a list of components called "Card" is displayed. Each card refers to a specific type of service; in particular, the following information is displayed:
+Nella pagina viene visualizzata una lista di componenti chiamati “Card”. Ogni card si riferisce a una specifica tipologia di servizio; in particolare, vengono visualizzate le seguenti informazioni:
 
-- Service name.
-- Service icon.
-- Type of script used for service provisioning.
-- Service description.
-- "Subscribe" button to proceed with service creation.
+- Nome servizio
+- Icona servizio
+- Tipologia di script utilizzato per il provisioning
+- Descrizione servizio
+- Pulsante “Subscribe” per procedere alla creazione del servizio
 
-Depending on the blueprint selected, the parameters for provisioning change, while the functionalities remain unchanged.
+A seconda del blueprint selezionato, cambiano i parametri per il provisioning, mentre le funzionalità restano invariate.
 
-![List of blueprints](assets/images/extract/media/image296.png)
+![Lista blueprint](assets/images/extract/media/image296.png)
 
-##### "Blueprint" execution request
+##### Richiesta esecuzione “Blueprint”
 
-Click the "Subscribe" button corresponding to a "Blueprint". The user will be redirected to step 1 of the creation page. In this step, it is necessary to select the subsystem in which provisioning is to be performed from the dropdown.
+Cliccare il pulsante “Subscribe” corrispondente a un “Blueprint”. L’utente viene reindirizzato allo step 1 della pagina di creazione. In questo step è necessario selezionare dal menu a tendina il sottosistema in cui effettuare il provisioning.
 
-![Step 1 of Blueprint creation](assets/images/extract/media/image310.png)
+![Step 1 creazione Blueprint](assets/images/extract/media/image310.png)
 
-By selecting a subsystem, the page will move to step 2 of creation where it will be necessary to fill out the form with the specific configuration parameters of the selected blueprint.
+Selezionando un sottosistema, la pagina passa allo step 2 della creazione dove sarà necessario compilare il form con i parametri di configurazione specifici del blueprint selezionato.
 
-![Step 2 of "Blueprint" creation](assets/images/extract/media/image311.png)
+![Step 2 creazione Blueprint](assets/images/extract/media/image311.png)
 
-Once the parameters have been entered, you can click the "Start" button at the bottom right to initiate provisioning. After a few seconds, you will be redirected to the "Dashboard" page, filtered for "Blueprints to be completed".
+Una volta inseriti i parametri, è possibile cliccare il pulsante “Start” in basso a destra per avviare il provisioning. Dopo alcuni secondi si verrà reindirizzati alla pagina “Dashboard” filtrata per “Blueprint da completare”.
 
-![Blueprint Request sent successfully](assets/images/extract/media/image312.png)
+![Richiesta Blueprint inviata con successo](assets/images/extract/media/image312.png)
 
-##### "To be completed" blueprint management page
+##### Pagina gestione blueprint “To be completed”
 
-To work on the blueprint, it is necessary to select a "to be completed" blueprint from the dashboard. Clicking on the corresponding row will display its management page.
+Per lavorare sul blueprint, è necessario selezionare un blueprint “da completare” dalla dashboard. Cliccando sulla riga corrispondente viene visualizzata la pagina di gestione.
 
-This page is divided into sections, specifically:
+Questa pagina è suddivisa in sezioni, nello specifico:
 
-- "Process Diagram": This section displays an image that graphically represents all the steps to be executed in the blueprint. Additionally, the step currently in execution is indicated in red.
-- "Variables": In this section, we can view all parameters entered manually or automatically during the blueprint execution.
-- "Task": In this section, it is possible to manage the blueprint steps that require manual intervention using the available controls.
-- "Subprocess": In this section, we can view the status of all automatic operations performed during the blueprint execution.
+- “Process Diagram”: sezione che mostra un’immagine che rappresenta graficamente tutti gli step da eseguire nel blueprint. Inoltre, lo step attualmente in esecuzione è indicato in rosso.
+- “Variables”: sezione in cui è possibile visualizzare tutti i parametri inseriti manualmente o automaticamente durante l’esecuzione del blueprint.
+- “Task”: sezione in cui è possibile gestire gli step del blueprint che richiedono intervento manuale tramite i controlli disponibili.
+- “Subprocess”: sezione in cui è possibile visualizzare lo stato di tutte le operazioni automatiche eseguite durante l’esecuzione del blueprint.
 
-![Provisioning plan flow](assets/images/extract/media/image313.png)
+![Flusso piano provisioning](assets/images/extract/media/image313.png)
 
-The execution, and therefore the corresponding change, between the Blueprint steps can be carried out in two ways: automatically or manually, exactly as described within the Blueprint itself.
+L’esecuzione, e quindi il passaggio, tra gli step del Blueprint può avvenire in due modi: automatico o manuale, esattamente come descritto all’interno del Blueprint stesso.
 
-###### Automatic steps
+###### Step automatici
 
-The system automatically manages the creation, configuration of resources, and deployment of applications. The status and result of these steps are visible in the "Subprocess" section below.
+Il sistema gestisce automaticamente la creazione, configurazione delle risorse e il deploy delle applicazioni. Lo stato e il risultato di questi step sono visibili nella sezione “Subprocess” sottostante.
 
-For each row in the table, by clicking the buttons on the right, it is possible to verify the generated output message and download its content.
+Per ogni riga della tabella, cliccando sui pulsanti a destra, è possibile verificare il messaggio di output generato e scaricarne il contenuto.
 
-![Blueprint subprocesses section](assets/images/extract/media/image314.png)
+![Sezione subprocess blueprint](assets/images/extract/media/image314.png)
 
-###### Manual steps
+###### Step manuali
 
-Manual tasks, when present and required in the blueprint, will appear in the relevant section. To work on it, it is first necessary to click the "Assign" button (red in the figure) to take charge of the task.
+I task manuali, quando presenti e richiesti nel blueprint, compariranno nella sezione dedicata. Per lavorarci, è necessario prima cliccare sul pulsante “Assign” (rosso in figura) per prendere in carico il task.
 
-![Task assignment to the user](assets/images/extract/media/image315.png)
+![Assegnazione task all’utente](assets/images/extract/media/image315.png)
 
-A confirmation modal for assignment will be displayed. By clicking "Yes", the task will be taken over by the user and cannot be worked on by a different user.
+Verrà visualizzata una modale di conferma per l’assegnazione. Cliccando “Yes”, il task verrà preso in carico dall’utente e non potrà essere lavorato da un altro utente.
 
-![Assignment confirmation](assets/images/extract/media/image316.png)
+![Conferma assegnazione](assets/images/extract/media/image316.png)
 
-A confirmation message will appear at the bottom, and we can note that the "Task" section has been updated. On the left, below the task name, the relevant assignee is indicated, and on the right, there are 2 buttons:
+Apparirà un messaggio di conferma in basso e si noterà che la sezione “Task” è stata aggiornata. A sinistra, sotto il nome del task, è indicato l’assegnatario, a destra sono presenti 2 pulsanti:
 
-- "Remove assignment" (red in the figure).
-- "Complete manual task" (yellow in the figure).
+- “Remove assignment” (rosso in figura)
+- “Complete manual task” (giallo in figura)
 
-![Task management buttons](assets/images/extract/media/image317.png)
+![Pulsanti gestione task](assets/images/extract/media/image317.png)
 
-Clicking "Remove assignment" will open a confirmation modal. Clicking "Yes" will make the task available to other users who can take charge of it.
+Cliccando “Remove assignment” si apre una modale di conferma. Cliccando “Yes” il task torna disponibile per altri utenti che potranno prenderlo in carico.
 
-![Task release](assets/images/extract/media/image318.png)
+![Rilascio task](assets/images/extract/media/image318.png)
 
-Clicking the "Complete task" button will open a modal containing one or more customizable fields. The fields can be of different types.
+Cliccando il pulsante “Complete task” si apre una modale contenente uno o più campi personalizzabili. I campi possono essere di tipologia diversa.
 
-We can enter numeric, boolean, and text fields. Once entered, it is possible to confirm by clicking the "Continue" button at the bottom right.
+Possiamo inserire campi numerici, booleani e di testo. Una volta inseriti, è possibile confermare cliccando il pulsante “Continue” in basso a destra.
 
-![Numeric fields of blueprints](assets/images/extract/media/image319.png)
+![Campi numerici blueprint](assets/images/extract/media/image319.png)
 
-![Text fields in Blueprints](assets/images/extract/media/image320.png)
+![Campi testo blueprint](assets/images/extract/media/image320.png)
 
-Once pressed, we can see that the BPMN graph on the page has been updated and that the next step of the blueprint is active and has a red outline.
+Una volta premuto, si nota che il grafo BPMN nella pagina è stato aggiornato e che il prossimo step del blueprint è attivo e ha il bordo rosso.
 
-![Next step](assets/images/extract/media/image321.png)
+![Step successivo](assets/images/extract/media/image321.png)
 
-All manual tasks present in the blueprint will follow the procedure described previously; therefore, regardless of the type of data to be entered, it is always necessary to assign the task to oneself.
+Tutti i task manuali presenti nel blueprint seguiranno la procedura descritta; quindi, indipendentemente dal tipo di dato da inserire, è sempre necessario assegnarsi il task.
 
-It is possible to insert a temporal field within the manual steps of blueprints, using a calendar it will be possible to manually select the correct day and time.
+È possibile inserire un campo temporale negli step manuali dei blueprint, utilizzando un calendario sarà possibile selezionare manualmente il giorno e l’ora corretti.
 
-![Date field in tasks](assets/images/extract/media/image322.png)
+![Campo data nei task](assets/images/extract/media/image322.png)
 
-The last type of step that we can find within the blueprints is the "Multi-choice" field. This field allows managing the blueprint's flow.
+L’ultimo tipo di step che possiamo trovare nei blueprint è il campo “Multi-choice”. Questo campo consente di gestire il flusso del blueprint.
 
-![Multi-choice field](assets/images/extract/media/image323.png)
+![Campo Multi-choice](assets/images/extract/media/image323.png)
 
-This field is of "Selection" type, so it will not be possible to enter a custom value, but selectable options will be proposed. Specifically, we can find three choices:
+Questo campo è di tipo “Selezione”, quindi non sarà possibile inserire un valore personalizzato, ma verranno proposte opzioni selezionabili. In particolare, possiamo trovare tre scelte:
 
-- "Repeat": allows re-executing the previous steps as described in the blueprint (path in pink in the figure).
-- "End": allows concluding the blueprint execution without performing further operations (path in yellow in the figure).
-- "Insert date": allows moving to a subsequent step of the blueprint (path in green in the figure).
+- “Repeat”: consente di rieseguire gli step precedenti come descritto nel blueprint (percorso rosa in figura)
+- “End”: consente di concludere l’esecuzione del blueprint senza ulteriori operazioni (percorso giallo in figura)
+- “Insert date”: consente di passare a uno step successivo del blueprint (percorso verde in figura)
 
-![Multi-choice field values](assets/images/extract/media/image324.png)
+![Valori campo Multi-choice](assets/images/extract/media/image324.png)
 
-![Possible state changes for Multi-choice](assets/images/extract/media/image325.png)
+![Possibili cambi di stato Multi-choice](assets/images/extract/media/image325.png)
 
-Once all blueprint steps are completed, the graph will be automatically removed from the page, and in the step section, it will no longer be possible to take charge of an operation. Furthermore, in the "sub-processes" section, we will be able to view the result of all automated steps in the blueprint.
+Una volta completati tutti gli step del blueprint, il grafo viene automaticamente rimosso dalla pagina e nella sezione step non sarà più possibile prendere in carico un’operazione. Inoltre, nella sezione “sub-processes” sarà possibile visualizzare il risultato di tutti gli step automatici del blueprint.
 
-![Blueprint completion](assets/images/extract/media/image326.png)
+![Completamento blueprint](assets/images/extract/media/image326.png)
 
-#### Modification of a performed provisioning
+#### Modifica di un provisioning effettuato
 
-For a provisioning that has been carried out and has failed, it is possible to modify it.
+Per un provisioning che è stato effettuato e risulta fallito, è possibile modificarlo.
 
-Provisioning modification is only available for resource types.
+La modifica del provisioning è disponibile solo per le tipologie “risorse”.
 
-To start modifying a provisioning, click on a failed forecast.
+Per avviare la modifica di un provisioning, cliccare su una previsione fallita.
 
-![Start modification of a Provisioning](assets/images/extract/media/image327.png)
+![Avvio modifica di un Provisioning](assets/images/extract/media/image327.png)
 
-After doing so, you will find yourself on the "Config" page of step 2 where you can modify the previously entered parameters.
+Dopo averlo fatto, ci si trova nella pagina “Config” dello step 2 dove è possibile modificare i parametri inseriti precedentemente.
 
-![Configuration parameters](assets/images/extract/media/image328.png)
+![Parametri di configurazione](assets/images/extract/media/image328.png)
 
-![Modification of parameters](assets/images/extract/media/image329.png)
+![Modifica parametri](assets/images/extract/media/image329.png)
 
-After modifying the necessary parameters, at the bottom right, click the "Submit" button.
+Dopo aver modificato i parametri necessari, in basso a destra cliccare il pulsante “Submit”.
 
-By doing so, you will find yourself on the "Plan" page of step 3, where the forecast is present, and below, the quote table.
+Così facendo, si viene portati alla pagina “Plan” dello step 3, dove è presente la previsione e sotto la tabella dei costi.
 
-At the bottom right, click the "Apply" button. After clicking the "Apply" button, you will find yourself on the "Dashboard" tab page.
+In basso a destra cliccare il pulsante “Apply”. Dopo aver cliccato “Apply”, si viene portati alla tab “Dashboard”.
 
-Subsequently, from the "Dashboard" page, the user notes that the modification was successful.
+Successivamente, dalla pagina “Dashboard”, l’utente nota che la modifica è andata a buon fine.
 
-It is also possible to modify a failed provisioning for other elements managed by SCMP.
+È possibile modificare anche un provisioning fallito per altri elementi gestiti da SCMP.
 
-![Provisioning summary and quote table](assets/images/extract/media/image330.png)
+![Riepilogo provisioning e tabella costi](assets/images/extract/media/image330.png)

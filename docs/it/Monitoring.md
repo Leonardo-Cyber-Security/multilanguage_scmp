@@ -1,166 +1,165 @@
-# Monitoring
 
-The SCMP collects metrics from all cloud providers and aggregates them by macro categories.
+# Monitoraggio
 
-This aggregation allows comparison between metrics from different providers.
+La SCMP raccoglie metriche da tutti i cloud provider e le aggrega per macro-categorie.
 
-By accessing the dashboard, we can see how this aggregation mechanism provides an overview of resource utilization, divided by provider and organized by associated resource type.
+Questa aggregazione consente il confronto tra metriche di provider diversi.
 
-Within the functionality, it is possible to filter by resource type using the tab bar at the top, while for a general view, the dashboard can be used.
+Accedendo alla dashboard, è possibile vedere come questo meccanismo di aggregazione fornisca una panoramica dell’utilizzo delle risorse, suddivisa per provider e organizzata per tipologia di risorsa associata.
 
-The monitoring module can be accessed via the dedicated menu. As shown in the figure:
+All’interno della funzionalità, è possibile filtrare per tipologia di risorsa utilizzando la barra delle tab in alto, mentre per una visione generale si può utilizzare la dashboard.
 
-![Access to the Monitoring Module](assets/images/extract/media/image259.png)
+Il modulo di monitoraggio è accessibile tramite il menu dedicato. Come mostrato in figura:
 
-### Monitoring Dashboard
+![Accesso al modulo Monitoring](assets/images/extract/media/image259.png)
 
-At this point, the user will be on the "Dashboard" monitoring tab page.
+### Dashboard di Monitoraggio
 
-![Monitoring Dashboard](assets/images/extract/media/170325001.png)
+A questo punto, l’utente si troverà nella pagina della tab “Dashboard” del monitoraggio.
 
-#### Monitoring Section Filters
+![Dashboard di Monitoraggio](assets/images/extract/media/170325001.png)
 
-Within the page, a series of filters are available that can be selected simultaneously to filter the dashboard results.
+#### Filtri della sezione Monitoring
 
-The main filter is the display period, which can be found at the top right. Clicking on it will open a selection window (in yellow in the figure) where it will be possible to either enter a customized time range, using the "From" and "To" fields on the left, or select a "Smart" time range by directly clicking on the desired choice in the scrollable section on the right.
+All’interno della pagina sono disponibili una serie di filtri che possono essere selezionati contemporaneamente per filtrare i risultati della dashboard.
 
-![Monitoring Time Filter](assets/images/extract/media/120325006.png)
+Il filtro principale è il periodo di visualizzazione, che si trova in alto a destra. Cliccandoci sopra si apre una finestra di selezione (in giallo in figura) dove è possibile inserire un intervallo di tempo personalizzato, utilizzando i campi “Da” e “A” a sinistra, oppure selezionare un intervallo “Smart” cliccando direttamente sulla scelta desiderata nella sezione scorrevole a destra.
 
-Additionally, a series of filters are available at the top left of the page, allowing users to filter the retrieved resources. Specifically, it is possible to filter by:
+![Filtro temporale Monitoring](assets/images/extract/media/120325006.png)
 
-- Provider type
-- Subsystem name.
-- Resource name (only in detailed dashboards)
+Inoltre, in alto a sinistra della pagina sono disponibili una serie di filtri che permettono di filtrare le risorse recuperate. In particolare, è possibile filtrare per:
 
- These filters allow for multiple values to be selected and can be combined to achieve the desired granularity.
+- Tipologia provider
+- Nome sottosistema
+- Nome risorsa (solo nelle dashboard di dettaglio)
 
-![Monitoring Functionality Filters](assets/images/extract/media/170325002.png)
+Questi filtri permettono la selezione multipla e possono essere combinati per ottenere la granularità desiderata.
 
-### Quotas Dashboard
+![Filtri funzionalità Monitoring](assets/images/extract/media/170325002.png)
 
-The Quotas dashboard, available in the "Quotas" tab, allows viewing the details of consumption and related limits applied to Vcloud type subsystems.
+### Dashboard Quotas
 
-To access it, you need to click the button at the top of the tab bar.
+La dashboard Quotas, disponibile nella tab “Quotas”, consente di visualizzare i dettagli dei consumi e dei limiti applicati ai sottosistemi di tipo Vcloud.
 
-![Access to the Quotas section](assets/images/extract/media/170325003.png)
+Per accedervi, è necessario cliccare il pulsante in alto nella barra delle tab.
 
-At this point, the user will be on the "Quotas" monitoring tab page.
-At the top, we can see a filter bar, which allows filtering by provider or subsystem. Additionally, it is possible to view the filters for the chart using the "Show additional filters" button; these filters modify the chart's display.
-Below the filters, there is a table indicating the subsystem name and
-the quotas used, limits, and an average utilization divided by resource type.
-Finally, at the bottom, a time-based chart on the selected metric in the filters can be displayed.
+![Accesso alla sezione Quotas](assets/images/extract/media/170325003.png)
 
-![Quotas Dashboard](assets/images/extract/media/170325004.png)
+A questo punto, l’utente si troverà nella pagina della tab “Quotas” del monitoraggio.
+In alto è presente una barra filtri che consente di filtrare per provider o sottosistema. Inoltre, è possibile visualizzare i filtri per il grafico tramite il pulsante “Mostra filtri aggiuntivi”; questi filtri modificano la visualizzazione del grafico.
+Sotto i filtri, è presente una tabella che indica il nome del sottosistema e le quote utilizzate, i limiti e un utilizzo medio suddiviso per tipologia di risorsa.
+Infine, in basso, può essere visualizzato un grafico temporale sulla metrica selezionata nei filtri.
 
-### Alarms on Quota Usage
+![Dashboard Quotas](assets/images/extract/media/170325004.png)
 
-To allow the user to receive notifications when quota usage thresholds are exceeded, an "Alerting" module has been included. To access it, you need to select the tab at the top of the Monitoring functionality.
+### Allarmi sull’utilizzo delle Quotas
 
-![Access to the Alerting system](assets/images/extract/media/090425002.png)
+Per permettere all’utente di ricevere notifiche quando vengono superate le soglie di utilizzo delle quote, è stato incluso un modulo “Alerting”. Per accedervi, è necessario selezionare la tab in alto della funzionalità Monitoring.
 
-Within the page, we find the list of "alerts" configured on the system, along with their respective configurations.
+![Accesso al sistema di Alerting](assets/images/extract/media/090425002.png)
 
-#### New Alert Creation
+All’interno della pagina troviamo l’elenco degli “alert” configurati sul sistema, insieme alle rispettive configurazioni.
 
-Using the menu available on the right, it is possible to add a new alert to the system.
-To do this, we select the displayed "New alert" option, and a configuration page will open.
+#### Creazione di un nuovo Alert
 
-![New Alert Creation](assets/images/extract/media/090425004.png)
+Utilizzando il menu disponibile a destra, è possibile aggiungere un nuovo alert al sistema.
+Per farlo, selezioniamo l’opzione “Nuovo alert” visualizzata e si aprirà una pagina di configurazione.
 
-On the configuration page, all fields must be filled in, specifically:
+![Creazione nuovo Alert](assets/images/extract/media/090425004.png)
 
-- **"Alert type"**: Select the alert type
-- **"Alert schedule"**: Indicates the frequency of checks to be performed
-- **"Quota type"**: Select the quota type to monitor
-- **"Threshold (%)"**: Enter the percentage beyond which the alert will be sent.
-- **"Subsystems"**: Select one or more subsystems to monitor
-- **"Alert send type"**: Select the type of alert to receive, via e-Mail or Rabbit queue (for automatic integration with other systems)
-- **"Alert format"**: Select the format of the sent file that defines the alert details.
-- **"Emails"**: By selecting E-mail as the notification type, we can enter an email address to send reports to. After entering an email, it is necessary to press "Enter" on the keyboard to confirm its entry. Once pressed, the newly entered email will move to the box at the bottom, and the field will be cleared to allow for the entry of a new email, if necessary.
+Nella pagina di configurazione, tutti i campi devono essere compilati, in particolare:
 
-![Configuration Page](assets/images/extract/media/090425005.png)
+- **“Tipo di alert”**: Selezionare la tipologia di alert
+- **“Schedulazione alert”**: Indica la frequenza dei controlli da effettuare
+- **“Tipo di quota”**: Selezionare la quota da monitorare
+- **“Soglia (%)”**: Inserire la percentuale oltre la quale verrà inviato l’alert
+- **“Sottosistemi”**: Selezionare uno o più sottosistemi da monitorare
+- **“Tipo invio alert”**: Selezionare la modalità di ricezione dell’alert, via e-mail o Rabbit queue (per integrazione automatica con altri sistemi)
+- **“Formato alert”**: Selezionare il formato del file inviato che definisce i dettagli dell’alert
+- **“Email”**: Se si seleziona E-mail come modalità di notifica, è possibile inserire un indirizzo email a cui inviare i report. Dopo aver inserito un’email, è necessario premere “Invio” sulla tastiera per confermare l’inserimento. Una volta premuto, l’email appena inserita si sposterà nel box in basso e il campo verrà svuotato per permettere l’inserimento di un nuovo indirizzo, se necessario.
 
-#### Viewing, Modifying, and Deleting an Alert
+![Pagina di configurazione](assets/images/extract/media/090425005.png)
 
-On this page, we find the list and related information of the alerts present in the system. For each result, by clicking the "Three dots" button on the right, it will be possible to perform three operations:
+#### Visualizzazione, modifica e cancellazione di un Alert
 
-- View the "alert" configuration
-- Edit the alert settings.
-- Delete the schedule to stop sending emails.
+In questa pagina troviamo l’elenco e le relative informazioni degli alert presenti nel sistema. Per ogni risultato, cliccando sul pulsante “tre puntini” a destra, sarà possibile effettuare tre operazioni:
 
-![Alert Operations](assets/images/extract/media/090425003.png)
+- Visualizzare la configurazione dell’alert
+- Modificare le impostazioni dell’alert
+- Eliminare la schedulazione per interrompere l’invio delle email
 
-### Reporting Tools
+![Operazioni sugli alert](assets/images/extract/media/090425003.png)
 
-The reporting functionality, specific to each feature, allows generating global reports of the information available for the various
-providers. Within the pages, the possibility will also be given to create files to facilitate information sharing.
-To access the functionality, above the breadcrumb path, click on the "Reports" tab.
+### Strumenti di Reportistica
 
-![Access to Catalog Report](assets/images/extract/media/image141.png)
+La funzionalità di reportistica, specifica per ogni funzionalità, consente di generare report globali delle informazioni disponibili per i vari provider. All’interno delle pagine sarà anche possibile creare file per facilitare la condivisione delle informazioni.
+Per accedere alla funzionalità, sopra il breadcrumb, cliccare sulla tab “Reports”.
 
-#### Available Report Types
+![Accesso alla reportistica Catalog](assets/images/extract/media/image141.png)
 
-- **Monitoring Threshold Quotas** – List of VCloud and/or Backup subsystems, integrated into the SCMP, with details of utilization quotas (CPU, Memory, Storage, Backup). Based on the selected filter combination, it is possible to filter subsystems that exceed a certain utilization threshold.
+#### Tipologie di report disponibili
 
-#### Report Creation
+- **Monitoring Threshold Quotas** – Elenco dei sottosistemi VCloud e/o Backup integrati nella SCMP, con dettaglio delle quote di utilizzo (CPU, Memoria, Storage, Backup). In base alla combinazione di filtri selezionata, è possibile filtrare i sottosistemi che superano una certa soglia di utilizzo.
 
-At the top right of the page, we can click the "New Report" button to start creating a report. Specifically, a modal is displayed containing the list of available report types.
+#### Creazione di un report
 
-![New Report Creation](assets/images/extract/media/image142.png)
+In alto a destra della pagina, è possibile cliccare sul pulsante “Nuovo Report” per avviare la creazione di un report. In particolare, viene visualizzata una modale contenente l’elenco delle tipologie di report disponibili.
 
-Once the report type is selected, click the "Configure" button to select the providers to include in the report. In the newly opened window, we find the "Provider" field which allows selecting one or more pre-existing providers in the system. Subsequently, it is possible to select one or more subsystems to include in the report; if no providers are selected, no subsystems can be selected. Finally, there is a "tag" section to include only resources that have the entered tag.
+![Creazione nuovo Report](assets/images/extract/media/image142.png)
 
-![Report Configuration](assets/images/extract/media/image143.png)
+Una volta selezionata la tipologia di report, cliccare su “Configura” per selezionare i provider da includere nel report. Nella nuova finestra troviamo il campo “Provider” che consente di selezionare uno o più provider già presenti nel sistema. Successivamente, è possibile selezionare uno o più sottosistemi da includere nel report; se non si selezionano provider, non sarà possibile selezionare sottosistemi. Infine, è presente una sezione “tag” per includere solo le risorse che hanno il tag inserito.
 
-At this point, the user can choose between two different actions:
+![Configurazione report](assets/images/extract/media/image143.png)
 
-- Create a static report that will be saved in the system.
-- Schedule a job that generates the report periodically.
+A questo punto, l’utente può scegliere tra due azioni diverse:
 
-To confirm the creation of a static report, verify that "One-Shot" has been selected for the "Report type" field and click the "Submit" button at the bottom.
-After a loading period, the newly generated report will be visible in the list.
+- Creare un report statico che verrà salvato nel sistema
+- Pianificare un job che generi il report periodicamente
 
-![List of Generated Reports](assets/images/extract/media/image144.png)
+Per confermare la creazione di un report statico, verificare che sia selezionato “One-Shot” per il campo “Tipo report” e cliccare sul pulsante “Submit” in basso.
+Dopo un periodo di caricamento, il nuovo report generato sarà visibile nell’elenco.
 
-##### Report Scheduling
+![Elenco report generati](assets/images/extract/media/image144.png)
 
-If, on the other hand, automatic report execution is desired, it will be necessary to select "Recurring" for the "Report Type" field. In this case, the window updates to show additional parameters for configuring the periodic report.
-The parameters to enter are:
+##### Pianificazione report
 
-- Period: allows selecting the report sending frequency (hourly, daily, ...).
-- "Receive only if not empty": if selected, the file will not be sent when it contains no information.
-- Report Language: allows selecting the language used in the report.
-- File format: allows selecting one or more file types to include in the email.
-- User E-mails: allows entering an email address to send reports to. After entering an email, it is necessary to press "Enter" on the keyboard to confirm its entry. Once pressed, the newly entered email will move to the box at the bottom, and the field will be cleared to allow for the entry of a new email, if necessary.
+Se invece si desidera l’esecuzione automatica del report, sarà necessario selezionare “Ricorrente” per il campo “Tipo report”. In questo caso, la finestra si aggiorna mostrando parametri aggiuntivi per la configurazione del report periodico.
+I parametri da inserire sono:
 
-![Scheduled Report Parameters](assets/images/extract/media/image145.png)
+- Periodo: consente di selezionare la frequenza di invio del report (oraria, giornaliera, ...)
+- “Ricevi solo se non vuoto”: se selezionato, il file non verrà inviato quando non contiene informazioni
+- Lingua report: consente di selezionare la lingua utilizzata nel report
+- Formato file: consente di selezionare uno o più tipi di file da includere nell’email
+- Email utente: consente di inserire un indirizzo email a cui inviare i report. Dopo aver inserito un’email, è necessario premere “Invio” sulla tastiera per confermare l’inserimento. Una volta premuto, l’email appena inserita si sposterà nel box in basso e il campo verrà svuotato per permettere l’inserimento di un nuovo indirizzo, se necessario.
 
-Having configured all parameters, the "Submit" button will become clickable. Click it to confirm the entry, and after a loading period, the newly generated report will be visible in the list.
+![Parametri report pianificato](assets/images/extract/media/image145.png)
 
-![List of Generated Reports](assets/images/extract/media/image144.png)
+Configurati tutti i parametri, il pulsante “Submit” diventerà cliccabile. Cliccarlo per confermare l’inserimento e, dopo un periodo di caricamento, il nuovo report generato sarà visibile nell’elenco.
 
-##### List of Scheduled Reports
+![Elenco report generati](assets/images/extract/media/image144.png)
 
-To view the list of scheduled reports, select the "Scheduled" tab located at the top left of the reports page.
+##### Elenco report pianificati
 
-![List of Scheduled Reports](assets/images/extract/media/image146.png)
+Per visualizzare l’elenco dei report pianificati, selezionare la tab “Scheduled” in alto a sinistra nella pagina dei report.
 
-On this page, we find the list and related information of the scheduled reports present in the system. For each result, by clicking the "Three dots" button on the right, it will be possible to perform three operations:
+![Elenco report pianificati](assets/images/extract/media/image146.png)
 
-- View the last generated report.
-- Edit the schedule settings; it will not be possible to modify the selected providers or subsystems.
-- Delete the schedule to stop sending emails.
+In questa pagina troviamo l’elenco e le relative informazioni dei report pianificati presenti nel sistema. Per ogni risultato, cliccando sul pulsante “tre puntini” a destra, sarà possibile effettuare tre operazioni:
 
-![Modify a schedule](assets/images/extract/media/image147.png)
+- Visualizzare l’ultimo report generato
+- Modificare le impostazioni della schedulazione (non sarà possibile modificare provider o sottosistemi selezionati)
+- Eliminare la schedulazione per interrompere l’invio delle email
 
-##### Report Usage
+![Modifica schedulazione](assets/images/extract/media/image147.png)
 
-By clicking on a static report row, or by using the "Show report" button available for scheduled reports, it will be possible to view the detail page of the selected report.
-Within the Inventory report summary, there is a "Stats" section which includes the number of disks, interfaces, networks, and virtual machines belonging to the selected provider.
-Below the "Stats" section, there are the filters used by the user to generate the report.
-Below the filters, there is a summary table of resources belonging to the providers. On the right, there are two buttons: "PRINT" and "EXPORT".
-Clicking the "PRINT" button will display a print preview modal. To print the report, click the "Print" button at the bottom right; at this point, the printing of the report will start.
-Clicking the "EXPORT" button allows exporting the report in ".csv", ".json", or ".pdf" format.
-To return to the "Results" tab, click the "CLOSE" button at the bottom right, or click the left-pointing arrow at the top left, next to the report title.
+##### Utilizzo dei report
 
-![Report Details](assets/images/extract/media/image148.png)
+Cliccando su una riga di report statico, o utilizzando il pulsante “Mostra report” disponibile per i report pianificati, sarà possibile visualizzare la pagina di dettaglio del report selezionato.
+All’interno del riepilogo report Inventory è presente una sezione “Stats” che include il numero di dischi, interfacce, reti e macchine virtuali appartenenti al provider selezionato.
+Sotto la sezione “Stats” sono presenti i filtri utilizzati dall’utente per generare il report.
+Sotto i filtri, è presente una tabella riepilogativa delle risorse appartenenti ai provider. A destra sono presenti due pulsanti: “PRINT” ed “EXPORT”.
+Cliccando su “PRINT” viene visualizzata una modale di anteprima di stampa. Per stampare il report, cliccare sul pulsante “Print” in basso a destra; a questo punto partirà la stampa del report.
+Cliccando su “EXPORT” è possibile esportare il report nei formati “.csv”, “.json” o “.pdf”.
+Per tornare alla tab “Results”, cliccare sul pulsante “CLOSE” in basso a destra, oppure sulla freccia verso sinistra in alto a sinistra, accanto al titolo del report.
+
+![Dettaglio report](assets/images/extract/media/image148.png)
