@@ -1,11 +1,11 @@
 # Dashboard
 
-Accedendo alla SCMP, la homepage si presenta con un riassunto di quattro sezioni: inventario, monitoring, costi e security.
+Accedendo alla Movincloud, la homepage si presenta con un riassunto di quattro sezioni: inventario, monitoring, costi e security.
 
 In particolare:
 
 - La sezione Inventory mostra:
-- Un grafico a torta che riguarda le risorse SCMP (per ogni risorsa di un singolo provider viene creata una istanza di tipo SCMP quindi il dato può essere considerato come la somma di tutte le risorse presenti in tutti i provider).
+- Un grafico a torta che riguarda le risorse Movincloud (per ogni risorsa di un singolo provider viene creata una istanza di tipo Movincloud quindi il dato può essere considerato come la somma di tutte le risorse presenti in tutti i provider).
 - Un grafico a torta per ogni tipo di provider.
 - La sezione monitoring mostra le metriche più popolate con il loro relativo utilizzo.
 - La sezione costi mostra la sintesi dei costi degli ultimi 30 giorni.

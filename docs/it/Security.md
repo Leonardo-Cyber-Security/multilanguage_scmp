@@ -1,6 +1,6 @@
 # Sicurezza
 
-La funzionalità di sicurezza di SCMP mostra le vulnerabilità degli asset di inventario presenti su SCMP.
+La funzionalità di sicurezza di Movincloud mostra le vulnerabilità degli asset di inventario presenti su Movincloud.
 
 Per accedere alla funzionalità “Sicurezza”, cliccare sul pulsante bento in alto a sinistra. Dopo averlo fatto, apparirà la barra del menu, dove occorre cliccare su “Sicurezza”.
 
@@ -24,7 +24,7 @@ Scorrendo la pagina verso il basso, è presente la tabella delle policy che verr
 
 ![Tabella policy](assets/images/extract/media/image270.png)
 
-Cliccando su una riga della tabella si aprirà una finestra di dettaglio dove è possibile trovare tutte le informazioni relative alla policy selezionata, e sarà disponibile anche la lista delle risorse coinvolte. È possibile cliccare sul nome di una macchina per visualizzarne i dettagli; in tal caso, l’utente verrà reindirizzato alla risorsa di inventario SCMP in modalità “visualizzazione”.
+Cliccando su una riga della tabella si aprirà una finestra di dettaglio dove è possibile trovare tutte le informazioni relative alla policy selezionata, e sarà disponibile anche la lista delle risorse coinvolte. È possibile cliccare sul nome di una macchina per visualizzarne i dettagli; in tal caso, l’utente verrà reindirizzato alla risorsa di inventario Movincloud in modalità “visualizzazione”.
 
 ![Dettaglio policy](assets/images/extract/media/image271.png)
 
@@ -82,7 +82,7 @@ Cliccando su una riga della tabella è possibile visualizzare il dettaglio della
 
 ### Dashboard Clusters
 
-A questo punto, l’utente si trova nella pagina tab “Dashboard” dove vengono mostrate in modo aggregato tutte le alert generate dai sottosistemi di tipo “Cluster” configurati in SCMP.
+A questo punto, l’utente si trova nella pagina tab “Dashboard” dove vengono mostrate in modo aggregato tutte le alert generate dai sottosistemi di tipo “Cluster” configurati in Movincloud.
 
 In alto è presente una barra dei filtri che consente di filtrare i risultati per namespace, sottoscrizione e/o nome policy.
 

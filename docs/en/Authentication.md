@@ -69,7 +69,7 @@ From the list of available Groups, a series of buttons are available for each gr
 
 ### Users
 
-For an account to access and use the system, it must be appropriately configured. Below, we will see the process of creating and managing a user within the SCMP using IAM as an access control application.
+For an account to access and use the system, it must be appropriately configured. Below, we will see the process of creating and managing a user within the Movincloud using IAM as an access control application.
 
 To access User management, click the "Users" menu in the "Entities" section of the IAM dashboard.
 
@@ -147,7 +147,7 @@ From the list of available users, a series of buttons are available for each gro
 
 ### Management of Menus Enabled per User/Group
 
-The IAM system integrated into the SCMP also allows the management of menu elements available to various users and groups. To access this functionality, simply click the "User management X Pages" link available in the "Administration" section of the IAM dashboard.
+The IAM system integrated into the Movincloud also allows the management of menu elements available to various users and groups. To access this functionality, simply click the "User management X Pages" link available in the "Administration" section of the IAM dashboard.
 
 ![Access to menu management](assets/images/extract/media/image28.png)
 
@@ -184,7 +184,7 @@ All attributes that can be assigned to Users and Groups are also indicated here.
 | :------------ | :-------------------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Monitoring    | Default, AS01, mase   | String array   | Enter the list of enabled tenants for the user, separated by commas between each tenant name.                                                                                                                                                                                |
 | Costs         | true / false          | Boolean        | By enabling the attribute, we specify that the user can perform searches by TAG instead of using the tenant as a discriminant.                                                                                                                                              |
-| Inventory     | ADMIN / LIMITED       | Enumeration    | By entering ADMIN as the value, the user will be able to view both costs received from the provider and costs calculated by the SCMP. By entering LIMITED, only costs calculated by the SCMP will be viewable.                                                                   |
+| Inventory     | ADMIN / LIMITED       | Enumeration    | By entering ADMIN as the value, the user will be able to view both costs received from the provider and costs calculated by the Movincloud. By entering LIMITED, only costs calculated by the Movincloud will be viewable.                                                                   |
 | Inventory     | Zona1                 | String         | Mandatory parameter for tools used by IAM.                                                                                                                                                                                                                                 |
 
 #### Administrator

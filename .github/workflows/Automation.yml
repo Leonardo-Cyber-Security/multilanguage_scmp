@@ -145,7 +145,7 @@ jobs:
           --margin-right 13 \
           "file://$(pwd)/documentation/pdfGeneration/pdf-firstPage.html" \
           "file://$(pwd)/generated/it/print_page/index.html" \
-          "$(pwd)/generated/pdf/SCMP_SUM_it.pdf"; \
+          "$(pwd)/generated/pdf/Movincloud_SUM_it.pdf"; \
         else echo "print_page.html IT non generato"; fi
 
     # ----------------------------
@@ -188,7 +188,7 @@ jobs:
           --margin-right 13 \
           "file://$(pwd)/documentation/pdfGeneration/pdf-firstPage.html" \
           "file://$(pwd)/generated/en/print_page/index.html" \
-          "$(pwd)/generated/pdf/SCMP_SUM_en.pdf"; \
+          "$(pwd)/generated/pdf/Movincloud_SUM_en.pdf"; \
         else echo "print_page.html EN non generato"; fi
 
     # ----------------------------
@@ -297,13 +297,13 @@ jobs:
 
         # Copy PDF files to respective language directories
         echo "🔄 Copying PDF files to language directories..."
-        if [ -f generated/pdf/SCMP_SUM_it.pdf ]; then
-          cp generated/pdf/SCMP_SUM_it.pdf generated/it/
-          echo "✅ Copied SCMP_SUM_it.pdf to generated/it/"
+        if [ -f generated/pdf/Movincloud_SUM_it.pdf ]; then
+          cp generated/pdf/Movincloud_SUM_it.pdf generated/it/
+          echo "✅ Copied Movincloud_SUM_it.pdf to generated/it/"
         fi
-        if [ -f generated/pdf/SCMP_SUM_en.pdf ]; then
-          cp generated/pdf/SCMP_SUM_en.pdf generated/en/
-          echo "✅ Copied SCMP_SUM_en.pdf to generated/en/"
+        if [ -f generated/pdf/Movincloud_SUM_en.pdf ]; then
+          cp generated/pdf/Movincloud_SUM_en.pdf generated/en/
+          echo "✅ Copied Movincloud_SUM_en.pdf to generated/en/"
         fi
 
         echo "✅ Documentation rebuilt with HTML links, nav configs restored"

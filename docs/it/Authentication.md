@@ -69,7 +69,7 @@ Sempre dalla lista dei Gruppi disponibili per ogni gruppo sono disponibili una s
 
 ### Utenti
 
-Per poter accedere e utilizzare il sistema è necessario che l’utenza da utilizzare sia opportunamente configurata, di seguito vedremo il processo di creazione e gestione di un utente all’interno della SCMP utilizzando IAM come applicazione per il controllo degli accessi.
+Per poter accedere e utilizzare il sistema è necessario che l’utenza da utilizzare sia opportunamente configurata, di seguito vedremo il processo di creazione e gestione di un utente all’interno della Movincloud utilizzando IAM come applicazione per il controllo degli accessi.
 
 Per accedere alla gestione Utenti cliccare il menù “Users” nella sezione “Entities” della dashboard IAM.
 
@@ -147,7 +147,7 @@ Sempre dalla lista degli utenti disponibili per ogni gruppo sono disponibili una
 
 ### Gestione menù abilitati per utente/Gruppo
 
-Il sistema IAM integrato nella SCMP permette anche la gestione degli elementi di menù disponibili per i vari utenti e gruppi, per accedere alla funzionalità basta cliccare il link “User management X Pages” disponibile nella sezione “Administration” della dashboard IAM.
+Il sistema IAM integrato nella Movincloud permette anche la gestione degli elementi di menù disponibili per i vari utenti e gruppi, per accedere alla funzionalità basta cliccare il link “User management X Pages” disponibile nella sezione “Administration” della dashboard IAM.
 
 ![Accesso alla gestione dei menù](assets/images/extract/media/image28.png)
 
@@ -184,7 +184,7 @@ Vengono indicati qui anche tutti gli attributi che possono essere assegnati a Ut
 |----|----|----|----|
 | Monitoring            | Default, AS01, mase | String array   | Inserire la lista dei tenant abilitati per l’utente inserendo una virgola tra i nomi di ogni tenant  |
 | Costs                 | true / false | Boolean | Abilitando l’attributo specifichiamo che l’utente può effettuare ricerche per TAG invece di utilizzare il tenant come discriminante   |
-| Inventory             |ADMIN  /  LIMITED | Enumeration | Inserendo ADMIN come valore l’utente potrà visualizzare sia i costi ricevuti dal provider che i costi calcolati dalla SCMP Inserendo LIMITED sarà possibile visualizzare solo i costi calcolati dalla SCMP|
+| Inventory             |ADMIN  /  LIMITED | Enumeration | Inserendo ADMIN come valore l’utente potrà visualizzare sia i costi ricevuti dal provider che i costi calcolati dalla Movincloud Inserendo LIMITED sarà possibile visualizzare solo i costi calcolati dalla Movincloud|
 | Inventory             | Zona1   | String   | Parametro obbligatorio degli strumenti utilizzati da IAM|
 
 #### Amministratore

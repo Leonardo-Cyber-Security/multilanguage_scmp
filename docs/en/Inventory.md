@@ -1,6 +1,6 @@
 # Inventory
 
-The inventory functionality collects metadata of installed assets across all providers present on the SCMP.
+The inventory functionality collects metadata of installed assets across all providers present on the Movincloud.
 
 The assets currently present are:
 
@@ -12,7 +12,7 @@ The assets currently present are:
 - Security
 - Others
 
-Heterogeneous metadata, coming from different sources, is then normalized by the SCMP to allow for standard visualization.
+Heterogeneous metadata, coming from different sources, is then normalized by the Movincloud to allow for standard visualization.
 
 Inventory is accessible from the “Inventory” menu item.
 
@@ -44,7 +44,7 @@ Below is the detailed view of a VM:
 
 ![Dettaglio risorsa](assets/images/extract/media/image108.png)
 
-And at the bottom, the asset's relationships with other SCMP elements, as shown in the figure:
+And at the bottom, the asset's relationships with other Movincloud elements, as shown in the figure:
 
 ![Grafico delle relazioni](assets/images/extract/media/image109.png)
 
@@ -56,7 +56,7 @@ Furthermore, it is possible to edit some attributes, such as tags, as shown in t
 
 For the “Provider Tags…” field, it is not possible to select a tag, as tags in this section are retrieved directly from the subsystem.
 
-The “Add SCMP Tag…” field allows selecting from a list or manually entering one. Inside the tag, there is an “X” symbol to delete it.
+The “Add Movincloud Tag…” field allows selecting from a list or manually entering one. Inside the tag, there is an “X” symbol to delete it.
 
 It is possible to add multiple tags to the resource.
 
@@ -242,7 +242,7 @@ On the left, in the “Select Resources to change” box, the user can search fo
 - “Search by Type” which allows obtaining resources by selecting the resource type;
 - “Search by tags” which allows searching for resources using one or more tags associated with them.
 
-The resource table will only show resources that, within the SCMP catalog, have more than one “Relationship” with different sizes but belong to the same region, price type, and operating system.
+The resource table will only show resources that, within the Movincloud catalog, have more than one “Relationship” with different sizes but belong to the same region, price type, and operating system.
 
 In the bottom left, there is the resource table, which can be filtered based on the parameters entered in the filter(s). Within the resource table, click on one of them and, using the “drag and drop” technique, drag it to the right, into the box titled “Currently selected:”.
 

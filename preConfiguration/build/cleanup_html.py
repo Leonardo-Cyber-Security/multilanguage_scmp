@@ -24,14 +24,14 @@ def cleanup_html(file_path):
     
     original_size = len(content)
     
-    # 1. Remove "SCMP Documentazione (IT)" or "SCMP Documentazione (EN)"
+    # 1. Remove "Movincloud Documentazione (IT)" or "Movincloud Documentazione (EN)"
     content = re.sub(
-        r'SCMP Documentazione \((IT|EN)\)',
+        r'Movincloud Documentazione \((IT|EN)\)',
         '',
         content,
         flags=re.IGNORECASE
     )
-    print("✅ Removed 'SCMP Documentazione' text")
+    print("✅ Removed 'Movincloud Documentazione' text")
     
     # 2. Remove "REST API" text
     content = re.sub(

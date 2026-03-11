@@ -1,6 +1,6 @@
 # Tenants
 
-SCMP has been developed as a Multi-Tenant solution, which offers greater security, customization, flexibility, and scalability, with more efficient administration and reduced costs.
+Movincloud has been developed as a Multi-Tenant solution, which offers greater security, customization, flexibility, and scalability, with more efficient administration and reduced costs.
 
 To allow the user to manage the tenants present in the infrastructure, the "Tenant" functionality has been made available, a feature not available to everyone but only to users enabled for Service Management.
 
@@ -50,8 +50,8 @@ The initial section (1) allows choosing only one option from:
 Subsequently, you can fill in the next section (2) by entering the non-mandatory fields:
 
 - **Providers**: list of providers configured in the source tenant; selecting one or more providers will copy their catalog items to the new tenant.
-- **Copy SCMP Catalog**: if activated, all elements present in the SCMP catalog will be added to the new tenant.
-- **Copy Services**: if activated, all elements present in the SCMP catalog will be added to the new tenant.
+- **Copy Movincloud Catalog**: if activated, all elements present in the Movincloud catalog will be added to the new tenant.
+- **Copy Services**: if activated, all elements present in the Movincloud catalog will be added to the new tenant.
 - **Copy Custom Services**: if activated, custom services available on the tenant will be added to the new tenant.
 - **Copy Blueprints**: if activated, all available Blueprints will be added to the new tenant.
 
@@ -95,7 +95,7 @@ Once all information has been entered, you can click the "import" button (in gre
 
 ![Tenant configuration parameters](assets/images/extract/media/082425002.png)
 
-After a few minutes, you can use the "Results" button (in pink in the image) to view the details of the operations performed by the SCMP.
+After a few minutes, you can use the "Results" button (in pink in the image) to view the details of the operations performed by the Movincloud.
 
 ![Results of performed imports](assets/images/extract/media/090425001.png)
 
@@ -114,7 +114,7 @@ Once files are inserted and it's verified that the provider is compatible, you c
 
 ![Tenant and subsystem import functionality](assets/images/extract/media/082425004.png)
 
-After a few minutes, you can use the "Results" button (in pink in the image) to view the details of the operations performed by the SCMP.
+After a few minutes, you can use the "Results" button (in pink in the image) to view the details of the operations performed by the Movincloud.
 
 ![Results of performed imports](assets/images/extract/media/090425001.png)
 
@@ -222,7 +222,7 @@ Removed in release 8.0.0
 
 ### Catalog synchronization between different tenants
 
-A functionality is implemented within SCMP that allows the user to copy a price list previously uploaded using an XML file in the catalog functionality. To do this, it is necessary to click on the destination tenant and then click on "Associate tenant".
+A functionality is implemented within Movincloud that allows the user to copy a price list previously uploaded using an XML file in the catalog functionality. To do this, it is necessary to click on the destination tenant and then click on "Associate tenant".
 
 ![Catalog association functionality](assets/images/extract/media/image36.png)
 

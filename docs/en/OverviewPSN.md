@@ -111,7 +111,7 @@ In the following table, you can consult the services pertaining to the Platform 
 | Middleware | BPM | PaaS Business Process as a Service |
 | Middleware | CMS | PaaS CMS as a Service |
 | Middleware | ETL | PaaS ETL - Batch / Real Time Processing - 1 worker |
-| Infra & Ops Platform | Multicloud Management | Multicloud Management Platform-Leonardo SCMP |
+| Infra & Ops Platform | Multicloud Management | Multicloud Management Platform-Leonardo Movincloud |
 | Infra & Ops Platform | Multicloud Management | Multicloud Management Platform-Morpheus |
 | Infra & Ops Platform | Observability-Infra | Control Room as Service |
 | Infra & Ops Platform | Observability-Infra | IT infrastructure Service Operations (Logging & Monitoring) |

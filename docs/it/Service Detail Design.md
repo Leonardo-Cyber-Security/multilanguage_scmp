@@ -2,7 +2,7 @@
 
 Il servizio Service Detail Design è la soluzione implementata per la gestione delle richieste, che devono poi essere lavorate all’interno del nostro ambiente da un utente autorizzato.
 
-Per accedere a Service Detail Design, effettuare il login su SCMP con l’utente Service Manager.
+Per accedere a Service Detail Design, effettuare il login su Movincloud con l’utente Service Manager.
 
 Dopo aver effettuato l’accesso, cliccare sul modulo "Service Detail Design" dal pulsante bento.
 

@@ -94,8 +94,7 @@ function setupLanguageSwitcherEvents() {
         return 'it'; // Default to Italian
     }
 
-    // Switch language function DISABLED TEMPORANEAMENTE
-    /*
+
     function switchLanguage(targetLang) {
         let currentUrl = window.location.href;
         let newUrl;
@@ -107,10 +106,8 @@ function setupLanguageSwitcherEvents() {
         console.log(`Switching from ${currentLang} to ${targetLang}: ${newUrl}`);
         window.location.href = newUrl;
     }
-    */
 
-    // Event listeners for language switches DISABILITATI TEMPORANEAMENTE
-    /*
+
     switchToIt.addEventListener('click', function(e) {
         e.preventDefault();
         switchLanguage('it');
@@ -120,7 +117,6 @@ function setupLanguageSwitcherEvents() {
         e.preventDefault();
         switchLanguage('en');
     });
-    */
 
     // Update button text based on current language
     function updateSwitcherText() {

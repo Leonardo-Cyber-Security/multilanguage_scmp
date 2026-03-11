@@ -2,7 +2,7 @@
   "languages": {
     "it": {
       "path": "config/it/mkdocs.yml",
-      "site_name": "SCMP Documentazione (IT)",
+      "site_name": "Documentazione Movincloud (IT)",
       "author": "Piccoli Giammarco",
       "numeroDocumento": "C000CMP01SUM01/09.00-SUM",
       "revisione": "09.00",
@@ -17,7 +17,7 @@
       
       "titoli": {
         "titolo1": "Digital Security",
-        "titolo2": "Secure Cloud Management Platform", 
+        "titolo2": "Movincloud", 
         "titolo3": "Software User Manual (SUM)"
       },
 
@@ -78,7 +78,7 @@
 
     "en": {
       "path": "config/en/mkdocs.yml",
-      "site_name": "SCMP Documentazione (IT)",
+      "site_name": "Documentazione Movincloud (EN)",
       "author": "Piccoli Giammarco",
       "numeroDocumento": "C000CMP01SUM01/09.00-SUM",
       "revisione": "09.00",
@@ -93,7 +93,7 @@
       
       "titoli": {
         "titolo1": "Digital Security",
-        "titolo2": "Secure Cloud Management Platform", 
+        "titolo2": "Movincloud", 
         "titolo3": "Software User Manual (SUM)"
       },
 

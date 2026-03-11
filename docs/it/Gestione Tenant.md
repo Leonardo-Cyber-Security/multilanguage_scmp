@@ -1,6 +1,6 @@
 # Tenants
 
-La SCMP è stata sviluppata come soluzione Multi-Tenant, ciò offre maggiore sicurezza, personalizzazione, flessibilità e scalabilità, con un'amministrazione più efficiente e costi ridotti.
+La Movincloud è stata sviluppata come soluzione Multi-Tenant, ciò offre maggiore sicurezza, personalizzazione, flessibilità e scalabilità, con un'amministrazione più efficiente e costi ridotti.
 
 Per permettere all’utente di gestire i tenant presenti nell’infrastruttura è stata resa disponibile la funzionalità “Tenant”, funzionalità disponibile non a tutti ma solo per gli utenti abilitati alla Gestione del servizio
 
@@ -50,8 +50,8 @@ La sezione iniziale (1) permette di scegliere una sola opzione tra:
 Successivamente è possibile compilare la sezione successiva (2) inserendo i campi non obbligatori:
 
 - **Providers**: lista dei provider configurati nel tenant di partenza, selezionando uno o più provider ne verranno copiati gli elementi di catalogo nel nuovo tenant.
-- **Copy SCMP Catalog**: se attivato tutti gli elementi presenti nel catalogo SCMP verranno aggiunti al nuovo tenant.
-- **Copy Services**: se attivato tutti gli elementi presenti nel catalogo SCMP verranno aggiunti al nuovo tenant.
+- **Copy Movincloud Catalog**: se attivato tutti gli elementi presenti nel catalogo Movincloud verranno aggiunti al nuovo tenant.
+- **Copy Services**: se attivato tutti gli elementi presenti nel catalogo Movincloud verranno aggiunti al nuovo tenant.
 - **Copy Custom Services**: se attivato i servizi custom disponibili sul tenant verranno aggiunti al nuovo tenant.
 - **Copy Blueprints**: se attivato tutte le Blueprint disponibili verranno aggiunte al nuovo tenant.
 
@@ -97,7 +97,7 @@ Una volta inserite tutte le informazioni è possibile cliccare il pulsante "impo
 
 ![Parametri di configurazione dei tenant](assets/images/extract/media/082425002.png)
 
-Dopo alcuni minuti è possibile utilizzare il pulsante "Results" (in rosa nell' immagine) per visualizzare il dettaglio delle operazioni eseguite dalla SCMP.
+Dopo alcuni minuti è possibile utilizzare il pulsante "Results" (in rosa nell' immagine) per visualizzare il dettaglio delle operazioni eseguite dalla Movincloud.
 
 ![Risultati degli import effettuati](assets/images/extract/media/090425001.png)
 
@@ -116,7 +116,7 @@ Una volta inseriti file e verificato che il provider sia compatibile è possibil
 
 ![Funzionalità di import tenant e sottosistemi](assets/images/extract/media/082425004.png)
 
-Dopo alcuni minuti è possibile utilizzare il pulsante "Results" (in rosa nell' immagine) per visualizzare il dettaglio delle operazioni eseguite dalla SCMP.
+Dopo alcuni minuti è possibile utilizzare il pulsante "Results" (in rosa nell' immagine) per visualizzare il dettaglio delle operazioni eseguite dalla Movincloud.
 
 ![Risultati degli import effettuati](assets/images/extract/media/090425001.png)
 
@@ -228,7 +228,7 @@ Rimosso nella release 8.0.0
 
 ### Sincronizzazione dei cataloghi tra tenant differenti
 
-Viene implementata, all’interno della SCMP una funzionalità che permette all’utente di copiare un listino caricato precedentemente utilizzando un file XML nella funzionalità di catalogo, per farlo è necessario cliccare in corrispondenza del tenant di destinazione e cliccare la voce “Associate tenant”.
+Viene implementata, all’interno della Movincloud una funzionalità che permette all’utente di copiare un listino caricato precedentemente utilizzando un file XML nella funzionalità di catalogo, per farlo è necessario cliccare in corrispondenza del tenant di destinazione e cliccare la voce “Associate tenant”.
 
 ![Funzionalità di associazione cataloghi](assets/images/extract/media/image36.png)
 

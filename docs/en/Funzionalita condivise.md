@@ -16,7 +16,7 @@ For the Monitoring, Costs, Inventory, Catalog, and Security functionalities, wit
 
 ## Light mode
 
-To activate light mode across the entire SCMP platform, in the upper right of the menu bar, click on the button depicting the sun as shown below.
+To activate light mode across the entire Movincloud platform, in the upper right of the menu bar, click on the button depicting the sun as shown below.
 
 ![Light mode activation](assets/images/extract/media/image348.png)
 
@@ -40,7 +40,7 @@ After doing this, the page updates with the desired Tenant, where you can view a
 
 ## Managing Columns in Available Tables
 
-For the tables available in SCMP, the user has the ability to customize the column display in two ways:
+For the tables available in Movincloud, the user has the ability to customize the column display in two ways:
 
 - Change the order of the displayed columns.
 - Change the number of columns shown.

@@ -1,6 +1,6 @@
 # Cost and Usages
 
-SCMP collects, through the APIs made available by the providers, the cost details of inventory assets.
+Movincloud collects, through the APIs made available by the providers, the cost details of inventory assets.
 
 In the event that providers do not expose cost data, this data can be editorially entered into the catalog so that it can then be counted within this functionality.
 
@@ -67,17 +67,17 @@ A series of filters are available in the upper left of the page, allowing you to
 
 ##### "General" Section
 
-In the first section, summary charts representing provider and SCMP costs are shown to the user based on the applied filters.
+In the first section, summary charts representing provider and Movincloud costs are shown to the user based on the applied filters.
 
 In detail:
 
 - **Provider Cost Difference:** chart containing the cost difference between the sum of the original provider costs and the sum of the costs agreed upon with the provider.  
   *Useful for identifying savings obtained through negotiation or resale compared to list prices.*
 
-- **Customer Cost Difference:** chart containing the cost difference between the sum of SCMP costs charged to the customer and the sum of the original provider costs.  
+- **Customer Cost Difference:** chart containing the cost difference between the sum of Movincloud costs charged to the customer and the sum of the original provider costs.  
   *Used to monitor profit margins and the competitiveness of prices offered to the customer.*
 
-- **Customer Cost Trend:** chart containing the total SCMP costs charged to the customer, with the respective profit/loss percentage.  
+- **Customer Cost Trend:** chart containing the total Movincloud costs charged to the customer, with the respective profit/loss percentage.  
   *Allows observing economic trends over time and detecting cost peaks or anomalies.*
 
 - **Provider Spend:** chart containing the sum of original costs for each provider.  
@@ -86,7 +86,7 @@ In detail:
 - **Provider Agreement Spend:** chart containing the sum of agreed costs for each provider.  
   *Useful for comparing the effectiveness of commercial agreements with each provider.*
 
-- **Effective Spend:** chart containing the sum of SCMP costs charged to the customer for each provider.  
+- **Effective Spend:** chart containing the sum of Movincloud costs charged to the customer for each provider.  
   *Helps evaluate the profitability obtained from each provider.*
 
 ![General](assets/images/extract/media/image243.png)
@@ -103,7 +103,7 @@ In detail:
 - **Sub-Account Provider Agreement Cost %:** Percentage of the total agreed provider cost, for each subordinate account.  
   *Useful for checking which accounts benefit from more significant discounts.*
 
-- **Sub-Account Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each subordinate account.  
+- **Sub-Account Effective Cost %:** Percentage of the total Movincloud cost charged to the customer, for each subordinate account.  
   *Allows seeing which accounts generate more revenue.*
 
 ![Accounts](assets/images/extract/media/image244.png)
@@ -120,7 +120,7 @@ In detail:
 - **Service Provider Agreement Cost %:** Percentage of the total agreed provider cost, for each service.  
   *Useful for analyzing the effectiveness of negotiations on various services.*
 
-- **Service Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each service.  
+- **Service Effective Cost %:** Percentage of the total Movincloud cost charged to the customer, for each service.  
   *Provides a clear view of the main revenue sources per service.*
 
 ![Services](assets/images/extract/media/image245.png)
@@ -137,7 +137,7 @@ In detail:
 - **Sku Provider Agreement Cost %:** Percentage of the total agreed provider cost, for each SKU.  
   *Useful for evaluating whether individual SKUs also benefit from discounts and optimizations.*
 
-- **Sku Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each SKU.  
+- **Sku Effective Cost %:** Percentage of the total Movincloud cost charged to the customer, for each SKU.  
   *Helps highlight any imbalances in margins at the SKU level.*
 
 ![Skus](assets/images/extract/media/image246.png)
@@ -154,7 +154,7 @@ In detail:
 - **Resource Provider Agreement Cost %:** Percentage of the total agreed provider cost, for each resource.  
   *Allows seeing if discounts are distributed equally among resources.*
 
-- **Resource Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each resource.  
+- **Resource Effective Cost %:** Percentage of the total Movincloud cost charged to the customer, for each resource.  
   *Provides visibility into the profitability of individual resources.*
 
 ![Resources](assets/images/extract/media/image247.png)
@@ -171,7 +171,7 @@ In detail:
 - **Resource Type Provider Agreement Cost %:** Percentage of the total agreed provider cost, for each resource type.  
   *Helps understand which types are most optimized through agreements.*
 
-- **Resource Type Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each resource type.  
+- **Resource Type Effective Cost %:** Percentage of the total Movincloud cost charged to the customer, for each resource type.  
   *Allows measuring the commercial weight of each category.*
 
 ![Types](assets/images/extract/media/image248.png)
@@ -188,18 +188,18 @@ In detail:
 - **Regional Provider Agreement Cost %:** Percentage of the total agreed provider cost, for each region.  
   *Allows evaluating the convenience of chosen regions based on discounts.*
 
-- **Regional Effective Cost %:** Percentage of the total SCMP cost charged to the customer, for each region.  
+- **Regional Effective Cost %:** Percentage of the total Movincloud cost charged to the customer, for each region.  
   *Useful for analyzing the distribution of revenue by geographical area.*
 
 ![Regions](assets/images/extract/media/image249.png)
 
 ##### **"History" Section**
 
-Finally, in the eighth section, charts focused on the historical costs of each billing account, generated by each subsystem integrated into the SCMP, are shown to the user.
+Finally, in the eighth section, charts focused on the historical costs of each billing account, generated by each subsystem integrated into the Movincloud, are shown to the user.
 
 In detail:
 
-- **System Costs Details:** Comparison between the total provider cost, the total agreed provider cost, and the total customer cost, for all subsystems integrated into the SCMP.  
+- **System Costs Details:** Comparison between the total provider cost, the total agreed provider cost, and the total customer cost, for all subsystems integrated into the Movincloud.  
   *Fundamental for retrospective analysis and for evaluating the economic sustainability of the system.*
 
 - **Historical Provider Billing Costs:** History of the trend of total costs for each cloud billing account.  
@@ -209,13 +209,13 @@ In detail:
 
 #### Limited view for the customer
 
-If a user configured with the "LIMITED" parameter is used to access the cost dashboard, the charts available on the dashboard will only relate to the recalculated SCMP costs, while the actual costs received from the providers will not be visible as they are superfluous, as can be seen in the image.
+If a user configured with the "LIMITED" parameter is used to access the cost dashboard, the charts available on the dashboard will only relate to the recalculated Movincloud costs, while the actual costs received from the providers will not be visible as they are superfluous, as can be seen in the image.
 
 ![Limited cost dashboard](assets/images/extract/media/image251.png)
 
 ### "Usage" Dashboard
 
-In addition to the main cost dashboard and its related detailed dashboards by resource type, in the SCMP Costs module, the user can view an additional dashboard, focused on the consumption of inventory resources integrated into the platform.
+In addition to the main cost dashboard and its related detailed dashboards by resource type, in the Movincloud Costs module, the user can view an additional dashboard, focused on the consumption of inventory resources integrated into the platform.
 
 By navigating to the Usages section of the module, generic and detailed information on the consumption of individual integrated services/SKUs and their respective resources will be shown.
 

@@ -1,10 +1,10 @@
 ### Getting Started
 
-The Secure Cloud Management Platform solution, in line with Gartner's definition indicated in the Reference Documents, is an operational platform that enables the governance, lifecycle management, brokering, and automation of resources managed in a cloud environment.
+The Movincloud solution, in line with Gartner's definition indicated in the Reference Documents, is an operational platform that enables the governance, lifecycle management, brokering, and automation of resources managed in a cloud environment.
 
 #### Requirements
 
-The SCMP solution is designed to run exclusively in Kubernetes environments compliant with the supported versions indicated in the section [Supported Kubernetes Versions](#supported-kubernetes-versions).  
+The Movincloud solution is designed to run exclusively in Kubernetes environments compliant with the supported versions indicated in the section [Supported Kubernetes Versions](#supported-kubernetes-versions).  
 Installation requires the availability of an existing Kubernetes cluster (upstream or managed service) or OpenShift Container Platform, equipped with the necessary resources to host the platform's core components.
 
 In OpenShift environments, it is possible to leverage the benefits of Red Hat certified operators. Alternatively, it is possible to use upstream or managed Kubernetes clusters (EKS, AKS, GKE) with Helm v3.
@@ -17,9 +17,9 @@ To ensure optimal performance, it is recommended that the Kubernetes cluster has
 |-----------|------|------|------|------|------|------|
 | Node | Control Plane | 3 | 8 | 16 | 128 | Respect native Kubernetes HA |
 | Node | Infra | 3 | 12 | 24 | 628 | For ingress, logging, monitoring services |
-| Node | Worker | 4 | 8 | 32 | 128 | For SCMP modules and user workloads |
+| Node | Worker | 4 | 8 | 32 | 128 | For Movincloud modules and user workloads |
 
-> ⚠ **Note:** Node quantities and sizes may vary based on environment size, number of SCMP modules installed, and workloads to be managed.
+> ⚠ **Note:** Node quantities and sizes may vary based on environment size, number of Movincloud modules installed, and workloads to be managed.
 
 #### Other Requirements
 
@@ -28,7 +28,7 @@ To ensure optimal performance, it is recommended that the Kubernetes cluster has
 - Outbound network connectivity (port 443) to the Internet and APIs/consoles of supported cloud providers.
 - Persistent Storage available via `StorageClass` compatible with Kubernetes PersistentVolumeClaim (NFS, Ceph, Portworx, EBS, Azure Disk, etc.).
 
-The SCMP platform is supported on Kubernetes and OpenShift in the following versions:
+The Movincloud platform is supported on Kubernetes and OpenShift in the following versions:
 
 | Platform | Supported Version(s) | Notes |
 | ----------------------------------- | ----------------------------------- | ---------------------------------------------------------------- |
@@ -59,8 +59,8 @@ Furthermore, it is necessary to verify that the environment can make requests to
 
 #### Components
 
-In this section, we define all the components necessary for the SCMP to function.
-The "required" elements must be installed before the various SCMP modules as explained in the "Installation" section.
+In this section, we define all the components necessary for the Movincloud to function.
+The "required" elements must be installed before the various Movincloud modules as explained in the "Installation" section.
 
 ##### Prerequisites
 
@@ -73,7 +73,7 @@ The "required" elements must be installed before the various SCMP modules as exp
 
 ##### Modules
 
-[comment]: # (insert the list of scmp modules?)
+[comment]: # (insert the list of Movincloud modules?)
 
 #### Common Ports & Requirements
 
@@ -81,7 +81,7 @@ The "required" elements must be installed before the various SCMP modules as exp
 
 #### Communication Data
 
-To update data, the SCMP uses a series of cron-jobs, divided by reference provider and relevant module.
+To update data, the Movincloud uses a series of cron-jobs, divided by reference provider and relevant module.
 Specifically, we can identify:
 
 | Type | Launched every | Activity performed |
@@ -89,12 +89,12 @@ Specifically, we can identify:
 | Inventory | 1 hour | Retrieves all inventory resources available on the provider |
 | Costs | 24 hours | Retrieves costs for the last 2 days for resources available on the provider (multiple days are retrieved to validate data) |
 | Monitoring | 24 hours | Retrieves monitoring information for the provider's resources |
-| Catalog | 24 hours | Retrieves catalog resources/SKUs from the provider, allowing their use in the SCMP |
+| Catalog | 24 hours | Retrieves catalog resources/SKUs from the provider, allowing their use in the Movincloud |
 | Security | 24 hours | Retrieves compliance and security information for available providers |
 
 #### Supported Locales
 
-Currently, the languages supported by SCMP are:
+Currently, the languages supported by Movincloud are:
 
 - Italian
 - English
@@ -124,16 +124,16 @@ global:
         email: ignorethis@email.com
   # The `namespace` key is needed by the official Vault chart in order to load the resources in the appropriate namespace
   # and it has to adhere to our naming scheme '<tenant>-<suffix_namespace>'
-  namespace: scmp-vault
-  tenant: scmp
+  namespace: Movincloud-vault
+  tenant: Movincloud
   suffix_namespace: vault
 ```
 5. Install the newly configured Leonardo `vault-Autounseal` chart using the code.
 `helm install vault-autounseal vault-autounseal`
-6. **After the completion of the `vault-autounseal` installation (i.e., when `vault-prod` pods are already available in the cluster), configure the SCMP installation parameters as in the code.
+6. **After the completion of the `vault-autounseal` installation (i.e., when `vault-prod` pods are already available in the cluster), configure the Movincloud installation parameters as in the code.
 ```yaml
 global:
-  tenant: scmp
+  tenant: Movincloud
   imagePullSecrets:
     - name: acr-secret-cs
       credentials: # specify the credentials for the image registry if you want to create the pull secret automatically
@@ -145,8 +145,8 @@ global:
     accesskey: "minioadmin"
     password: "minioadmin123!"
 ```
-7. Launch the SCMP installation using the newly modified chart; to launch it, we can use:
-`helm install scmp scmp/`
+7. Launch the Movincloud installation using the newly modified chart; to launch it, we can use:
+`helm install Movincloud Movincloud/`
 
 !!! warning "Perform Configurations"
 
@@ -190,7 +190,7 @@ global:
   - Enable 'Implicit Flow'
   - Set 'Valid Redirect URIs' to:
     - `http://localhost:3000/*`
-    - SCMP host domain
+    - Movincloud host domain
 
 #### Content Management
 

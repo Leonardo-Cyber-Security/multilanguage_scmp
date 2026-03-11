@@ -1,6 +1,6 @@
 # Inventory
 
-La funzionalità di inventario raccoglie i metadati degli asset installati all’interno di tutti i provider presenti sulla SCMP.
+La funzionalità di inventario raccoglie i metadati degli asset installati all’interno di tutti i provider presenti sulla Movincloud.
 
 Gli asset attualmente presenti sono:
 
@@ -12,7 +12,7 @@ Gli asset attualmente presenti sono:
 - Security
 - Others
 
-I metadati eterogenei, provenienti da diverse fonti vengono poi normalizzati dalla SCMP per permettere una visualizzazione standard.
+I metadati eterogenei, provenienti da diverse fonti vengono poi normalizzati dalla Movincloud per permettere una visualizzazione standard.
 
 L’inventario è accessibile dalla voce di menu “Inventory”.
 
@@ -44,7 +44,7 @@ Di seguito la visualizzazione dei dettagli di una VM:
 
 ![Dettaglio risorsa](assets/images/extract/media/image108.png)
 
-E in calce le relazioni dell’asset con altri elementi di SCMP, come mostrato in figura:
+E in calce le relazioni dell’asset con altri elementi di Movincloud, come mostrato in figura:
 
 ![Grafico delle relazioni](assets/images/extract/media/image109.png)
 
@@ -56,7 +56,7 @@ Inoltre, è possibile editare alcuni attributi, come ad esempio i tags, come da 
 
 Per il campo “Provider Tags…” non è possibile selezionare un tag, in quanto i tag in questa sezione vengono recuperati direttamente dal sottosistema
 
-Il campo “Add SCMP Tag…” permette di selezionare da un elenco o inserirne uno manualmente. All’interno del tag è presente il simbolo “X” per eliminare il suddetto.
+Il campo “Add Movincloud Tag…” permette di selezionare da un elenco o inserirne uno manualmente. All’interno del tag è presente il simbolo “X” per eliminare il suddetto.
 
 È possibile inserire più tag per la risorsa.
 
@@ -243,7 +243,7 @@ A sinistra nel riquadro “Select Resources to change”, l’utente può ricerc
 - “Search by Type” che consente di ottenere le risorse tramite la selezione del tipo di risorsa;
 - “Search by tags” che consente di ricercare le risorse tramite uno o più tag associato alle suddette.
 
-Nella tabella delle risorse verranno riportate solo risorse che, all’interno del catalogo SCMP, abbiamo più di una “Relazione” con size differenti ma appartenenti alla stessa regione, stesso tipo di prezzo e sistema operativo.
+Nella tabella delle risorse verranno riportate solo risorse che, all’interno del catalogo Movincloud, abbiamo più di una “Relazione” con size differenti ma appartenenti alla stessa regione, stesso tipo di prezzo e sistema operativo.
 
 In basso a sinistra, è presente la tabella delle risorse, che può essere filtrata in base ai parametri inseriti nel o nei filtri. All’interno della tabella delle risorse, cliccare su una di essa e tramite la tecnica del “drag and drop”, trascinarla a destra, all’interno nel riquadro intitolato “Currently selected:”.
 

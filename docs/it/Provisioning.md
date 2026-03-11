@@ -1,9 +1,9 @@
 
 # Provisioning
 
-Il provisioning è una delle funzionalità più importanti di SCMP. Attraverso questi moduli è possibile allocare risorse runtime all’interno dei provider gestiti da SCMP.
+Il provisioning è una delle funzionalità più importanti di Movincloud. Attraverso questi moduli è possibile allocare risorse runtime all’interno dei provider gestiti da Movincloud.
 
-Per utilizzare questa funzionalità, è necessario che siano definite delle relazioni all’interno di SCMP.
+Per utilizzare questa funzionalità, è necessario che siano definite delle relazioni all’interno di Movincloud.
 
 Questo vincolo è stato introdotto per legare alcune caratteristiche al provisioning; ad esempio, la dimensione della VM non è selezionabile durante il provisioning ma è tra le caratteristiche predefinite dagli amministratori nel catalogo.
 
@@ -66,7 +66,7 @@ Quando si seleziona “Servizi custom” come tipologia di filtro, è visibile u
 
 ![Disinstalla servizio HELM](assets/images/extract/media/20250605001.png)
 
-Cliccando il pulsante viene richiesta conferma della cancellazione. Alla conferma, SCMP eliminerà tutte le risorse HELM deployate nel namespace indicato.
+Cliccando il pulsante viene richiesta conferma della cancellazione. Alla conferma, Movincloud eliminerà tutte le risorse HELM deployate nel namespace indicato.
 
 ![Conferma disinstallazione](assets/images/extract/media/20250605002.png)
 
@@ -96,9 +96,9 @@ Se invece viene selezionato un blueprint completato, si viene reindirizzati alla
 
 #### Provisioning di “Risorse fisiche”
 
-Utilizzando le tab della funzionalità provisioning, è possibile visualizzare le liste delle risorse provisionabili all’interno di SCMP, come Virtual Machine, Storage e Kubernetes.
+Utilizzando le tab della funzionalità provisioning, è possibile visualizzare le liste delle risorse provisionabili all’interno di Movincloud, come Virtual Machine, Storage e Kubernetes.
 
-Per visualizzare gli elementi nelle liste dei risultati, è necessario che esista una relazione nel catalogo SCMP con la risorsa catalogo del provider da provisionare.
+Per visualizzare gli elementi nelle liste dei risultati, è necessario che esista una relazione nel catalogo Movincloud con la risorsa catalogo del provider da provisionare.
 
 Le funzionalità disponibili per questi elementi sono identiche; cambiano solo i parametri da inserire nei vari step di creazione.
 
@@ -147,7 +147,7 @@ A seconda della tipologia di servizio selezionata, cambiano gli step per il prov
 
 ##### Servizi “Standard”
 
-Cliccare il pulsante “Subscribe” corrispondente a un servizio “standard”. L’utente viene reindirizzato allo step 1 della pagina di creazione del servizio e vengono visualizzate tutte le versioni istanziabili del servizio da SCMP. In particolare, vengono mostrati vari blocchi, ognuno con una lista di configurazioni:
+Cliccare il pulsante “Subscribe” corrispondente a un servizio “standard”. L’utente viene reindirizzato allo step 1 della pagina di creazione del servizio e vengono visualizzate tutte le versioni istanziabili del servizio da Movincloud. In particolare, vengono mostrati vari blocchi, ognuno con una lista di configurazioni:
 
 - Nome e versione del servizio che verrà istanziato
 - Nome e versione del sistema operativo che verrà installato sulla macchina
@@ -410,6 +410,6 @@ In basso a destra cliccare il pulsante “Apply”. Dopo aver cliccato “Apply�
 
 Successivamente, dalla pagina “Dashboard”, l’utente nota che la modifica è andata a buon fine.
 
-È possibile modificare anche un provisioning fallito per altri elementi gestiti da SCMP.
+È possibile modificare anche un provisioning fallito per altri elementi gestiti da Movincloud.
 
 ![Riepilogo provisioning e tabella costi](assets/images/extract/media/image330.png)

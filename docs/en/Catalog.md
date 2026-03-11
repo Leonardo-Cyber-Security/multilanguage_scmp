@@ -18,23 +18,23 @@ At this point, the user is on the "Resources" tab page.
 
 We can divide the functionality into 3 sections to specify its behavior:
 
-- SCMP catalog items (yellow box in the image).
+- Movincloud catalog items (yellow box in the image).
 - Provider catalog items (green box in the image).
-- SCMP catalog services and blueprints (red box in the image).
+- Movincloud catalog services and blueprints (red box in the image).
 
 Below, we will analyze each group of functionalities separately.
 
-![Catalogo della SCMP](assets/images/extract/media/image150.png)
+![Catalogo della Movincloud](assets/images/extract/media/image150.png)
 
-### SCMP Catalog Item Management
+### Movincloud Catalog Item Management
 
 On the page, there is a series of filters that, once selected and by clicking on the magnifying glass button, will be used to filter the list of results.
 
-![ Catalogo SCMP filtrato](assets/images/extract/media/image151.png)
+![ Catalogo Movincloud filtrato](assets/images/extract/media/image151.png)
 
-!!! warning "Association between SCMP catalog resource/SKU and Provider catalog resource/SKU"
+!!! warning "Association between Movincloud catalog resource/SKU and Provider catalog resource/SKU"
 
-    To allow the system to correctly calculate costs, it is necessary that the SCMP catalog resource or SKU contains a reference to the actual ID retrieved from the provider (as explained in this section) in order to correctly overwrite the cost of the resource / SKU.
+    To allow the system to correctly calculate costs, it is necessary that the Movincloud catalog resource or SKU contains a reference to the actual ID retrieved from the provider (as explained in this section) in order to correctly overwrite the cost of the resource / SKU.
 
 Next to the magnifying glass button, there is an "X" button to reset the filters and the resource table.
 
@@ -44,16 +44,16 @@ Click on it and select a tag; at this point, the table returns the resources ass
 
 #### Resources and relationships between resources
 
-Within the SCMP, it is possible to configure a "Relationship" type resource. This relationship allows mapping machines from various providers to modify their costs and enable their use in other functionalities (e.g., for cost calculation).
+Within the Movincloud, it is possible to configure a "Relationship" type resource. This relationship allows mapping machines from various providers to modify their costs and enable their use in other functionalities (e.g., for cost calculation).
 
 !!! warning "Automatic Relationships"
 
-    If a price list resource with the provider's UUID but no relationship is present in the SCMP catalog, the relationship will be created automatically, and costs will be updated accordingly.
+    If a price list resource with the provider's UUID but no relationship is present in the Movincloud catalog, the relationship will be created automatically, and costs will be updated accordingly.
     After a few minutes, the relationship will also be visible within the catalog.
 
-To access the relationships page, click the "SCMP Resources" tab at the top of the Catalog functionality.
+To access the relationships page, click the "Movincloud Resources" tab at the top of the Catalog functionality.
 
-![Accesso a "SCMP resources"](assets/images/extract/media/image152.png)
+![Accesso a "Movincloud resources"](assets/images/extract/media/image152.png)
 
 At the top, there is a filter section that allows searching by:
 
@@ -103,7 +103,7 @@ Mandatory parameters are indicated with \*
 | RAM(GIB)\* | integer | Enter here the quantity in GiB used by the machines included in the relationship | 16 |
 | VCPU\* | integer | Enter here the number of vCPUs used by the machines included in the relationship | 8 |
 
-On the resource creation page, fill in all fields in the "Properties" section. After doing this, select one or more tags for the "Add SCMP tag…" field and fill in notes in the "Tags & Note" section.
+On the resource creation page, fill in all fields in the "Properties" section. After doing this, select one or more tags for the "Add Movincloud tag…" field and fill in notes in the "Tags & Note" section.
 
 ![Sezione tag e note](assets/images/extract/media/image158.png)
 
@@ -121,7 +121,7 @@ We can make a "single" association by entering only one machine in this section.
 
 By selecting more than one machine per provider, the cost section is automatically hidden; the applied costs will be defined by the percentages configured in the subsystems.
 
-![Risorse associate alla risorsa SCMP](assets/images/extract/media/image161.png)
+![Risorse associate alla risorsa Movincloud](assets/images/extract/media/image161.png)
 
 Once the resources are related, an illustrative diagram will automatically be created in the 'Relations Chart' section.
 
@@ -133,13 +133,13 @@ Finally, in the bottom right, click the "Save" button to save the changes. A ban
 
 ###### Resource Summary View
 
-To view the data of an SCMP resource, on the "Resources" page of Catalog, in the list of resources, click on the record of interest for a resource. A window will appear showing brief information about the identified resource: System, Name, Size, Update Date, RAM, and CPU as shown in the following image.
+To view the data of an Movincloud resource, on the "Resources" page of Catalog, in the list of resources, click on the record of interest for a resource. A window will appear showing brief information about the identified resource: System, Name, Size, Update Date, RAM, and CPU as shown in the following image.
 
 ![Dettaglio rapido delle risorse di catalogo](assets/images/extract/media/image163.png)
 
 ###### Viewing Catalog Relationships
 
-To view the data of an SCMP resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Show".
+To view the data of an Movincloud resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Show".
 
 ![Accesso alla risorsa in modalità view](assets/images/extract/media/image164.png)
 
@@ -160,7 +160,7 @@ The detail of a resource is divided into various sections:
 
 ![Sezione Tags & Note degli elementi del catalogo](assets/images/extract/media/image167.png)
 
-![Sezione delle relazioni del catalogo SCMP](assets/images/extract/media/image168.png)
+![Sezione delle relazioni del catalogo Movincloud](assets/images/extract/media/image168.png)
 
 ![Sezione Relations Chart delle risorse](assets/images/extract/media/image169.png)
 
@@ -168,7 +168,7 @@ In the bottom right, click the "Close" button. The user will be redirected to th
 
 ###### Editing Catalog Relationships
 
-To modify an SCMP resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Edit".
+To modify an Movincloud resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Edit".
 
 ![Accesso alla risorsa in modalità edit](assets/images/extract/media/image170.png)
 
@@ -182,7 +182,7 @@ In addition, the user will be redirected to the "Resources" page of Catalog.
 
 ###### Deleting Catalog Relationships
 
-To delete an SCMP resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Delete".
+To delete an Movincloud resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Delete".
 
 ![Eliminazione di una risorsa](assets/images/extract/media/image172.png)
 
@@ -192,11 +192,11 @@ Once done, a modal appears where it is necessary to click the "Remove" button to
 
 #### Resources and relationships between SKUs
 
-Within the SCMP, it is possible to configure an "SCMP SKU" type resource. This relationship allows mapping SKUs received from providers to define their costs and the unit of measure displayed in the system.
+Within the Movincloud, it is possible to configure an "Movincloud SKU" type resource. This relationship allows mapping SKUs received from providers to define their costs and the unit of measure displayed in the system.
 
-To access the SKUs page, click the "SCMP SKU" tab at the top of the Catalog functionality.
+To access the SKUs page, click the "Movincloud SKU" tab at the top of the Catalog functionality.
 
-![Accesso a "SCMP SKU"](assets/images/extract/media/image174.png)
+![Accesso a "Movincloud SKU"](assets/images/extract/media/image174.png)
 
 At the top, there is a filter section that allows searching by:
 
@@ -206,7 +206,7 @@ At the top, there is a filter section that allows searching by:
 
 ##### Export of Catalog Resources
 
-To export the list of Catalog resources present in the list, always on the "SCMP" tab page, in the upper right corner, click on the hamburger menu, and then click on "Export".
+To export the list of Catalog resources present in the list, always on the "Movincloud" tab page, in the upper right corner, click on the hamburger menu, and then click on "Export".
 
 The operator will have the option to export the list of results in .csv and/or .json format.
 
@@ -214,7 +214,7 @@ The operator will have the option to export the list of results in .csv and/or .
 
 ##### Creating a Catalog SKU Relationship
 
-To create a resource in the Catalog, always on the "SCMP" tab page, in the upper right corner, click on the hamburger menu, and then click on "Add Catalog Resource".
+To create a resource in the Catalog, always on the "Movincloud" tab page, in the upper right corner, click on the hamburger menu, and then click on "Add Catalog Resource".
 
 ![Opzione per aggiungere una risorsa “SKU”](assets/images/extract/media/image175.png)
 
@@ -233,7 +233,7 @@ Mandatory parameters are indicated with \*
 | name * |string | Enter the SKU name | Simple vm sku |
 | Service name | string | Enter the name of the service related to the SKU | enter the service name |
 | unit | string | Enter text that will be used as the "unit of measure" displayed across all functionalities | MB/hour |
-| Unit conversion Expression * | string | Enter the conversion formula between the value received from the provider and the value that will be used in the SCMP (conversion between the provider's unit of measure and the unit of measure indicated in the SKU relationship) "$var" indicates the value received from the provider | $var * 24 / 100 |
+| Unit conversion Expression * | string | Enter the conversion formula between the value received from the provider and the value that will be used in the Movincloud (conversion between the provider's unit of measure and the unit of measure indicated in the SKU relationship) "$var" indicates the value received from the provider | $var * 24 / 100 |
 
 ![Compilazione dei campi, selezione Properties](assets/images/extract/media/image177.png)
 
@@ -243,7 +243,7 @@ If it has been entered correctly, the button will turn "Green" with "TEST OK" wr
 
 ![Conferma della formula di conversione](assets/images/extract/media/image178.png)
 
-Subsequently, select one or more tags for the "Add SCMP tag…" field and fill in notes in the "Tags & Note" section.
+Subsequently, select one or more tags for the "Add Movincloud tag…" field and fill in notes in the "Tags & Note" section.
 
 In the "Relation" section, it is possible to select one or more SKUs from the various provider catalogs to relate them and unify their costs. To do this, click on the "Composition" section on the left; a dark section will open where, using drag and drop, we can move the available SKUs to the right section.
 
@@ -279,7 +279,7 @@ The detail of a resource is divided into various sections:
 
 - Details.
 - Properties.
-- Tags & Notes: where in the "Provider Tags…" field it is not possible to select a tag, as it is automatically obtained from the subsystem it belongs to; the "Add SCMP Tag…" field allows selecting tags from a list or entering one manually; in the Notes field, it is possible to enter a text note.
+- Tags & Notes: where in the "Provider Tags…" field it is not possible to select a tag, as it is automatically obtained from the subsystem it belongs to; the "Add Movincloud Tag…" field allows selecting tags from a list or entering one manually; in the Notes field, it is possible to enter a text note.
 - Relations: where provider SKUs are present in relation.
 - Cost.
 - Relations Chart.
@@ -296,7 +296,7 @@ In the bottom right, click the "Close" button. The user will be redirected to th
 
 ###### Editing Catalog Relationships
 
-To modify an SCMP resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Edit".
+To modify an Movincloud resource, on the "Resources" page of Catalog, in the list of resources, click on the kebab menu for a resource and then click on "Edit".
 
 ![Accesso alla risorsa in modalità edit](assets/images/extract/media/image170.png)
 
@@ -380,7 +380,7 @@ At the bottom, we can click the "More Details" button to view the details of the
 
 ### Provider Catalog Item Management
 
-Within the Catalog Module, it is possible to view the list and details of the "sizes" available on the various providers configured on the SCMP for both individual resources (VM, STORAGE, NETWORK, SECURITY) and resource groups "SKU".
+Within the Catalog Module, it is possible to view the list and details of the "sizes" available on the various providers configured on the Movincloud for both individual resources (VM, STORAGE, NETWORK, SECURITY) and resource groups "SKU".
 
 #### Resources
 
@@ -446,7 +446,7 @@ In the bottom right, click the "Close" button to return to the list.
 
 The management of resource catalogs in on-premise systems varies significantly, being specific to each system. In some cases, the catalog functionality is absent, while in others, it is available but does not allow automatic retrieval of resources.
 
-The user is given the possibility to define a personalized "Cloud" catalog directly in the SCMP. In this way, it will then be possible to add the created resources to the relationships of "SCMP Catalog" resources.
+The user is given the possibility to define a personalized "Cloud" catalog directly in the Movincloud. In this way, it will then be possible to add the created resources to the relationships of "Movincloud Catalog" resources.
 
 To do this, it is first necessary to access the catalog resources tab of an on-premise provider. Specifically, we take "VMWare" as an example by selecting "VMWare" in the "Cloud resources" menu of the catalog module.
 
@@ -533,7 +533,7 @@ To access the "Services" functionality, click on the bento button in the upper l
 
 ![Accesso ai "Services"](assets/images/extract/media/image210.png)
 
-From the "SCMP" page, click on the tab that depicts three joined squares, 'Services', located above the breadcrumb path. After doing this, you will be on the 'Services' page, where a list of components called "Card" is displayed.
+From the "Movincloud" page, click on the tab that depicts three joined squares, 'Services', located above the breadcrumb path. After doing this, you will be on the 'Services' page, where a list of components called "Card" is displayed.
 
 Each card refers to a specific type of service. Since there are many services, the system paginates them. At the bottom, we can use the "Item for page" field to display more results or use the arrows to navigate through the lists of services.
 
@@ -565,7 +565,7 @@ In the following paragraphs, we will analyze the individual service types in det
 
 ###### “Standard” Services
 
-The first type of services available for the SCMP are "Standard" services. These services are natively integrated into the system, and their operation cannot be modified by the user.
+The first type of services available for the Movincloud are "Standard" services. These services are natively integrated into the system, and their operation cannot be modified by the user.
 
 List of services offered:
 
@@ -600,7 +600,7 @@ Once all data has been entered, the service can be saved using the "save" button
 
 The user is given the possibility to define "Custom" services by uploading a zip file containing all the necessary files for execution.
 
-In this specific case, the SCMP system is only used to save the service and launch its execution, so it is not possible to check the correctness of the process, which will have to be managed by the user.
+In this specific case, the Movincloud system is only used to save the service and launch its execution, so it is not possible to check the correctness of the process, which will have to be managed by the user.
 
 all are orchestrators, but with different functionalities and purposes:
 
@@ -671,7 +671,7 @@ Once all data has been entered, the service can be saved using the "save" button
 
 ###### “Azure Pipeline” Services
 
-The user is given the possibility to define "Azure Pipeline" services. This type of service allows the SCMP to invoke the execution of a remote DEVOPS pipeline usable through the provisioning functionality.
+The user is given the possibility to define "Azure Pipeline" services. This type of service allows the Movincloud to invoke the execution of a remote DEVOPS pipeline usable through the provisioning functionality.
 
 In the configuration of "Azure Pipeline" services, we can identify a general section composed of the parameters:
 
@@ -701,7 +701,7 @@ Once all data has been entered, the service can be saved using the "save" button
 
 ###### “HELM” Services
 
-We can also configure "HELM" type services within the SCMP. For the configuration of these services, it is necessary to enter these parameters:
+We can also configure "HELM" type services within the Movincloud. For the configuration of these services, it is necessary to enter these parameters:
 
 - "Categories": enter free text in the field and select an already configured category from the dropdown, or it is possible to add a new category by clicking the "+" button in the dropdown.
 - "Chart name": the actual name of the HELM CHART that will be used.
@@ -745,7 +745,7 @@ To access the "Services" functionality, click on the bento button in the upper l
 
 ![Accesso alle "Blueprint"](assets/images/extract/media/image210.png)
 
-From the "SCMP" page, click on the tab that depicts three joined squares, 'Blueprint', located above the breadcrumb path. After doing this, you will be on the 'Blueprint' page, where the list of blueprints configured in the system is displayed.
+From the "Movincloud" page, click on the tab that depicts three joined squares, 'Blueprint', located above the breadcrumb path. After doing this, you will be on the 'Blueprint' page, where the list of blueprints configured in the system is displayed.
 
 ![Pagina delle Blueprint](assets/images/extract/media/image225.png)
 
@@ -778,7 +778,7 @@ Since "Blueprints" are complex objects that must be properly configured, a file 
 Specifically, there are 4 possible "STATUSES":
 
 1. READY TO USE (green checkmark): indicates that the blueprint is configured correctly and can be used during "Provisioning".
-2. VERIFY (yellow circle): indicates that the SCMP is validating the content of the Blueprint.
+2. VERIFY (yellow circle): indicates that the Movincloud is validating the content of the Blueprint.
 3. FAILED (red "X"): indicates that the uploaded file is not valid and must be re-entered by the user after correction.
 4. DRAFT (orange): indicates that the "blueprint" has been created as a draft but does not contain the necessary CSAR file. Once the file is inserted, the blueprint will change to VERIFY status.
 
@@ -827,7 +827,7 @@ To access the functionality, above the breadcrumb path, click on the "Reports" t
 
 #### Available Report Types
 
-**CATALOG Missing SKU** – List of provider SKUs not present in the SCMP catalog price list, if applicable. Consequently, the customer price for missing SKUs will be given by applying the discount/markup percentage configured in the Administration section.
+**CATALOG Missing SKU** – List of provider SKUs not present in the Movincloud catalog price list, if applicable. Consequently, the customer price for missing SKUs will be given by applying the discount/markup percentage configured in the Administration section.
 
 #### Creating a Report
 

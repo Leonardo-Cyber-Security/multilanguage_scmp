@@ -1,8 +1,8 @@
 # Provisioning
 
-Provisioning is one of the most important functionalities of SCMP. Through these modules, it is possible to allocate runtime assets within the providers managed by SCMP.
+Provisioning is one of the most important functionalities of Movincloud. Through these modules, it is possible to allocate runtime assets within the providers managed by Movincloud.
 
-To use this functionality, relations must be defined within the SCMP.
+To use this functionality, relations must be defined within the Movincloud.
 
 This constraint was made available to bind certain characteristics to provisioning; for example, the VM size is not selectable during provisioning but is among the predefined characteristics by administrators within the catalog.
 
@@ -64,7 +64,7 @@ When we select "Custom services" as a filter type, we can notice a new "Uninstal
 
 ![Uninstall HELM service](assets/images/extract/media/20250605001.png)
 
-Clicking the button will ask for confirmation of deletion. Upon confirmation, SCMP will delete all HELM resources deployed in the indicated namespace.
+Clicking the button will ask for confirmation of deletion. Upon confirmation, Movincloud will delete all HELM resources deployed in the indicated namespace.
 
 ![Uninstall confirmation](assets/images/extract/media/20250605002.png)
 
@@ -94,9 +94,9 @@ If a completed blueprint is selected instead, we will be redirected to the bluep
 
 #### Provisioning of "Physical Resources"
 
-Using the tabs in the provisioning functionality, it is possible to view the lists of provisionable resources within the SCMP, such as Virtual Machines, Storage, and Kubernetes.
+Using the tabs in the provisioning functionality, it is possible to view the lists of provisionable resources within the Movincloud, such as Virtual Machines, Storage, and Kubernetes.
 
-To view elements within the result lists, it is necessary that a relation exists in the SCMP catalog with the catalog resource of the provider to be provisioned.
+To view elements within the result lists, it is necessary that a relation exists in the Movincloud catalog with the catalog resource of the provider to be provisioned.
 
 The functionalities available for these elements are identical; only the parameters to be entered in the creation steps change.
 
@@ -145,7 +145,7 @@ Depending on the type of service selected, the steps for provisioning change; th
 
 ##### "Standard" Services
 
-Click the "Subscribe" button corresponding to a "standard" service. The user will be redirected to step 1 of the service creation page, and all instantiable versions of the service by SCMP will be displayed. In particular, various blocks will be shown, each with a list of configurations:
+Click the "Subscribe" button corresponding to a "standard" service. The user will be redirected to step 1 of the service creation page, and all instantiable versions of the service by Movincloud will be displayed. In particular, various blocks will be shown, each with a list of configurations:
 
 - Name and version of the service that will be instantiated.
 - Name and version of the operating system that will be installed on the machine.
@@ -408,6 +408,6 @@ At the bottom right, click the "Apply" button. After clicking the "Apply" button
 
 Subsequently, from the "Dashboard" page, the user notes that the modification was successful.
 
-It is also possible to modify a failed provisioning for other elements managed by SCMP.
+It is also possible to modify a failed provisioning for other elements managed by Movincloud.
 
 ![Provisioning summary and quote table](assets/images/extract/media/image330.png)

@@ -2,7 +2,7 @@
 
 Use these examples to structure your documentation for clarity and consistency.
 
-La funzionalità di Administration è la base di partenza per poter utilizzare la SCMP.
+La funzionalità di Administration è la base di partenza per poter utilizzare la Movincloud.
 
 I provider inseriti all’interno di questa funzionalità verranno utilizzati dal sistema per recuperare tutte le informazioni necessarie.
 <figcaption><em>TESTO CENTRATO</em></figcaption>
@@ -31,17 +31,17 @@ Possiamo notare che nella lista sono presenti delle "folder", dei contenitori di
 
 Inoltre, per ogni sottosistema è disponibile uno status, rappresentato da un “led” colorato:
 
-- Verde: il funziona correttamente nella SCMP “status: ok”.
-- Rosso: il sottosistema non è più utilizzabile dalla SCMP “status : failed”.
+- Verde: il funziona correttamente nella Movincloud “status: ok”.
+- Rosso: il sottosistema non è più utilizzabile dalla Movincloud “status : failed”.
 
-La SCMP effettua periodicamente dei test di connessione su tutti i  sottosistemi configurati, quando un sottosistema fallisce questo controllo, lo status del sottosistema viene aggiornato e vengono disabilitati tutti i processi di recupero delle informazioni (costi, inventario, monitoring, sicurezza).
+La Movincloud effettua periodicamente dei test di connessione su tutti i  sottosistemi configurati, quando un sottosistema fallisce questo controllo, lo status del sottosistema viene aggiornato e vengono disabilitati tutti i processi di recupero delle informazioni (costi, inventario, monitoring, sicurezza).
 
 Questo potrebbe accadere, ad esempio quando il secret o le password utilizzate per connettersi scadono e devono essere rinnovate.
 Andando a modificare il sottosistema è possibile inserire i nuovi parametri di connessione per ristabilirne il corretto funzionamento, che verrà confermato dallo status "OK"
 
 ##### **Informazioni sui cron-job dei sottosistemi**
 
-Ogni tenant effettua, durante la giornata, diverse operazioni di recupero delle informazioni disponibili per tutti i sottosistemi configurati, così da permettere all’utente di visualizzare tutti i dati necessari utilizzando la sola SCMP.
+Ogni tenant effettua, durante la giornata, diverse operazioni di recupero delle informazioni disponibili per tutti i sottosistemi configurati, così da permettere all’utente di visualizzare tutti i dati necessari utilizzando la sola Movincloud.
 
 Per visualizzare l'esito di queste operazioni, cliccare sulla riga del sottosistema e all' interno della modale selezionare il pulsante "Show discovery info"
 
@@ -130,7 +130,7 @@ Inoltre è possibile richiedere l’aggiornamento dei costi per tutto il tenant:
 
 ![Aggiornamento dei costi su tutto tenant](assets/images/extract/media/image54.png)
 
-Una volta selezionato un recupero costi è possibile indicare il numero dei giorni da recuperare e selezionando il box "Reset the cost" la SCMP effettuerà prima una pulizia dei dati (del relativo range selezionato) e successivamente effettua il refresh
+Una volta selezionato un recupero costi è possibile indicare il numero dei giorni da recuperare e selezionando il box "Reset the cost" la Movincloud effettuerà prima una pulizia dei dati (del relativo range selezionato) e successivamente effettua il refresh
 
 ![Configurazione del refresh costi](assets/images/extract/media/20250604001.png)
 
@@ -141,11 +141,11 @@ Una volta selezionato un recupero costi è possibile indicare il numero dei gior
 Il processo di recupero dei costi viene effettuato dal modulo “Abstraction Layer”, questo modulo è composto da:
 
 - Un sotto-modulo di ABS chiamato “layer” per ogni tipologia di provider (ad esempio “CMP-ABS-VMWare-layer”)
-- ABS Gateway: è il sotto-modulo che si occupa di gestire la comunicazione e l’omologazione delle informazioni recuperate dai vari Layer dei diversi provider e le rende disponibili per gli altri moduli del sistema SCMP.
+- ABS Gateway: è il sotto-modulo che si occupa di gestire la comunicazione e l’omologazione delle informazioni recuperate dai vari Layer dei diversi provider e le rende disponibili per gli altri moduli del sistema Movincloud.
 
 Il processo di recupero dei costi viene effettuato da un cron-job, che viene lanciato una volta per provider, automaticamente durante le ore notturne.
 
-Per i provider di tipo ON-Premise vengono generati automaticamente dalla SCMP dei valori di usage basandosi sulla quantità risorse disponibili in inventario utilizzando gli stessi moduli “ABS”. Successivamente, come per gli alti provider, i valori di usage verranno utilizzati per calcolare i costi tramite il modello di costo descritto nella sezione Administration.
+Per i provider di tipo ON-Premise vengono generati automaticamente dalla Movincloud dei valori di usage basandosi sulla quantità risorse disponibili in inventario utilizzando gli stessi moduli “ABS”. Successivamente, come per gli alti provider, i valori di usage verranno utilizzati per calcolare i costi tramite il modello di costo descritto nella sezione Administration.
 
 In caso di fallimento il processo viene schedulato automaticamente fino al raggiungimento di 3 tentativi. Nel caso in cui il sistema non dovesse riuscire a risolvere in maniera automatica è necessario l’intervento manuale. Inoltre, è possibile richiede un aggiornamento dei costi manuale utilizzando i pulsanti disponibili nella sezione Administration.
 
@@ -155,8 +155,8 @@ In basso i dettagli specifici per tipologia di sottosistema
 
 **Modalità di recupero:**
 
-- **Modello "standard"**: Il modulo ABS richiede tramite le REST API messe a disposizione da Azure i costi per gli ultimi 2 giorni che vengono salvati all' interno del database SCMP.
-- **Modello "Storage Account"**:Il modulo ABS recupera un file che contiene le estrazioni dei costi effettuate suddivise per sottosistema,he vengono salvati all' interno del database SCMP.
+- **Modello "standard"**: Il modulo ABS richiede tramite le REST API messe a disposizione da Azure i costi per gli ultimi 2 giorni che vengono salvati all' interno del database Movincloud.
+- **Modello "Storage Account"**:Il modulo ABS recupera un file che contiene le estrazioni dei costi effettuate suddivise per sottosistema,he vengono salvati all' interno del database Movincloud.
 - **Modello "Billing storage**: il modulo ABS recupera un file che contiene le estrazioni di tutte le sottoscrizioni disponibili nel "billing account", i risultati vengono divisi per sottosistema e salvati sul database
 
 **Calcolo dei costi per singola risorsa:**
@@ -164,26 +164,26 @@ In basso i dettagli specifici per tipologia di sottosistema
 1. Il modulo ABS invia al modulo costi le informazioni di costo e le info sulla risorsa che li ha generati.
 2. Il modulo costi verifica la configurazione del sottosistema per individuare la "tipologia di aggregazione", questo parametro indica quale catalogo utilizzare ([RISORSE](Catalog.md#risorse-e-relazioni-tra-risorse).
  o [SKU](Catalog.md#risorse-e-relazioni-tra-sku)) cosi da calcolarne correttamente il prezzo
-3. Il modulo costi verifica se l'identificativo della risorsa(UUID) è presente nel [catalogo SCMP](Catalog.md#gestione-elementi-di-catalogo-scmp), se presente il sistema moltiplica lo usage per il costo di catalogo
-4. Se la risorsa non è presente a catalogo (quindi non rientra nello step precedente) la SCMP applicherà la percentuale di sconto/ricarico configurata [nel sottosistema](Administration.md#parametri-azure)
+3. Il modulo costi verifica se l'identificativo della risorsa(UUID) è presente nel [catalogo Movincloud](Catalog.md#gestione-elementi-di-catalogo-Movincloud), se presente il sistema moltiplica lo usage per il costo di catalogo
+4. Se la risorsa non è presente a catalogo (quindi non rientra nello step precedente) la Movincloud applicherà la percentuale di sconto/ricarico configurata [nel sottosistema](Administration.md#parametri-azure)
 
 ###### Recupero e calcolo costi cliente per il provider *AWS*
 
-- **Modello "standard"**: Il modulo ABS interroga le API di AWS Cost Explorer per ottenere i costi degli ultimi 2 giorni, salvando i dati all'interno del database SCMP.
-- **Modello "ARN ROLE"**: Il modulo ABS assume un ruolo IAM specifico ([ARN ROLE](Administration.md#parametri-amazon-web-services)) per accedere ai dati di billing di AWS. I costi vengono estratti e suddivisi per sottosistema, quindi salvati nel database SCMP.
+- **Modello "standard"**: Il modulo ABS interroga le API di AWS Cost Explorer per ottenere i costi degli ultimi 2 giorni, salvando i dati all'interno del database Movincloud.
+- **Modello "ARN ROLE"**: Il modulo ABS assume un ruolo IAM specifico ([ARN ROLE](Administration.md#parametri-amazon-web-services)) per accedere ai dati di billing di AWS. I costi vengono estratti e suddivisi per sottosistema, quindi salvati nel database Movincloud.
 
 **Calcolo dei costi per singola risorsa:**
 
 1. Il modulo ABS invia al modulo costi le informazioni di costo e le info sulla risorsa che li ha generati.
 2. Il modulo costi verifica la configurazione del sottosistema per individuare la "tipologia di aggregazione", questo parametro indica quale catalogo utilizzare ([RISORSE](Catalog.md#risorse-e-relazioni-tra-risorse)
  o [SKU](Catalog.md#risorse-e-relazioni-tra-sku)) cosi da calcolarne correttamente il prezzo
-3. Il modulo costi verifica se l'identificativo della risorsa(UUID) è presente nel [catalogo SCMP](Catalog.md#gestione-elementi-di-catalogo-scmp), se presente il sistema moltiplica lo usage per il costo di catalogo.
-4. Se la risorsa non è presente a catalogo (quindi non rientra nello step precedente) la SCMP applicherà la percentuale di sconto/ricarico configurata [nel sottosistema](Administration.md#parametri-amazon-web-services)
+3. Il modulo costi verifica se l'identificativo della risorsa(UUID) è presente nel [catalogo Movincloud](Catalog.md#gestione-elementi-di-catalogo-Movincloud), se presente il sistema moltiplica lo usage per il costo di catalogo.
+4. Se la risorsa non è presente a catalogo (quindi non rientra nello step precedente) la Movincloud applicherà la percentuale di sconto/ricarico configurata [nel sottosistema](Administration.md#parametri-amazon-web-services)
 
 ###### Recupero e calcolo costi cliente per il provider *Google*
 
-- **Modello "standard"**: Il modulo ABS interroga le API di Google Cloud Billing per ottenere i costi degli ultimi 2 giorni, salvando i dati all'interno del database SCMP.
-- **Modello "Dataset Export"**: Il modulo ABS accede ai dati di billing esportati da **BigQuery**. I costi vengono estratti, suddivisi per sottosistema e salvati nel database SCMP.
+- **Modello "standard"**: Il modulo ABS interroga le API di Google Cloud Billing per ottenere i costi degli ultimi 2 giorni, salvando i dati all'interno del database Movincloud.
+- **Modello "Dataset Export"**: Il modulo ABS accede ai dati di billing esportati da **BigQuery**. I costi vengono estratti, suddivisi per sottosistema e salvati nel database Movincloud.
 
 **Calcolo dei costi per singola risorsa:**
 
@@ -191,12 +191,12 @@ In basso i dettagli specifici per tipologia di sottosistema
 2. Il modulo costi verifica la configurazione del sottosistema per individuare la "tipologia di aggregazione", questo parametro indica quale catalogo utilizzare ([RISORSE](Catalog.md#risorse-e-relazioni-tra-risorse)
  o [SKU](Catalog.md#risorse-e-relazioni-tra-sku)) cosi da calcolarne correttamente il prezzo
 3. Se il campo "Cost from USD" è stato selezionato il sistema utilizzerà per il calcolo il prezzo in USD(restituito dal provider), al quale viene applicata una percentuale di sconto/ricarico definita nella sezione administration, altrimenti viene utilizzato il prezzo gia convertito in EUR.
-4. Il modulo costi verifica se l'identificativo della risorsa(UUID) è presente nel [catalogo SCMP](Catalog.md#gestione-elementi-di-catalogo-scmp), se presente il sistema moltiplica lo usage per il costo di catalogo.
-5. Se la risorsa non è presente a catalogo (quindi non rientra nello step precedente) la SCMP applicherà la percentuale di sconto/ricarico configurata [nel sottosistema](Administration.md#parametri-google-cloud)
+4. Il modulo costi verifica se l'identificativo della risorsa(UUID) è presente nel [catalogo Movincloud](Catalog.md#gestione-elementi-di-catalogo-Movincloud), se presente il sistema moltiplica lo usage per il costo di catalogo.
+5. Se la risorsa non è presente a catalogo (quindi non rientra nello step precedente) la Movincloud applicherà la percentuale di sconto/ricarico configurata [nel sottosistema](Administration.md#parametri-google-cloud)
 
 ###### Recupero e calcolo costi cliente per i provider *Oracle, OracleEXAcc*
 
-- **Modello "standard"**: Il modulo ABS interroga le API ORACLE per ottenere i costi degli ultimi 2 giorni, salvando i dati all'interno del database SCMP.
+- **Modello "standard"**: Il modulo ABS interroga le API ORACLE per ottenere i costi degli ultimi 2 giorni, salvando i dati all'interno del database Movincloud.
 
 **Calcolo dei costi per singola risorsa:**
 
@@ -204,8 +204,8 @@ In basso i dettagli specifici per tipologia di sottosistema
 2. Il modulo costi verifica la configurazione del sottosistema per individuare la "tipologia di aggregazione", questo parametro indica quale catalogo utilizzare ([RISORSE](Catalog.md#risorse-e-relazioni-tra-risorse)
  o [SKU](Catalog.md#risorse-e-relazioni-tra-sku)) cosi da calcolarne correttamente il prezzo
 3. Se il campo "Cost from USD" è stato selezionato il sistema utilizzerà per il calcolo il prezzo in USD(restituito dal provider), al quale viene applicata una percentuale di sconto/ricarico definita nella sezione administration, altrimenti viene utilizzato il prezzo gia convertito in EUR.
-4. Il modulo costi verifica se l'identificativo della risorsa(UUID) è presente nel [catalogo SCMP](Catalog.md#gestione-elementi-di-catalogo-scmp), se presente il sistema moltiplica lo usage per il costo di catalogo.
-5. Se la risorsa non è presente a catalogo (quindi non rientra nello step precedente) la SCMP applicherà la percentuale di sconto/ricarico configurata [nel sottosistema](Administration.md#parametri-oracle)
+4. Il modulo costi verifica se l'identificativo della risorsa(UUID) è presente nel [catalogo Movincloud](Catalog.md#gestione-elementi-di-catalogo-Movincloud), se presente il sistema moltiplica lo usage per il costo di catalogo.
+5. Se la risorsa non è presente a catalogo (quindi non rientra nello step precedente) la Movincloud applicherà la percentuale di sconto/ricarico configurata [nel sottosistema](Administration.md#parametri-oracle)
 
 ###### Recupero e calcolo costi cliente per i provider *Kubernetes, OpenShift, vcloudDirector , VMWare, Red Hat Edge*
 
@@ -214,7 +214,7 @@ In basso i dettagli specifici per tipologia di sottosistema
 **Calcolo dei costi per singola risorsa:**
 
 1. Il modulo ABS invia al modulo costi le informazioni di costo e le info sulla risorsa che li ha generati .
-2. la SCMP applicherà la percentuale di sconto/ricarico configurata [nel modello di costo](Administration.md#modello-di-costo-per-i-provider-on-premise)
+2. la Movincloud applicherà la percentuale di sconto/ricarico configurata [nel modello di costo](Administration.md#modello-di-costo-per-i-provider-on-premise)
 
 #### Creazione nuovo sottosistema
 
@@ -250,7 +250,7 @@ Il tasto “Test Connection” serve ad effettuare un test di connessione utiliz
 
 ![Pulsanti di connessione](assets/images/extract/media/image58.png)
 
-Al salvataggio, la SCMP comunicherà al modulo che gestisce quella tipologia di provider, di caricare all’interno del nostro bus (Kafka) tutti gli item relativi all’inventario, metriche, costi ed elementi di security.
+Al salvataggio, la Movincloud comunicherà al modulo che gestisce quella tipologia di provider, di caricare all’interno del nostro bus (Kafka) tutti gli item relativi all’inventario, metriche, costi ed elementi di security.
 
 Lo stesso modulo, si occuperà successivamente di schedulare dei job per l’aggiornamento periodico di tutti gli asset presenti.
 
@@ -435,7 +435,7 @@ Vengono indicati con \* i parametri obbligatori
 | usageAggregation | boolean | Indica se l'aggregazione per "usage" è abilitata per la sottoscrizione. Quando questa spunta viene abilitata i costi del sottosistema verranno raggruppati per Tipologia risorsa | false |
 | Storage account ID\*\* | String | Inserire il percorso dove vengono effettuate le esportazioni dei costi | /subscriptions/{{sottoscrizione}}/resourceGroups/{{resourcegroup}}/providers/Microsoft.Storage/storageAccounts/{{storage account}} |
 | Cost from Billing storage\*\* | boolean | Selezionare questa casella per recuperare i costi in formato "billing Account" | true |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | 5 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | 5 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | dataFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
@@ -446,7 +446,7 @@ Vengono indicati con \* i parametri obbligatori
 
     - Utilizzare il campo "Storage account ID" per recuperare i costi tramite le estrazioni automatiche effettuate singolarmente per sottosistema (solo se lo storage appartiene allo stesso tenant)
     - Utilizzare il campo "Cost from Billing storage" per recuperare i costi a livello di billing account, quindi utilizzando un solo file per tutte le sottoscrizioni disponibili (Sono necessari i permessi di Contributor e Blob Contributor )
-    - Lasciando vuoto il campo "Cost from Billing storage" e il campo "Cost from billing storage" la SCMP recupererà i costi utilizzando le API Azure predisposte per i costi giornalieri.
+    - Lasciando vuoto il campo "Cost from Billing storage" e il campo "Cost from billing storage" la Movincloud recupererà i costi utilizzando le API Azure predisposte per i costi giornalieri.
 
     Questa distinzione è necessaria per evitare che le API Azure rispondano con un errore 429 legato al grande numero di richieste effettuate, inoltre per utilizzare i metodi descritti precedentemente è necessario che il sistema Azure sia configurato correttamente e le utenze inserite abbiano tutti i permessi necessari
 
@@ -476,11 +476,11 @@ Vengono indicati con \* i parametri obbligatori
 | tenantId \* | string | L'ID del tenant Azure a cui appartiene il sottosistema Azure Cloud. Il tenant è un'entità organizzativa in Azure che rappresenta un'azienda o un'organizzazione. | 884147733-ff13-4783-a765-834183773083 |
 | subscriptionId \* | string | L'ID della sottoscrizione Azure utilizzata per accedere al sottosistema Azure Cloud. La sottoscrizione è un contratto per l'utilizzo dei servizi Azure. | 884147733-ff13-4783-a765-834183773083 |
 | usageAggregation | boolean | Indica se l'aggregazione per "usage" è abilitata per la sottoscrizione. Quando questa spunta viene abilitata i costi del sottosistema verranno raggruppati per Tipologia risorsa | false |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | 5 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | 5 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | dataFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
-Per i provider on Premise, in particolare, vengono richiesti dati sulla capacità della infrastruttura, in modo tale che la SCMP possa effettuare dei calcoli preliminari in molteplici scenari.
+Per i provider on Premise, in particolare, vengono richiesti dati sulla capacità della infrastruttura, in modo tale che la Movincloud possa effettuare dei calcoli preliminari in molteplici scenari.
 
 Per esempio, durante il provisioning, in modo tale da non superare la capacità massima consentita del provider.
 
@@ -510,11 +510,11 @@ Vengono indicati con \* i parametri obbligatori
 | tenantId \* | string | L'ID del tenant Azure a cui appartiene il sottosistema Azure Cloud. Il tenant è un'entità organizzativa in Azure che rappresenta un'azienda o un'organizzazione. | 884147733-ff13-4783-a765-834183773083 |
 | subscriptionId \* | string | L'ID della sottoscrizione Azure utilizzata per accedere al sottosistema Azure Cloud. La sottoscrizione è un contratto per l'utilizzo dei servizi Azure. | 884147733-ff13-4783-a765-834183773083 |
 | usageAggregation | boolean | Indica se l'aggregazione per "usage" è abilitata per la sottoscrizione. Quando questa spunta viene abilitata i costi del sottosistema verranno raggruppati per Tipologia risorsa | false |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | 5 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | 5 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | dataFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
-Per i provider on Premise, in particolare, vengono richiesti dati sulla capacità della infrastruttura, in modo tale che la SCMP possa effettuare dei calcoli preliminari in molteplici scenari.
+Per i provider on Premise, in particolare, vengono richiesti dati sulla capacità della infrastruttura, in modo tale che la Movincloud possa effettuare dei calcoli preliminari in molteplici scenari.
 
 Per esempio, durante il provisioning, in modo tale da non superare la capacità massima consentita del provider.
 
@@ -542,11 +542,11 @@ Vengono indicati con \* i parametri obbligatori
 | tenantId \* | string | L'ID del tenant Azure a cui appartiene il sottosistema Azure Cloud. Il tenant è un'entità organizzativa in Azure che rappresenta un'azienda o un'organizzazione. | 884147733-ff13-4783-a765-834183773083 |
 | subscriptionId \* | string | L'ID della sottoscrizione Azure utilizzata per accedere al sottosistema Azure Cloud. La sottoscrizione è un contratto per l'utilizzo dei servizi Azure. | 884147733-ff13-4783-a765-834183773083 |
 | usageAggregation | boolean | Indica se l'aggregazione per "usage" è abilitata per la sottoscrizione. Quando questa spunta viene abilitata i costi del sottosistema verranno raggruppati per Tipologia risorsa | false |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | 5 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | 5 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | dataFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
-Per i provider on Premise, in particolare, vengono richiesti dati sulla capacità della infrastruttura, in modo tale che la SCMP possa effettuare dei calcoli preliminari in molteplici scenari.
+Per i provider on Premise, in particolare, vengono richiesti dati sulla capacità della infrastruttura, in modo tale che la Movincloud possa effettuare dei calcoli preliminari in molteplici scenari.
 
 Per esempio, durante il provisioning, in modo tale da non superare la capacità massima consentita del provider.
 
@@ -574,12 +574,12 @@ Vengono indicati con \* i parametri obbligatori
 | client_id \* | string |  | 104822473261100667392 |
 | clientSecret \* | string | Secret del cliente utilizzato per la connessione | 82hg7ds1h0sds7392 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | 10 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | 10 |
 | dataFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
 !!! info "Configurazione lato PROVIDER"
 
-    Per poter inserire il sistema nella SCMP sono necessarie alcune configurazioni da effettuare sul portale del provider.
+    Per poter inserire il sistema nella Movincloud sono necessarie alcune configurazioni da effettuare sul portale del provider.
 
     Nello specifico :
 
@@ -635,7 +635,7 @@ Vengono indicati con \* i parametri obbligatori (disponibili in basso sotto la s
 | usageAggregation | boolean | Indica se l'aggregazione per "usage" è abilitata per la sottoscrizione. Quando questa spunta viene abilitata i costi del sottosistema verranno raggruppati per Tipologia risorsa | false |
 | Cost from USD Currency | boolean | Indica se il costo finale è calcolato dal prezzo in USD o EUR | true |
 | providerPriceDiscount \*\* (solo se costFromUSDCurrency è true) | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi in USD del provider per tutte le risorse | 30 |
-| catalogPriceDiscount \*\* | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | -5 |
+| catalogPriceDiscount \*\* | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | -5 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | dataFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
@@ -689,7 +689,7 @@ Effettuando l’upload del file il form viene completato automaticamente con i p
 
         Nella stessa pagina degli account di servizio, trova l'account appena creato e clicca sul suo nome.
         Vai alla sezione Permissions e nella tabella in basso, in corrispondenza del service account, nella colonna Inheritance clicca su Edit principal.
-        Nel menù a comparsa, seleziona i ruoli appropriati per l'account di servizio. Di seguito l'elenco minimale dei ruoli per la SCMP:
+        Nel menù a comparsa, seleziona i ruoli appropriati per l'account di servizio. Di seguito l'elenco minimale dei ruoli per la Movincloud:
             - App Engine Admin
             - BigQuery Data Transfer Service Agent
             - Cloud OS Config Service Agent
@@ -706,7 +706,7 @@ Effettuando l’upload del file il form viene completato automaticamente con i p
         Vai su APIs and services
         In alto cliccare su + Enable APIs and services
         Cerca nella barra di ricerca i servizi API da abilitare e clicca sul loro nome
-        Una volta dentro il servizio API, seleziona Enable per abilitarlo; di seguito i servizi API per la SCMP:
+        Una volta dentro il servizio API, seleziona Enable per abilitarlo; di seguito i servizi API per la Movincloud:
             - Cloud Monitoring API
             - Compute Engine API
             - Cloud Asset API
@@ -720,7 +720,7 @@ Effettuando l’upload del file il form viene completato automaticamente con i p
 
     5. Dataset dei costi
 
-        Se il dataset dei costi è situato in un service account diverso da quello da voler integrare, specificare nella casello di testo Cost Export Dataset ID (mel modulo di creazione sottosistema presente in administration della SCMP)la completa stringa di connessione al relativo dataset (es: projectId.datasetName.tableName)
+        Se il dataset dei costi è situato in un service account diverso da quello da voler integrare, specificare nella casello di testo Cost Export Dataset ID (mel modulo di creazione sottosistema presente in administration della Movincloud)la completa stringa di connessione al relativo dataset (es: projectId.datasetName.tableName)
 
 ##### Parametri Kubernetes
 
@@ -749,8 +749,8 @@ Vengono indicati con \* i parametri obbligatori
 | User key Data \* | String | Inserire la key relativa all’ utenza utilizzata per la connessione | Sf8j9jts4ewht7h3wfwj908w |
 | User token \* | String | Token segreto relativo all’ utenza utilizzata per la connessione al provider | Sf8eufce9sfber4543jh8ddsfh89r43 |
 | User name \* | String | Inserire l’username utilizzato per l’autenticazione | administrator |
-| Label selector | string | Inserisci qui un selettore per filtrare le risorse recuperate dalla SCMP | Name=rossi |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | -10 |
+| Label selector | string | Inserisci qui un selettore per filtrare le risorse recuperate dalla Movincloud | Name=rossi |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | -10 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 
 !!! info "Configurazione sul provider"
@@ -860,7 +860,7 @@ Vengono indicati con \* i parametri obbligatori
 | Realm | string | Il nome del contenitore logico che raggruppa le risorse OCI e i relativi costi. | personal-realm.it |
 | keyFile \* | password | un file PEM che contiene la chiave pubblica e privata utilizzata per l'autenticazione. | " -----BEGIN PRIVATE KEY-----MIIJQgIBADANB…" |
 | usageAggregation | boolean | Indica se l'aggregazione per "usage" è abilitata per la sottoscrizione. Quando questa spunta viene abilitata i costi del sottosistema verranno raggruppati per Tipologia risorsa | false |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | -10 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | -10 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | dataFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
@@ -948,7 +948,7 @@ Vengono indicati con \* i parametri obbligatori
 | tenantId \* | string | L'ID del tenant OCI a cui ci si vuole connettere | ocid5.tenancy.oc77...aaabnbthaj6pnvsb2gqnaaaaait3mqzekefmlhwkige2wxna6hfaj3f6njma |
 | region \* | string | La regione è ls posizione geografica specifica in cui si trovano le risorse OCI. | eu-dcc-rome-1 |
 | Private key \* | password | un file PEM che contiene la chiave pubblica e privata utilizzata per l'autenticazione. | " -----BEGIN PRIVATE KEY-----MIIJQgIBADANB…" |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | -10 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | -10 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | dataFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
@@ -976,7 +976,7 @@ Vengono indicati con \* i parametri obbligatori
 | token \* | password | Il token di autenticazione per il VCloudDirector è una stringa segreta che viene utilizzata per autenticare l'utente con il VCloudDirector | aesZo6LextKTQx92VoRpyzaesZo6LextKT |
 | Location | String | Inserire la regione di appartenenza delle risorse VCloudDirector | Eu west |
 | Location | string | inserire la posizione geografica del sistema | OnPremise |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | 5 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | 5 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 
 ##### **Parametri VMWare**
@@ -1005,11 +1005,11 @@ Vengono indicati con \* i parametri obbligatori
 | tenantId \* | string | L'ID del tenant Azure a cui appartiene il sottosistema Azure Cloud. Il tenant è un'entità organizzativa in Azure che rappresenta un'azienda o un'organizzazione. | 884147733-ff13-4783-a765-834183773083 |
 | subscriptionId \* | string | L'ID della sottoscrizione Azure utilizzata per accedere al sottosistema Azure Cloud. La sottoscrizione è un contratto per l'utilizzo dei servizi Azure. | 884147733-ff13-4783-a765-834183773083 |
 | usageAggregation | boolean | Indica se l'aggregazione per "usage" è abilitata per la sottoscrizione. Quando questa spunta viene abilitata i costi del sottosistema verranno raggruppati per Tipologia risorsa | false |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | 5 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | 5 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | datsFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
-Per i provider on Premise, in particolare, vengono richiesti dati sulla capacità della infrastruttura, in modo tale che la SCMP possa effettuare dei calcoli preliminari in molteplici scenari.
+Per i provider on Premise, in particolare, vengono richiesti dati sulla capacità della infrastruttura, in modo tale che la Movincloud possa effettuare dei calcoli preliminari in molteplici scenari.
 
 Per esempio, durante il provisioning, in modo tale da non superare la capacità massima consentita del provider.
 
@@ -1017,11 +1017,11 @@ Per esempio, durante il provisioning, in modo tale da non superare la capacità 
 
 ##### Azure Folder
 
-Per consentire alla SCMP di sfruttare tutte le potenzialità offerte dal provider “Azure” è stata inserita la possibilità di configurare delle “Folders”
+Per consentire alla Movincloud di sfruttare tutte le potenzialità offerte dal provider “Azure” è stata inserita la possibilità di configurare delle “Folders”
 
 Durante la creazione di un provider selezionando la tipologia “Azure”  possiamo notare la presenza di un campo esclusivo per il provider :
 
-- Un box di conferma per indicare alla SCMP se il provider in inserimento è una “Folder”.
+- Un box di conferma per indicare alla Movincloud se il provider in inserimento è una “Folder”.
 
 ![Opzione folder Azure](assets/images/extract/media/image73.png)
 
@@ -1037,17 +1037,17 @@ Vengono indicati con \* i parametri obbligatori
 | clientSecret \* | password | La chiave segreta del client, utilizzata per autenticare il client con il sottosistema Azure Cloud. La chiave segreta deve essere tenuta segreta e non deve essere condivisa con nessuno. | np6Kc\_.xwsvhR8Q~rP05fCqYNXmbqfMGQLOEzfMt |
 | tenantId \* | string | L'ID del tenant Azure a cui appartiene il sottosistema Azure Cloud. Il tenant è un'entità organizzativa in Azure che rappresenta un'azienda o un'organizzazione. | 884147733-ff13-4783-a765-834183773083 |
 | usageAggregation | boolean | Indica se l'aggregazione per "usage" è abilitata per la sottoscrizione. Quando questa spunta viene abilitata i costi del sottosistema verranno raggruppati per Tipologia risorsa | false |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | 5 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | 5 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | datsFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
 ##### Google Cloud Folders
 
-Per consentire alla SCMP di sfruttare tutte le potenzialità offerte dal provider “Google Cloud” è stata inserita la possibilità di configurare delle “Folders” e la possibilità di importare il file generato dalla console del provider così da semplificare l’inserimento dello stesso.
+Per consentire alla Movincloud di sfruttare tutte le potenzialità offerte dal provider “Google Cloud” è stata inserita la possibilità di configurare delle “Folders” e la possibilità di importare il file generato dalla console del provider così da semplificare l’inserimento dello stesso.
 
 Durante la creazione di un provider selezionando la tipologia “Google Cloud”  possiamo notare la presenza di 2 campi esclusivi per il provider:
 
-1. Un box di conferma per indicare alla SCMP se il provider in inserimento è una “Folder”.
+1. Un box di conferma per indicare alla Movincloud se il provider in inserimento è una “Folder”.
 2. Un box dove, cliccando all’ interno sarà possibile, tramite la finestra di selezione file di windows inserire il file di tipo “JSON” esportato direttamente dalla console Google.
 
 ![Parametri specifici di Google Cloud](assets/images/extract/media/image75.png)
@@ -1062,7 +1062,7 @@ I parametri specifici della Google Folder da inserire sono esposti nella tabella
 | Cost from USD Currency | Boolean | Indica se il costo finale è calcolato dal prezzo in USD o EUR | true |
 | providerPriceDiscount (solo se costFromUSDCurrency è true) | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi in USD del provider per tutte le risorse | 30 |
 | Cost cross project | Boolean | Indica se recuperare i costi di tutti i progetti dell’account di fatturazione o solamente del progetto corrente | true |
-| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione SCMP | -20 |
+| catalogPriceDiscount | integer | Inserisci qui uno sconto/maggiorazione da applicare sui prezzi del catalogo per tutte le risorse che non hanno una relazione Movincloud | -20 |
 | odlID | string | Inserisci qui l'id dell'ordine di lavoro che verrà associato al sottosistema e verrà inserito come tag su tutte le risorse del sottosistema | ODL001 |
 | datsFirstCostRecover | int | Inserire il numero di giorni precedenti alla data di creazione dei quali bisogna recuperare i costi al primo avvio del sottosistema | 15 |
 
@@ -1092,8 +1092,8 @@ All’interno della pagina è possibile effettuare le stesse operazioni di visua
 
 Accedendo ad una “Folder” in modalità “View” scorrendo in basso nella pagina possiamo visualizzare la lista dei sottosistemi presenti nel provider e le relative informazioni sullo status:
 
-- In verde possiamo notare un sottosistema configurato correttamente nel provider e che la SCMP provvede ad inserire automaticamente nel sistema e sarà visibile nella sezione “Cloud Providers” e in tutte le funzionalità della SCMP.
-- In rosso possiamo notare un sottosistema configurato in maniera errata che, dopo le opportune modifiche dalla console di “Google Cloud”, potrà essere accettato dalla SCMP.
+- In verde possiamo notare un sottosistema configurato correttamente nel provider e che la Movincloud provvede ad inserire automaticamente nel sistema e sarà visibile nella sezione “Cloud Providers” e in tutte le funzionalità della Movincloud.
+- In rosso possiamo notare un sottosistema configurato in maniera errata che, dopo le opportune modifiche dalla console di “Google Cloud”, potrà essere accettato dalla Movincloud.
 
 ![Visualizzazione sottosistemi della Folder](assets/images/extract/media/image78.png)
 
@@ -1233,7 +1233,7 @@ A questo punto, il Secret manager non sarà più presente all’interno della li
 
 ### Backup
 
-Viene data la possibilità all’ utente di inserire all’ interno della SCMP una connessione con un CommVault per permettere successivamente il recupero e la visualizzazione delle informazioni relative ai backup e alle operazioni effettuate dal Vault.
+Viene data la possibilità all’ utente di inserire all’ interno della Movincloud una connessione con un CommVault per permettere successivamente il recupero e la visualizzazione delle informazioni relative ai backup e alle operazioni effettuate dal Vault.
 
 Per accedere a questa funzionalità è necessario selezionare il tab “CommVault” disponibile in alto nella funzionalità “Administration” .
 
@@ -1247,7 +1247,7 @@ In questa pagina , dopo aver inserito le credenziali di accesso (indirizzo ip, u
 
 ### Confidential computing
 
-Nella sezione di Confidential Computing viene data la possibilità all’ utente di inserire all’ interno della SCMP una connessione ad un servizio di “Remote Attestation” per il controllo e la visualizzazione delle informazioni relative allo stato di confidenzialità delle macchine gestite dal servizio
+Nella sezione di Confidential Computing viene data la possibilità all’ utente di inserire all’ interno della Movincloud una connessione ad un servizio di “Remote Attestation” per il controllo e la visualizzazione delle informazioni relative allo stato di confidenzialità delle macchine gestite dal servizio
 
 Per accedere a questa funzionalità è necessario selezionare il tab “Confidential computing” disponibile in alto nella funzionalità “Administration” .
 

@@ -16,7 +16,7 @@ Per le funzionalità Monitoring, Costs, Inventory, Catalog e Security, all’int
 
 ## Light mode
 
-Per attivare la light mode in tutta la piattaforma SCMP, in alto a destra sulla barra dei menu, cliccare sul pulsante che raffigura il sole come mostrato sotto.
+Per attivare la light mode in tutta la piattaforma Movincloud, in alto a destra sulla barra dei menu, cliccare sul pulsante che raffigura il sole come mostrato sotto.
 
 ![Attivazione della light mode](assets/images/extract/media/image348.png)
 
@@ -41,7 +41,7 @@ Dopo aver fatto ciò, la pagina si aggiorna con il Tenant desiderato in cui può
 
 ## Gestione delle colonne nelle tabelle disponibili
 
-Per le tabelle disponibili nella SCMP, l'utente ha la possibilità di personalizzare la visualizzazione delle colonne in due modi:
+Per le tabelle disponibili nella Movincloud, l'utente ha la possibilità di personalizzare la visualizzazione delle colonne in due modi:
 
 - Modificare l'ordine delle colonne visualizzate.
 - Cambiare il numero di colonne mostrate.

@@ -1,11 +1,11 @@
 # Dashboard
 
-Accessing the SCMP, the homepage presents a summary of four sections: inventory, monitoring, costs, and security.
+Accessing the Movincloud, the homepage presents a summary of four sections: inventory, monitoring, costs, and security.
 
 In particular:
 
 - The Inventory section shows:
-- A pie chart regarding SCMP resources (for each resource of a single provider, an SCMP type instance is created, so the data can be considered as the sum of all resources present across all providers).
+- A pie chart regarding Movincloud resources (for each resource of a single provider, an Movincloud type instance is created, so the data can be considered as the sum of all resources present across all providers).
 - A pie chart for each provider type.
 - The monitoring section shows the most populated metrics with their relative usage.
 - The costs section shows a summary of costs for the last 30 days.

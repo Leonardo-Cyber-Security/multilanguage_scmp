@@ -1,6 +1,6 @@
 # Monitoring
 
-The SCMP collects metrics from all cloud providers and aggregates them by macro categories.
+The Movincloud collects metrics from all cloud providers and aggregates them by macro categories.
 
 This aggregation allows comparison between metrics from different providers.
 
@@ -100,7 +100,7 @@ To access the functionality, above the breadcrumb path, click on the "Reports" t
 
 #### Available Report Types
 
-- **Monitoring Threshold Quotas** – List of VCloud and/or Backup subsystems, integrated into the SCMP, with details of utilization quotas (CPU, Memory, Storage, Backup). Based on the selected filter combination, it is possible to filter subsystems that exceed a certain utilization threshold.
+- **Monitoring Threshold Quotas** – List of VCloud and/or Backup subsystems, integrated into the Movincloud, with details of utilization quotas (CPU, Memory, Storage, Backup). Based on the selected filter combination, it is possible to filter subsystems that exceed a certain utilization threshold.
 
 #### Report Creation
 
