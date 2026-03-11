@@ -95,6 +95,7 @@ function setupLanguageSwitcherEvents() {
     }
 
 
+    
     function switchLanguage(targetLang) {
         const currentLang = getCurrentLanguage();
         let path = window.location.pathname;
