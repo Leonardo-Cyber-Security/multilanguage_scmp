@@ -1,7 +1,20 @@
 // Language Switcher JavaScript - Dynamic Injection
 document.addEventListener('DOMContentLoaded', function() {
-    // Aspetta un momento per assicurarsi che Material theme sia completamente caricato
+    // Forza redirect a /it/ se manca prefisso lingua
     setTimeout(function() {
+        const path = window.location.pathname;
+        if (!/^\/(it|en)\//.test(path)) {
+            // Inserisci /it/ subito dopo la root
+            const parts = path.split('/').filter(Boolean);
+            let newPath = '/it';
+            if (parts.length > 0) {
+                newPath += '/' + parts.join('/');
+            }
+            newPath = newPath.replace(/\/\//g, '/');
+            const newUrl = window.location.origin + newPath + window.location.search + window.location.hash;
+            window.location.replace(newUrl);
+            return;
+        }
         injectLanguageSwitcher();
     }, 100);
 });
