@@ -96,13 +96,21 @@ function setupLanguageSwitcherEvents() {
 
 
     function switchLanguage(targetLang) {
-        let currentUrl = window.location.href;
-        let newUrl;
         const currentLang = getCurrentLanguage();
-        const path = window.location.pathname.replace(/^\/(en|it)\//, '/');
-        const baseUrl = window.location.origin;
-        newUrl = `${baseUrl}/${targetLang}${path}`;
-        newUrl = newUrl.replace(/\/\//g, '/').replace(':/', '://');
+        let path = window.location.pathname;
+        // Sostituisci solo il segmento lingua
+        if (currentLang === targetLang) return;
+        if (currentLang === 'it' && targetLang === 'en') {
+            path = path.replace('/it/', '/en/');
+        } else if (currentLang === 'en' && targetLang === 'it') {
+            path = path.replace('/en/', '/it/');
+        } else {
+            // fallback: aggiungi /targetLang/ solo se non presente
+            path = `/${targetLang}${path}`;
+        }
+        // Normalizza doppie barre
+        path = path.replace(/\/\//g, '/');
+        const newUrl = window.location.origin + path;
         console.log(`Switching from ${currentLang} to ${targetLang}: ${newUrl}`);
         window.location.href = newUrl;
     }
