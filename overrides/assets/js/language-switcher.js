@@ -98,15 +98,18 @@ function setupLanguageSwitcherEvents() {
     function switchLanguage(targetLang) {
         const currentLang = getCurrentLanguage();
         let path = window.location.pathname;
-        // Sostituisci solo il segmento lingua
         if (currentLang === targetLang) return;
-        if (currentLang === 'it' && targetLang === 'en') {
-            path = path.replace('/it/', '/en/');
-        } else if (currentLang === 'en' && targetLang === 'it') {
-            path = path.replace('/en/', '/it/');
+
+        // Sostituisci solo il segmento lingua se presente
+        if (/^\/(it|en)\//.test(path)) {
+            path = path.replace(/^\/(it|en)\//, `/${targetLang}/`);
         } else {
-            // fallback: aggiungi /targetLang/ solo se non presente
-            path = `/${targetLang}${path}`;
+            // Se non c'è prefisso lingua, inseriscilo subito dopo la root
+            const parts = path.split('/').filter(Boolean);
+            path = `/${targetLang}`;
+            if (parts.length > 0) {
+                path += '/' + parts.join('/');
+            }
         }
         // Normalizza doppie barre
         path = path.replace(/\/\//g, '/');
