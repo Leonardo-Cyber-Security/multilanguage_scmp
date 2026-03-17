@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Azure Pipelines - Trigger</title>
+</head>
+<body>
+  <h1>Trigger Azure Pipeline (esempio)</h1>
+
+  <div>
+    <label>Organization: <input id="organization" placeholder="myorg"></label>
+  </div>
+  <div>
+    <label>Project: <input id="project" placeholder="myproject"></label>
+  </div>
+  <div>
+    <label>PAT (Personal Access Token): <input id="pat" type="password" placeholder="inserisci PAT"></label>
+    <button id="savePatBtn">Salva PAT in session</button>
+    <button id="clearPatBtn">Rimuovi PAT</button>
+  </div>
+
+  <p>
+    <button id="listPipelinesBtn">Elenca pipeline</button>
+  </p>
+
+  <ul id="pipelinesList" style="max-height:200px;overflow:auto;border:1px solid #ddd;padding:8px;background:#fff"></ul>
+
+  <h2>Avvia pipeline</h2>
+  <div>
+    <label>Pipeline ID: <input id="pipelineId"></label>
+  </div>
+  <div>
+    <label>Parameters (JSON): <input id="parameters" value='{"param1":"value"}' style="width:60%"></label>
+  </div>
+  <p>
+    <button id="runPipelineBtn">Run Pipeline</button>
+  </p>
+
+  <pre id="output" style="background:#f6f6f6;padding:10px;max-height:300px;overflow:auto"></pre>
+
+  <script src="trigger.js"></script>
+  <script>
+    document.getElementById('savePatBtn').addEventListener('click', async () => {
+      const pat = document.getElementById('pat').value;
+      sessionStorage.setItem('azure_pat', pat);
+      alert('PAT salvato in sessionStorage (temporaneo).');
+      // Dopo il salvataggio, elenca automaticamente le pipeline usando i default/config
+      try {
+        await window.loadAndShowPipelines();
+      } catch (e) {
+        console.error(e);
+      }
+    });
+    document.getElementById('clearPatBtn').addEventListener('click', () => {
+      sessionStorage.removeItem('azure_pat');
+      alert('PAT rimosso.');
+    });
+
+    document.getElementById('listPipelinesBtn').addEventListener('click', async () => {
+      await window.loadAndShowPipelines();
+    });
+
+    document.getElementById('runPipelineBtn').addEventListener('click', async () => {
+      const org = document.getElementById('organization').value;
+      const proj = document.getElementById('project').value;
+      const pat = sessionStorage.getItem('azure_pat');
+      const pipelineId = document.getElementById('pipelineId').value;
+      const params = document.getElementById('parameters').value;
+      const out = document.getElementById('output');
+      out.textContent = 'Esecuzione...';
+      try {
+        const res = await runPipeline(org, proj, pipelineId, pat, params);
+        out.textContent = JSON.stringify(res, null, 2);
+      } catch (e) {
+        out.textContent = e.toString();
+      }
+    });
+
+    // Al caricamento della pagina, applica i default dal file config.json
+    window.addEventListener('DOMContentLoaded', async () => {
+      try {
+        await window.loadConfig();
+        // Se il PAT è già salvato, elenca automaticamente le pipeline
+        if (sessionStorage.getItem('azure_pat')) {
+          await window.loadAndShowPipelines();
+        }
+      } catch (e) {
+        console.warn('Errore caricamento config o pipelines:', e);
+      }
+    });
+  </script>
+</body>
+</html>
