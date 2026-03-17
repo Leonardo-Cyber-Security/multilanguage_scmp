@@ -1,34 +1,10 @@
 // Language Switcher JavaScript - Dynamic Injection
 document.addEventListener('DOMContentLoaded', function() {
-    // Forza redirect a /it/ se manca prefisso lingua
+    // Aspetta un momento per assicurarsi che Material theme sia completamente caricato
     setTimeout(function() {
-        const path = window.location.pathname;
-        // helper disponibile anche globalmente (dichiarata più sotto)
-
-        if (!/^\/(it|en)\//.test(path)) {
-            const newPath = insertLangBeforeFolder(path, 'it');
-            const newUrl = window.location.origin + newPath + window.location.search + window.location.hash;
-            window.location.replace(newUrl);
-            return;
-        }
         injectLanguageSwitcher();
     }, 100);
 });
-
-// helper: inserisce il prefisso lingua prima della cartella che contiene index.html
-function insertLangBeforeFolder(originalPath, lang) {
-    const parts = originalPath.split('/').filter(Boolean);
-    if (parts.length === 0) return `/${lang}/`;
-    let pos;
-    if (parts[parts.length - 1].toLowerCase() === 'index.html') {
-        pos = parts.length - 2; // prima della cartella che contiene index.html
-    } else {
-        pos = parts.length - 1; // prima dell'ultima cartella
-    }
-    if (pos < 0) pos = 0;
-    parts.splice(pos, 0, lang);
-    return '/' + parts.join('/');
-}
 
 function injectLanguageSwitcher() {
     // Trova la navbar dell'header di Material
@@ -129,8 +105,12 @@ function setupLanguageSwitcherEvents() {
         if (/^\/(it|en)\//.test(path)) {
             path = path.replace(/^\/(it|en)\//, `/${targetLang}/`);
         } else {
-            // Se non c'è prefisso lingua, inseriscilo prima della cartella che contiene index.html (o prima dell'ultima cartella)
-            path = insertLangBeforeFolder(path, targetLang);
+            // Se non c'è prefisso lingua, inseriscilo subito dopo la root
+            const parts = path.split('/').filter(Boolean);
+            path = `/${targetLang}`;
+            if (parts.length > 0) {
+                path += '/' + parts.join('/');
+            }
         }
         // Normalizza doppie barre
         path = path.replace(/\/\//g, '/');
