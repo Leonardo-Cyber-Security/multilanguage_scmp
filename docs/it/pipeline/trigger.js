@@ -24,6 +24,70 @@ async function listPipelines(organization, project, pat) {
   return await resp.json();
 }
 
+// Recupera dettagli del pipeline (per ottenere repository/id)
+async function getPipelineDetails(organization, project, pipelineId, pat) {
+  if (!organization || !project || !pipelineId) throw new Error('Organization, Project e PipelineId richiesti');
+  const url = `https://dev.azure.com/${encodeURIComponent(organization)}/${encodeURIComponent(project)}/_apis/pipelines/${encodeURIComponent(pipelineId)}?api-version=7.1-preview.1`;
+  const resp = await fetch(url, {
+    method: 'GET',
+    headers: { 'Authorization': getAuthHeader(pat), 'Content-Type': 'application/json' }
+  });
+  if (!resp.ok) {
+    const txt = await resp.text();
+    throw new Error('Get pipeline details failed: ' + resp.status + ' - ' + txt);
+  }
+  return await resp.json();
+}
+
+// Carica i branch per il repository associato al pipeline e popola la select
+async function loadBranchesForPipeline(organization, project, pipelineId, pat) {
+  const select = document.getElementById('branchSelect');
+  select.innerHTML = '<option value="">Caricamento...</option>';
+  try {
+    const details = await getPipelineDetails(organization, project, pipelineId, pat);
+    // tentiamo di trovare repository id
+    let repoId = null;
+    if (details && details.configuration && details.configuration.repository) {
+      repoId = details.configuration.repository.id || details.configuration.repository.name || null;
+    }
+    // Se non troviamo repoId, proviamo a leggere dalla proprietà repository in cima
+    if (!repoId && details && details.repository) {
+      repoId = details.repository.id || details.repository.name || null;
+    }
+
+    if (!repoId) {
+      // fallback: chiedi all'utente di inserire manualmente il repo (non ideale)
+      select.innerHTML = '<option value="">Nessun repository associato trovato</option>';
+      return;
+    }
+
+    // Chiamata per elencare refs (heads)
+    const refsUrl = `https://dev.azure.com/${encodeURIComponent(organization)}/_apis/git/repositories/${encodeURIComponent(repoId)}/refs?filter=heads/&api-version=7.1-preview.1`;
+    const refsResp = await fetch(refsUrl, { method: 'GET', headers: { 'Authorization': getAuthHeader(pat) } });
+    if (!refsResp.ok) {
+      const txt = await refsResp.text();
+      throw new Error('List refs failed: ' + refsResp.status + ' - ' + txt);
+    }
+    const refsData = await refsResp.json();
+    select.innerHTML = '';
+    if (!refsData || !refsData.value || refsData.value.length === 0) {
+      select.innerHTML = '<option value="">Nessun branch trovato</option>';
+      return;
+    }
+    refsData.value.forEach(r => {
+      const name = (r.name || '').replace('refs/heads/', '');
+      const opt = document.createElement('option');
+      opt.value = name;
+      opt.textContent = name;
+      select.appendChild(opt);
+    });
+  } catch (e) {
+    select.innerHTML = '<option value="">Errore caricamento branch</option>';
+    console.error(e);
+  }
+}
+
+
 // Avvia una pipeline YAML usando l'API runs
 async function runPipeline(organization, project, pipelineId, pat, parametersJson) {
   if (!organization || !project || !pipelineId) throw new Error('Organization, Project e PipelineId richiesti');
@@ -32,12 +96,20 @@ async function runPipeline(organization, project, pipelineId, pat, parametersJso
   const url = `https://dev.azure.com/${encodeURIComponent(organization)}/${encodeURIComponent(project)}/_apis/pipelines/${encodeURIComponent(pipelineId)}/runs?api-version=7.1-preview.1`;
 
   let bodyObj = {};
+  let templateParams = {};
   try {
-    bodyObj = { resources: {}, templateParameters: JSON.parse(parametersJson || '{}') };
+    templateParams = JSON.parse(parametersJson || '{}');
   } catch (e) {
     throw new Error('Parameters JSON non valido: ' + e.message);
   }
 
+  // Se è selezionato un branch, includilo nelle risorse
+  const branch = (document.getElementById('branchSelect') && document.getElementById('branchSelect').value) || '';
+  if (branch) {
+    bodyObj = { resources: { repositories: { self: { refName: `refs/heads/${branch}` } } }, templateParameters: templateParams };
+  } else {
+    bodyObj = { resources: {}, templateParameters: templateParams };
+  }
   const resp = await fetch(url, {
     method: 'POST',
     headers: {
@@ -93,7 +165,14 @@ async function loadAndShowPipelines() {
       const li = document.createElement('li');
       li.textContent = `${p.name} (id: ${p.id})`;
       li.style.cursor = 'pointer';
-      li.addEventListener('click', () => document.getElementById('pipelineId').value = p.id);
+      li.addEventListener('click', async () => {
+        document.getElementById('pipelineId').value = p.id;
+        try {
+          await loadBranchesForPipeline(org, proj, p.id, pat);
+        } catch (e) {
+          console.error('Errore caricamento branch:', e);
+        }
+      });
       listEl.appendChild(li);
     });
   } catch (e) {
@@ -103,3 +182,4 @@ async function loadAndShowPipelines() {
 
 window.loadConfig = loadConfig;
 window.loadAndShowPipelines = loadAndShowPipelines;
+window.loadBranchesForPipeline = loadBranchesForPipeline;

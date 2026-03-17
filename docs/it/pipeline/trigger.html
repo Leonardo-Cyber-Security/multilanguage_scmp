@@ -31,6 +31,9 @@
     <label>Pipeline ID: <input id="pipelineId"></label>
   </div>
   <div>
+    <label>Branch: <select id="branchSelect"><option value="">-- seleziona branch --</option></select></label>
+  </div>
+  <div>
     <label>Parameters (JSON): <input id="parameters" value='{"param1":"value"}' style="width:60%"></label>
   </div>
   <p>
@@ -81,9 +84,13 @@
     window.addEventListener('DOMContentLoaded', async () => {
       try {
         await window.loadConfig();
-        // Se il PAT è già salvato, elenca automaticamente le pipeline
+        // Se il PAT è già salvato, elenca automaticamente le pipeline e carica branch per default pipeline se presente
         if (sessionStorage.getItem('azure_pat')) {
           await window.loadAndShowPipelines();
+          const pid = document.getElementById('pipelineId').value;
+          if (pid) {
+            await window.loadBranchesForPipeline(document.getElementById('organization').value, document.getElementById('project').value, pid, sessionStorage.getItem('azure_pat'));
+          }
         }
       } catch (e) {
         console.warn('Errore caricamento config o pipelines:', e);
