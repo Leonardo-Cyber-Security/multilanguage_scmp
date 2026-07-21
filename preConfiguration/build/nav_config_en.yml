@@ -1,15 +1,15 @@
 nav:
-- "<span class='ms-Icon ms-Icon--WaitlistConfirm'></span> Installation and Deploy": Getting started.md
+- "<span class='ms-Icon ms-Icon--Home'></span> Home": index.md
+- "<span class='ms-Icon ms-Icon--ViewDashboard'></span> Dashboard": Dashboard.md
 - "<span class='ms-Icon ms-Icon--AuthenticatorApp'></span> Authentication": Authentication.md
 - "<span class='ms-Icon ms-Icon--ModelingView'></span> Tenant Management": Gestione Tenant.md
 - "<span class='ms-Icon ms-Icon--Admin'></span> Administration": Administration.md
-- "<span class='ms-Icon ms-Icon--ViewDashboard'></span> Dashboard": Dashboard.md
 - "<span class='ms-Icon ms-Icon--OpenFolderHorizontal'></span> Inventory": Inventory.md
-- "<span class='ms-Icon ms-Icon--AreaChart'></span> Monitoring": Monitoring.md
-- "<span class='ms-Icon ms-Icon--AzureKeyVault'></span> Security": Security.md
 - "<span class='ms-Icon ms-Icon--AddToShoppingList'></span> Catalog": Catalog.md
+- "<span class='ms-Icon ms-Icon--AreaChart'></span> Monitoring": Monitoring.md
 - "<span class='ms-Icon ms-Icon--Money'></span> Costs & Usage": Costs e Usage.md
 - "<span class='ms-Icon ms-Icon--BranchFork2'></span> Provisioning": Provisioning.md
+- "<span class='ms-Icon ms-Icon--AzureKeyVault'></span> Security": Security.md
 - "<span class='ms-Icon ms-Icon--Lifesaver'></span> Backup & Disaster Recovery": Backup Disaster Recovery.md
 - "<span class='ms-Icon ms-Icon--SecondaryNav'></span> Shared Features": Funzionalità condivise.md
 - "<span class='ms-Icon ms-Icon--ReservationOrders'></span> Service Detail Design": Service Detail Design.md
@@ -28,3 +28,4 @@ nav:
   - "Tenant Manager": api/tenantAPI.md
   - "Service detail design": api/api.md
 - "<span class='ms-Icon ms-Icon--PDF'></span> Complete PDF Version": Movincloud_SUM_en.pdf
+- "<span class='ms-Icon ms-Icon--DependencyAdd'></span> Installation": Getting started.md

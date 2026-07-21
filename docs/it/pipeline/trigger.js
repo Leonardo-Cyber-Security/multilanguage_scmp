@@ -104,7 +104,9 @@ async function runPipeline(organization, project, pipelineId, pat, parametersJso
   }
 
   // Se è selezionato un branch, includilo nelle risorse
-  const branch = (document.getElementById('branchSelect') && document.getElementById('branchSelect').value) || '';
+  const manualBranchEl = document.getElementById('branchInput');
+  const manualBranch = manualBranchEl ? (manualBranchEl.value || '').trim() : '';
+  const branch = manualBranch || (document.getElementById('branchSelect') && document.getElementById('branchSelect').value) || '';
   if (branch) {
     bodyObj = { resources: { repositories: { self: { refName: `refs/heads/${branch}` } } }, templateParameters: templateParams };
   } else {

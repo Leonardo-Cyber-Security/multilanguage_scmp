@@ -1,4 +1,5 @@
 {
+  "base_url": "https://vostro-sito.it",
   "languages": {
     "it": {
       "path": "config/it/mkdocs.yml",

@@ -29,10 +29,19 @@ for lang_code, lang_config in languages.items():
     with open(nav_path, encoding='utf-8') as f:
         nav_yaml = f.read()
     
+    # Costruisci site_url combinando base_url e alternate_link
+    base_url = config.get("base_url", "").rstrip("/")
+    alternate_link = lang_config.get("alternate_link", "")
+    # Se alternate_link non inizia con /, aggiungilo per sicurezza se c'è un base_url
+    if base_url and not alternate_link.startswith("/"):
+        alternate_link = "/" + alternate_link
+    site_url = base_url + alternate_link
+    
     # Usa direttamente la configurazione della lingua dal JSON
     # che ora contiene tutto: titoli, autori, contatti, headerFooterPdf
     template_vars = lang_config.copy()
     template_vars.update({
+        "site_url": site_url,
         "nav_yaml": nav_yaml,
         "alternate_link_it": languages["it"]["alternate_link"],
         "alternate_link_en": languages["en"]["alternate_link"]
