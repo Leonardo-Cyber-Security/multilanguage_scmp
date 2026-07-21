@@ -198,17 +198,13 @@ jobs:
       if: env.RUN_SWAGGER == 'true'
       id: api_login
       run: |
-        response=$(curl -s --location 'https://www.movincloud.com//api/iam/login' \
-        -H "Content-Type: application/json" \
-        -d '{
-              "user": "cmp_api_test",
-              "psw": "${{ secrets.PSW }}",
-              "get_routes": true,
-              "routes_for_module": "IAM/IAM_FE",
-              "app_to_use": "TUTTE",
-              "iam_fe_login": true,
-              "error_on_iam_routes": false
-            }')
+        response=$(curl -s --location "https://www.movincloud.com/auth/realms/${{ secrets.REALM }}/protocol/openid-connect/token" \
+        --header 'Content-Type: application/x-www-form-urlencoded' \
+        --data-urlencode 'grant_type=password' \
+        --data-urlencode 'client_id=confidential-client' \
+        --data-urlencode 'username=testadmin' \
+        --data-urlencode "password=${{ secrets.PSW }}" \
+        --data-urlencode "client_secret=${{ secrets.SECRET }}")
         echo "$response"
         token=$(echo "$response" | jq -r '.access_token')
         if [ "$token" == "null" ] || [ -z "$token" ]; then
