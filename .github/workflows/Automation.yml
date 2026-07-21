@@ -211,6 +211,7 @@ jobs:
           echo "Login fallita: token non ricevuto"
           exit 1
         fi
+
         echo "::add-mask::$token"
         echo "API_TOKEN=$token" >> $GITHUB_ENV
         echo "api_token=$token" >> $GITHUB_OUTPUT
