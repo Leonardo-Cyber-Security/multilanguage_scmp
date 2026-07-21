@@ -202,7 +202,7 @@ jobs:
         --header 'Content-Type: application/x-www-form-urlencoded' \
         --data-urlencode 'grant_type=password' \
         --data-urlencode 'client_id=confidential-client' \
-        --data-urlencode 'username=testadmin' \
+        --data-urlencode 'username=cmp_api_test' \
         --data-urlencode "password=${{ secrets.PSW }}" \
         --data-urlencode "client_secret=${{ secrets.SECRET }}")
         echo "$response"
