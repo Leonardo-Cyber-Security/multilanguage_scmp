@@ -1,0 +1,8 @@
+{
+  "organization": "Leonardo-Cybersecurity",
+  "project": "ETD-CMP",
+  "apiVersion": "7.1-preview.1",
+  "defaultPipelineId": null,
+  "defaultParameters": {},
+  "notes": "Do not store PAT here. Insert PAT manually in the frontend (sessionStorage)."
+}
