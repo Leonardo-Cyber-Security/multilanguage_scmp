@@ -5,9 +5,9 @@
       "path": "config/it/mkdocs.yml",
       "site_name": "Documentazione Movincloud (IT)",
       "author": "Piccoli Giammarco",
-      "numeroDocumento": "C000CMP01SUM01/09.00-SUM",
-      "revisione": "09.00",
-      "data": "22/12/2025",
+      "numeroDocumento": "C000CMP01SUM01/10.00-SUM",
+      "revisione": "10.00",
+      "data": "22/07/2026",
       "cageCode": "A0069",
       "language_code": "it",
       "docs_dir": "../../docs/it",
@@ -29,18 +29,18 @@
           "area": "R. Cloud Product | Digital Systems & Engineering Technologies | Engineering"
         },
         "verifica1": {
-          "nome": "Andrea Giorgio Busà",
-          "qualifica": "PEM IPT di Prodotto",
-          "area": "R. Digital Systems & Engineering Technologies | Engineering"
+          "nome": "Daniele Leone",
+          "qualifica": "Responsabile UO Digital Platforms ",
+          "area": "Digital Platforms"
         },
         "verifica2": {
-          "nome": "Simonetta De Biase",
+          "nome": "Simone Giuseppe Fuscaldo",
           "qualifica": "PAM IPT Sviluppo",
           "area": "Quality Cyber Security, Intelligence & Digital Solutions"
         },
         "approvazione1": {
-          "nome": "Daniele Leone",
-          "qualifica": "IPT Leader IPT di Sviluppo",
+          "nome": "Davide Mela",
+          "qualifica": "PEM IPT di Sviluppo",
           "area": "R. Digital Platform | Digital Systems & Engineering Technologies | Engineering"
         },
         "approvazione2": {
