@@ -5,3 +5,6 @@ mkdocs-material
 markdown-captions
 mkdocs-render-swagger-plugin
 Pillow
+beautifulsoup4
+pyyaml
+jinja2

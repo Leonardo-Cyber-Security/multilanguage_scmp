@@ -84,39 +84,22 @@ function setupLanguageSwitcherEvents() {
 
     // Get current URL and detect language
     function getCurrentLanguage() {
-        const path = window.location.pathname;
-        if (path.includes('/en/')) {
-            return 'en';
-        } else if (path.includes('/it/')) {
-            return 'it';
-        }
-        // Default fallback - check if we're in a subdirectory structure
-        return 'it'; // Default to Italian
+        const match = window.location.pathname.match(/\/(it|en)(\/|$)/);
+        return match ? match[1] : 'it'; // Default a 'it'
     }
 
-
-    
     function switchLanguage(targetLang) {
-        const currentLang = getCurrentLanguage();
-        let path = window.location.pathname;
-        if (currentLang === targetLang) return;
+        if (getCurrentLanguage() === targetLang) return;
 
-        // Sostituisci solo il segmento lingua se presente
-        if (/^\/(it|en)\//.test(path)) {
-            path = path.replace(/^\/(it|en)\//, `/${targetLang}/`);
-        } else {
-            // Se non c'è prefisso lingua, inseriscilo subito dopo la root
-            const parts = path.split('/').filter(Boolean);
-            path = `/${targetLang}`;
-            if (parts.length > 0) {
-                path += '/' + parts.join('/');
-            }
-        }
-        // Normalizza doppie barre
-        path = path.replace(/\/\//g, '/');
-        const newUrl = window.location.origin + path;
-        console.log(`Switching from ${currentLang} to ${targetLang}: ${newUrl}`);
-        window.location.href = newUrl;
+        const path = window.location.pathname;
+        const langRegex = /\/(it|en)(\/|$)/;
+        
+        // Se trova /it/ o /en/ lo sostituisce
+        const newPath = langRegex.test(path) 
+            ? path.replace(langRegex, `/${targetLang}$2`)
+            : `/${targetLang}${path}`; // Altrimenti aggiunge la lingua all'inizio 
+
+        window.location.href = newPath.replace(/\/+/g, '/');
     }
 
 
