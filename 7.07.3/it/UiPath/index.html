@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Lancia Test Orchestrator UiPath (External App Connection)</title>
+    <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+    .container { max-width: 400px; margin: 60px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
+    h2 { text-align: center; }
+    label { display: block; margin-top: 15px; }
+    input[type="text"] { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+    select { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+    button { margin-top: 20px; width: 100%; padding: 10px; background: #0078d7; color: #fff; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
+    button:hover { background: #005fa3; }
+             opt.textContent = test.Name;
+    } catch (err) {
+ </script>
+    <!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lancia Test Orchestrator UiPath (External App Connection)</title>
+        <style>
+            body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+            .container { max-width: 400px; margin: 60px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
+            h2 { text-align: center; }
+            label { display: block; margin-top: 15px; }
+            input[type="text"] { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+            select { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+            button { margin-top: 20px; width: 100%; padding: 10px; background: #0078d7; color: #fff; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
+            button:hover { background: #005fa3; }
+            .result { margin-top: 20px; text-align: center; }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <h2>Lancia Test Orchestrator</h2>
+        <form id="testForm">
+            <label for="secret">Secret</label>
+            <input type="text" id="secret" required>
+            <label for="value">Value</label>
+            <input type="text" id="value" required>
+            <button type="button" id="fetchTests">Carica lista test</button>
+            <label for="testSelect">Seleziona Test</label>
+            <select id="testSelect" required disabled>
+                <option value="">-- Carica la lista dei test --</option>
+            </select>
+            <button type="submit" id="launchBtn" disabled>Lancia Test</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+    </body>
+    </html>
+<body>
+<div class="container">
+    <h2>Lancia Test Orchestrator</h2>
+    <form id="testForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+        <label for="testName">Nome Test</label>
+        <input type="text" id="testName" required>
+        <button type="submit">Lancia Test</button>
+    </form>
+    <div class="result" id="result"></div>
+</div>
+<script>
+// Sostituisci questi endpoint e parametri con quelli reali del tuo Orchestrator
+const orchestratorUrl = "https://YOUR_ORCHESTRATOR_URL";
+const tenant = "YOUR_TENANT";
+const folderId = "YOUR_FOLDER_ID"; // opzionale, se usi le cartelle
+
+async function authenticate(username, password) {
+    // Esempio di autenticazione: modifica secondo la tua configurazione
+    const response = await fetch(`${orchestratorUrl}/api/Account/Authenticate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            tenancyName: tenant,
+            usernameOrEmailAddress: username,
+            password: password
+        })
+    });
+    if (!response.ok) throw new Error('Autenticazione fallita');
+    const data = await response.json();
+    return data.result;
+}
+
+async function startTest(token, testName) {
+    // Esempio: cerca il test e lancialo (modifica secondo le tue API)
+    // 1. Cerca il test per nome
+    const testRes = await fetch(`${orchestratorUrl}/odata/TestCases?$filter=Name eq '${testName}'`, {
+        headers: { 'Authorization': `Bearer ${token}` }
+    });
+    const testData = await testRes.json();
+    if (!testData.value || testData.value.length === 0) throw new Error('Test non trovato');
+    const testId = testData.value[0].Id;
+    // 2. Avvia il test
+    const startRes = await fetch(`${orchestratorUrl}/odata/TestCaseExecutions/UiPath.Server.Configuration.OData.StartTestCaseExecution`, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            testCaseId: testId,
+            folderId: folderId // opzionale
+        })
+    });
+    if (!startRes.ok) throw new Error('Errore nell\'avvio del test');
+    return await startRes.json();
+}
+
+document.getElementById('testForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const testName = document.getElementById('testName').value;
+    const resultDiv = document.getElementById('result');
+    resultDiv.textContent = 'Attendere...';
+    try {
+        const token = await authenticate(username, password);
+        const res = await startTest(token, testName);
+        resultDiv.textContent = 'Test avviato con successo!';
+    } catch (err) {
+        resultDiv.textContent = 'Errore: ' + err.message;
+    }
+});
+</script>
+</body>
+</html>
